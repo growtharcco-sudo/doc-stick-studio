@@ -1,70 +1,277 @@
 {
  "id": "001_crocodile_birth_control",
  "beats": [
-  {"say": "Ancient Egyptians used crocodile poop...", "cap": "ANCIENT EGYPTIANS | USED *CROCODILE* | *POOP...*",
-   "show": {"doc": {"pose": "deadpan", "poses": {"1": "point"}},
-            "props": [{"name": "crocodile", "slot": "floor_right", "size": 0.68, "in": "none"},
-                      {"name": "poop", "slot": "floor_mid", "size": 0.9, "at": "0+1.25"}]}},
-  {"say": "as birth control.", "cap": "AS *BIRTH CONTROL.*"},
-
-  {"say": "Yes. Really.", "cap": "YES. REALLY.",
-   "show": {"doc": {"pose": "deadpan", "poses": {"1": "point"}},
-            "props": [{"name": "papyrus", "slot": "center", "at": "1"}],
-            "stamps": [{"text": "~4,000 YEARS AGO", "slot": "low", "at": "1+1.6", "size": 54}]}},
-  {"say": "A medical papyrus from almost four thousand years ago lists it.", "cap": "A MEDICAL *PAPYRUS* | FROM ALMOST | *4,000* YEARS AGO | LISTS IT."},
-
-  {"say": "Did it work?", "cap": "DID IT WORK?",
-   "show": {"doc": {"pose": "deadpan", "poses": {"2": "shrug"}},
-            "props": [{"name": "poop", "slot": "floor_right", "size": 1.1},
-                      {"name": "qmark", "slot": "right", "at": "0+0.1", "until": "1"},
-                      {"name": "qmark", "slot": "high_right", "at": "2+0.2", "size": 0.8}],
-            "stamps": [{"text": "NO EVIDENCE", "slot": "center", "at": "1+0.3", "size": 64, "until": "2"}]}},
-  {"say": "There's no evidence it did.", "cap": "THERE'S *NO EVIDENCE* | IT DID."},
-  {"say": "And historians still argue about how you were even meant to use it.", "cap": "AND HISTORIANS | STILL *ARGUE* | ABOUT HOW | YOU WERE EVEN | MEANT TO USE IT."},
-
-  {"say": "Good news.", "cap": "GOOD NEWS.",
-   "show": {"doc": {"pose": "deadpan", "poses": {"1": "wave"}},
-            "props": [{"name": "crocodile", "slot": "floor_right", "size": 0.68, "in": "none", "until": "1+0.3", "out": "slide_right"}]}},
-  {"say": "You no longer need a crocodile.", "cap": "YOU *NO* LONGER | NEED A CROCODILE."},
-
-  {"say": "Condoms are about ninety eight percent effective,", "cap": "CONDOMS ARE ABOUT | *98%* EFFECTIVE,",
-   "show": {"doc": "point",
-            "props": [{"name": "ring", "slot": "center", "args": {"value": 98, "line1": "WHEN USED", "line2": "CORRECTLY"}},
-                      {"name": "condom", "slot": "low_left", "size": 0.7, "at": "0+0.6"},
-                      {"name": "shield", "slot": "low_right", "size": 0.8, "at": "2+0.9", "label": "STI PROTECTION"}]}},
-  {"say": "when used correctly.", "cap": "WHEN USED *CORRECTLY.*"},
-  {"say": "And they also help protect against sexually transmitted infections.", "cap": "AND THEY ALSO | HELP *PROTECT* AGAINST | SEXUALLY TRANSMITTED | INFECTIONS."},
-
-  {"say": "Crocodile poop does neither.", "cap": "CROCODILE POOP | DOES *NEITHER.*",
-   "show": {"doc": "deadpan",
-            "props": [{"name": "crocodile", "slot": "floor_center", "size": 0.62, "in": "none"},
-                      {"name": "poop", "slot": "floor_far", "size": 0.75, "in": "none"},
-                      {"name": "bigx", "slot": "low", "at": "0+0.7"}]}},
-
-  {"say": "So please.", "cap": "SO PLEASE.",
-   "show": {"doc": {"pose": "point", "poses": {"1+0.5": "deadpan"}},
-            "props": [{"name": "crocodile", "slot": "floor_right", "size": 0.68, "in": "none", "args": {"state": "sad"},
-                       "until": "1+0.2", "out": "slide_right"}]}},
-  {"say": "Leave the crocodile alone.", "cap": "LEAVE THE | CROCODILE *ALONE.*"}
+  {
+   "say": "Ancient Egyptians used crocodile poop...",
+   "cap": "ANCIENT EGYPTIANS | USED *CROCODILE* | *POOP...*",
+   "show": {
+    "doc": {
+     "pose": "deadpan",
+     "poses": {
+      "1": "point"
+     }
+    },
+    "props": [
+     {
+      "name": "crocodile",
+      "slot": "floor_right",
+      "size": 0.68,
+      "in": "none"
+     },
+     {
+      "name": "poop",
+      "slot": "floor_mid",
+      "size": 0.9,
+      "at": "0+1.25"
+     }
+    ]
+   }
+  },
+  {
+   "say": "as birth control.",
+   "cap": "AS *BIRTH CONTROL.*"
+  },
+  {
+   "say": "Yes. Really.",
+   "cap": "YES. REALLY.",
+   "show": {
+    "doc": {
+     "pose": "deadpan",
+     "poses": {
+      "1": "point"
+     }
+    },
+    "props": [
+     {
+      "name": "papyrus",
+      "slot": "center",
+      "at": "1"
+     }
+    ],
+    "stamps": [
+     {
+      "text": "~4,000 YEARS AGO",
+      "slot": "low",
+      "at": "1+1.6",
+      "size": 54
+     }
+    ]
+   }
+  },
+  {
+   "say": "A medical papyrus from almost four thousand years ago lists it.",
+   "cap": "A MEDICAL *PAPYRUS* | FROM ALMOST | *4,000* YEARS AGO | LISTS IT."
+  },
+  {
+   "say": "Did it work?",
+   "cap": "DID IT WORK?",
+   "show": {
+    "doc": {
+     "pose": "deadpan",
+     "poses": {
+      "2": "shrug"
+     }
+    },
+    "props": [
+     {
+      "name": "poop",
+      "slot": "floor_right",
+      "size": 1.1
+     },
+     {
+      "name": "qmark",
+      "slot": "right",
+      "at": "0+0.1",
+      "until": "1"
+     },
+     {
+      "name": "qmark",
+      "slot": "high_right",
+      "at": "2+0.2",
+      "size": 0.8
+     }
+    ],
+    "stamps": [
+     {
+      "text": "NO EVIDENCE",
+      "slot": "center",
+      "at": "1+0.3",
+      "size": 64,
+      "until": "2"
+     }
+    ]
+   }
+  },
+  {
+   "say": "There's no evidence it did.",
+   "cap": "THERE'S *NO EVIDENCE* | IT DID."
+  },
+  {
+   "say": "And historians still argue about how you were even meant to use it.",
+   "cap": "AND HISTORIANS | STILL *ARGUE* | ABOUT HOW | YOU WERE EVEN | MEANT TO USE IT."
+  },
+  {
+   "say": "Good news.",
+   "cap": "GOOD NEWS.",
+   "show": {
+    "doc": {
+     "pose": "deadpan",
+     "poses": {
+      "1": "wave"
+     }
+    },
+    "props": [
+     {
+      "name": "crocodile",
+      "slot": "floor_right",
+      "size": 0.68,
+      "in": "none",
+      "until": "1+0.3",
+      "out": "slide_right"
+     }
+    ]
+   }
+  },
+  {
+   "say": "You no longer need a crocodile.",
+   "cap": "YOU *NO* LONGER | NEED A CROCODILE."
+  },
+  {
+   "say": "Condoms are about ninety eight percent effective,",
+   "cap": "CONDOMS ARE ABOUT | *98%* EFFECTIVE,",
+   "show": {
+    "doc": "point",
+    "props": [
+     {
+      "name": "ring",
+      "slot": "center",
+      "args": {
+       "value": 98,
+       "line1": "WHEN USED",
+       "line2": "CORRECTLY"
+      }
+     },
+     {
+      "name": "condom",
+      "slot": "low_left",
+      "size": 0.7,
+      "at": "0+0.6"
+     },
+     {
+      "name": "shield",
+      "slot": "low_right",
+      "size": 0.8,
+      "at": "2+0.9",
+      "label": "STI PROTECTION"
+     }
+    ]
+   }
+  },
+  {
+   "say": "when used correctly.",
+   "cap": "WHEN USED *CORRECTLY.*"
+  },
+  {
+   "say": "And they also help protect against sexually transmitted infections.",
+   "cap": "AND THEY ALSO | HELP *PROTECT* AGAINST | SEXUALLY TRANSMITTED | INFECTIONS."
+  },
+  {
+   "say": "Crocodile poop does neither.",
+   "cap": "CROCODILE POOP | DOES *NEITHER.*",
+   "show": {
+    "doc": "deadpan",
+    "props": [
+     {
+      "name": "crocodile",
+      "slot": "floor_center",
+      "size": 0.62,
+      "in": "none"
+     },
+     {
+      "name": "poop",
+      "slot": "floor_far",
+      "size": 0.75,
+      "in": "none"
+     },
+     {
+      "name": "bigx",
+      "slot": "low",
+      "at": "0+0.7"
+     }
+    ]
+   }
+  },
+  {
+   "say": "So please.",
+   "cap": "SO PLEASE.",
+   "show": {
+    "doc": {
+     "pose": "point",
+     "poses": {
+      "1+0.5": "deadpan"
+     }
+    },
+    "props": [
+     {
+      "name": "crocodile",
+      "slot": "floor_right",
+      "size": 0.68,
+      "in": "none",
+      "args": {
+       "state": "sad"
+      },
+      "until": "1+0.2",
+      "out": "slide_right"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Leave the crocodile alone.",
+   "cap": "LEAVE THE | CROCODILE *ALONE.*"
+  }
  ],
- "cover": {"big": ["CROCODILE POOP", "*BIRTH CONTROL?*"]},
+ "cover": {
+  "big": [
+   "CROCODILE POOP",
+   "*BIRTH CONTROL?*"
+  ]
+ },
  "sources": [
-  {"fact": "The Kahun Gynaecological Papyrus, the oldest known Egyptian medical text (c. 1825 BC), describes a contraception method using crocodile dung; whether it was burned/sprinkled or inserted is debated",
-   "url": "https://en.wikipedia.org/wiki/Kahun_Gynaecological_Papyrus", "fetched": "2026-11-18"},
-  {"fact": "Kahun papyrus around 1825 BC, famous for crocodile dung contraception; how it was meant to be used is a matter of debate",
-   "url": "https://www.history.co.uk/articles/contraception-through-the-ages", "fetched": "2026-11-18"},
-  {"fact": "Condoms are up to 98% effective at preventing pregnancy if used correctly every time; condoms protect against HIV and other STIs",
-   "url": "https://www.nhs.uk/contraception/methods-of-contraception/condoms/", "fetched": "2026-11-18"}
+  {
+   "fact": "The Kahun Gynaecological Papyrus, the oldest known Egyptian medical text (c. 1825 BC), describes a contraception method using crocodile dung; whether it was burned/sprinkled or inserted is debated",
+   "url": "https://en.wikipedia.org/wiki/Kahun_Gynaecological_Papyrus",
+   "fetched": "2026-11-18"
+  },
+  {
+   "fact": "Kahun papyrus around 1825 BC, famous for crocodile dung contraception; how it was meant to be used is a matter of debate",
+   "url": "https://www.history.co.uk/articles/contraception-through-the-ages",
+   "fetched": "2026-11-18"
+  },
+  {
+   "fact": "Condoms are up to 98% effective at preventing pregnancy if used correctly every time; condoms protect against HIV and other STIs",
+   "url": "https://www.nhs.uk/contraception/methods-of-contraception/condoms/",
+   "fetched": "2026-11-18"
+  }
  ],
  "math": [
-  {"expr": "2026 + 1825", "expect": 3851, "note": "years since c. 1825 BC, so 'almost 4,000 years ago'"},
-  {"expr": "98", "expect": 98, "note": "NHS: up to 98% effective when used correctly"}
+  {
+   "expr": "2026 + 1825",
+   "expect": 3851,
+   "note": "years since c. 1825 BC, so 'almost 4,000 years ago'"
+  },
+  {
+   "expr": "98",
+   "expect": 98,
+   "note": "NHS: up to 98% effective when used correctly"
+  }
  ],
  "post": {
-  "slot": "evening",
-  "post_at": "2026-11-19T23:30:00+05:30",
+  "slot": "test",
+  "post_at": "2026-11-18T04:49:40+05:30",
   "instagram_caption": "Ancient Egypt had... interesting ideas about birth control 🐊\n\nThe Kahun papyrus, written around 1825 BC, lists crocodile dung as a contraceptive. Historians still argue about how it was used, and there is no evidence it worked.\n\nToday condoms are up to 98% effective when used correctly, and they also help protect against STIs.\n\nSources: Kahun Gynaecological Papyrus, NHS.\n\nWhat's the weirdest health myth you've heard?\n\n#docstick #sexeducation #historyfacts #weirdfacts #bodyfacts",
   "youtube_title": "Ancient Egypt's Crocodile Poop Birth Control",
-  "youtube_description": "Around 1825 BC, an Egyptian medical papyrus listed crocodile dung as birth control. There's no evidence it worked. Today condoms are up to 98% effective when used correctly, and they also help protect against STIs.\n\nEducational only, not medical advice.\n\nSources:\n• Wikipedia, \"Kahun Gynaecological Papyrus\" (fetched Nov 18, 2026)\n• History UK, \"Contraception through the ages\" (fetched Nov 18, 2026)\n• NHS, \"Condoms\" (fetched Nov 18, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#SexEducation #History #Shorts"
+  "youtube_description": "Around 1825 BC, an Egyptian medical papyrus listed crocodile dung as birth control. There's no evidence it worked. Today condoms are up to 98% effective when used correctly, and they also help protect against STIs.\n\nEducational only, not medical advice.\n\nSources:\n• Wikipedia, \"Kahun Gynaecological Papyrus\" (fetched Nov 18, 2026)\n• History UK, \"Contraception through the ages\" (fetched Nov 18, 2026)\n• NHS, \"Condoms\" (fetched Nov 18, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#SexEducation #History #Shorts",
+  "breaking": true
  }
 }
