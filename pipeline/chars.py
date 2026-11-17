@@ -1,4 +1,4 @@
-"""Doc Stick characters: Doc Stick (narrator), the boy and the girl. Do not change the look unless James asks.
+"""Doc Stick characters: Doc Stick (narrator), the boy and the girl. Do not change the look unless Samrit asks.
 
 All characters are drawn with their feet at (x, y), facing right when face=1 and left when face=-1.
 Poses: deadpan, point, shocked, wave, think, shrug (all characters); sit_laptop (boy/girl only).
