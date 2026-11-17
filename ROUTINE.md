@@ -45,14 +45,25 @@ Two Reels a day (all times IST), made in ONE daily run (section A):
 ## 4. Write a BRIEF, not a spec (the Reel kit)
 Write `briefs/<NNN>_<slug>.json` (NNN = next number after the highest in specs/ and posted/), then:
 `python pipeline/kit.py briefs/<id>.json`. **Never hand-write coordinates or edit specs/ by hand.**
-- Examples: `briefs/001_crocodile_birth_control.json`, `briefs/002_built_in_air_conditioner.json`.
-  Every field, slot and pose is listed at the top of `pipeline/kit.py`; every prop is in `pipeline/props.py`
+- Copy `briefs/000_kit_example.json` (reel 001 written with scene kinds). `briefs/000_kit_kinds_test.json` shows
+  every other kind. Field lists are at the top of `pipeline/kit.py`; every prop is in `pipeline/props.py`
   (`python -c "import sys; sys.path.insert(0,'pipeline'); import props; [print(k, '-', v.doc) for k, v in props.PROPS.items()]"`).
-- One beat = one spoken phrase. A beat with `"show"` starts a new scene; beat 0 must have one with the hook image
-  (`"at": "0", "in": "none"`) so frame 0 is never empty.
-- Scenes that work: hook (Doc deadpan, the bizarre thing) > twist (Doc points, a prop or stamp) > science
-  (thermometer, ring, big_number, arrows, person reacting) > payoff (bigx, check, stamp) > callback to the hook.
-  New scene every 1 to 3 beats. Doc points while explaining, goes shocked only on the most surprising beat.
+- One beat = one spoken phrase. A beat with `"show"` starts a new scene. Use a scene KIND whenever one fits:
+  | kind | what it shows | main fields |
+  |---|---|---|
+  | `hook` | frame 0: Doc deadpan (points from beat 1) + the bizarre thing on the floor | `prop`, `prop2`, `person` |
+  | `patient` | a boy or girl asks the awkward question in a bubble | `person`, `question` |
+  | `explain` | Doc points at one big object, optional stamp under it | `prop`, `at`, `stamp` |
+  | `pair` | two things side by side (comparison, before/after) | `left`, `right`, `right_at` |
+  | `number` | a ring that counts up (`ring`: value, line1, line2) or a big number (`number`) | `ring`/`number`, `left`, `right` |
+  | `stamp` | one thing on the floor, then NO EVIDENCE / MYTH / TRUE slams on | `prop`, `stamp` |
+  | `verdict` | the payoff: floor props + red X, or green check with `"verdict": "true"` | `props`, `verdict` |
+  | `exit` | callback: the hook object leaves, Doc waves | `prop`, `leave_at`, `pose` |
+  | `solo` | no Doc: a person (e.g. `sit_laptop`) + things on the right | `person`, `person_pose`, `prop`, `prop2` |
+  | `censored` | implied intimacy, never shown: bed + CENSORED stamp | `text` |
+  Every kind also takes `poses` (Doc), `add_props`, `stamps`, `particles`. Only when no kind fits, write a custom
+  element-level scene (no `kind`, see `briefs/002_built_in_air_conditioner.json`).
+- Beat 0 is a `hook` (or `patient`) so the hook image is on frame 0.
 - A topic needs an object that isn't in props.py (like the crocodile)? Add it to `pipeline/props.py` with `@prop`
   in the same flat cartoon style (thick dark outline, flat fills, no gradients, nothing anatomical or sexual) and an honest bbox.
 - If `kit.py` prints LAYOUT PROBLEMS, change the slot or size it names and run it again until "layout ok".

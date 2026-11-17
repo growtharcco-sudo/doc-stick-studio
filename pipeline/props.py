@@ -12,7 +12,7 @@ Adding a prop for a new topic is allowed (ROUTINE.md step 4): register it here, 
 """
 import math
 from types import SimpleNamespace
-from base import INK, RED, stroke, fillstroke, rrect, text, ease_out, ease_inout, clamp
+from base import INK, RED, stroke, fillstroke, rrect, text, text_w, ease_out, ease_inout, clamp
 
 PROPS = {}
 BLUE = (0.25, 0.55, 0.90); GREEN = (0.38, 0.66, 0.30); DGREEN = (0.16, 0.33, 0.13); LGREEN = (0.74, 0.86, 0.55)
@@ -413,8 +413,10 @@ def sign(c, st):
     c.rectangle(-10, -180, 20, 180); fillstroke(c, BROWN, DBROWN, 4)
     rrect(c, -165, -325, 330, 160, 14); fillstroke(c, (0.93, 0.80, 0.55), DBROWN, 6)
     lines = st.args.get("lines", ["SIGN"]); n = len(lines)
+    size = 40 if n > 1 else 52
+    while size > 22 and max(text_w(c, ln, size) for ln in lines) > 290: size -= 2   # always fits the board
     for i, ln in enumerate(lines):
-        text(c, ln, 0, -245 + (i - (n - 1) / 2) * 48 + 16, 40 if n > 1 else 52, DBROWN)
+        text(c, ln, 0, -245 + (i - (n - 1) / 2) * (size + 8) + 16, size, DBROWN)
 
 
 @prop("bubble", (-200, -95, 200, 95), "center",
@@ -425,9 +427,10 @@ def bubble(c, st):
     c.set_source_rgb(1, 1, 1); c.fill_preserve(); stroke(c, INK, 6)
     c.move_to(tx - 20 * d, 63); c.line_to(tx + 40 * d, 92); c.line_to(tx + 20 * d, 62); c.close_path(); c.set_source_rgb(1, 1, 1); c.fill()
     c.move_to(tx - 20 * d, 64); c.line_to(tx + 40 * d, 92); c.line_to(tx + 22 * d, 64); stroke(c, INK, 6)
-    lines = st.args.get("lines", ["..."]); n = len(lines)
+    lines = st.args.get("lines", ["..."]); n = len(lines); size = 44
+    while size > 24 and max(text_w(c, ln, size) for ln in lines) > 340: size -= 2   # always fits the bubble
     for i, ln in enumerate(lines):
-        text(c, ln, 0, -10 + (i - (n - 1) / 2) * 50 + 14, 40, col(st.args.get("color"), INK))
+        text(c, ln, 0, -10 + (i - (n - 1) / 2) * (size + 8) + 14, size, col(st.args.get("color"), INK))
 
 
 @prop("elevator", (-140, -700, 140, 0), "ground",

@@ -98,6 +98,18 @@ def stamp(c, e, k):
 
 
 # ------------------------------------------------------------------ captions
+def hl_words(words):
+    """*one* or *several words* -> [(word, red?)]; a span opens on a word starting with * and closes on one ending with *."""
+    out, on = [], False
+    for w in words:
+        opens = w.startswith("*"); closes = w.rstrip(".,!?:;").endswith("*") or w.endswith("*")
+        red = on or opens
+        out.append((w.replace("*", ""), red))
+        if opens and not closes: on = True
+        elif closes: on = False
+    return out
+
+
 def build_captions(spec, clock):
     chunks = []
     for i, p in enumerate(spec["phrases"]):
@@ -114,16 +126,15 @@ def caption(c, chunks, t):
         if not (a <= t < b): continue
         k = ease_back((t - a) / 0.22)
         c.save(); c.translate(W / 2, CAP_Y); sc = 0.82 + 0.18 * k; c.scale(sc, sc); font(c, 96)
-        words = s.upper().split(); lines, cur = [], []
+        words = hl_words(s.upper().split()); lines, cur = [], []
         for w in words:
-            if cur and c.text_extents(" ".join(cur + [w]).replace("*", "")).x_advance > 900: lines.append(cur); cur = []
+            if cur and c.text_extents(" ".join(x[0] for x in cur + [w])).x_advance > 900: lines.append(cur); cur = []
             cur.append(w)
         lines.append(cur); sp = c.text_extents(" ").x_advance
         for li, ln in enumerate(lines):
             y = (li - (len(lines) - 1) / 2) * 112 + 34
-            tw = sum(c.text_extents(w.replace("*", "")).x_advance for w in ln) + sp * (len(ln) - 1); x = -tw / 2
-            for w in ln:
-                hl = w.startswith("*") or w.endswith("*") or w.rstrip(".,!?:;").endswith("*"); w2 = w.replace("*", "")
+            tw = sum(c.text_extents(w).x_advance for w, _ in ln) + sp * (len(ln) - 1); x = -tw / 2
+            for w2, hl in ln:
                 c.move_to(x, y); c.text_path(w2)
                 c.set_source_rgb(1, 1, 1); c.set_line_width(18); c.set_line_join(cairo.LINE_JOIN_ROUND); c.stroke_preserve()
                 c.set_source_rgb(*(RED if hl else INK)); c.fill(); x += c.text_extents(w2).x_advance + sp
@@ -289,10 +300,9 @@ def cover(spec, times, total, wav, out_png):
     rrect(c, 380, 210, 320, 70, 35); fillstroke(c, RED, INK, 5); text(c, "DOC STICK", 540, 262, 40, (1, 1, 1))
     font(c, 110)
     for i, line in enumerate(big[:2]):
-        y = 420 + i * 130; words = line.split(); sp = c.text_extents(" ").x_advance
-        tw = sum(c.text_extents(w.replace("*", "")).x_advance for w in words) + sp * (len(words) - 1); x = W / 2 - tw / 2
-        for w in words:
-            hl = "*" in w; w2 = w.replace("*", "")
+        y = 420 + i * 130; words = hl_words(line.split()); sp = c.text_extents(" ").x_advance
+        tw = sum(c.text_extents(w).x_advance for w, _ in words) + sp * (len(words) - 1); x = W / 2 - tw / 2
+        for w2, hl in words:
             c.move_to(x, y); c.text_path(w2); c.set_source_rgb(1, 1, 1); c.set_line_width(20); c.set_line_join(cairo.LINE_JOIN_ROUND)
             c.stroke_preserve(); c.set_source_rgb(*(RED if hl else INK)); c.fill(); x += c.text_extents(w2).x_advance + sp
     surf.write_to_png(out_png)

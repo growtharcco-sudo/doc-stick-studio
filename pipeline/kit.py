@@ -15,7 +15,8 @@ Brief:
 }
 The outro ("Follow, for the stuff school skipped.") is added automatically. Do not write it.
 
-Scene ("show"). Times: "n" = beat n of THIS scene (0 = the beat with the show), "n+0.4" = 0.4 s after it starts.
+Scene ("show"): EITHER a kind (see "scene kinds" below: hook, explain, pair, number, patient, stamp, verdict,
+exit, solo, censored) with its few fields, OR a custom element-level scene. Times: "n" = beat n of THIS scene (0 = the beat with the show), "n+0.4" = 0.4 s after it starts.
   "doc":    pose name, or {"pose": "deadpan", "poses": {"1": "point", "2+0.3": "shocked"}}, or false (no Doc).
             Doc Stick stands on the left (x 190). Poses: deadpan, point, shocked, wave, think, shrug.
   "person": {"kind": "boy"|"girl", "slot": "right"|"left"|"center", "pose": ..., "poses": {...}, "in": "slide"|"pop"|"none"}
@@ -56,9 +57,119 @@ def ref(v, first, default=0.0):
     return [first + int(m.group(1)), float(m.group(2)) if m.group(2) else default]
 
 
+# ------------------------------------------------------------------ scene kinds (short briefs)
+# "show": {"kind": "<kind>", ...fields}. Each kind expands to the element-level scene below, with fixed tested slots.
+# A prop field is a name ("poop") or a dict {"name", "size", "args", "states", "label", "at", "in", "out", "until"}.
+# Every kind also accepts: "poses" (Doc's pose changes, e.g. {"1": "point"}), "add_props", "stamps", "particles".
+def _p(v, slot, **dflt):
+    if v is None: return None
+    d = {"name": v} if isinstance(v, str) else dict(v)
+    for k, x in dflt.items(): d.setdefault(k, x)
+    d.setdefault("slot", slot); return d
+
+
+def _doc(pose, f, default_poses=None):
+    poses = dict(default_poses or {}); poses.update(f.get("poses", {}))
+    return {"pose": f.get("pose", pose), "poses": poses}
+
+
+def k_hook(f):
+    """Frame-0 hook: Doc deadpan (points from beat 1) + the bizarre thing on the floor (+ optional second thing / patient)."""
+    props = [_p(f["prop"], "floor_right", **{"in": "none"})]
+    if f.get("prop2"): props.append(_p(f["prop2"], "floor_mid"))
+    sh = {"doc": _doc("deadpan", f, {"1": "point"}), "props": props}
+    if f.get("person"):
+        props[0]["slot"] = f.get("prop_slot", "left")
+        sh["person"] = {"kind": f["person"], "pose": "deadpan", "poses": f.get("person_poses", {"1+0.3": "shocked"})}
+    return sh
+
+
+def k_explain(f):
+    """Doc points at one big object in the middle (+ optional stamp under it)."""
+    pr = _p(f["prop"], "center"); pr.setdefault("at", f.get("at", "0"))
+    sh = {"doc": _doc("point", f), "props": [pr]}
+    if f.get("stamp"): sh["stamps"] = [{"slot": "low", "at": "1+0.6", "size": 54, **({"text": f["stamp"]} if isinstance(f["stamp"], str) else f["stamp"])}]
+    return sh
+
+
+def k_pair(f):
+    """Doc points at two things side by side (comparison): left appears first, right one beat later."""
+    l = _p(f["left"], "low_left"); r = _p(f["right"], "low_right", at=f.get("right_at", "1"))
+    return {"doc": _doc("point", f), "props": [l, r]}
+
+
+def k_number(f):
+    """Big statistic: a ring that counts up (value 0-100) or a big number, + optional small props under it."""
+    if "ring" in f: main = {"name": "ring", "slot": "center", "args": f["ring"]}
+    else: main = {"name": "big_number", "slot": "center", "args": f["number"]}
+    props = [main]
+    if f.get("left"): props.append(_p(f["left"], "low_left", size=0.7, at="0+0.6"))
+    if f.get("right"): props.append(_p(f["right"], "low_right", size=0.8, at=f.get("right_at", "1+0.5")))
+    return {"doc": _doc("point", f), "props": props}
+
+
+def k_patient(f):
+    """A boy or girl asks the awkward question in a speech bubble; Doc answers."""
+    lines = f["question"] if isinstance(f["question"], list) else [f["question"]]
+    return {"doc": _doc("deadpan", f, {"1": "point"}),
+            "person": {"kind": f.get("person", "boy"), "pose": f.get("person_pose", "think"), "in": "slide"},
+            "props": [{"name": "bubble", "slot": "high_right", "size": 0.85, "at": "0+0.5", "args": {"lines": lines, "tail": "right"}}]}
+
+
+def k_stamp(f):
+    """One thing on the floor, then a stamp slams on (NO EVIDENCE, MYTH, TRUE...)."""
+    st = f["stamp"] if isinstance(f["stamp"], dict) else {"text": f["stamp"]}
+    st = {"slot": "center", "at": "1+0.3", "size": 64, **st}
+    return {"doc": _doc("deadpan", f), "props": [_p(f["prop"], "floor_right")], "stamps": [st]}
+
+
+def k_verdict(f):
+    """The payoff: 1 or 2 floor props (floor_center, floor_far) + a big red X (false) or a green check ("verdict": "true")."""
+    props = [_p(x, s, **{"in": "none"}) for x, s in zip(f["props"], ("floor_center", "floor_far"))]
+    mark = "check" if f.get("verdict") == "true" else "bigx"
+    props.append({"name": mark, "slot": "low" if mark == "bigx" else "high", "at": "0+0.7"})
+    return {"doc": _doc("deadpan", f), "props": props}
+
+
+def k_exit(f):
+    """Callback / goodbye: the hook object leaves (slides off right) while Doc waves or goes deadpan."""
+    pr = _p(f["prop"], "floor_right", **{"in": "none", "out": "slide_right"}); pr.setdefault("until", f.get("leave_at", "1+0.3"))
+    return {"doc": _doc(f.get("pose", "deadpan"), f, {"1": "wave"} if "pose" not in f else {}), "props": [pr]}
+
+
+def k_solo(f):
+    """No Doc: a person (often sit_laptop) on the left and one or two things on the right."""
+    props = [_p(f["prop"], "floor_right", at=f.get("prop_at", "0+0.9"))]
+    if f.get("prop2"): props.append(_p(f["prop2"], "high_right", at=f.get("prop2_at", "1+0.2")))
+    return {"doc": False, "person": {"kind": f.get("person", "boy"), "pose": f.get("person_pose", "deadpan"), "slot": "left"}, "props": props}
+
+
+def k_censored(f):
+    """Implied intimacy, never shown: a bed and a CENSORED stamp. Doc stares, unimpressed."""
+    return {"doc": _doc("deadpan", f), "props": [{"name": "bed", "slot": "floor_right", "size": 0.9}],
+            "stamps": [{"text": f.get("text", "CENSORED"), "slot": "center", "at": "0+0.6", "color": "ink", "size": 70}]}
+
+
+KINDS = {"hook": k_hook, "explain": k_explain, "pair": k_pair, "number": k_number, "patient": k_patient, "stamp": k_stamp,
+         "verdict": k_verdict, "exit": k_exit, "solo": k_solo, "censored": k_censored}
+
+
+def expand(show):
+    """Kind -> element-level scene. A show without "kind" is already element-level (custom scene)."""
+    if "kind" not in show: return show
+    f = dict(show); kind = f.pop("kind")
+    if kind not in KINDS: raise SystemExit(f"unknown scene kind '{kind}'. Kinds: {', '.join(KINDS)}")
+    sh = KINDS[kind](f)
+    sh["props"] = sh.get("props", []) + [_p(x, "center") for x in f.get("add_props", [])]
+    if f.get("stamps"): sh["stamps"] = sh.get("stamps", []) + f["stamps"]
+    if f.get("particles"): sh["particles"] = f["particles"]
+    return sh
+
+
 def build(brief):
     beats = brief["beats"]
     if not beats or "show" not in beats[0]: raise SystemExit("beat 0 needs a 'show' (the hook frame)")
+    if beats[0]["show"].get("kind", "hook") not in ("hook", "patient"): print("note: beat 0 is usually kind \"hook\" or \"patient\"")
     if any("school skipped" in b["say"].lower() for b in beats): raise SystemExit("do not write the outro, the kit adds it")
     firsts = [i for i, b in enumerate(beats) if "show" in b]
     phrases = []
@@ -68,7 +179,7 @@ def build(brief):
     scenes = []
     for si, first in enumerate(firsts):
         end = firsts[si + 1] if si + 1 < len(firsts) else len(beats)
-        sh = beats[first]["show"]; sc = {"first": first, "end": end, "doc": None, "people": [], "els": []}
+        sh = expand(beats[first]["show"]); sc = {"first": first, "end": end, "doc": None, "people": [], "els": []}
         d = sh.get("doc", "point")
         if d is not False:
             if isinstance(d, str): d = {"pose": d}

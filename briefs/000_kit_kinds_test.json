@@ -1,0 +1,34 @@
+{
+ "id": "000_kit_kinds_test",
+ "beats": [
+  {"say": "You shrink every single day.", "cap": "YOU *SHRINK* | EVERY SINGLE DAY.",
+   "show": {"kind": "hook", "person": "girl", "prop": {"name": "arrow_down", "size": 0.9}}},
+  {"say": "And you grow back every night.", "cap": "AND YOU *GROW BACK* | EVERY NIGHT."},
+  {"say": "Wait. Am I shrinking?", "cap": "WAIT. | AM I *SHRINKING?*",
+   "show": {"kind": "patient", "person": "girl", "question": ["AM I", "SHRINKING?"]}},
+  {"say": "A little. Your spine has soft discs between the bones.", "cap": "A LITTLE. | YOUR SPINE HAS | SOFT *DISCS* | BETWEEN THE BONES."},
+  {"say": "During the day, gravity squeezes them.", "cap": "DURING THE DAY, | GRAVITY *SQUEEZES* THEM.",
+   "show": {"kind": "pair", "left": "sun", "right": {"name": "arrow_down", "args": {"color": "red"}}}},
+  {"say": "At night, lying down lets them spread out again.", "cap": "AT NIGHT, | LYING DOWN LETS THEM | *SPREAD OUT* AGAIN."},
+  {"say": "Yes, in bed. Just sleeping.", "cap": "YES, IN BED. | JUST *SLEEPING.*",
+   "show": {"kind": "censored", "text": "SLEEPING ONLY"}},
+  {"say": "So you're about one centimetre taller in the morning.", "cap": "SO YOU'RE ABOUT | *1 CM* TALLER | IN THE MORNING.",
+   "show": {"kind": "solo", "person": "boy", "prop": {"name": "sign", "args": {"lines": ["+1 CM", "IN THE MORNING"]}}, "prop2": "arrow_up"}},
+  {"say": "Then gravity takes it back.", "cap": "THEN GRAVITY | *TAKES IT BACK.*",
+   "show": {"kind": "number", "number": {"value": 1, "prefix": "-", "suffix": " CM", "color": "red"}, "left": "clock"}},
+  {"say": "Totally normal.", "cap": "TOTALLY *NORMAL.*",
+   "show": {"kind": "verdict", "verdict": "true", "props": [{"name": "bed", "size": 0.9}]}}
+ ],
+ "cover": {"big": ["YOU SHRINK", "*EVERY DAY*"]},
+ "sources": [
+  {"fact": "Spinal cartilage compresses during the day by about 1 cm on average and decompresses when lying down, so you are taller in the morning",
+   "url": "https://mechse.illinois.edu/news/blogs/how-get-taller-any-age", "fetched": "2026-11-18"}
+ ],
+ "math": [{"expr": "1", "expect": 1, "note": "about 1 cm daily height change (University of Illinois MechSE)"}],
+ "post": {
+  "slot": "test", "post_at": "2099-01-01T23:30:00+05:30",
+  "instagram_caption": "You shrink every single day 📏\n\nThe soft discs in your spine get squeezed by gravity during the day and spread out again while you sleep.\n\nThat makes you about 1 cm taller in the morning.\n\nSources: University of Illinois MechSE.\n\nHave you ever measured yourself morning and night?\n\n#docstick #bodyfacts #spine #sciencefacts #weirdfacts",
+  "youtube_title": "You Shrink Every Single Day",
+  "youtube_description": "Gravity squeezes the soft discs in your spine during the day, and they spread out again while you sleep, so you are about 1 cm taller in the morning.\n\nEducational only, not medical advice.\n\nSources:\n• University of Illinois MechSE, \"How to get taller at any age\" (fetched Nov 18, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#BodyFacts #Spine #Shorts"
+ }
+}

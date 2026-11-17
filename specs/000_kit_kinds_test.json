@@ -1,0 +1,551 @@
+{
+ "id": "000_kit_kinds_test",
+ "voice": "am_michael",
+ "speed": 1.0,
+ "phrases": [
+  {
+   "say": "You shrink every single day.",
+   "cap": "YOU *SHRINK* | EVERY SINGLE DAY.",
+   "pause": 0.2
+  },
+  {
+   "say": "And you grow back every night.",
+   "cap": "AND YOU *GROW BACK* | EVERY NIGHT.",
+   "pause": 0.45
+  },
+  {
+   "say": "Wait. Am I shrinking?",
+   "cap": "WAIT. | AM I *SHRINKING?*",
+   "pause": 0.2
+  },
+  {
+   "say": "A little. Your spine has soft discs between the bones.",
+   "cap": "A LITTLE. | YOUR SPINE HAS | SOFT *DISCS* | BETWEEN THE BONES.",
+   "pause": 0.45
+  },
+  {
+   "say": "During the day, gravity squeezes them.",
+   "cap": "DURING THE DAY, | GRAVITY *SQUEEZES* THEM.",
+   "pause": 0.2
+  },
+  {
+   "say": "At night, lying down lets them spread out again.",
+   "cap": "AT NIGHT, | LYING DOWN LETS THEM | *SPREAD OUT* AGAIN.",
+   "pause": 0.45
+  },
+  {
+   "say": "Yes, in bed. Just sleeping.",
+   "cap": "YES, IN BED. | JUST *SLEEPING.*",
+   "pause": 0.45
+  },
+  {
+   "say": "So you're about one centimetre taller in the morning.",
+   "cap": "SO YOU'RE ABOUT | *1 CM* TALLER | IN THE MORNING.",
+   "pause": 0.45
+  },
+  {
+   "say": "Then gravity takes it back.",
+   "cap": "THEN GRAVITY | *TAKES IT BACK.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Totally normal.",
+   "cap": "TOTALLY *NORMAL.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Follow,",
+   "cap": "*FOLLOW*",
+   "pause": 0.15
+  },
+  {
+   "say": "for the stuff school skipped.",
+   "cap": "FOR THE STUFF | SCHOOL *SKIPPED.*",
+   "pause": 0.5
+  }
+ ],
+ "scenes": [
+  {
+   "first": 0,
+   "end": 2,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      0,
+      0.0,
+      "deadpan"
+     ],
+     [
+      1,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [
+    {
+     "kind": "girl",
+     "x": 820,
+     "s": 2.25,
+     "face": -1,
+     "poses": [
+      [
+       0,
+       0.0,
+       "deadpan"
+      ],
+      [
+       1,
+       0.3,
+       "shocked"
+      ]
+     ],
+     "at": [
+      0,
+      0.0
+     ],
+     "in": "none"
+    }
+   ],
+   "els": [
+    {
+     "type": "prop",
+     "name": "arrow_down",
+     "x": 520,
+     "y": 1010,
+     "s": 0.9,
+     "slot": "left",
+     "at": [
+      0,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 2,
+   "end": 4,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      2,
+      0.0,
+      "deadpan"
+     ],
+     [
+      3,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [
+    {
+     "kind": "girl",
+     "x": 820,
+     "s": 2.25,
+     "face": -1,
+     "poses": [
+      [
+       2,
+       0.0,
+       "think"
+      ]
+     ],
+     "at": [
+      2,
+      0.0
+     ],
+     "in": "slide"
+    }
+   ],
+   "els": [
+    {
+     "type": "prop",
+     "name": "bubble",
+     "x": 860,
+     "y": 830,
+     "s": 0.85,
+     "slot": "high_right",
+     "at": [
+      2,
+      0.5
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "lines": [
+       "AM I",
+       "SHRINKING?"
+      ],
+      "tail": "right"
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 4,
+   "end": 6,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      4,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "sun",
+     "x": 520,
+     "y": 1300,
+     "s": 1.0,
+     "slot": "low_left",
+     "at": [
+      4,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "arrow_down",
+     "x": 860,
+     "y": 1300,
+     "s": 1.0,
+     "slot": "low_right",
+     "at": [
+      5,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "color": "red"
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 6,
+   "end": 7,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      6,
+      0.0,
+      "deadpan"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "bed",
+     "x": 820,
+     "y": 1560,
+     "s": 0.9,
+     "slot": "floor_right",
+     "at": [
+      6,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "SLEEPING ONLY",
+     "sub": null,
+     "x": 660,
+     "y": 1010,
+     "color": "ink",
+     "rot": -0.12,
+     "size": 70,
+     "at": [
+      6,
+      0.6
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 7,
+   "end": 8,
+   "doc": null,
+   "people": [
+    {
+     "kind": "boy",
+     "x": 300,
+     "s": 2.25,
+     "face": 1,
+     "poses": [
+      [
+       7,
+       0.0,
+       "deadpan"
+      ]
+     ],
+     "at": [
+      7,
+      0.0
+     ],
+     "in": "none"
+    }
+   ],
+   "els": [
+    {
+     "type": "prop",
+     "name": "sign",
+     "x": 820,
+     "y": 1560,
+     "s": 1.0,
+     "slot": "floor_right",
+     "at": [
+      7,
+      0.9
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "lines": [
+       "+1 CM",
+       "IN THE MORNING"
+      ]
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "arrow_up",
+     "x": 860,
+     "y": 830,
+     "s": 1.0,
+     "slot": "high_right",
+     "at": [
+      8,
+      0.2
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 8,
+   "end": 9,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      8,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "big_number",
+     "x": 660,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "center",
+     "at": [
+      8,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "value": 1,
+      "prefix": "-",
+      "suffix": " CM",
+      "color": "red"
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "clock",
+     "x": 520,
+     "y": 1300,
+     "s": 0.7,
+     "slot": "low_left",
+     "at": [
+      8,
+      0.6
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 9,
+   "end": 10,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      9,
+      0.0,
+      "deadpan"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "bed",
+     "x": 640,
+     "y": 1560,
+     "s": 0.9,
+     "slot": "floor_center",
+     "at": [
+      9,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "check",
+     "x": 660,
+     "y": 830,
+     "s": 1.0,
+     "slot": "high",
+     "at": [
+      9,
+      0.7
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 10,
+   "end": 12,
+   "outro": true,
+   "doc": {
+    "x": 540,
+    "s": 2.4,
+    "face": 1,
+    "poses": [
+     [
+      10,
+      0.0,
+      "wave"
+     ]
+    ]
+   },
+   "people": [],
+   "els": []
+  }
+ ],
+ "cover": {
+  "big": [
+   "YOU SHRINK",
+   "*EVERY DAY*"
+  ]
+ },
+ "sources": [
+  {
+   "fact": "Spinal cartilage compresses during the day by about 1 cm on average and decompresses when lying down, so you are taller in the morning",
+   "url": "https://mechse.illinois.edu/news/blogs/how-get-taller-any-age",
+   "fetched": "2026-11-18"
+  }
+ ],
+ "math": [
+  {
+   "expr": "1",
+   "expect": 1,
+   "note": "about 1 cm daily height change (University of Illinois MechSE)"
+  }
+ ],
+ "post": {
+  "slot": "test",
+  "post_at": "2099-01-01T23:30:00+05:30",
+  "instagram_caption": "You shrink every single day 📏\n\nThe soft discs in your spine get squeezed by gravity during the day and spread out again while you sleep.\n\nThat makes you about 1 cm taller in the morning.\n\nSources: University of Illinois MechSE.\n\nHave you ever measured yourself morning and night?\n\n#docstick #bodyfacts #spine #sciencefacts #weirdfacts",
+  "youtube_title": "You Shrink Every Single Day",
+  "youtube_description": "Gravity squeezes the soft discs in your spine during the day, and they spread out again while you sleep, so you are about 1 cm taller in the morning.\n\nEducational only, not medical advice.\n\nSources:\n• University of Illinois MechSE, \"How to get taller at any age\" (fetched Nov 18, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#BodyFacts #Spine #Shorts"
+ }
+}
