@@ -1,0 +1,508 @@
+{
+ "id": "002_built_in_air_conditioner",
+ "voice": "am_michael",
+ "speed": 1.0,
+ "phrases": [
+  {
+   "say": "Men have a built-in air conditioner.",
+   "cap": "MEN HAVE A | BUILT-IN | *AIR CONDITIONER.*",
+   "pause": 0.2
+  },
+  {
+   "say": "And it's in their pants.",
+   "cap": "AND IT'S IN | THEIR *PANTS.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Testicles need to stay about two degrees cooler than the rest of the body.",
+   "cap": "TESTICLES NEED | TO STAY ABOUT | *2 DEGREES* *COOLER* | THAN THE REST | OF THE BODY.",
+   "pause": 0.2
+  },
+  {
+   "say": "Too warm, and sperm production slows down.",
+   "cap": "TOO WARM, AND | SPERM PRODUCTION | *SLOWS DOWN.*",
+   "pause": 0.45
+  },
+  {
+   "say": "So the body built an elevator.",
+   "cap": "SO THE BODY BUILT | AN *ELEVATOR.*",
+   "pause": 0.2
+  },
+  {
+   "say": "Cold? They pull up closer for warmth.",
+   "cap": "*COLD?* | THEY PULL *UP* | CLOSER FOR WARMTH.",
+   "pause": 0.2
+  },
+  {
+   "say": "Hot? They drop down to cool off.",
+   "cap": "*HOT?* | THEY DROP *DOWN* | TO COOL OFF.",
+   "pause": 0.45
+  },
+  {
+   "say": "That's why hot tubs, and laptops on your lap,",
+   "cap": "THAT'S WHY | HOT *TUBS* | AND *LAPTOPS* | ON YOUR LAP",
+   "pause": 0.2
+  },
+  {
+   "say": "can lower sperm count for a while.",
+   "cap": "CAN *LOWER* | SPERM COUNT | FOR A WHILE.",
+   "pause": 0.45
+  },
+  {
+   "say": "Long story short.",
+   "cap": "LONG STORY SHORT.",
+   "pause": 0.2
+  },
+  {
+   "say": "Keep the twins chill.",
+   "cap": "KEEP THE TWINS | *CHILL.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Follow,",
+   "cap": "*FOLLOW*",
+   "pause": 0.15
+  },
+  {
+   "say": "for the stuff school skipped.",
+   "cap": "FOR THE STUFF | SCHOOL *SKIPPED.*",
+   "pause": 0.5
+  }
+ ],
+ "scenes": [
+  {
+   "first": 0,
+   "end": 2,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      0,
+      0.0,
+      "deadpan"
+     ],
+     [
+      1,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [
+    {
+     "kind": "boy",
+     "x": 820,
+     "s": 2.25,
+     "face": -1,
+     "poses": [
+      [
+       0,
+       0.0,
+       "deadpan"
+      ],
+      [
+       1,
+       0.3,
+       "shocked"
+      ]
+     ],
+     "at": [
+      0,
+      0.0
+     ],
+     "in": "none"
+    }
+   ],
+   "els": [
+    {
+     "type": "prop",
+     "name": "ac_unit",
+     "x": 520,
+     "y": 1010,
+     "s": 0.9,
+     "slot": "left",
+     "at": [
+      0,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "particles",
+     "kind": "snow",
+     "area": "right",
+     "at": [
+      1,
+      0.0
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 2,
+   "end": 4,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      2,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "thermometer",
+     "x": 520,
+     "y": 1300,
+     "s": 1.0,
+     "slot": "low_left",
+     "at": [
+      2,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "level": 0.8,
+      "color": "red",
+      "label": "BODY",
+      "value": "37°C"
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "thermometer",
+     "x": 860,
+     "y": 1300,
+     "s": 1.0,
+     "slot": "low_right",
+     "at": [
+      2,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [
+      [
+       3,
+       0.0,
+       "hot"
+      ]
+     ],
+     "args": {
+      "level": 0.62,
+      "level_hot": 0.82,
+      "color": "blue",
+      "label": "TWINS",
+      "value": "~35°C"
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "PRODUCTION: SLOW",
+     "sub": null,
+     "x": 660,
+     "y": 830,
+     "color": "red",
+     "rot": -0.12,
+     "size": 52,
+     "at": [
+      3,
+      1.0
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 4,
+   "end": 7,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      4,
+      0.0,
+      "deadpan"
+     ],
+     [
+      4,
+      0.8,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "elevator",
+     "x": 820,
+     "y": 1560,
+     "s": 1.0,
+     "slot": "floor_right",
+     "at": [
+      4,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [
+      [
+       5,
+       0.0,
+       "up"
+      ],
+      [
+       6,
+       0.0,
+       "down"
+      ]
+     ],
+     "args": {
+      "state": "mid"
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "sun",
+     "x": 500,
+     "y": 830,
+     "s": 0.9,
+     "slot": "high_left",
+     "at": [
+      6,
+      0.1
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "particles",
+     "kind": "snow",
+     "area": "right",
+     "at": [
+      5,
+      0.0
+     ],
+     "until": [
+      6,
+      0.0
+     ]
+    }
+   ]
+  },
+  {
+   "first": 7,
+   "end": 9,
+   "doc": null,
+   "people": [
+    {
+     "kind": "boy",
+     "x": 300,
+     "s": 2.25,
+     "face": 1,
+     "poses": [
+      [
+       7,
+       0.0,
+       "sit_laptop"
+      ]
+     ],
+     "at": [
+      7,
+      0.0
+     ],
+     "in": "none"
+    }
+   ],
+   "els": [
+    {
+     "type": "prop",
+     "name": "hot_tub",
+     "x": 820,
+     "y": 1560,
+     "s": 1.0,
+     "slot": "floor_right",
+     "at": [
+      7,
+      0.9
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "arrow_down",
+     "x": 860,
+     "y": 830,
+     "s": 1.0,
+     "slot": "high_right",
+     "at": [
+      8,
+      0.2
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": "SPERM COUNT",
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 9,
+   "end": 11,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      9,
+      0.0,
+      "deadpan"
+     ],
+     [
+      10,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "twins",
+     "x": 840,
+     "y": 1010,
+     "s": 2.2,
+     "slot": "right",
+     "at": [
+      9,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [
+      [
+       10,
+       0.0,
+       "chill"
+      ]
+     ],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "particles",
+     "kind": "snow",
+     "area": "right",
+     "at": [
+      9,
+      0.0
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 11,
+   "end": 13,
+   "outro": true,
+   "doc": {
+    "x": 540,
+    "s": 2.4,
+    "face": 1,
+    "poses": [
+     [
+      11,
+      0.0,
+      "wave"
+     ]
+    ]
+   },
+   "people": [],
+   "els": []
+  }
+ ],
+ "cover": {
+  "big": [
+   "YOUR BUILT-IN",
+   "*AIR CONDITIONER*"
+  ]
+ },
+ "sources": [
+  {
+   "fact": "Testicles are usually kept at about 35 C, about two degrees below body temperature; the cremaster muscle draws them closer for warmth or away to cool; a few degrees of extra heat can inhibit sperm production; laptop use adds heat",
+   "url": "https://www.mcgill.ca/oss/node/8379",
+   "fetched": "2026-11-18"
+  },
+  {
+   "fact": "Hot tubs and heat lower sperm count, motility and shape; fertility usually returns after the heat stops (takes months)",
+   "url": "https://theturekclinic.com/hot-tubs-male-infertility-heat-azoospermia/",
+   "fetched": "2026-11-18"
+  },
+  {
+   "fact": "Laptop use on the lap raises scrotal temperature",
+   "url": "https://goaskalice.columbia.edu/answered-questions/laptops-and-infertility/",
+   "fetched": "2026-11-18"
+  }
+ ],
+ "math": [
+  {
+   "expr": "37 - 35",
+   "expect": 2,
+   "note": "body ~37 C vs testicles ~35 C (McGill)"
+  }
+ ],
+ "post": {
+  "slot": "morning",
+  "post_at": "2026-11-20T07:30:00+05:30",
+  "instagram_caption": "Your body has its own cooling system. Who knew? ❄️\n\nTesticles work best about two degrees cooler than the rest of the body. When it's cold they pull up closer for warmth, and when it's hot they drop down to cool off.\n\nThat's why regular hot tubs, and laptops on your lap, can lower sperm count for a while.\n\nSources: McGill Office for Science and Society, Turek Clinic, Columbia Go Ask Alice.\n\nDid you know this, or is your mind blown?\n\n#docstick #bodyfacts #menshealth #sciencefacts #weirdfacts",
+  "youtube_title": "Men Have a Built-In Air Conditioner",
+  "youtube_description": "Testicles work best about two degrees cooler than the rest of the body, so a muscle moves them up when it's cold and down when it's hot. Regular hot tubs and laptops on your lap can lower sperm count for a while.\n\nEducational only, not medical advice.\n\nSources:\n• McGill Office for Science and Society (fetched Nov 18, 2026)\n• Turek Clinic, \"Hot tubs and male fertility\" (fetched Nov 18, 2026)\n• Columbia Go Ask Alice, \"Laptops and infertility\" (fetched Nov 18, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#BodyFacts #MensHealth #Shorts"
+ }
+}

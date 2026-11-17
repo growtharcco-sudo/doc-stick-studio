@@ -1,0 +1,59 @@
+{
+ "id": "002_built_in_air_conditioner",
+ "beats": [
+  {"say": "Men have a built-in air conditioner.", "cap": "MEN HAVE A | BUILT-IN | *AIR CONDITIONER.*",
+   "show": {"doc": {"pose": "deadpan", "poses": {"1": "point"}},
+            "person": {"kind": "boy", "slot": "right", "pose": "deadpan", "poses": {"1+0.3": "shocked"}},
+            "props": [{"name": "ac_unit", "slot": "left", "size": 0.9, "in": "none"}],
+            "particles": [{"kind": "snow", "area": "right", "at": "1"}]}},
+  {"say": "And it's in their pants.", "cap": "AND IT'S IN | THEIR *PANTS.*"},
+
+  {"say": "Testicles need to stay about two degrees cooler than the rest of the body.", "cap": "TESTICLES NEED | TO STAY ABOUT | *2 DEGREES* *COOLER* | THAN THE REST | OF THE BODY.",
+   "show": {"doc": "point",
+            "props": [{"name": "thermometer", "slot": "low_left", "args": {"level": 0.8, "color": "red", "label": "BODY", "value": "37°C"}},
+                      {"name": "thermometer", "slot": "low_right", "states": {"1": "hot"},
+                       "args": {"level": 0.62, "level_hot": 0.82, "color": "blue", "label": "TWINS", "value": "~35°C"}}],
+            "stamps": [{"text": "PRODUCTION: SLOW", "slot": "high", "at": "1+1.0", "size": 52}]}},
+  {"say": "Too warm, and sperm production slows down.", "cap": "TOO WARM, AND | SPERM PRODUCTION | *SLOWS DOWN.*"},
+
+  {"say": "So the body built an elevator.", "cap": "SO THE BODY BUILT | AN *ELEVATOR.*",
+   "show": {"doc": {"pose": "deadpan", "poses": {"0+0.8": "point"}},
+            "props": [{"name": "elevator", "slot": "floor_right", "states": {"1": "up", "2": "down"}, "args": {"state": "mid"}},
+                      {"name": "sun", "slot": "high_left", "size": 0.9, "at": "2+0.1"}],
+            "particles": [{"kind": "snow", "area": "right", "at": "1", "until": "2"}]}},
+  {"say": "Cold? They pull up closer for warmth.", "cap": "*COLD?* | THEY PULL *UP* | CLOSER FOR WARMTH."},
+  {"say": "Hot? They drop down to cool off.", "cap": "*HOT?* | THEY DROP *DOWN* | TO COOL OFF."},
+
+  {"say": "That's why hot tubs, and laptops on your lap,", "cap": "THAT'S WHY | HOT *TUBS* | AND *LAPTOPS* | ON YOUR LAP",
+   "show": {"doc": false,
+            "person": {"kind": "boy", "slot": "left", "pose": "sit_laptop"},
+            "props": [{"name": "hot_tub", "slot": "floor_right", "at": "0+0.9"},
+                      {"name": "arrow_down", "slot": "high_right", "at": "1+0.2", "label": "SPERM COUNT"}]}},
+  {"say": "can lower sperm count for a while.", "cap": "CAN *LOWER* | SPERM COUNT | FOR A WHILE."},
+
+  {"say": "Long story short.", "cap": "LONG STORY SHORT.",
+   "show": {"doc": {"pose": "deadpan", "poses": {"1": "point"}},
+            "props": [{"name": "twins", "slot": "right", "size": 2.2, "states": {"1": "chill"}}],
+            "particles": [{"kind": "snow", "area": "right"}]}},
+  {"say": "Keep the twins chill.", "cap": "KEEP THE TWINS | *CHILL.*"}
+ ],
+ "cover": {"big": ["YOUR BUILT-IN", "*AIR CONDITIONER*"]},
+ "sources": [
+  {"fact": "Testicles are usually kept at about 35 C, about two degrees below body temperature; the cremaster muscle draws them closer for warmth or away to cool; a few degrees of extra heat can inhibit sperm production; laptop use adds heat",
+   "url": "https://www.mcgill.ca/oss/node/8379", "fetched": "2026-11-18"},
+  {"fact": "Hot tubs and heat lower sperm count, motility and shape; fertility usually returns after the heat stops (takes months)",
+   "url": "https://theturekclinic.com/hot-tubs-male-infertility-heat-azoospermia/", "fetched": "2026-11-18"},
+  {"fact": "Laptop use on the lap raises scrotal temperature",
+   "url": "https://goaskalice.columbia.edu/answered-questions/laptops-and-infertility/", "fetched": "2026-11-18"}
+ ],
+ "math": [
+  {"expr": "37 - 35", "expect": 2, "note": "body ~37 C vs testicles ~35 C (McGill)"}
+ ],
+ "post": {
+  "slot": "morning",
+  "post_at": "2026-11-20T07:30:00+05:30",
+  "instagram_caption": "Your body has its own cooling system. Who knew? ❄️\n\nTesticles work best about two degrees cooler than the rest of the body. When it's cold they pull up closer for warmth, and when it's hot they drop down to cool off.\n\nThat's why regular hot tubs, and laptops on your lap, can lower sperm count for a while.\n\nSources: McGill Office for Science and Society, Turek Clinic, Columbia Go Ask Alice.\n\nDid you know this, or is your mind blown?\n\n#docstick #bodyfacts #menshealth #sciencefacts #weirdfacts",
+  "youtube_title": "Men Have a Built-In Air Conditioner",
+  "youtube_description": "Testicles work best about two degrees cooler than the rest of the body, so a muscle moves them up when it's cold and down when it's hot. Regular hot tubs and laptops on your lap can lower sperm count for a while.\n\nEducational only, not medical advice.\n\nSources:\n• McGill Office for Science and Society (fetched Nov 18, 2026)\n• Turek Clinic, \"Hot tubs and male fertility\" (fetched Nov 18, 2026)\n• Columbia Go Ask Alice, \"Laptops and infertility\" (fetched Nov 18, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#BodyFacts #MensHealth #Shorts"
+ }
+}
