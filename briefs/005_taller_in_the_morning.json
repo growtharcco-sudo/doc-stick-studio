@@ -1,0 +1,44 @@
+{
+ "id": "005_taller_in_the_morning",
+ "beats": [
+  {"say": "You are shorter tonight than you were this morning.", "cap": "YOU ARE *SHORTER* TONIGHT | THAN YOU WERE | THIS MORNING.",
+   "show": {"kind": "hook", "prop": {"name": "ruler", "size": 0.9, "args": {"mark": 420}, "states": {"0+1.4": "shrink"}}}},
+  {"say": "Yes. Really.", "cap": "YES. *REALLY.*"},
+  {"say": "In one study, people lost about one point four centimetres over the day.", "cap": "IN ONE STUDY, | PEOPLE LOST ABOUT | *1.4 CM* | OVER THE DAY.",
+   "show": {"kind": "number", "number": {"value": 1.4, "decimals": 1, "prefix": "-", "suffix": " CM", "color": "red"}, "left": "clock", "right": {"name": "arrow_down", "args": {"color": "red"}}, "right_at": "0+1.2"}},
+  {"say": "And got it back overnight.", "cap": "AND GOT IT BACK | *OVERNIGHT.*"},
+  {"say": "Blame the cushions in your spine.", "cap": "BLAME THE *CUSHIONS* | IN YOUR SPINE.",
+   "show": {"kind": "explain", "prop": {"name": "spine", "size": 1.3, "states": {"2+0.3": "squished"}}, "pose": "point"}},
+  {"say": "Between the bones sit soft discs with watery centres.", "cap": "BETWEEN THE BONES | SIT SOFT *DISCS* | WITH WATERY CENTRES."},
+  {"say": "All day, gravity squeezes them a little flatter.", "cap": "ALL DAY, *GRAVITY* | SQUEEZES THEM | A LITTLE FLATTER."},
+  {"say": "At night, you lie down, and they plump back up.", "cap": "AT NIGHT, YOU LIE DOWN, | AND THEY *PLUMP* | BACK UP.",
+   "show": {"kind": "stamp", "prop": {"name": "bed", "size": 1.3, "args": {"state": "zzz"}}, "stamp": {"text": "REFILLING", "color": "ink", "at": "0+1.2"}}},
+  {"say": "So you wake up a tiny bit taller.", "cap": "SO YOU WAKE UP | A *TINY* BIT TALLER."},
+  {"say": "Astronauts get an even bigger boost.", "cap": "ASTRONAUTS GET | AN EVEN *BIGGER* BOOST.",
+   "show": {"kind": "number", "number": {"value": 3, "prefix": "UP TO ", "suffix": "%"}, "right": {"name": "arrow_up"}, "right_at": "1+0.3"}},
+  {"say": "With no gravity squashing their spines, they can grow up to three percent taller.", "cap": "WITH NO GRAVITY | SQUASHING THEIR SPINES, | THEY CAN GROW | UP TO *3%* TALLER."},
+  {"say": "Then Earth takes it back.", "cap": "THEN EARTH | *TAKES IT BACK.*"},
+  {"say": "So if you want to be measured tall,", "cap": "SO IF YOU WANT | TO BE MEASURED *TALL,*",
+   "show": {"kind": "exit", "prop": {"name": "ruler", "size": 0.9, "args": {"mark": 380}, "states": {"0+0.6": "grow"}}, "leave_at": "1+0.6", "pose": "point", "poses": {"1+0.8": "deadpan"}}},
+  {"say": "do it before breakfast.", "cap": "DO IT BEFORE *BREAKFAST.*"}
+ ],
+ "cover": {"big": ["YOU'RE SHORTER", "*TONIGHT*"]},
+ "sources": [
+  {"fact": "Leatt, Reilly & Troup, Br J Sports Med 1986: circadian variation in stature averaged 14.4 mm; spinal shrinkage reversed during a night's sleep", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1478354/", "fetched": "2026-11-19"},
+  {"fact": "Arch Dis Child letter 'Diurnal variation in children: is stretching the answer?': mean overnight height increase 19.3 mm in seven women, with lumbar disc volume increasing overnight", "url": "https://adc.bmj.com/content/78/4/395.8", "fetched": "2026-11-19"},
+  {"fact": "StatPearls, Intervertebral discs: the nucleus pulposus is 66% to 86% water; discs provide a shock-absorbing effect within the spine", "url": "https://statpearls.com/sp/al/48/24456/", "fetched": "2026-11-19"},
+  {"fact": "Scientific American: NASA scientists say astronauts can grow up to 3 percent taller in microgravity; height returns to normal after a few months back on Earth", "url": "https://scientificamerican.com/article/astronauts-get-taller-in-space", "fetched": "2026-11-19"}
+ ],
+ "math": [
+  {"expr": "round(14.4 / 10, 1)", "expect": 1.4, "note": "BJSM 1986: mean circadian stature change 14.4 mm = 1.4 cm"},
+  {"expr": "3", "expect": 3, "note": "Scientific American / NASA: up to 3 percent taller in space"},
+  {"expr": "66 < 86", "expect": true, "note": "StatPearls: nucleus pulposus 66 to 86% water, so 'watery centres'"}
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-19T23:30:00+05:30",
+  "instagram_caption": "You are shorter right now than when you woke up 📏\n\nThe discs between your vertebrae have soft, watery centres. Gravity squeezes them flatter during the day, and they plump back up while you lie down at night. In one study people lost about 1.4 cm over the day and got it back overnight. In space, astronauts can grow up to 3% taller until Earth takes it back.\n\nWant to be measured at your tallest? Do it before breakfast.\n\nSources: British Journal of Sports Medicine, Archives of Disease in Childhood, StatPearls, Scientific American.\n\nWould you rather be taller in the morning or at night?\n\n#docstick #bodyfacts #spine #sciencefacts #weirdfacts",
+  "youtube_title": "Why You're Shorter at Night Than in the Morning",
+  "youtube_description": "The discs between your vertebrae get squeezed flatter by gravity during the day and plump back up overnight, so you are a little taller in the morning. In one study the average daily change was about 1.4 cm. Astronauts can grow up to 3% taller in space until they return to Earth.\n\nEducational only, not medical advice.\n\nSources:\n• British Journal of Sports Medicine, \"Spinal loading during circuit weight-training and running\" (fetched Nov 19, 2026)\n• Archives of Disease in Childhood, \"Diurnal variation in children: is stretching the answer?\" (fetched Nov 19, 2026)\n• StatPearls, \"Intervertebral Disc\" (fetched Nov 19, 2026)\n• Scientific American, \"Strange but True: Astronauts Get Taller in Space\" (fetched Nov 19, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#BodyFacts #Science #Shorts"
+ }
+}

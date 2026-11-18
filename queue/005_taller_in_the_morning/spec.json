@@ -1,0 +1,509 @@
+{
+ "id": "005_taller_in_the_morning",
+ "voice": "am_michael",
+ "speed": 1.0,
+ "phrases": [
+  {
+   "say": "You are shorter tonight than you were this morning.",
+   "cap": "YOU ARE *SHORTER* TONIGHT | THAN YOU WERE | THIS MORNING.",
+   "pause": 0.2
+  },
+  {
+   "say": "Yes. Really.",
+   "cap": "YES. *REALLY.*",
+   "pause": 0.45
+  },
+  {
+   "say": "In one study, people lost about one point four centimetres over the day.",
+   "cap": "IN ONE STUDY, | PEOPLE LOST ABOUT | *1.4 CM* | OVER THE DAY.",
+   "pause": 0.2
+  },
+  {
+   "say": "And got it back overnight.",
+   "cap": "AND GOT IT BACK | *OVERNIGHT.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Blame the cushions in your spine.",
+   "cap": "BLAME THE *CUSHIONS* | IN YOUR SPINE.",
+   "pause": 0.2
+  },
+  {
+   "say": "Between the bones sit soft discs with watery centres.",
+   "cap": "BETWEEN THE BONES | SIT SOFT *DISCS* | WITH WATERY CENTRES.",
+   "pause": 0.2
+  },
+  {
+   "say": "All day, gravity squeezes them a little flatter.",
+   "cap": "ALL DAY, *GRAVITY* | SQUEEZES THEM | A LITTLE FLATTER.",
+   "pause": 0.45
+  },
+  {
+   "say": "At night, you lie down, and they plump back up.",
+   "cap": "AT NIGHT, YOU LIE DOWN, | AND THEY *PLUMP* | BACK UP.",
+   "pause": 0.2
+  },
+  {
+   "say": "So you wake up a tiny bit taller.",
+   "cap": "SO YOU WAKE UP | A *TINY* BIT TALLER.",
+   "pause": 0.45
+  },
+  {
+   "say": "Astronauts get an even bigger boost.",
+   "cap": "ASTRONAUTS GET | AN EVEN *BIGGER* BOOST.",
+   "pause": 0.2
+  },
+  {
+   "say": "With no gravity squashing their spines, they can grow up to three percent taller.",
+   "cap": "WITH NO GRAVITY | SQUASHING THEIR SPINES, | THEY CAN GROW | UP TO *3%* TALLER.",
+   "pause": 0.2
+  },
+  {
+   "say": "Then Earth takes it back.",
+   "cap": "THEN EARTH | *TAKES IT BACK.*",
+   "pause": 0.45
+  },
+  {
+   "say": "So if you want to be measured tall,",
+   "cap": "SO IF YOU WANT | TO BE MEASURED *TALL,*",
+   "pause": 0.2
+  },
+  {
+   "say": "do it before breakfast.",
+   "cap": "DO IT BEFORE *BREAKFAST.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Follow,",
+   "cap": "*FOLLOW*",
+   "pause": 0.15
+  },
+  {
+   "say": "for the stuff school skipped.",
+   "cap": "FOR THE STUFF | SCHOOL *SKIPPED.*",
+   "pause": 0.5
+  }
+ ],
+ "scenes": [
+  {
+   "first": 0,
+   "end": 2,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      0,
+      0.0,
+      "deadpan"
+     ],
+     [
+      1,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "ruler",
+     "x": 820,
+     "y": 1560,
+     "s": 0.9,
+     "slot": "floor_right",
+     "at": [
+      0,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [
+      [
+       0,
+       1.4,
+       "shrink"
+      ]
+     ],
+     "args": {
+      "mark": 420
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 2,
+   "end": 4,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      2,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "big_number",
+     "x": 660,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "center",
+     "at": [
+      2,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "value": 1.4,
+      "decimals": 1,
+      "prefix": "-",
+      "suffix": " CM",
+      "color": "red"
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "clock",
+     "x": 520,
+     "y": 1300,
+     "s": 0.7,
+     "slot": "low_left",
+     "at": [
+      2,
+      0.6
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "arrow_down",
+     "x": 860,
+     "y": 1300,
+     "s": 0.8,
+     "slot": "low_right",
+     "at": [
+      2,
+      1.2
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "color": "red"
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 4,
+   "end": 7,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      4,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "spine",
+     "x": 660,
+     "y": 1010,
+     "s": 1.3,
+     "slot": "center",
+     "at": [
+      4,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [
+      [
+       6,
+       0.3,
+       "squished"
+      ]
+     ],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 7,
+   "end": 9,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      7,
+      0.0,
+      "deadpan"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "bed",
+     "x": 820,
+     "y": 1560,
+     "s": 1.3,
+     "slot": "floor_right",
+     "at": [
+      7,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "state": "zzz"
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "REFILLING",
+     "sub": null,
+     "x": 660,
+     "y": 1010,
+     "color": "ink",
+     "rot": -0.12,
+     "size": 64,
+     "at": [
+      7,
+      1.2
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 9,
+   "end": 12,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      9,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "big_number",
+     "x": 660,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "center",
+     "at": [
+      9,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "value": 3,
+      "prefix": "UP TO ",
+      "suffix": "%"
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "arrow_up",
+     "x": 860,
+     "y": 1300,
+     "s": 0.8,
+     "slot": "low_right",
+     "at": [
+      10,
+      0.3
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 12,
+   "end": 14,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      12,
+      0.0,
+      "point"
+     ],
+     [
+      13,
+      0.8,
+      "deadpan"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "ruler",
+     "x": 820,
+     "y": 1560,
+     "s": 0.9,
+     "slot": "floor_right",
+     "at": [
+      12,
+      0.0
+     ],
+     "until": [
+      13,
+      0.6
+     ],
+     "in": "none",
+     "out": "slide_right",
+     "states": [
+      [
+       12,
+       0.6,
+       "grow"
+      ]
+     ],
+     "args": {
+      "mark": 380
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 14,
+   "end": 16,
+   "outro": true,
+   "doc": {
+    "x": 540,
+    "s": 2.4,
+    "face": 1,
+    "poses": [
+     [
+      14,
+      0.0,
+      "wave"
+     ]
+    ]
+   },
+   "people": [],
+   "els": []
+  }
+ ],
+ "cover": {
+  "big": [
+   "YOU'RE SHORTER",
+   "*TONIGHT*"
+  ]
+ },
+ "sources": [
+  {
+   "fact": "Leatt, Reilly & Troup, Br J Sports Med 1986: circadian variation in stature averaged 14.4 mm; spinal shrinkage reversed during a night's sleep",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1478354/",
+   "fetched": "2026-11-19"
+  },
+  {
+   "fact": "Arch Dis Child letter 'Diurnal variation in children: is stretching the answer?': mean overnight height increase 19.3 mm in seven women, with lumbar disc volume increasing overnight",
+   "url": "https://adc.bmj.com/content/78/4/395.8",
+   "fetched": "2026-11-19"
+  },
+  {
+   "fact": "StatPearls, Intervertebral discs: the nucleus pulposus is 66% to 86% water; discs provide a shock-absorbing effect within the spine",
+   "url": "https://statpearls.com/sp/al/48/24456/",
+   "fetched": "2026-11-19"
+  },
+  {
+   "fact": "Scientific American: NASA scientists say astronauts can grow up to 3 percent taller in microgravity; height returns to normal after a few months back on Earth",
+   "url": "https://scientificamerican.com/article/astronauts-get-taller-in-space",
+   "fetched": "2026-11-19"
+  }
+ ],
+ "math": [
+  {
+   "expr": "round(14.4 / 10, 1)",
+   "expect": 1.4,
+   "note": "BJSM 1986: mean circadian stature change 14.4 mm = 1.4 cm"
+  },
+  {
+   "expr": "3",
+   "expect": 3,
+   "note": "Scientific American / NASA: up to 3 percent taller in space"
+  },
+  {
+   "expr": "66 < 86",
+   "expect": true,
+   "note": "StatPearls: nucleus pulposus 66 to 86% water, so 'watery centres'"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-19T23:30:00+05:30",
+  "instagram_caption": "You are shorter right now than when you woke up 📏\n\nThe discs between your vertebrae have soft, watery centres. Gravity squeezes them flatter during the day, and they plump back up while you lie down at night. In one study people lost about 1.4 cm over the day and got it back overnight. In space, astronauts can grow up to 3% taller until Earth takes it back.\n\nWant to be measured at your tallest? Do it before breakfast.\n\nSources: British Journal of Sports Medicine, Archives of Disease in Childhood, StatPearls, Scientific American.\n\nWould you rather be taller in the morning or at night?\n\n#docstick #bodyfacts #spine #sciencefacts #weirdfacts",
+  "youtube_title": "Why You're Shorter at Night Than in the Morning",
+  "youtube_description": "The discs between your vertebrae get squeezed flatter by gravity during the day and plump back up overnight, so you are a little taller in the morning. In one study the average daily change was about 1.4 cm. Astronauts can grow up to 3% taller in space until they return to Earth.\n\nEducational only, not medical advice.\n\nSources:\n• British Journal of Sports Medicine, \"Spinal loading during circuit weight-training and running\" (fetched Nov 19, 2026)\n• Archives of Disease in Childhood, \"Diurnal variation in children: is stretching the answer?\" (fetched Nov 19, 2026)\n• StatPearls, \"Intervertebral Disc\" (fetched Nov 19, 2026)\n• Scientific American, \"Strange but True: Astronauts Get Taller in Space\" (fetched Nov 19, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#BodyFacts #Science #Shorts"
+ }
+}

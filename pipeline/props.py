@@ -515,5 +515,89 @@ def guitar(c, st):
         c.move_to(k * 5, -170); c.line_to(k * 5 + vib * (k % 2), 157); stroke(c, (0.95, 0.92, 0.85), 1.6)
 
 
+# ------------------------------------------------------------------ props added for reels 005 to 007
+@prop("ruler", (-70, -560, 70, 0), "ground",
+      "tall wall height chart (measuring height). args.mark = red marker line height from the floor (0-520); state 'shrink' slides it down 40, 'grow' up 40")
+def ruler(c, st):
+    rrect(c, -50, -540, 100, 540, 8); fillstroke(c, (0.99, 0.88, 0.45), INK, 6)
+    for k in range(1, 27):
+        y = -k * 20; L = 40 if k % 5 == 0 else 22
+        c.move_to(-50, y); c.line_to(-50 + L, y); stroke(c, INK, 4 if k % 5 == 0 else 2.5)
+    m = st.args.get("mark")
+    if m is not None:
+        k = ease_inout(clamp(st.since / 0.8, 0, 1))
+        m = m - 40 * k if st.state == "shrink" else (m + 40 * k if st.state == "grow" else m)
+        c.move_to(-68, -m); c.line_to(68, -m); stroke(c, RED, 9)
+
+
+@prop("spine", (-90, -250, 90, 250), "center",
+      "cartoon spine: stacked bones with blue cushion discs. state 'squished' = discs squash flat (gravity), back to plump when the state ends")
+def spine(c, st):
+    n = 6; bone = 46
+    k = ease_inout(clamp(st.since / 0.6, 0, 1))
+    sq = k if st.state == "squished" else (1 - k if st.prev == "squished" else 0)
+    disc = 30 - 16 * sq
+    total = n * bone + (n - 1) * disc; y = total / 2
+    for i in range(n):
+        rrect(c, -80, y - bone, 160, bone, 16); fillstroke(c, (0.97, 0.95, 0.88), INK, 5)
+        c.move_to(-28, y - bone / 2); c.line_to(28, y - bone / 2); stroke(c, (0.80, 0.76, 0.66), 3)
+        y -= bone
+        if i < n - 1:
+            ellipse(c, 0, y - disc / 2, 66, disc / 2); fillstroke(c, (0.45, 0.70, 0.95), NAVY, 4)
+            y -= disc
+
+
+@prop("ice_cream", (-75, -150, 75, 150), "center", "ice cream cone with two scoops (cold food, brain freeze)")
+def ice_cream(c, st):
+    c.move_to(-62, 10); c.line_to(62, 10); c.line_to(0, 148); c.close_path(); fillstroke(c, (0.90, 0.68, 0.38), DBROWN, 6)
+    for k in (-1, 1):
+        c.move_to(-40 * k, 20); c.line_to(18 * k, 120); stroke(c, DBROWN, 3)
+    c.arc(0, 0, 66, math.pi, 2 * math.pi); c.close_path(); fillstroke(c, PINK, INK, 6)
+    c.arc(0, -78, 56, 0, 2 * math.pi); fillstroke(c, (0.98, 0.95, 0.85), INK, 6)
+    c.arc(0, -144, 12, 0, 2 * math.pi); fillstroke(c, RED, INK, 4)
+    c.move_to(30, 0); c.curve_to(34, 18, 26, 24, 30, 34); stroke(c, PINK, 7)
+
+
+@prop("bee", (-110, -80, 110, 80), "center", "cartoon bee flying in place, wings buzzing. state 'happy' = smile, state 'dead' = X eyes, lying still")
+def bee(c, st):
+    dead = st.state == "dead"
+    c.save()
+    if dead: c.rotate(math.pi * 0.9)
+    else: c.translate(math.sin(st.t * 4) * 6, math.sin(st.t * 6) * 8)
+    fl = 1.0 if dead else 0.6 + 0.4 * abs(math.sin(st.t * 40))
+    for d in (-1, 1):
+        c.save(); c.translate(d * 18, -38); c.scale(1, fl); ellipse(c, 0, -10, 26, 36); c.restore()
+        fillstroke(c, (0.88, 0.95, 1.0), INK, 4)
+    c.move_to(80, 0); c.line_to(106, 0); stroke(c, INK, 5)
+    ellipse(c, 0, 0, 82, 54); fillstroke(c, YELLOW, INK, 6)
+    c.save(); ellipse(c, 0, 0, 82, 54); c.clip()
+    for x in (-10, 30): c.rectangle(x, -60, 20, 120); c.set_source_rgb(*INK); c.fill()
+    c.restore(); ellipse(c, 0, 0, 82, 54); stroke(c, INK, 6)
+    if dead:
+        for ex in (-58, -34):
+            c.move_to(ex - 7, -14); c.line_to(ex + 7, 0); c.move_to(ex + 7, -14); c.line_to(ex - 7, 0); stroke(c, INK, 4)
+    else:
+        for ex in (-58, -34):
+            c.arc(ex, -8, 6, 0, 2 * math.pi); c.set_source_rgb(*INK); c.fill()
+        if st.state == "happy":
+            c.arc(-46, 10, 12, 0.15 * math.pi, 0.85 * math.pi); stroke(c, INK, 4)
+    for d in (-1, 1):
+        c.move_to(-60, -40); c.line_to(-70 + d * 10, -72); stroke(c, INK, 4)
+    c.restore()
+
+
+@prop("mirror", (-110, -330, 110, 0), "ground", "standing oval mirror on a wooden frame. state 'dim' = the glass goes grey and dull")
+def mirror(c, st):
+    for d in (-1, 1):
+        c.move_to(d * 70, -150); c.line_to(d * 95, 0); stroke(c, DBROWN, 12)
+    ellipse(c, 0, -200, 100, 128); fillstroke(c, BROWN, DBROWN, 6)
+    k = ease_inout(clamp(st.since / 0.8, 0, 1)) if st.state == "dim" else 0
+    glass = tuple(a + (b - a) * k for a, b in zip((0.75, 0.90, 0.98), (0.55, 0.55, 0.57)))
+    ellipse(c, 0, -200, 80, 106); fillstroke(c, glass, INK, 4)
+    if k < 0.9:
+        c.move_to(-40, -250); c.line_to(-10, -280); c.move_to(-48, -215); c.line_to(0, -263)
+        c.set_source_rgba(1, 1, 1, 1 - k); c.set_line_width(8); c.stroke()
+
+
 def draw(c, name, st):
     PROPS[name].draw(c, st)

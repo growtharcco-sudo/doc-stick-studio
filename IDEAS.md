@@ -16,7 +16,7 @@ Everything else about the body
 - [ ] Fever is your body turning up the heat on purpose (see a doctor if...)
 - [ ] Hiccups are a leftover from our fish-like ancestors (hypothesis, say so)
 - [ ] Brain freeze: your brain doesn't feel pain, so why does it hurt?
-- [ ] You're taller in the morning than at night
+- [x] You're taller in the morning than at night (005)
 - [ ] Your stomach makes a new lining every few days so it doesn't digest itself
 - [x] Goosebumps: leftover fur-fluffing reflex (003)
 - [ ] You shed about a million skin cells a day? (check the real number)
