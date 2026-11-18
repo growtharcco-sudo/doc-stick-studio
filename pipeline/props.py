@@ -448,5 +448,72 @@ def elevator(c, st):
     c.save(); c.translate(0, pos + 100); c.scale(1.35, 1.35); twins(c, SimpleNamespace(t=st.t, state=mood)); c.restore()
 
 
+ORANGE = (0.98, 0.62, 0.25); DORANGE = (0.55, 0.28, 0.08)
+
+
+@prop("cat", (-150, -330, 175, 0), "ground",
+      "sitting orange cat, front view. state 'puffed' (or args.puffed) = fur standing on end, wide eyes, bristly tail")
+def cat(c, st):
+    if st.state == "puffed": pf = ease_out(st.since / 0.35)
+    elif st.prev == "puffed": pf = 1 - ease_out(st.since / 0.35)
+    else: pf = 1.0 if st.args.get("puffed") else 0.0
+    ow = 5
+    # tail (right side), bristly when puffed
+    c.move_to(55, -25); c.curve_to(150, -30, 165, -120, 120, -175 - 20 * math.sin(st.t * 2))
+    c.set_line_width(26 + 22 * pf); c.set_line_cap(1); c.set_source_rgb(*DORANGE); c.stroke_preserve()
+    c.set_line_width(16 + 22 * pf); c.set_source_rgb(*ORANGE); c.stroke(); c.set_line_cap(0)
+
+    def fuzzy(cx, cy, rx, ry, n):
+        if pf <= 0.01:
+            ellipse(c, cx, cy, rx, ry); return
+        for i in range(n * 2 + 1):
+            a = i * math.pi / n; r = 1 + (0.30 * pf if i % 2 == 0 else 0)
+            x, y = cx + math.cos(a) * rx * r, cy + math.sin(a) * ry * r
+            (c.move_to if i == 0 else c.line_to)(x, y)
+        c.close_path()
+    s = 1 + 0.15 * pf
+    fuzzy(0, -85, 82 * s, 85 * s, 14); fillstroke(c, ORANGE, DORANGE, ow)
+    ellipse(c, 0, -70, 42, 50); c.set_source_rgb(1.0, 0.86, 0.68); c.fill()
+    for fx in (-35, 35):
+        ellipse(c, fx, -10, 26, 14); fillstroke(c, ORANGE, DORANGE, 4)
+    hy = -200 - 10 * pf
+    for d in (-1, 1):
+        c.move_to(d * 22, hy - 50); c.line_to(d * 62, hy - 95 - 10 * pf); c.line_to(d * 66, hy - 25); c.close_path()
+        fillstroke(c, ORANGE, DORANGE, ow)
+    fuzzy(0, hy, 68 * s, 60 * s, 12); fillstroke(c, ORANGE, DORANGE, ow)
+    er = 9 + 9 * pf
+    for d in (-1, 1):
+        c.arc(d * 26, hy - 10, er + 6, 0, 2 * math.pi); fillstroke(c, WHITE, DORANGE, 3)
+        c.arc(d * 26, hy - 10, er * 0.6, 0, 2 * math.pi); c.set_source_rgb(*INK); c.fill()
+    c.move_to(-9, hy + 10); c.line_to(9, hy + 10); c.line_to(0, hy + 20); c.close_path(); c.set_source_rgb(*PINK); c.fill()
+    c.move_to(0, hy + 20); c.line_to(0, hy + 30); stroke(c, DORANGE, 3)
+    if pf > 0.5: ellipse(c, 0, hy + 40, 12, 9); c.set_source_rgb(*INK); c.fill()
+    else:
+        c.move_to(-16, hy + 32); c.curve_to(-8, hy + 40, -2, hy + 36, 0, hy + 30)
+        c.curve_to(2, hy + 36, 8, hy + 40, 16, hy + 32); stroke(c, DORANGE, 3)
+    for d in (-1, 1):
+        for k in (-1, 0, 1):
+            c.move_to(d * 28, hy + 22 + k * 7); c.line_to(d * (88 + 18 * pf), hy + 14 + k * (14 + 10 * pf)); stroke(c, INK, 2.5)
+
+
+@prop("guitar", (-95, -230, 95, 205), "center",
+      "acoustic guitar standing upright (music, instruments). Use size 0.6 for a small one")
+def guitar(c, st):
+    c.rectangle(-14, -175, 28, 200); fillstroke(c, DBROWN, INK, 5)
+    rrect(c, -26, -228, 52, 60, 10); fillstroke(c, DBROWN, INK, 5)
+    for k in range(3):
+        for d in (-1, 1):
+            c.arc(d * 34, -215 + k * 18, 6, 0, 2 * math.pi); fillstroke(c, GREY, INK, 2)
+    ellipse(c, 0, 140, 92, 62); fillstroke(c, (0.90, 0.62, 0.30), DBROWN, 6)
+    ellipse(c, 0, 40, 70, 55); fillstroke(c, (0.90, 0.62, 0.30), DBROWN, 6)
+    ellipse(c, 0, 115, 78, 50); c.set_source_rgb(0.90, 0.62, 0.30); c.fill()
+    ellipse(c, 0, 0, 52, 40); c.set_source_rgb(0.90, 0.62, 0.30); c.fill()
+    c.arc(0, 60, 26, 0, 2 * math.pi); fillstroke(c, (0.25, 0.14, 0.06), DBROWN, 4)
+    c.rectangle(-30, 150, 60, 14); fillstroke(c, DBROWN, INK, 3)
+    vib = math.sin(st.t * 60) * 2 if st.args.get("play") else 0
+    for k in range(-2, 3):
+        c.move_to(k * 5, -170); c.line_to(k * 5 + vib * (k % 2), 157); stroke(c, (0.95, 0.92, 0.85), 1.6)
+
+
 def draw(c, name, st):
     PROPS[name].draw(c, st)

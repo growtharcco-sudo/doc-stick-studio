@@ -1,0 +1,47 @@
+{
+ "id": "003_goosebumps_phantom_fur",
+ "beats": [
+  {"say": "Goosebumps are your body trying to fluff up fur...", "cap": "GOOSEBUMPS ARE | YOUR BODY TRYING | TO FLUFF UP *FUR...*",
+   "show": {"kind": "hook", "prop": {"name": "cat", "size": 1.3, "args": {"puffed": true}}, "particles": [{"kind": "snow", "area": "right", "at": "0"}]}},
+  {"say": "you don't have.", "cap": "YOU *DON'T HAVE.*"},
+  {"say": "Wait. Why do I get goosebumps?", "cap": "WAIT. WHY DO I | GET *GOOSEBUMPS?*",
+   "show": {"kind": "patient", "person": "girl", "question": ["WHY DO I GET", "GOOSEBUMPS?"], "particles": [{"kind": "snow", "area": "right", "at": "0"}]}},
+  {"say": "When you're cold, tiny muscles at the base of each hair contract.", "cap": "WHEN YOU'RE COLD, | TINY *MUSCLES* | AT THE BASE | OF EACH HAIR | CONTRACT."},
+  {"say": "They pull each hair upright.", "cap": "THEY PULL EACH HAIR | *UPRIGHT.*",
+   "show": {"kind": "explain", "prop": {"name": "arrow_up", "size": 1.3}, "stamp": {"text": "PILOERECTION", "at": "1+0.2"}}},
+  {"say": "Doctors call it piloerection.", "cap": "DOCTORS CALL IT | *PILOERECTION.*"},
+  {"say": "For animals with thick fur, it helps keep them warm.", "cap": "FOR ANIMALS | WITH THICK FUR, | IT HELPS KEEP | THEM *WARM.*",
+   "show": {"kind": "stamp", "prop": {"name": "cat", "size": 1.3, "states": {"0+0.6": "puffed"}},
+            "stamp": {"text": "WARM", "at": "0+1.2", "until": "1", "color": "ink"},
+            "stamps": [{"text": "LOOKS BIGGER", "slot": "center", "at": "1+0.8", "size": 60}]}},
+  {"say": "And a puffed up cat looks bigger to a predator.", "cap": "AND A PUFFED UP CAT | LOOKS *BIGGER* | TO A PREDATOR."},
+  {"say": "You, however, have too little hair for it to keep you warm.", "cap": "YOU, HOWEVER, | HAVE *TOO LITTLE HAIR* | FOR IT TO | KEEP YOU WARM.",
+   "show": {"kind": "stamp", "prop": {"name": "sign", "args": {"lines": ["FUR:", "NOT FOUND"]}}, "stamp": {"text": "DENIED", "at": "0+1.6"}}},
+  {"say": "Your body does it anyway.", "cap": "YOUR BODY | DOES IT *ANYWAY.*"},
+  {"say": "It even happens with fear, excitement, or a great song.", "cap": "IT EVEN HAPPENS | WITH *FEAR*, *EXCITEMENT*, | OR A *GREAT SONG.*",
+   "show": {"kind": "explain", "prop": {"name": "guitar", "size": 1.0, "args": {"play": true}}, "particles": [{"kind": "sparkle", "area": "right", "at": "0+0.5"}]}},
+  {"say": "And in mice, scientists found the same system helps hair grow back.", "cap": "AND IN *MICE*, | SCIENTISTS FOUND | THE SAME SYSTEM | HELPS HAIR *GROW BACK.*",
+   "show": {"kind": "explain", "prop": {"name": "book", "size": 1.4, "args": {"title": "MICE"}}, "stamp": {"text": "TWIST", "at": "0+1.2"}}},
+  {"say": "So next time you get goosebumps,", "cap": "SO NEXT TIME | YOU GET *GOOSEBUMPS,*",
+   "show": {"kind": "exit", "prop": {"name": "cat", "size": 1.3, "states": {"0+0.3": "puffed"}}, "leave_at": "2+0.2", "pose": "deadpan", "poses": {"2": "wave"}}},
+  {"say": "your body is asking for fur.", "cap": "YOUR BODY IS | ASKING FOR *FUR.*"},
+  {"say": "Request denied.", "cap": "REQUEST *DENIED.*"}
+ ],
+ "cover": {"big": ["GOOSEBUMPS =", "*PHANTOM FUR*"]},
+ "sources": [
+  {"fact": "Goosebumps (piloerection) are an involuntary reaction of the sympathetic nervous system: tiny muscles contract at the base of each hair follicle. Triggers: sudden cold, fear, shock, anger or excitement, and frisson from music or movies. In animals it makes them appear larger to predators (cats puffing up). In humans they don't appear to have much purpose beyond helping conserve heat.",
+   "url": "https://health.clevelandclinic.org/why-do-you-get-goosebumps", "fetched": "2026-11-18"},
+  {"fact": "Arrector pili muscles pull hair upright. For animals with thick fur this helps keep them warm, but it doesn't do so for people, who have too little hair to retain warmth. In mice, these muscles and their nerves activate hair follicle stem cells and can lead to new hair growth (Cell, 2020).",
+   "url": "https://www.nih.gov/news-events/nih-research-matters/what-goosebumps-are", "fetched": "2026-11-18"}
+ ],
+ "math": [
+  {"expr": "2020", "expect": 2020, "note": "year of the mouse study in Cell, reported by NIH Research Matters (not shown on screen)"}
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-18T23:30:00+05:30",
+  "instagram_caption": "Goosebumps are your body reaching for fur you don't have 🐈\n\nWhen you're cold, tiny muscles at the base of each hair contract and pull the hair upright. In animals with thick fur that fluffed coat helps keep them warm, and a puffed up cat also looks bigger to predators.\n\nHumans have too little hair for it to keep us warm, yet it still happens with cold, fear, excitement and even music. In mice, scientists found the same system helps hair grow back.\n\nSources: Cleveland Clinic, NIH.\n\nWhat song gives you goosebumps every single time?\n\n#docstick #goosebumps #bodyfacts #sciencefacts #weirdfacts",
+  "youtube_title": "Goosebumps Are Your Body Fluffing Fur You Don't Have",
+  "youtube_description": "When you're cold, tiny muscles pull each hair upright. For furry animals that helps keep them warm and makes them look bigger, but humans have too little hair for it to do much. It still happens with fear, excitement and great music.\n\nEducational only, not medical advice.\n\nSources:\n• Cleveland Clinic, \"Why Do You Get Goosebumps?\" (fetched Nov 18, 2026)\n• NIH Research Matters, \"What goosebumps are for\" (fetched Nov 18, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#Goosebumps #BodyFacts #Shorts"
+ }
+}

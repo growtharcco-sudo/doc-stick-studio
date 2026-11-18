@@ -18,7 +18,7 @@ Everything else about the body
 - [ ] Brain freeze: your brain doesn't feel pain, so why does it hurt?
 - [ ] You're taller in the morning than at night
 - [ ] Your stomach makes a new lining every few days so it doesn't digest itself
-- [ ] Goosebumps: leftover fur-fluffing reflex
+- [x] Goosebumps: leftover fur-fluffing reflex (003)
 - [ ] You shed about a million skin cells a day? (check the real number)
 - [ ] Why yawns are contagious
 - [ ] Your nose smells in stereo
