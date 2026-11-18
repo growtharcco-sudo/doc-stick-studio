@@ -1,0 +1,178 @@
+{
+ "id": "006_brain_freeze_name",
+ "beats": [
+  {
+   "say": "Brain freeze has a ridiculous scientific name.",
+   "cap": "BRAIN FREEZE HAS | A *RIDICULOUS* | SCIENTIFIC NAME.",
+   "show": {
+    "kind": "hook",
+    "prop": {
+     "name": "ice_cream",
+     "slot": "right",
+     "size": 1.3
+    }
+   }
+  },
+  {
+   "say": "Sphenopalatine ganglioneuralgia.",
+   "cap": "*SPHENOPALATINE* | *GANGLIONEURALGIA.*",
+   "pause": 0.4
+  },
+  {
+   "say": "Yes. Really.",
+   "cap": "YES. REALLY.",
+   "show": {
+    "kind": "stamp",
+    "prop": {
+     "name": "sign",
+     "args": {
+      "lines": [
+       "SPHENOPALATINE",
+       "GANGLIONEURALGIA"
+      ]
+     },
+     "size": 1.4
+    },
+    "stamp": {
+     "text": "REAL NAME",
+     "at": "1"
+    }
+   }
+  },
+  {
+   "say": "Try saying that with a mouth full of ice cream.",
+   "cap": "TRY SAYING THAT | WITH A MOUTH FULL | OF *ICE CREAM.*"
+  },
+  {
+   "say": "Here's the twist.",
+   "cap": "HERE'S THE *TWIST.*",
+   "show": {
+    "kind": "explain",
+    "prop": {
+     "name": "brain",
+     "size": 1.6
+    },
+    "stamp": {
+     "text": "NO PAIN SENSORS",
+     "at": "1+0.4"
+    }
+   }
+  },
+  {
+   "say": "Your brain itself can't feel pain.",
+   "cap": "YOUR BRAIN ITSELF | *CAN'T* FEEL PAIN."
+  },
+  {
+   "say": "It has no pain sensors of its own.",
+   "cap": "IT HAS NO | PAIN *SENSORS* | OF ITS OWN."
+  },
+  {
+   "say": "So here's what happens.",
+   "cap": "SO HERE'S | WHAT HAPPENS.",
+   "show": {
+    "kind": "pair",
+    "left": {
+     "name": "ice_cream",
+     "size": 1.3
+    },
+    "right": {
+     "name": "heart",
+     "size": 1.4,
+     "label": "WARM BLOOD"
+    },
+    "right_at": "2"
+   }
+  },
+  {
+   "say": "The cold hits the roof of your mouth.",
+   "cap": "THE *COLD* HITS | THE ROOF | OF YOUR MOUTH."
+  },
+  {
+   "say": "Blood vessels there quickly widen to warm things up.",
+   "cap": "BLOOD VESSELS THERE | QUICKLY *WIDEN* | TO WARM THINGS UP."
+  },
+  {
+   "say": "Nerves sense the sudden change,",
+   "cap": "NERVES SENSE | THE *SUDDEN* CHANGE,"
+  },
+  {
+   "say": "and you feel it in the front of your head.",
+   "cap": "AND YOU FEEL IT | IN THE *FRONT* | OF YOUR HEAD."
+  },
+  {
+   "say": "It usually lasts a few seconds, up to two minutes.",
+   "cap": "IT USUALLY LASTS | A FEW SECONDS, | UP TO *2 MINUTES.*",
+   "show": {
+    "kind": "number",
+    "number": {
+     "value": 2,
+     "prefix": "UP TO ",
+     "suffix": " MIN"
+    },
+    "left": "clock"
+   }
+  },
+  {
+   "say": "If you get frequent headaches that last a while, see a doctor.",
+   "cap": "IF YOU GET FREQUENT | HEADACHES THAT | LAST A WHILE, | SEE A *DOCTOR.*"
+  },
+  {
+   "say": "So no, your brain isn't freezing.",
+   "cap": "SO NO, | YOUR BRAIN | ISN'T *FREEZING.*",
+   "show": {
+    "kind": "exit",
+    "prop": {
+     "name": "ice_cream",
+     "slot": "right",
+     "size": 1.3
+    },
+    "leave_at": "1+0.8",
+    "pose": "deadpan",
+    "poses": {
+     "1": "shrug"
+    }
+   }
+  },
+  {
+   "say": "It's just hearing the complaints.",
+   "cap": "IT'S JUST HEARING | THE *COMPLAINTS.*"
+  }
+ ],
+ "cover": {
+  "big": [
+   "BRAIN FREEZE'S",
+   "*REAL NAME*"
+  ]
+ },
+ "sources": [
+  {
+   "fact": "Brain freeze is a brief, intense pain in the front of the head; scientific term sphenopalatine ganglioneuralgia; usually lasts a few seconds to two minutes; not serious; talk to a provider about frequent headaches that last a while",
+   "url": "https://my.clevelandclinic.org/health/diseases/21478-brain-freeze",
+   "fetched": "2026-11-19"
+  },
+  {
+   "fact": "Swinburne University physiologists (The Conversation): the brain can't sense cold or pain because it lacks its own internal sensory receptors; cold over the hard palate can trigger brain freeze",
+   "url": "https://www.swinburne.edu.au/news/2017/01/health-check-does-my-brain-really-freeze-when-i-eat-ice-cream/",
+   "fetched": "2026-11-19"
+  },
+  {
+   "fact": "Virginia Tech Carilion neuroscientist Kristofer Rau: cold prompts a rapid increase of warm blood flow through vessels in the roof of the mouth; the sudden expansion is sensed by nerve cells and interpreted as pain; goes away within seconds to a minute or so",
+   "url": "https://news.vt.edu/articles/2023/05/Brain_freeze_expert.html",
+   "fetched": "2026-11-19"
+  }
+ ],
+ "math": [
+  {
+   "expr": "2",
+   "expect": 2,
+   "note": "Cleveland Clinic: a few seconds to two minutes"
+  }
+ ],
+ "post": {
+  "slot": "morning",
+  "post_at": "2026-11-20T07:30:00+05:30",
+  "instagram_caption": "Brain freeze has a real scientific name, and it's a mouthful 🍦\n\nIt's called sphenopalatine ganglioneuralgia. Your brain itself has no pain sensors: cold hits the roof of your mouth, blood vessels there quickly widen to warm things up, and nerves report it as pain in the front of your head. It usually lasts a few seconds, up to two minutes. If you get frequent headaches that last a while, see a doctor.\n\nYour brain isn't freezing. It's just hearing the complaints.\n\nSources: Cleveland Clinic, Swinburne University, Virginia Tech.\n\nWhat's the coldest thing that ever gave you brain freeze?\n\n#docstick #brainfreeze #bodyfacts #icecream #sciencefacts",
+  "youtube_title": "Brain Freeze Has a Ridiculous Scientific Name",
+  "youtube_description": "Brain freeze is officially called sphenopalatine ganglioneuralgia. Your brain has no pain sensors of its own: cold on the roof of your mouth makes blood vessels there widen quickly, nerves sense it, and you feel pain in the front of your head for a few seconds up to two minutes.\n\nEducational only, not medical advice.\n\nSources:\n• Cleveland Clinic, \"Brain Freeze\" (fetched Nov 19, 2026)\n• Swinburne University, \"Health Check: does my brain really freeze when I eat ice cream?\" (fetched Nov 19, 2026)\n• Virginia Tech, \"Neuroscientist explains the science of the brain freeze\" (fetched Nov 19, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#BrainFreeze #BodyFacts #Shorts"
+ }
+}
