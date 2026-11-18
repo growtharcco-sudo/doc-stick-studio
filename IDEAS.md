@@ -5,7 +5,7 @@ Sex ed / relationships (about 1 in 3)
 - [x] Testicles: the built-in air conditioner (002)
 - [ ] Sperm can't swim straight: they spin like a corkscrew
 - [ ] The egg chooses: eggs release chemicals that attract some sperm over others
-- [ ] Period myths: Romans thought period blood soured wine and dulled mirrors (Pliny the Elder)
+- [x] Period myths: Romans thought period blood soured wine and dulled mirrors (Pliny the Elder) (007)
 - [ ] Your heart rate during a kiss / kissing burns calories (check the real number)
 - [ ] The "morning wood" is a nightly health check (nocturnal erections, sleep cycles)
 - [ ] Why men have nipples

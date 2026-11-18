@@ -1,0 +1,598 @@
+{
+ "id": "007_pliny_period_bees",
+ "voice": "am_michael",
+ "speed": 1.0,
+ "phrases": [
+  {
+   "say": "A Roman scientist claimed a woman on her period",
+   "cap": "A ROMAN SCIENTIST | CLAIMED A WOMAN | ON HER *PERIOD*",
+   "pause": 0.2
+  },
+  {
+   "say": "could kill bees just by looking at them.",
+   "cap": "COULD KILL *BEES* | JUST BY | LOOKING AT THEM.",
+   "pause": 0.45
+  },
+  {
+   "say": "Yes. Really.",
+   "cap": "YES. REALLY.",
+   "pause": 0.2
+  },
+  {
+   "say": "Pliny the Elder wrote it almost two thousand years ago,",
+   "cap": "*PLINY THE ELDER* | WROTE IT ALMOST | *2,000* YEARS AGO,",
+   "pause": 0.2
+  },
+  {
+   "say": "in his giant encyclopedia, Natural History.",
+   "cap": "IN HIS GIANT | ENCYCLOPEDIA, | *NATURAL HISTORY.*",
+   "pause": 0.45
+  },
+  {
+   "say": "He also said her look could dim mirrors,",
+   "cap": "HE ALSO SAID | HER LOOK COULD | *DIM MIRRORS,*",
+   "pause": 0.2
+  },
+  {
+   "say": "and make fruit fall off trees.",
+   "cap": "AND MAKE *FRUIT* | FALL OFF TREES.",
+   "pause": 0.45
+  },
+  {
+   "say": "When an egg isn't fertilized, the lining of the uterus sheds.",
+   "cap": "WHEN AN EGG | ISN'T FERTILIZED, | THE LINING OF | THE UTERUS *SHEDS.*",
+   "pause": 0.2
+  },
+  {
+   "say": "That usually happens every twenty four to thirty eight days.",
+   "cap": "THAT USUALLY | HAPPENS EVERY | *24 TO 38* DAYS.",
+   "pause": 0.45
+  },
+  {
+   "say": "That's about six to eight teaspoons of blood, on average.",
+   "cap": "THAT'S ABOUT | *6 TO 8 TEASPOONS* | OF BLOOD, ON AVERAGE.",
+   "pause": 0.2
+  },
+  {
+   "say": "See a doctor if periods last more than eight days,",
+   "cap": "SEE A *DOCTOR* | IF PERIODS LAST | MORE THAN *8 DAYS,*",
+   "pause": 0.2
+  },
+  {
+   "say": "or suddenly get heavier.",
+   "cap": "OR SUDDENLY | GET *HEAVIER.*",
+   "pause": 0.45
+  },
+  {
+   "say": "The bees are fine.",
+   "cap": "THE BEES | ARE *FINE.*",
+   "pause": 0.2
+  },
+  {
+   "say": "The mirrors are fine.",
+   "cap": "THE MIRRORS | ARE *FINE.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Pliny's encyclopedia, though?",
+   "cap": "PLINY'S | ENCYCLOPEDIA, | *THOUGH?*",
+   "pause": 0.2
+  },
+  {
+   "say": "Britannica calls it of dubious accuracy.",
+   "cap": "BRITANNICA CALLS IT | OF *DUBIOUS* | ACCURACY.",
+   "pause": 0.45
+  },
+  {
+   "say": "Follow,",
+   "cap": "*FOLLOW*",
+   "pause": 0.15
+  },
+  {
+   "say": "for the stuff school skipped.",
+   "cap": "FOR THE STUFF | SCHOOL *SKIPPED.*",
+   "pause": 0.5
+  }
+ ],
+ "scenes": [
+  {
+   "first": 0,
+   "end": 2,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      0,
+      0.0,
+      "deadpan"
+     ],
+     [
+      1,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "bee",
+     "x": 840,
+     "y": 1010,
+     "s": 1.4,
+     "slot": "right",
+     "at": [
+      0,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 2,
+   "end": 5,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      2,
+      0.0,
+      "deadpan"
+     ],
+     [
+      3,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "book",
+     "x": 660,
+     "y": 1010,
+     "s": 1.6,
+     "slot": "center",
+     "at": [
+      2,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "title": "PLINY",
+      "color": "purple"
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "77 AD",
+     "sub": null,
+     "x": 680,
+     "y": 1300,
+     "color": "red",
+     "rot": -0.12,
+     "size": 54,
+     "at": [
+      3,
+      0.3
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 5,
+   "end": 7,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      5,
+      0.0,
+      "deadpan"
+     ],
+     [
+      6,
+      1.0,
+      "shrug"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "mirror",
+     "x": 820,
+     "y": 1560,
+     "s": 1.2,
+     "slot": "floor_right",
+     "at": [
+      5,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [
+      [
+       5,
+       1.0,
+       "dim"
+      ]
+     ],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "MYTH",
+     "sub": null,
+     "x": 660,
+     "y": 1010,
+     "color": "red",
+     "rot": -0.12,
+     "size": 90,
+     "at": [
+      6,
+      1.0
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 7,
+   "end": 9,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      7,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "sign",
+     "x": 820,
+     "y": 1560,
+     "s": 1.1,
+     "slot": "floor_right",
+     "at": [
+      7,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "lines": [
+       "EVERY",
+       "24 TO 38",
+       "DAYS"
+      ]
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 9,
+   "end": 12,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      9,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "big_number",
+     "x": 660,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "center",
+     "at": [
+      9,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "value": 8,
+      "prefix": "6 TO ",
+      "suffix": " TSP",
+      "color": "red"
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "drop",
+     "x": 520,
+     "y": 1300,
+     "s": 0.7,
+     "slot": "low_left",
+     "at": [
+      9,
+      0.6
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "color": "red"
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 12,
+   "end": 14,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      12,
+      0.0,
+      "deadpan"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "mirror",
+     "x": 640,
+     "y": 1560,
+     "s": 1.0,
+     "slot": "floor_center",
+     "at": [
+      12,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "check",
+     "x": 660,
+     "y": 830,
+     "s": 1.0,
+     "slot": "high",
+     "at": [
+      12,
+      0.7
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "bee",
+     "x": 840,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "right",
+     "at": [
+      12,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "state": "happy"
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 14,
+   "end": 16,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      14,
+      0.0,
+      "deadpan"
+     ],
+     [
+      15,
+      0.0,
+      "shrug"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "book",
+     "x": 840,
+     "y": 1010,
+     "s": 1.6,
+     "slot": "right",
+     "at": [
+      14,
+      0.0
+     ],
+     "until": [
+      15,
+      1.2
+     ],
+     "in": "none",
+     "out": "slide_right",
+     "states": [],
+     "args": {
+      "title": "PLINY",
+      "color": "purple"
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 16,
+   "end": 18,
+   "outro": true,
+   "doc": {
+    "x": 540,
+    "s": 2.4,
+    "face": 1,
+    "poses": [
+     [
+      16,
+      0.0,
+      "wave"
+     ]
+    ]
+   },
+   "people": [],
+   "els": []
+  }
+ ],
+ "cover": {
+  "big": [
+   "PERIODS",
+   "*KILL BEES?*"
+  ]
+ },
+ "sources": [
+  {
+   "fact": "Pliny the Elder, Natural History Book 7 ch. 13 (Bostock and Riley translation): a menstruating woman's look dims mirrors, bees die if she looks at them, fruit falls from a tree she sits under; translator's note: no foundation",
+   "url": "https://peterburk.github.io/pliny/ChaptersHtml/7. Book VII. Man, His Birth, His Organization, And The Invention Of The Arts./13. Chap. 13. (15.)-Remarkable Circumstances Connected With The Menstrual Discharge..html",
+   "fetched": "2026-11-19"
+  },
+  {
+   "fact": "Vagina Museum, Ancient Rome: Pliny wrote that a swarm of bees looked upon by her will die, and her look dims mirrors",
+   "url": "https://www.vaginamuseum.co.uk/1g-ancient-rome",
+   "fetched": "2026-11-19"
+  },
+  {
+   "fact": "Britannica: Natural History, completed 77 CE in 37 books, an encyclopaedic scientific work of dubious accuracy; Pliny credited with the first scientific encyclopaedia",
+   "url": "https://britannica.com/print/article/406245",
+   "fetched": "2026-11-19"
+  },
+  {
+   "fact": "Mayo Clinic: if an egg isn't fertilized, the lining of the uterus sheds (a period); bleeding might happen every 24 to 38 days; talk to your care team if you bleed for more than eight days",
+   "url": "https://mayoclinic.org/healthy-lifestyle/womens-health/in-depth/menstrual-cycle/art-20047186",
+   "fetched": "2026-11-19"
+  },
+  {
+   "fact": "nidirect (NI government health): average blood loss per period is around 6 to 8 teaspoons; see a GP if periods have become heavier",
+   "url": "https://www.nidirect.gov.uk/conditions/heavy-periods",
+   "fetched": "2026-11-19"
+  }
+ ],
+ "math": [
+  {
+   "expr": "2026 - 77",
+   "expect": 1949,
+   "note": "Britannica: completed 77 CE, so 'almost 2,000 years ago'"
+  },
+  {
+   "expr": "77",
+   "expect": 77,
+   "note": "Britannica: Natural History completed 77 CE"
+  },
+  {
+   "expr": "24",
+   "expect": 24,
+   "note": "Mayo Clinic: every 24 to 38 days (low end)"
+  },
+  {
+   "expr": "38",
+   "expect": 38,
+   "note": "Mayo Clinic: every 24 to 38 days (high end)"
+  },
+  {
+   "expr": "6",
+   "expect": 6,
+   "note": "nidirect: average around 6 to 8 teaspoons (low end)"
+  },
+  {
+   "expr": "8",
+   "expect": 8,
+   "note": "nidirect: average around 6 to 8 teaspoons (high end)"
+  },
+  {
+   "expr": "8",
+   "expect": 8,
+   "note": "Mayo Clinic: talk to your care team if you bleed for more than eight days"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-20T23:30:00+05:30",
+  "instagram_caption": "A Roman scientist said periods could kill bees with a look 🐝\n\nPliny the Elder wrote in his encyclopedia Natural History (77 AD) that a woman on her period could dim mirrors, kill bees and make fruit fall off trees. None of it is true. A period is the lining of the uterus shedding when an egg isn't fertilized, usually every 24 to 38 days, with about 6 to 8 teaspoons of blood on average.\n\nSee a doctor if periods last more than 8 days or suddenly get heavier.\n\nSources: Pliny's Natural History, Britannica, Mayo Clinic, nidirect, Vagina Museum.\n\nWhat's the strangest period myth you've heard?\n\n#docstick #periods #menstruation #history #sexeducation",
+  "youtube_title": "A Roman Scientist Said Periods Could Kill Bees",
+  "youtube_description": "Around 77 AD, Pliny the Elder wrote in Natural History that a woman on her period could kill bees with a look, dim mirrors and make fruit fall off trees. None of it is true. A period is the lining of the uterus shedding when an egg isn't fertilized, usually every 24 to 38 days, and the average blood loss is about 6 to 8 teaspoons.\n\nEducational only, not medical advice.\n\nSources:\n• Pliny the Elder, \"Natural History, Book 7, Chapter 13\" (fetched Nov 19, 2026)\n• Britannica, \"Natural History\" (fetched Nov 19, 2026)\n• Mayo Clinic, \"Menstrual cycle: What's normal, what's not\" (fetched Nov 19, 2026)\n• nidirect, \"Heavy periods\" (fetched Nov 19, 2026)\n• Vagina Museum, \"Ancient Rome\" (fetched Nov 19, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#Periods #History #Shorts"
+ }
+}

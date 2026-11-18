@@ -1,0 +1,259 @@
+{
+ "id": "007_pliny_period_bees",
+ "beats": [
+  {
+   "say": "A Roman scientist claimed a woman on her period",
+   "cap": "A ROMAN SCIENTIST | CLAIMED A WOMAN | ON HER *PERIOD*",
+   "show": {
+    "kind": "hook",
+    "prop": {
+     "name": "bee",
+     "slot": "right",
+     "size": 1.4
+    }
+   }
+  },
+  {
+   "say": "could kill bees just by looking at them.",
+   "cap": "COULD KILL *BEES* | JUST BY | LOOKING AT THEM."
+  },
+  {
+   "say": "Yes. Really.",
+   "cap": "YES. REALLY.",
+   "show": {
+    "kind": "explain",
+    "prop": {
+     "name": "book",
+     "size": 1.6,
+     "args": {
+      "title": "PLINY",
+      "color": "purple"
+     }
+    },
+    "stamp": {
+     "text": "77 AD",
+     "at": "1+0.3"
+    },
+    "pose": "deadpan",
+    "poses": {
+     "1": "point"
+    }
+   }
+  },
+  {
+   "say": "Pliny the Elder wrote it almost two thousand years ago,",
+   "cap": "*PLINY THE ELDER* | WROTE IT ALMOST | *2,000* YEARS AGO,"
+  },
+  {
+   "say": "in his giant encyclopedia, Natural History.",
+   "cap": "IN HIS GIANT | ENCYCLOPEDIA, | *NATURAL HISTORY.*"
+  },
+  {
+   "say": "He also said her look could dim mirrors,",
+   "cap": "HE ALSO SAID | HER LOOK COULD | *DIM MIRRORS,*",
+   "show": {
+    "kind": "stamp",
+    "prop": {
+     "name": "mirror",
+     "size": 1.2,
+     "states": {
+      "0+1.0": "dim"
+     }
+    },
+    "stamp": {
+     "text": "MYTH",
+     "at": "1+1.0",
+     "size": 90
+    },
+    "poses": {
+     "1+1.0": "shrug"
+    }
+   }
+  },
+  {
+   "say": "and make fruit fall off trees.",
+   "cap": "AND MAKE *FRUIT* | FALL OFF TREES."
+  },
+  {
+   "say": "When an egg isn't fertilized, the lining of the uterus sheds.",
+   "cap": "WHEN AN EGG | ISN'T FERTILIZED, | THE LINING OF | THE UTERUS *SHEDS.*",
+   "show": {
+    "kind": "explain",
+    "prop": {
+     "name": "sign",
+     "slot": "floor_right",
+     "size": 1.1,
+     "args": {
+      "lines": [
+       "EVERY",
+       "24 TO 38",
+       "DAYS"
+      ]
+     }
+    },
+    "pose": "point"
+   }
+  },
+  {
+   "say": "That usually happens every twenty four to thirty eight days.",
+   "cap": "THAT USUALLY | HAPPENS EVERY | *24 TO 38* DAYS."
+  },
+  {
+   "say": "That's about six to eight teaspoons of blood, on average.",
+   "cap": "THAT'S ABOUT | *6 TO 8 TEASPOONS* | OF BLOOD, ON AVERAGE.",
+   "show": {
+    "kind": "number",
+    "number": {
+     "value": 8,
+     "prefix": "6 TO ",
+     "suffix": " TSP",
+     "color": "red"
+    },
+    "left": {
+     "name": "drop",
+     "args": {
+      "color": "red"
+     }
+    }
+   }
+  },
+  {
+   "say": "See a doctor if periods last more than eight days,",
+   "cap": "SEE A *DOCTOR* | IF PERIODS LAST | MORE THAN *8 DAYS,*"
+  },
+  {
+   "say": "or suddenly get heavier.",
+   "cap": "OR SUDDENLY | GET *HEAVIER.*"
+  },
+  {
+   "say": "The bees are fine.",
+   "cap": "THE BEES | ARE *FINE.*",
+   "show": {
+    "kind": "verdict",
+    "verdict": "true",
+    "props": [
+     {
+      "name": "mirror",
+      "size": 1.0
+     }
+    ],
+    "add_props": [
+     {
+      "name": "bee",
+      "slot": "right",
+      "size": 1.0,
+      "args": {
+       "state": "happy"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "say": "The mirrors are fine.",
+   "cap": "THE MIRRORS | ARE *FINE.*"
+  },
+  {
+   "say": "Pliny's encyclopedia, though?",
+   "cap": "PLINY'S | ENCYCLOPEDIA, | *THOUGH?*",
+   "show": {
+    "kind": "exit",
+    "prop": {
+     "name": "book",
+     "slot": "right",
+     "size": 1.6,
+     "args": {
+      "title": "PLINY",
+      "color": "purple"
+     }
+    },
+    "leave_at": "1+1.2",
+    "pose": "deadpan",
+    "poses": {
+     "1": "shrug"
+    }
+   }
+  },
+  {
+   "say": "Britannica calls it of dubious accuracy.",
+   "cap": "BRITANNICA CALLS IT | OF *DUBIOUS* | ACCURACY."
+  }
+ ],
+ "cover": {
+  "big": [
+   "PERIODS",
+   "*KILL BEES?*"
+  ]
+ },
+ "sources": [
+  {
+   "fact": "Pliny the Elder, Natural History Book 7 ch. 13 (Bostock and Riley translation): a menstruating woman's look dims mirrors, bees die if she looks at them, fruit falls from a tree she sits under; translator's note: no foundation",
+   "url": "https://peterburk.github.io/pliny/ChaptersHtml/7. Book VII. Man, His Birth, His Organization, And The Invention Of The Arts./13. Chap. 13. (15.)-Remarkable Circumstances Connected With The Menstrual Discharge..html",
+   "fetched": "2026-11-19"
+  },
+  {
+   "fact": "Vagina Museum, Ancient Rome: Pliny wrote that a swarm of bees looked upon by her will die, and her look dims mirrors",
+   "url": "https://www.vaginamuseum.co.uk/1g-ancient-rome",
+   "fetched": "2026-11-19"
+  },
+  {
+   "fact": "Britannica: Natural History, completed 77 CE in 37 books, an encyclopaedic scientific work of dubious accuracy; Pliny credited with the first scientific encyclopaedia",
+   "url": "https://britannica.com/print/article/406245",
+   "fetched": "2026-11-19"
+  },
+  {
+   "fact": "Mayo Clinic: if an egg isn't fertilized, the lining of the uterus sheds (a period); bleeding might happen every 24 to 38 days; talk to your care team if you bleed for more than eight days",
+   "url": "https://mayoclinic.org/healthy-lifestyle/womens-health/in-depth/menstrual-cycle/art-20047186",
+   "fetched": "2026-11-19"
+  },
+  {
+   "fact": "nidirect (NI government health): average blood loss per period is around 6 to 8 teaspoons; see a GP if periods have become heavier",
+   "url": "https://www.nidirect.gov.uk/conditions/heavy-periods",
+   "fetched": "2026-11-19"
+  }
+ ],
+ "math": [
+  {
+   "expr": "2026 - 77",
+   "expect": 1949,
+   "note": "Britannica: completed 77 CE, so 'almost 2,000 years ago'"
+  },
+  {
+   "expr": "77",
+   "expect": 77,
+   "note": "Britannica: Natural History completed 77 CE"
+  },
+  {
+   "expr": "24",
+   "expect": 24,
+   "note": "Mayo Clinic: every 24 to 38 days (low end)"
+  },
+  {
+   "expr": "38",
+   "expect": 38,
+   "note": "Mayo Clinic: every 24 to 38 days (high end)"
+  },
+  {
+   "expr": "6",
+   "expect": 6,
+   "note": "nidirect: average around 6 to 8 teaspoons (low end)"
+  },
+  {
+   "expr": "8",
+   "expect": 8,
+   "note": "nidirect: average around 6 to 8 teaspoons (high end)"
+  },
+  {
+   "expr": "8",
+   "expect": 8,
+   "note": "Mayo Clinic: talk to your care team if you bleed for more than eight days"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-20T23:30:00+05:30",
+  "instagram_caption": "A Roman scientist said periods could kill bees with a look 🐝\n\nPliny the Elder wrote in his encyclopedia Natural History (77 AD) that a woman on her period could dim mirrors, kill bees and make fruit fall off trees. None of it is true. A period is the lining of the uterus shedding when an egg isn't fertilized, usually every 24 to 38 days, with about 6 to 8 teaspoons of blood on average.\n\nSee a doctor if periods last more than 8 days or suddenly get heavier.\n\nSources: Pliny's Natural History, Britannica, Mayo Clinic, nidirect, Vagina Museum.\n\nWhat's the strangest period myth you've heard?\n\n#docstick #periods #menstruation #history #sexeducation",
+  "youtube_title": "A Roman Scientist Said Periods Could Kill Bees",
+  "youtube_description": "Around 77 AD, Pliny the Elder wrote in Natural History that a woman on her period could kill bees with a look, dim mirrors and make fruit fall off trees. None of it is true. A period is the lining of the uterus shedding when an egg isn't fertilized, usually every 24 to 38 days, and the average blood loss is about 6 to 8 teaspoons.\n\nEducational only, not medical advice.\n\nSources:\n• Pliny the Elder, \"Natural History, Book 7, Chapter 13\" (fetched Nov 19, 2026)\n• Britannica, \"Natural History\" (fetched Nov 19, 2026)\n• Mayo Clinic, \"Menstrual cycle: What's normal, what's not\" (fetched Nov 19, 2026)\n• nidirect, \"Heavy periods\" (fetched Nov 19, 2026)\n• Vagina Museum, \"Ancient Rome\" (fetched Nov 19, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#Periods #History #Shorts"
+ }
+}
