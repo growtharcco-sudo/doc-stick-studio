@@ -1,0 +1,506 @@
+{
+ "id": "004_voice_crack_upgrade",
+ "voice": "am_michael",
+ "speed": 1.0,
+ "phrases": [
+  {
+   "say": "Puberty can drop a boy's voice by about an octave.",
+   "cap": "PUBERTY CAN DROP | A BOY'S VOICE | BY ABOUT AN *OCTAVE.*",
+   "pause": 0.2
+  },
+  {
+   "say": "And sometimes it trips on the way down.",
+   "cap": "AND SOMETIMES | IT *TRIPS* | ON THE WAY DOWN.",
+   "pause": 0.45
+  },
+  {
+   "say": "Why does my voice keep cracking?",
+   "cap": "WHY DOES MY VOICE | KEEP *CRACKING?*",
+   "pause": 0.2
+  },
+  {
+   "say": "Your voice box, the larynx, is growing.",
+   "cap": "YOUR VOICE BOX, | THE *LARYNX*, | IS GROWING.",
+   "pause": 0.45
+  },
+  {
+   "say": "Your vocal cords get longer and thicker.",
+   "cap": "YOUR VOCAL CORDS | GET *LONGER* | AND *THICKER.*",
+   "pause": 0.2
+  },
+  {
+   "say": "It's like swapping a tiny guitar for a big one, mid song.",
+   "cap": "IT'S LIKE SWAPPING | A *TINY GUITAR* | FOR A *BIG ONE,* | MID SONG.",
+   "pause": 0.2
+  },
+  {
+   "say": "While your body gets used to the new equipment, the voice can crack.",
+   "cap": "WHILE YOUR BODY | GETS USED TO | THE *NEW EQUIPMENT,* | THE VOICE CAN *CRACK.*",
+   "pause": 0.45
+  },
+  {
+   "say": "The voice box also drops lower and tilts.",
+   "cap": "THE VOICE BOX | ALSO DROPS LOWER | AND *TILTS.*",
+   "pause": 0.2
+  },
+  {
+   "say": "That bump in the throat is the Adam's apple.",
+   "cap": "THAT BUMP | IN THE THROAT | IS THE *ADAM'S APPLE.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Girls' voices drop too, but only about three tones.",
+   "cap": "GIRLS' VOICES | DROP TOO, | BUT ONLY ABOUT | *3 TONES.*",
+   "pause": 0.2
+  },
+  {
+   "say": "So it's barely noticeable.",
+   "cap": "SO IT'S *BARELY* NOTICEABLE.",
+   "pause": 0.45
+  },
+  {
+   "say": "The cracking usually lasts only a few months.",
+   "cap": "THE CRACKING | USUALLY LASTS | ONLY A *FEW MONTHS.*",
+   "pause": 0.2
+  },
+  {
+   "say": "Your voice isn't broken.",
+   "cap": "YOUR VOICE | ISN'T *BROKEN.*",
+   "pause": 0.2
+  },
+  {
+   "say": "It's being upgraded.",
+   "cap": "IT'S BEING | *UPGRADED.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Follow,",
+   "cap": "*FOLLOW*",
+   "pause": 0.15
+  },
+  {
+   "say": "for the stuff school skipped.",
+   "cap": "FOR THE STUFF | SCHOOL *SKIPPED.*",
+   "pause": 0.5
+  }
+ ],
+ "scenes": [
+  {
+   "first": 0,
+   "end": 2,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      0,
+      0.0,
+      "deadpan"
+     ],
+     [
+      1,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [
+    {
+     "kind": "boy",
+     "x": 820,
+     "s": 2.25,
+     "face": -1,
+     "poses": [
+      [
+       0,
+       0.0,
+       "deadpan"
+      ],
+      [
+       1,
+       0.3,
+       "shocked"
+      ]
+     ],
+     "at": [
+      0,
+      0.0
+     ],
+     "in": "none"
+    }
+   ],
+   "els": [
+    {
+     "type": "prop",
+     "name": "arrow_down",
+     "x": 520,
+     "y": 1010,
+     "s": 1.3,
+     "slot": "left",
+     "at": [
+      0,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [],
+     "args": {
+      "color": "red"
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 2,
+   "end": 4,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      2,
+      0.0,
+      "deadpan"
+     ],
+     [
+      3,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [
+    {
+     "kind": "boy",
+     "x": 820,
+     "s": 2.25,
+     "face": -1,
+     "poses": [
+      [
+       2,
+       0.0,
+       "think"
+      ]
+     ],
+     "at": [
+      2,
+      0.0
+     ],
+     "in": "slide"
+    }
+   ],
+   "els": [
+    {
+     "type": "prop",
+     "name": "bubble",
+     "x": 860,
+     "y": 830,
+     "s": 0.85,
+     "slot": "high_right",
+     "at": [
+      2,
+      0.5
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "lines": [
+       "WHY DOES MY",
+       "VOICE CRACK?"
+      ],
+      "tail": "right"
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 4,
+   "end": 7,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      4,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "guitar",
+     "x": 520,
+     "y": 1300,
+     "s": 0.55,
+     "slot": "low_left",
+     "at": [
+      4,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "guitar",
+     "x": 860,
+     "y": 1300,
+     "s": 0.95,
+     "slot": "low_right",
+     "at": [
+      5,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 7,
+   "end": 9,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      7,
+      0.0,
+      "deadpan"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "sign",
+     "x": 820,
+     "y": 1560,
+     "s": 1.0,
+     "slot": "floor_right",
+     "at": [
+      7,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "lines": [
+       "ADAM'S",
+       "APPLE"
+      ]
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "NOT AN APPLE",
+     "sub": null,
+     "x": 660,
+     "y": 1010,
+     "color": "red",
+     "rot": -0.12,
+     "size": 64,
+     "at": [
+      8,
+      0.5
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 9,
+   "end": 11,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      9,
+      0.0,
+      "point"
+     ],
+     [
+      9,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "big_number",
+     "x": 660,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "center",
+     "at": [
+      9,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "value": 3,
+      "suffix": " TONES"
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 11,
+   "end": 14,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      11,
+      0.0,
+      "deadpan"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "sign",
+     "x": 640,
+     "y": 1560,
+     "s": 1.0,
+     "slot": "floor_center",
+     "at": [
+      11,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [],
+     "args": {
+      "lines": [
+       "VOICE",
+       "UPGRADE",
+       "IN PROGRESS"
+      ]
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "check",
+     "x": 660,
+     "y": 830,
+     "s": 1.0,
+     "slot": "high",
+     "at": [
+      11,
+      0.7
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 14,
+   "end": 16,
+   "outro": true,
+   "doc": {
+    "x": 540,
+    "s": 2.4,
+    "face": 1,
+    "poses": [
+     [
+      14,
+      0.0,
+      "wave"
+     ]
+    ]
+   },
+   "people": [],
+   "els": []
+  }
+ ],
+ "cover": {
+  "big": [
+   "WHY VOICES",
+   "*CRACK*"
+  ]
+ },
+ "sources": [
+  {
+   "fact": "As the body goes through puberty, the larynx grows larger and thicker and the vocal cords grow longer and thicker. As a boy's body adjusts to this changing equipment, his voice may crack or break. The bump at the front of the throat is the Adam's apple, formed as the larynx angles differently. Girls' voices only deepen by a couple of tones and the change is barely noticeable. This process lasts only a few months.",
+   "url": "https://kidshealth.org/en/kids/changing-voice.html",
+   "fetched": "2026-11-18"
+  },
+  {
+   "fact": "Before puberty the larynx sits higher in the neck; in puberty it enlarges and moves lower, and the vocal folds thicken and enlarge. Boys' voices can suddenly drop about an octave lower; girls' pitch drops only about three tones.",
+   "url": "https://health.clevelandclinic.org/voice-changes-what-can-they-tell-you-as-you-age/",
+   "fetched": "2026-11-18"
+  }
+ ],
+ "math": [
+  {
+   "expr": "1",
+   "expect": 1,
+   "note": "about one octave drop for boys (Cleveland Clinic)"
+  },
+  {
+   "expr": "3",
+   "expect": 3,
+   "note": "about three tones drop for girls (Cleveland Clinic); KidsHealth says 'a couple of tones'"
+  }
+ ],
+ "post": {
+  "slot": "morning",
+  "post_at": "2026-11-19T07:30:00+05:30",
+  "instagram_caption": "Puberty can drop a boy's voice by about an octave. Sometimes it trips on the way down 🎸\n\nDuring puberty the larynx (voice box) grows and moves lower, and the vocal cords get longer and thicker. While the body gets used to the new equipment, the voice can crack. Girls' voices drop too, but only by about three tones.\n\nThe cracking usually lasts only a few months: your voice isn't broken, it's being upgraded.\n\nSources: KidsHealth (Nemours), Cleveland Clinic.\n\nDid your voice crack at the worst possible moment?\n\n#docstick #puberty #voicecrack #bodyfacts #sexeducation",
+  "youtube_title": "Why Your Voice Cracks During Puberty",
+  "youtube_description": "During puberty the voice box grows and moves lower, and the vocal cords get longer and thicker, so a boy's voice can drop about an octave. While the body adjusts, the voice can crack for a few months. Girls' voices drop too, by about three tones.\n\nEducational only, not medical advice.\n\nSources:\n• KidsHealth (Nemours), \"Your Changing Voice\" (fetched Nov 18, 2026)\n• Cleveland Clinic, \"Voice Changes: What Can They Tell You As You Age?\" (fetched Nov 18, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#Puberty #BodyFacts #Shorts"
+ }
+}

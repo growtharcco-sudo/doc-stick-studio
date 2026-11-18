@@ -1,0 +1,170 @@
+{
+ "id": "004_voice_crack_upgrade",
+ "beats": [
+  {
+   "say": "Puberty can drop a boy's voice by about an octave.",
+   "cap": "PUBERTY CAN DROP | A BOY'S VOICE | BY ABOUT AN *OCTAVE.*",
+   "show": {
+    "kind": "hook",
+    "person": "boy",
+    "prop": {
+     "name": "arrow_down",
+     "size": 1.3,
+     "args": {
+      "color": "red"
+     }
+    }
+   }
+  },
+  {
+   "say": "And sometimes it trips on the way down.",
+   "cap": "AND SOMETIMES | IT *TRIPS* | ON THE WAY DOWN."
+  },
+  {
+   "say": "Why does my voice keep cracking?",
+   "cap": "WHY DOES MY VOICE | KEEP *CRACKING?*",
+   "show": {
+    "kind": "patient",
+    "person": "boy",
+    "question": [
+     "WHY DOES MY",
+     "VOICE CRACK?"
+    ]
+   }
+  },
+  {
+   "say": "Your voice box, the larynx, is growing.",
+   "cap": "YOUR VOICE BOX, | THE *LARYNX*, | IS GROWING."
+  },
+  {
+   "say": "Your vocal cords get longer and thicker.",
+   "cap": "YOUR VOCAL CORDS | GET *LONGER* | AND *THICKER.*",
+   "show": {
+    "kind": "pair",
+    "left": {
+     "name": "guitar",
+     "size": 0.55
+    },
+    "right": {
+     "name": "guitar",
+     "size": 0.95
+    }
+   }
+  },
+  {
+   "say": "It's like swapping a tiny guitar for a big one, mid song.",
+   "cap": "IT'S LIKE SWAPPING | A *TINY GUITAR* | FOR A *BIG ONE,* | MID SONG."
+  },
+  {
+   "say": "While your body gets used to the new equipment, the voice can crack.",
+   "cap": "WHILE YOUR BODY | GETS USED TO | THE *NEW EQUIPMENT,* | THE VOICE CAN *CRACK.*"
+  },
+  {
+   "say": "The voice box also drops lower and tilts.",
+   "cap": "THE VOICE BOX | ALSO DROPS LOWER | AND *TILTS.*",
+   "show": {
+    "kind": "stamp",
+    "prop": {
+     "name": "sign",
+     "args": {
+      "lines": [
+       "ADAM'S",
+       "APPLE"
+      ]
+     }
+    },
+    "stamp": {
+     "text": "NOT AN APPLE",
+     "at": "1+0.5"
+    }
+   }
+  },
+  {
+   "say": "That bump in the throat is the Adam's apple.",
+   "cap": "THAT BUMP | IN THE THROAT | IS THE *ADAM'S APPLE.*"
+  },
+  {
+   "say": "Girls' voices drop too, but only about three tones.",
+   "cap": "GIRLS' VOICES | DROP TOO, | BUT ONLY ABOUT | *3 TONES.*",
+   "show": {
+    "kind": "number",
+    "number": {
+     "value": 3,
+     "suffix": " TONES"
+    },
+    "poses": {
+     "0": "point"
+    }
+   }
+  },
+  {
+   "say": "So it's barely noticeable.",
+   "cap": "SO IT'S *BARELY* NOTICEABLE."
+  },
+  {
+   "say": "The cracking usually lasts only a few months.",
+   "cap": "THE CRACKING | USUALLY LASTS | ONLY A *FEW MONTHS.*",
+   "show": {
+    "kind": "verdict",
+    "verdict": "true",
+    "props": [
+     {
+      "name": "sign",
+      "args": {
+       "lines": [
+        "VOICE",
+        "UPGRADE",
+        "IN PROGRESS"
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "say": "Your voice isn't broken.",
+   "cap": "YOUR VOICE | ISN'T *BROKEN.*"
+  },
+  {
+   "say": "It's being upgraded.",
+   "cap": "IT'S BEING | *UPGRADED.*"
+  }
+ ],
+ "cover": {
+  "big": [
+   "WHY VOICES",
+   "*CRACK*"
+  ]
+ },
+ "sources": [
+  {
+   "fact": "As the body goes through puberty, the larynx grows larger and thicker and the vocal cords grow longer and thicker. As a boy's body adjusts to this changing equipment, his voice may crack or break. The bump at the front of the throat is the Adam's apple, formed as the larynx angles differently. Girls' voices only deepen by a couple of tones and the change is barely noticeable. This process lasts only a few months.",
+   "url": "https://kidshealth.org/en/kids/changing-voice.html",
+   "fetched": "2026-11-18"
+  },
+  {
+   "fact": "Before puberty the larynx sits higher in the neck; in puberty it enlarges and moves lower, and the vocal folds thicken and enlarge. Boys' voices can suddenly drop about an octave lower; girls' pitch drops only about three tones.",
+   "url": "https://health.clevelandclinic.org/voice-changes-what-can-they-tell-you-as-you-age/",
+   "fetched": "2026-11-18"
+  }
+ ],
+ "math": [
+  {
+   "expr": "1",
+   "expect": 1,
+   "note": "about one octave drop for boys (Cleveland Clinic)"
+  },
+  {
+   "expr": "3",
+   "expect": 3,
+   "note": "about three tones drop for girls (Cleveland Clinic); KidsHealth says 'a couple of tones'"
+  }
+ ],
+ "post": {
+  "slot": "morning",
+  "post_at": "2026-11-19T07:30:00+05:30",
+  "instagram_caption": "Puberty can drop a boy's voice by about an octave. Sometimes it trips on the way down 🎸\n\nDuring puberty the larynx (voice box) grows and moves lower, and the vocal cords get longer and thicker. While the body gets used to the new equipment, the voice can crack. Girls' voices drop too, but only by about three tones.\n\nThe cracking usually lasts only a few months: your voice isn't broken, it's being upgraded.\n\nSources: KidsHealth (Nemours), Cleveland Clinic.\n\nDid your voice crack at the worst possible moment?\n\n#docstick #puberty #voicecrack #bodyfacts #sexeducation",
+  "youtube_title": "Why Your Voice Cracks During Puberty",
+  "youtube_description": "During puberty the voice box grows and moves lower, and the vocal cords get longer and thicker, so a boy's voice can drop about an octave. While the body adjusts, the voice can crack for a few months. Girls' voices drop too, by about three tones.\n\nEducational only, not medical advice.\n\nSources:\n• KidsHealth (Nemours), \"Your Changing Voice\" (fetched Nov 18, 2026)\n• Cleveland Clinic, \"Voice Changes: What Can They Tell You As You Age?\" (fetched Nov 18, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#Puberty #BodyFacts #Shorts"
+ }
+}

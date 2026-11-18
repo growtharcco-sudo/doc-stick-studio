@@ -10,7 +10,7 @@ Sex ed / relationships (about 1 in 3)
 - [ ] The "morning wood" is a nightly health check (nocturnal erections, sleep cycles)
 - [ ] Why men have nipples
 - [ ] Consent explained with a cup of tea, stick-figure version
-- [ ] Puberty: why voices crack (larynx growth)
+- [x] Puberty: why voices crack (larynx growth) (004)
 
 Everything else about the body
 - [ ] Fever is your body turning up the heat on purpose (see a doctor if...)
