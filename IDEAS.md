@@ -8,7 +8,7 @@ Sex ed / relationships (about 1 in 3)
 - [x] Period myths: Romans thought period blood soured wine and dulled mirrors (Pliny the Elder) (007)
 - [ ] Your heart rate during a kiss / kissing burns calories (check the real number)
 - [ ] The "morning wood" is a nightly health check (nocturnal erections, sleep cycles)
-- [ ] Why men have nipples
+- [x] Why men have nipples (009)
 - [ ] Consent explained with a cup of tea, stick-figure version
 - [x] Puberty: why voices crack (larynx growth) (004)
 

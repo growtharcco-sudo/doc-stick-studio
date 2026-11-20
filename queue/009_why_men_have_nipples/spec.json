@@ -1,0 +1,494 @@
+{
+ "id": "009_why_men_have_nipples",
+ "voice": "am_michael",
+ "speed": 1.0,
+ "phrases": [
+  {
+   "say": "Why do guys even have nipples?",
+   "cap": "WHY DO GUYS | EVEN HAVE *NIPPLES?*",
+   "pause": 0.2
+  },
+  {
+   "say": "Because they got them before they were guys.",
+   "cap": "BECAUSE THEY GOT THEM | *BEFORE* THEY WERE GUYS.",
+   "pause": 0.45
+  },
+  {
+   "say": "Yes. Really.",
+   "cap": "YES. *REALLY.*",
+   "pause": 0.2
+  },
+  {
+   "say": "Every embryo starts from the same basic blueprint.",
+   "cap": "EVERY EMBRYO STARTS | FROM THE *SAME* | BASIC BLUEPRINT.",
+   "pause": 0.45
+  },
+  {
+   "say": "Nipples start forming around weeks four to six.",
+   "cap": "NIPPLES START FORMING | AROUND *WEEKS 4 TO 6.*",
+   "pause": 0.2
+  },
+  {
+   "say": "The gene that starts making an embryo male, called S R Y,",
+   "cap": "THE GENE THAT STARTS | MAKING AN EMBRYO *MALE,* | CALLED *SRY,*",
+   "pause": 0.2
+  },
+  {
+   "say": "only switches on around week seven.",
+   "cap": "ONLY SWITCHES ON | AROUND *WEEK 7.*",
+   "pause": 0.2
+  },
+  {
+   "say": "By then, the nipples are already there.",
+   "cap": "BY THEN, THE NIPPLES | ARE *ALREADY THERE.*",
+   "pause": 0.45
+  },
+  {
+   "say": "So why didn't evolution delete them?",
+   "cap": "SO WHY DIDN'T | EVOLUTION *DELETE* THEM?",
+   "pause": 0.2
+  },
+  {
+   "say": "A popular explanation: they do no harm,",
+   "cap": "A POPULAR EXPLANATION: | THEY DO *NO HARM,*",
+   "pause": 0.2
+  },
+  {
+   "say": "so there was no pressure to get rid of them.",
+   "cap": "SO THERE WAS | *NO PRESSURE* | TO GET RID OF THEM.",
+   "pause": 0.45
+  },
+  {
+   "say": "One more thing.",
+   "cap": "ONE MORE *THING.*",
+   "pause": 0.2
+  },
+  {
+   "say": "Men can get breast cancer too. It's rare, but real.",
+   "cap": "MEN CAN GET | *BREAST CANCER* TOO. | IT'S RARE, BUT REAL.",
+   "pause": 0.2
+  },
+  {
+   "say": "So see a doctor if a nipple or chest changes.",
+   "cap": "SO SEE A DOCTOR | IF A NIPPLE OR CHEST | *CHANGES.*",
+   "pause": 0.45
+  },
+  {
+   "say": "So no, guys' nipples aren't a mistake.",
+   "cap": "SO NO, GUYS' NIPPLES | AREN'T A *MISTAKE.*",
+   "pause": 0.2
+  },
+  {
+   "say": "They're a souvenir from week four.",
+   "cap": "THEY'RE A *SOUVENIR* | FROM WEEK 4.",
+   "pause": 0.45
+  },
+  {
+   "say": "Follow,",
+   "cap": "*FOLLOW*",
+   "pause": 0.15
+  },
+  {
+   "say": "for the stuff school skipped.",
+   "cap": "FOR THE STUFF | SCHOOL *SKIPPED.*",
+   "pause": 0.5
+  }
+ ],
+ "scenes": [
+  {
+   "first": 0,
+   "end": 2,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      0,
+      0.0,
+      "deadpan"
+     ],
+     [
+      1,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [
+    {
+     "kind": "boy",
+     "x": 820,
+     "s": 2.25,
+     "face": -1,
+     "poses": [
+      [
+       0,
+       0.0,
+       "deadpan"
+      ],
+      [
+       0,
+       0.01,
+       "think"
+      ],
+      [
+       1,
+       0.3,
+       "shocked"
+      ]
+     ],
+     "at": [
+      0,
+      0.0
+     ],
+     "in": "none"
+    }
+   ],
+   "els": [
+    {
+     "type": "prop",
+     "name": "bubble",
+     "x": 860,
+     "y": 830,
+     "s": 0.85,
+     "slot": "high_right",
+     "at": [
+      0,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [],
+     "args": {
+      "lines": [
+       "WHY DO GUYS",
+       "HAVE NIPPLES?"
+      ],
+      "tail": "right"
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 2,
+   "end": 4,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      2,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "sign",
+     "x": 820,
+     "y": 1560,
+     "s": 1.3,
+     "slot": "floor_right",
+     "at": [
+      2,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "lines": [
+       "SAME",
+       "BLUEPRINT"
+      ]
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 4,
+   "end": 8,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      4,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "calendar",
+     "x": 520,
+     "y": 1300,
+     "s": 1.0,
+     "slot": "low_left",
+     "at": [
+      4,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "top": "WEEK",
+      "big": "4-6"
+     },
+     "label": "NIPPLES FORM",
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "calendar",
+     "x": 860,
+     "y": 1300,
+     "s": 1.0,
+     "slot": "low_right",
+     "at": [
+      5,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "top": "WEEK",
+      "big": "7"
+     },
+     "label": "SRY GENE ON",
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 8,
+   "end": 11,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      8,
+      0.0,
+      "deadpan"
+     ],
+     [
+      9,
+      0.0,
+      "shrug"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "qmark",
+     "x": 660,
+     "y": 1010,
+     "s": 1.1,
+     "slot": "center",
+     "at": [
+      8,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "NO HARM",
+     "sub": null,
+     "x": 680,
+     "y": 1300,
+     "color": "red",
+     "rot": -0.12,
+     "size": 64,
+     "at": [
+      9,
+      0.3
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 11,
+   "end": 14,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      11,
+      0.0,
+      "deadpan"
+     ],
+     [
+      12,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "warning",
+     "x": 660,
+     "y": 1010,
+     "s": 1.2,
+     "slot": "center",
+     "at": [
+      11,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 14,
+   "end": 16,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      14,
+      0.0,
+      "deadpan"
+     ],
+     [
+      15,
+      0.8,
+      "wave"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "calendar",
+     "x": 840,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "right",
+     "at": [
+      14,
+      0.0
+     ],
+     "until": [
+      15,
+      0.6
+     ],
+     "in": "none",
+     "out": "slide_right",
+     "states": [],
+     "args": {
+      "top": "WEEK",
+      "big": "4-6"
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 16,
+   "end": 18,
+   "outro": true,
+   "doc": {
+    "x": 540,
+    "s": 2.4,
+    "face": 1,
+    "poses": [
+     [
+      16,
+      0.0,
+      "wave"
+     ]
+    ]
+   },
+   "people": [],
+   "els": []
+  }
+ ],
+ "cover": {
+  "big": [
+   "WHY DO GUYS",
+   "*HAVE NIPPLES?*"
+  ]
+ },
+ "sources": [
+  {
+   "fact": "UNSW Sydney (Michelle Moscova, via The Conversation), 'Why do men have nipples?': breasts and nipples start to form before the SRY gene has been activated, between weeks four and six; SRY is activated when the embryo is around seven weeks old; embryos of both sexes have primitive structures; some argue male nipples remain because they do no harm and there is no benefit in eliminating them; at birth boys' and girls' nipples and breasts look alike; men can develop breast cancer (0.5-1% of breast cancers) and nipple changes should be checked by a doctor",
+   "url": "https://www.unsw.edu.au/newsroom/news/2019/09/why-do-men-have-nipples",
+   "fetched": "2026-11-21"
+  },
+  {
+   "fact": "Discover Magazine, 'Why Do Men Have Nipples?': males and females start from the same genetic blueprint; nipples appear before sex differentiation; Stephen Jay Gould argued male nipples need no adaptive explanation because there is no selective pressure against a harmless trait",
+   "url": "https://www.discovermagazine.com/health/why-do-men-have-nipples",
+   "fetched": "2026-11-21"
+  }
+ ],
+ "math": [
+  {
+   "expr": "4 < 6 < 7",
+   "expect": true,
+   "note": "UNSW: nipples form weeks 4 to 6, before SRY activates around week 7"
+  },
+  {
+   "expr": "7",
+   "expect": 7,
+   "note": "UNSW: SRY activated around seven weeks"
+  },
+  {
+   "expr": "1 <= 1",
+   "expect": true,
+   "note": "UNSW: men are about 0.5 to 1% of breast cancers, so 'rare'"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-21T23:30:00+05:30",
+  "instagram_caption": "Why do guys have nipples? 🤔\n\nEvery embryo starts from the same basic blueprint. Nipples start forming around weeks 4 to 6, and the SRY gene that starts making an embryo male only switches on around week 7. By then the nipples are already there, and since they do no harm, there was no pressure for evolution to remove them.\n\nMen can get breast cancer too, so see a doctor if a nipple or chest changes.\n\nSources: UNSW Sydney, Discover Magazine.\n\nWhat body question did school never answer for you?\n\n#docstick #sexeducation #puberty #bodyfacts #evolution",
+  "youtube_title": "Why Do Guys Have Nipples?",
+  "youtube_description": "Guys have nipples because they got them before they were guys. Every embryo starts from the same blueprint: nipples start forming around weeks 4 to 6, and the SRY gene that starts making an embryo male switches on around week 7. A popular explanation for why evolution kept them: they do no harm. Men can get breast cancer too, so see a doctor if a nipple or chest changes.\n\nEducational only, not medical advice.\n\nSources:\n• UNSW Sydney, \"Why do men have nipples?\" (fetched Nov 21, 2026)\n• Discover Magazine, \"Why Do Men Have Nipples?\" (fetched Nov 21, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#SexEducation #BodyFacts #Shorts"
+ }
+}
