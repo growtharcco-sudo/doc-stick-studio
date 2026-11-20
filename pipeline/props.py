@@ -599,5 +599,27 @@ def mirror(c, st):
         c.set_source_rgba(1, 1, 1, 1 - k); c.set_line_width(8); c.stroke()
 
 
+@prop("tadpole", (-120, -150, 200, 75), "center", "cartoon tadpole facing left with little gill tufts and a wiggling tail. state 'hic' = it jolts up with a small HIC! above")
+def tadpole(c, st):
+    jolt = 0
+    if st.state == "hic":
+        ph = (st.since % 1.4)
+        jolt = -28 * math.sin(math.pi * clamp(ph / 0.25, 0, 1)) if ph < 0.25 else 0
+    c.save(); c.translate(0, jolt + math.sin(st.t * 3) * 5)
+    w = math.sin(st.t * 9) * 18
+    c.move_to(60, -22); c.curve_to(110, -26 + w * 0.4, 150, -10 - w, 195, -4 - w)
+    c.curve_to(150, 10 - w * 0.6, 110, 26 + w * 0.4, 60, 22); c.close_path(); fillstroke(c, LGREEN, DGREEN, 5)
+    ellipse(c, -10, 0, 82, 62); fillstroke(c, GREEN, DGREEN, 6)
+    for gx in (22, 40, 58):
+        sw = math.sin(st.t * 5 + gx) * 4
+        c.move_to(gx - 8, -12); c.curve_to(gx - 10 + sw, -48, gx + 10 + sw, -48, gx + 8, -12); fillstroke(c, PINK, DGREEN, 4)
+    c.arc(-48, -16, 15, 0, 2 * math.pi); fillstroke(c, WHITE, INK, 4)
+    c.arc(-52, -16, 7, 0, 2 * math.pi); c.set_source_rgb(*INK); c.fill()
+    c.arc(-62, 18, 10, 0.1 * math.pi, 0.9 * math.pi); stroke(c, INK, 4)
+    c.restore()
+    if st.state == "hic" and (st.since % 1.4) < 0.7:
+        text(c, "HIC!", -10, -100, 44, RED)
+
+
 def draw(c, name, st):
     PROPS[name].draw(c, st)

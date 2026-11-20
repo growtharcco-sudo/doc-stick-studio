@@ -1,0 +1,217 @@
+{
+ "id": "010_hiccups_inner_tadpole",
+ "beats": [
+  {
+   "say": "Your hiccups might be a leftover from ancestors with gills.",
+   "cap": "YOUR *HICCUPS* MIGHT BE | A LEFTOVER FROM | ANCESTORS WITH *GILLS.*",
+   "show": {
+    "kind": "hook",
+    "prop": {
+     "name": "tadpole",
+     "slot": "center",
+     "size": 1.4,
+     "states": {
+      "0+0.4": "hic"
+     }
+    }
+   }
+  },
+  {
+   "say": "Well. Probably.",
+   "cap": "WELL. *PROBABLY.*"
+  },
+  {
+   "say": "Here's a hiccup.",
+   "cap": "HERE'S A *HICCUP.*",
+   "show": {
+    "kind": "pair",
+    "left": {
+     "name": "arrow_down",
+     "size": 0.9,
+     "label": "DIAPHRAGM"
+    },
+    "right": {
+     "name": "sign",
+     "slot": "floor_right",
+     "size": 1.1,
+     "args": {
+      "lines": [
+       "VOCAL",
+       "CORDS",
+       "SHUT"
+      ]
+     }
+    },
+    "right_at": "2"
+   }
+  },
+  {
+   "say": "Your diaphragm suddenly yanks air in,",
+   "cap": "YOUR *DIAPHRAGM* | SUDDENLY YANKS AIR IN,"
+  },
+  {
+   "say": "and your vocal cords snap shut. Hic.",
+   "cap": "AND YOUR VOCAL CORDS | *SNAP SHUT.* HIC."
+  },
+  {
+   "say": "Now meet a tadpole.",
+   "cap": "NOW MEET A *TADPOLE.*",
+   "show": {
+    "kind": "explain",
+    "prop": {
+     "name": "tadpole",
+     "size": 1.5
+    },
+    "stamp": {
+     "text": "SAME MOVE",
+     "at": "3"
+    }
+   }
+  },
+  {
+   "say": "Tadpoles breathe with gills and lungs.",
+   "cap": "TADPOLES BREATHE | WITH *GILLS* AND *LUNGS.*"
+  },
+  {
+   "say": "To push water over their gills, they suck in hard and shut the glottis,",
+   "cap": "TO PUSH WATER | OVER THEIR GILLS, | THEY *SUCK IN HARD* | AND SHUT THE GLOTTIS,"
+  },
+  {
+   "say": "so water can't flood their lungs.",
+   "cap": "SO WATER CAN'T | FLOOD THEIR *LUNGS.*"
+  },
+  {
+   "say": "Scientists proposed this link in two thousand three.",
+   "cap": "SCIENTISTS PROPOSED | THIS LINK IN *2003.*",
+   "show": {
+    "kind": "stamp",
+    "prop": {
+     "name": "book",
+     "slot": "center",
+     "size": 1.2,
+     "args": {
+      "title": "2003"
+     }
+    },
+    "stamp": {
+     "text": "HYPOTHESIS",
+     "slot": "low",
+     "at": "1"
+    },
+    "poses": {
+     "1": "shrug"
+    }
+   }
+  },
+  {
+   "say": "It's a hypothesis, not proven.",
+   "cap": "IT'S A *HYPOTHESIS,* | NOT PROVEN."
+  },
+  {
+   "say": "But here's a clue: babies hiccup in the womb,",
+   "cap": "BUT HERE'S A CLUE: | BABIES HICCUP | IN THE *WOMB,*"
+  },
+  {
+   "say": "before they even start practicing breathing.",
+   "cap": "BEFORE THEY EVEN | START *PRACTICING* | BREATHING."
+  },
+  {
+   "say": "Hiccups usually stop within minutes.",
+   "cap": "HICCUPS USUALLY STOP | WITHIN *MINUTES.*",
+   "show": {
+    "kind": "number",
+    "number": {
+     "value": 48,
+     "suffix": " HRS",
+     "color": "red"
+    },
+    "left": "clock",
+    "right": {
+     "name": "warning",
+     "size": 0.7
+    },
+    "right_at": "1"
+   }
+  },
+  {
+   "say": "See a doctor if they last more than forty eight hours.",
+   "cap": "SEE A DOCTOR | IF THEY LAST MORE THAN | *48 HOURS.*"
+  },
+  {
+   "say": "So next time you hiccup,",
+   "cap": "SO NEXT TIME | YOU *HICCUP,*",
+   "show": {
+    "kind": "exit",
+    "prop": {
+     "name": "tadpole",
+     "slot": "center",
+     "size": 1.4,
+     "states": {
+      "0": "hic"
+     }
+    },
+    "leave_at": "1+0.9",
+    "pose": "deadpan",
+    "poses": {
+     "1": "wave"
+    }
+   }
+  },
+  {
+   "say": "that's your inner tadpole saying hi.",
+   "cap": "THAT'S YOUR | *INNER TADPOLE* | SAYING HI."
+  }
+ ],
+ "cover": {
+  "big": [
+   "HICCUPS ARE",
+   "*TADPOLE MOVES*"
+  ]
+ },
+ "sources": [
+  {
+   "fact": "Straus et al., 'A phylogenetic hypothesis for the origin of hiccough', BioEssays 25:182-188 (2003): hiccough may be the expression of archaic motor patterns, particularly gill ventilation in bimodal breathers such as most frogs; in gill ventilation the glottis is closed to prevent flooding the lung; hiccough is a burst of inspiratory muscles with glottal closure; circuit probably in the brainstem; hiccoughs occur in the human fetus and appear before breathing movements; neither model has experimental proof",
+   "url": "https://core.ac.uk/download/357378668.pdf",
+   "fetched": "2026-11-21"
+  },
+  {
+   "fact": "Scientific American, 'The Evolutionary Origins of Hiccups and Hernias': according to one well-supported hypothesis, the hiccup motor pattern turns up in tadpoles that use both lungs and gills; they shut the glottis while sharply inspiring",
+   "url": "https://www.scientificamerican.com/article/this-old-body/",
+   "fetched": "2026-11-21"
+  },
+  {
+   "fact": "Mayo Clinic, Hiccups: a spasm in your diaphragm causes your vocal cords to suddenly close, producing a 'hic' sound; see a provider if hiccups last more than 48 hours",
+   "url": "https://www.mayoclinic.org/diseases-conditions/hiccups/symptoms-causes/syc-20352613",
+   "fetched": "2026-11-21"
+  },
+  {
+   "fact": "NHS, Hiccups: they should only last a few minutes; see a GP if hiccups last longer than 48 hours",
+   "url": "https://www.nhs.uk/symptoms/hiccups/",
+   "fetched": "2026-11-21"
+  },
+  {
+   "fact": "Cleveland Clinic, Hiccups: your diaphragm pulls down suddenly, making you quickly suck in air; the glottis suddenly closes; call a provider if hiccups last longer than two days",
+   "url": "https://my.clevelandclinic.org/health/diseases/17672-hiccups",
+   "fetched": "2026-11-21"
+  }
+ ],
+ "math": [
+  {
+   "expr": "2003",
+   "expect": 2003,
+   "note": "Straus et al., BioEssays 2003"
+  },
+  {
+   "expr": "2 * 24",
+   "expect": 48,
+   "note": "NHS and Mayo Clinic: more than 48 hours; Cleveland Clinic: two days"
+  }
+ ],
+ "post": {
+  "slot": "morning",
+  "post_at": "2026-11-22T07:30:00+05:30",
+  "instagram_caption": "Your hiccups might be a leftover from ancestors with gills 🐸\n\nIn a hiccup your diaphragm suddenly yanks air in and your vocal cords snap shut. Tadpoles do almost the same move to push water over their gills: they suck in hard and shut the glottis so water can't flood their lungs. Scientists proposed the link in 2003. It's a hypothesis, not proven, but babies even hiccup in the womb before they start practicing breathing.\n\nHiccups usually stop within minutes. See a doctor if they last more than 48 hours.\n\nSources: BioEssays (Straus et al. 2003), Scientific American, Mayo Clinic, NHS, Cleveland Clinic.\n\nWhat's the longest you've ever had the hiccups?\n\n#docstick #hiccups #evolution #bodyfacts #weirdfacts",
+  "youtube_title": "Your Hiccups Might Come From Ancestors With Gills",
+  "youtube_description": "In a hiccup, your diaphragm suddenly pulls air in and your vocal cords snap shut. A 2003 hypothesis suggests this is a leftover of gill breathing: tadpoles suck in hard and close the glottis so water can't flood their lungs. It isn't proven, but babies hiccup in the womb before they start practicing breathing. See a doctor if hiccups last more than 48 hours.\n\nEducational only, not medical advice.\n\nSources:\n• Straus et al., BioEssays, \"A phylogenetic hypothesis for the origin of hiccough\" (fetched Nov 21, 2026)\n• Scientific American, \"The Evolutionary Origins of Hiccups and Hernias\" (fetched Nov 21, 2026)\n• Mayo Clinic, \"Hiccups: Symptoms and causes\" (fetched Nov 21, 2026)\n• NHS, \"Hiccups\" (fetched Nov 21, 2026)\n• Cleveland Clinic, \"Hiccups\" (fetched Nov 21, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#Hiccups #Evolution #Shorts"
+ }
+}
