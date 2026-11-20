@@ -1,0 +1,198 @@
+{
+ "id": "011_eggs_pick_sperm",
+ "beats": [
+  {
+   "say": "Human eggs might play favourites with sperm.",
+   "cap": "HUMAN *EGGS* MIGHT | PLAY *FAVOURITES* | WITH SPERM.",
+   "show": {
+    "kind": "hook",
+    "prop": {
+     "name": "egg_cell",
+     "slot": "right",
+     "size": 1.6
+    },
+    "prop2": {
+     "name": "sperm",
+     "slot": "low_left",
+     "size": 1.5,
+     "args": {
+      "count": 3
+     },
+     "at": "0",
+     "in": "none"
+    }
+   }
+  },
+  {
+   "say": "Yes. Really.",
+   "cap": "YES. *REALLY.*"
+  },
+  {
+   "say": "An egg is surrounded by fluid,",
+   "cap": "AN EGG IS SURROUNDED | BY *FLUID,*",
+   "show": {
+    "kind": "explain",
+    "prop": {
+     "name": "egg_cell",
+     "size": 1.7
+    },
+    "stamp": {
+     "text": "CHEMICAL SIGNALS",
+     "at": "1+0.3"
+    }
+   }
+  },
+  {
+   "say": "and it gives off chemicals that attract sperm.",
+   "cap": "AND IT GIVES OFF | *CHEMICALS* THAT | ATTRACT SPERM."
+  },
+  {
+   "say": "In a twenty twenty study, scientists tested egg fluid from different women",
+   "cap": "IN A *2020* STUDY, | SCIENTISTS TESTED | EGG FLUID FROM | DIFFERENT WOMEN",
+   "show": {
+    "kind": "pair",
+    "left": {
+     "name": "egg_cell",
+     "size": 1.3,
+     "label": "WOMAN A"
+    },
+    "right": {
+     "name": "sperm",
+     "size": 1.5,
+     "args": {
+      "count": 1
+     },
+     "label": "MAN B"
+    },
+    "right_at": "2"
+   }
+  },
+  {
+   "say": "against sperm from different men.",
+   "cap": "AGAINST SPERM | FROM *DIFFERENT MEN.*"
+  },
+  {
+   "say": "One woman's fluid pulled in one man's sperm best.",
+   "cap": "ONE WOMAN'S FLUID | PULLED IN | *ONE MAN'S* SPERM BEST."
+  },
+  {
+   "say": "Another woman's fluid preferred a different man.",
+   "cap": "ANOTHER WOMAN'S FLUID | PREFERRED A | *DIFFERENT* MAN."
+  },
+  {
+   "say": "And it wasn't always her own partner.",
+   "cap": "AND IT WASN'T ALWAYS | HER OWN *PARTNER.*",
+   "show": {
+    "kind": "stamp",
+    "prop": {
+     "name": "heart",
+     "slot": "center",
+     "size": 1.1
+    },
+    "stamp": {
+     "text": "NOT ALWAYS",
+     "slot": "low",
+     "at": "0+1.0"
+    },
+    "poses": {
+     "0+1.2": "shrug"
+    }
+   }
+  },
+  {
+   "say": "Awkward.",
+   "cap": "*AWKWARD.*"
+  },
+  {
+   "say": "It was a small lab study, with six couples.",
+   "cap": "IT WAS A *SMALL* | LAB STUDY, | WITH *6 COUPLES.*",
+   "show": {
+    "kind": "stamp",
+    "prop": {
+     "name": "book",
+     "slot": "center",
+     "size": 1.1,
+     "args": {
+      "title": "2020"
+     }
+    },
+    "stamp": {
+     "text": "SMALL STUDY",
+     "slot": "low",
+     "at": "0+1.0"
+    },
+    "poses": {
+     "1": "point"
+    }
+   }
+  },
+  {
+   "say": "But researchers hope it may help explain some unexplained infertility.",
+   "cap": "BUT RESEARCHERS HOPE | IT MAY HELP EXPLAIN | SOME *UNEXPLAINED* | INFERTILITY."
+  },
+  {
+   "say": "So the egg isn't just sitting there waiting.",
+   "cap": "SO THE EGG ISN'T | JUST SITTING THERE | *WAITING.*",
+   "show": {
+    "kind": "exit",
+    "prop": {
+     "name": "egg_cell",
+     "slot": "right",
+     "size": 1.6
+    },
+    "leave_at": "1+0.8",
+    "pose": "deadpan",
+    "poses": {
+     "1": "point",
+     "1+1.0": "wave"
+    }
+   }
+  },
+  {
+   "say": "It might be reading the applications.",
+   "cap": "IT MIGHT BE READING | THE *APPLICATIONS.*"
+  }
+ ],
+ "cover": {
+  "big": [
+   "EGGS PLAY",
+   "*FAVOURITES*"
+  ]
+ },
+ "sources": [
+  {
+   "fact": "University of Manchester, 'Human eggs prefer some men's sperm over others, research shows' (10 June 2020): human eggs release chemicals called chemoattractants that attract sperm to unfertilised eggs; researchers examined how sperm respond to follicular fluid, which surrounds eggs; follicular fluid from one female was better at attracting sperm from one male, while fluid from another female was better at attracting sperm from a different male; eggs did not always attract more sperm from their partner; published in Proceedings of the Royal Society B; Stockholm University and Manchester; research may eventually help understand some unexplained causes of infertility",
+   "url": "https://www.manchester.ac.uk/about/news/human-eggs-prefer-some-mens-sperm-over-others-research-shows/",
+   "fetched": "2026-11-21"
+  },
+  {
+   "fact": "EurekAlert (Stockholm University release), same study: different women's eggs attract different men's sperm, and not necessarily their partners'",
+   "url": "https://www.eurekalert.org/news-releases/674383",
+   "fetched": "2026-11-21"
+  },
+  {
+   "fact": "News-Medical, 'The egg decides which sperm fertilizes it': researchers used follicular fluids and sperm from six couples undergoing infertility treatment; Proc. R. Soc. B. 287 20200805; Fitzpatrick: only a small fraction of sperm reach the egg",
+   "url": "https://www.news-medical.net/news/20200611/The-egg-decides-which-sperm-fertilizes-it.aspx",
+   "fetched": "2026-11-21"
+  }
+ ],
+ "math": [
+  {
+   "expr": "2020",
+   "expect": 2020,
+   "note": "Fitzpatrick et al., Proc R Soc B 2020 (Manchester, June 2020)"
+  },
+  {
+   "expr": "6",
+   "expect": 6,
+   "note": "News-Medical: follicular fluid and sperm from six couples"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-22T23:30:00+05:30",
+  "instagram_caption": "Human eggs might play favourites with sperm 🥚\n\nAn egg is surrounded by fluid that gives off chemicals that attract sperm. In a small 2020 lab study (6 couples), one woman's egg fluid pulled in one man's sperm best, while another woman's fluid preferred a different man. And it wasn't always her own partner.\n\nResearchers hope this may one day help explain some unexplained infertility.\n\nSources: University of Manchester, Stockholm University via EurekAlert, News-Medical.\n\nDid school ever tell you the egg might get a say?\n\n#docstick #sexeducation #fertility #biology #bodyfacts",
+  "youtube_title": "Human Eggs Might Play Favourites With Sperm",
+  "youtube_description": "An egg is surrounded by fluid that gives off chemicals that attract sperm. In a small 2020 lab study with six couples, egg fluid from different women attracted sperm from different men best, and not always her own partner's. Researchers hope it may help explain some unexplained infertility.\n\nEducational only, not medical advice.\n\nSources:\n• University of Manchester, \"Human eggs prefer some men's sperm over others, research shows\" (fetched Nov 21, 2026)\n• EurekAlert, \"Human eggs prefer some men's sperm over others, research shows\" (fetched Nov 21, 2026)\n• News-Medical, \"The egg decides which sperm fertilizes it\" (fetched Nov 21, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#SexEducation #Biology #Shorts"
+ }
+}

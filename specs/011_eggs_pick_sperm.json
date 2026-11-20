@@ -1,0 +1,495 @@
+{
+ "id": "011_eggs_pick_sperm",
+ "voice": "am_michael",
+ "speed": 1.0,
+ "phrases": [
+  {
+   "say": "Human eggs might play favourites with sperm.",
+   "cap": "HUMAN *EGGS* MIGHT | PLAY *FAVOURITES* | WITH SPERM.",
+   "pause": 0.2
+  },
+  {
+   "say": "Yes. Really.",
+   "cap": "YES. *REALLY.*",
+   "pause": 0.45
+  },
+  {
+   "say": "An egg is surrounded by fluid,",
+   "cap": "AN EGG IS SURROUNDED | BY *FLUID,*",
+   "pause": 0.2
+  },
+  {
+   "say": "and it gives off chemicals that attract sperm.",
+   "cap": "AND IT GIVES OFF | *CHEMICALS* THAT | ATTRACT SPERM.",
+   "pause": 0.45
+  },
+  {
+   "say": "In a twenty twenty study, scientists tested egg fluid from different women",
+   "cap": "IN A *2020* STUDY, | SCIENTISTS TESTED | EGG FLUID FROM | DIFFERENT WOMEN",
+   "pause": 0.2
+  },
+  {
+   "say": "against sperm from different men.",
+   "cap": "AGAINST SPERM | FROM *DIFFERENT MEN.*",
+   "pause": 0.2
+  },
+  {
+   "say": "One woman's fluid pulled in one man's sperm best.",
+   "cap": "ONE WOMAN'S FLUID | PULLED IN | *ONE MAN'S* SPERM BEST.",
+   "pause": 0.2
+  },
+  {
+   "say": "Another woman's fluid preferred a different man.",
+   "cap": "ANOTHER WOMAN'S FLUID | PREFERRED A | *DIFFERENT* MAN.",
+   "pause": 0.45
+  },
+  {
+   "say": "And it wasn't always her own partner.",
+   "cap": "AND IT WASN'T ALWAYS | HER OWN *PARTNER.*",
+   "pause": 0.2
+  },
+  {
+   "say": "Awkward.",
+   "cap": "*AWKWARD.*",
+   "pause": 0.45
+  },
+  {
+   "say": "It was a small lab study, with six couples.",
+   "cap": "IT WAS A *SMALL* | LAB STUDY, | WITH *6 COUPLES.*",
+   "pause": 0.2
+  },
+  {
+   "say": "But researchers hope it may help explain some unexplained infertility.",
+   "cap": "BUT RESEARCHERS HOPE | IT MAY HELP EXPLAIN | SOME *UNEXPLAINED* | INFERTILITY.",
+   "pause": 0.45
+  },
+  {
+   "say": "So the egg isn't just sitting there waiting.",
+   "cap": "SO THE EGG ISN'T | JUST SITTING THERE | *WAITING.*",
+   "pause": 0.2
+  },
+  {
+   "say": "It might be reading the applications.",
+   "cap": "IT MIGHT BE READING | THE *APPLICATIONS.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Follow,",
+   "cap": "*FOLLOW*",
+   "pause": 0.15
+  },
+  {
+   "say": "for the stuff school skipped.",
+   "cap": "FOR THE STUFF | SCHOOL *SKIPPED.*",
+   "pause": 0.5
+  }
+ ],
+ "scenes": [
+  {
+   "first": 0,
+   "end": 2,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      0,
+      0.0,
+      "deadpan"
+     ],
+     [
+      1,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "egg_cell",
+     "x": 840,
+     "y": 1010,
+     "s": 1.6,
+     "slot": "right",
+     "at": [
+      0,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "sperm",
+     "x": 520,
+     "y": 1300,
+     "s": 1.5,
+     "slot": "low_left",
+     "at": [
+      0,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [],
+     "args": {
+      "count": 3
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 2,
+   "end": 4,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      2,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "egg_cell",
+     "x": 660,
+     "y": 1010,
+     "s": 1.7,
+     "slot": "center",
+     "at": [
+      2,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "CHEMICAL SIGNALS",
+     "sub": null,
+     "x": 680,
+     "y": 1300,
+     "color": "red",
+     "rot": -0.12,
+     "size": 54,
+     "at": [
+      3,
+      0.3
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 4,
+   "end": 8,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      4,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "egg_cell",
+     "x": 520,
+     "y": 1300,
+     "s": 1.3,
+     "slot": "low_left",
+     "at": [
+      4,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": "WOMAN A",
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "sperm",
+     "x": 860,
+     "y": 1300,
+     "s": 1.5,
+     "slot": "low_right",
+     "at": [
+      6,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "count": 1
+     },
+     "label": "MAN B",
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 8,
+   "end": 10,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      8,
+      0.0,
+      "deadpan"
+     ],
+     [
+      8,
+      1.2,
+      "shrug"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "heart",
+     "x": 660,
+     "y": 1010,
+     "s": 1.1,
+     "slot": "center",
+     "at": [
+      8,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "NOT ALWAYS",
+     "sub": null,
+     "x": 680,
+     "y": 1300,
+     "color": "red",
+     "rot": -0.12,
+     "size": 64,
+     "at": [
+      8,
+      1.0
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 10,
+   "end": 12,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      10,
+      0.0,
+      "deadpan"
+     ],
+     [
+      11,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "book",
+     "x": 660,
+     "y": 1010,
+     "s": 1.1,
+     "slot": "center",
+     "at": [
+      10,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "title": "2020"
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "SMALL STUDY",
+     "sub": null,
+     "x": 680,
+     "y": 1300,
+     "color": "red",
+     "rot": -0.12,
+     "size": 64,
+     "at": [
+      10,
+      1.0
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 12,
+   "end": 14,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      12,
+      0.0,
+      "deadpan"
+     ],
+     [
+      13,
+      0.0,
+      "point"
+     ],
+     [
+      13,
+      1.0,
+      "wave"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "egg_cell",
+     "x": 840,
+     "y": 1010,
+     "s": 1.6,
+     "slot": "right",
+     "at": [
+      12,
+      0.0
+     ],
+     "until": [
+      13,
+      0.8
+     ],
+     "in": "none",
+     "out": "slide_right",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 14,
+   "end": 16,
+   "outro": true,
+   "doc": {
+    "x": 540,
+    "s": 2.4,
+    "face": 1,
+    "poses": [
+     [
+      14,
+      0.0,
+      "wave"
+     ]
+    ]
+   },
+   "people": [],
+   "els": []
+  }
+ ],
+ "cover": {
+  "big": [
+   "EGGS PLAY",
+   "*FAVOURITES*"
+  ]
+ },
+ "sources": [
+  {
+   "fact": "University of Manchester, 'Human eggs prefer some men's sperm over others, research shows' (10 June 2020): human eggs release chemicals called chemoattractants that attract sperm to unfertilised eggs; researchers examined how sperm respond to follicular fluid, which surrounds eggs; follicular fluid from one female was better at attracting sperm from one male, while fluid from another female was better at attracting sperm from a different male; eggs did not always attract more sperm from their partner; published in Proceedings of the Royal Society B; Stockholm University and Manchester; research may eventually help understand some unexplained causes of infertility",
+   "url": "https://www.manchester.ac.uk/about/news/human-eggs-prefer-some-mens-sperm-over-others-research-shows/",
+   "fetched": "2026-11-21"
+  },
+  {
+   "fact": "EurekAlert (Stockholm University release), same study: different women's eggs attract different men's sperm, and not necessarily their partners'",
+   "url": "https://www.eurekalert.org/news-releases/674383",
+   "fetched": "2026-11-21"
+  },
+  {
+   "fact": "News-Medical, 'The egg decides which sperm fertilizes it': researchers used follicular fluids and sperm from six couples undergoing infertility treatment; Proc. R. Soc. B. 287 20200805; Fitzpatrick: only a small fraction of sperm reach the egg",
+   "url": "https://www.news-medical.net/news/20200611/The-egg-decides-which-sperm-fertilizes-it.aspx",
+   "fetched": "2026-11-21"
+  }
+ ],
+ "math": [
+  {
+   "expr": "2020",
+   "expect": 2020,
+   "note": "Fitzpatrick et al., Proc R Soc B 2020 (Manchester, June 2020)"
+  },
+  {
+   "expr": "6",
+   "expect": 6,
+   "note": "News-Medical: follicular fluid and sperm from six couples"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-22T23:30:00+05:30",
+  "instagram_caption": "Human eggs might play favourites with sperm 🥚\n\nAn egg is surrounded by fluid that gives off chemicals that attract sperm. In a small 2020 lab study (6 couples), one woman's egg fluid pulled in one man's sperm best, while another woman's fluid preferred a different man. And it wasn't always her own partner.\n\nResearchers hope this may one day help explain some unexplained infertility.\n\nSources: University of Manchester, Stockholm University via EurekAlert, News-Medical.\n\nDid school ever tell you the egg might get a say?\n\n#docstick #sexeducation #fertility #biology #bodyfacts",
+  "youtube_title": "Human Eggs Might Play Favourites With Sperm",
+  "youtube_description": "An egg is surrounded by fluid that gives off chemicals that attract sperm. In a small 2020 lab study with six couples, egg fluid from different women attracted sperm from different men best, and not always her own partner's. Researchers hope it may help explain some unexplained infertility.\n\nEducational only, not medical advice.\n\nSources:\n• University of Manchester, \"Human eggs prefer some men's sperm over others, research shows\" (fetched Nov 21, 2026)\n• EurekAlert, \"Human eggs prefer some men's sperm over others, research shows\" (fetched Nov 21, 2026)\n• News-Medical, \"The egg decides which sperm fertilizes it\" (fetched Nov 21, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#SexEducation #Biology #Shorts"
+ }
+}
