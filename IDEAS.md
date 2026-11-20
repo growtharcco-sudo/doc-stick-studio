@@ -13,7 +13,7 @@ Sex ed / relationships (about 1 in 3)
 - [x] Puberty: why voices crack (larynx growth) (004)
 
 Everything else about the body
-- [ ] Fever is your body turning up the heat on purpose (see a doctor if...)
+- [x] Fever is your body turning up the heat on purpose (see a doctor if...) (008)
 - [ ] Hiccups are a leftover from our fish-like ancestors (hypothesis, say so)
 - [x] Brain freeze: your brain doesn't feel pain, so why does it hurt? (006)
 - [x] You're taller in the morning than at night (005)

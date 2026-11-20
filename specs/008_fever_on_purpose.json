@@ -1,0 +1,609 @@
+{
+ "id": "008_fever_on_purpose",
+ "voice": "am_michael",
+ "speed": 1.0,
+ "phrases": [
+  {
+   "say": "When germs get in, your brain cranks up the heat.",
+   "cap": "WHEN GERMS GET IN, | YOUR BRAIN | *CRANKS UP THE HEAT.*",
+   "pause": 0.2
+  },
+  {
+   "say": "On purpose.",
+   "cap": "ON *PURPOSE.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Yes. Really.",
+   "cap": "YES. *REALLY.*",
+   "pause": 0.2
+  },
+  {
+   "say": "Your body's thermostat sits in your brain, in the hypothalamus.",
+   "cap": "YOUR BODY'S *THERMOSTAT* | SITS IN YOUR BRAIN, | IN THE *HYPOTHALAMUS.*",
+   "pause": 0.2
+  },
+  {
+   "say": "Germs make your white blood cells release chemicals called pyrogens.",
+   "cap": "GERMS MAKE YOUR | WHITE BLOOD CELLS | RELEASE CHEMICALS | CALLED *PYROGENS.*",
+   "pause": 0.2
+  },
+  {
+   "say": "And the thermostat resets higher.",
+   "cap": "AND THE THERMOSTAT | RESETS *HIGHER.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Suddenly, normal feels too cold.",
+   "cap": "SUDDENLY, NORMAL | FEELS *TOO COLD.*",
+   "pause": 0.2
+  },
+  {
+   "say": "So you shiver to make heat,",
+   "cap": "SO YOU *SHIVER* | TO MAKE HEAT,",
+   "pause": 0.2
+  },
+  {
+   "say": "and blood moves away from your skin to keep it in.",
+   "cap": "AND BLOOD MOVES | AWAY FROM YOUR SKIN | TO *KEEP IT IN.*",
+   "pause": 0.45
+  },
+  {
+   "say": "A fever usually means thirty eight degrees Celsius or more.",
+   "cap": "A FEVER USUALLY MEANS | *38°C* OR MORE.",
+   "pause": 0.2
+  },
+  {
+   "say": "Why bother?",
+   "cap": "WHY *BOTHER?*",
+   "pause": 0.45
+  },
+  {
+   "say": "The heat makes it harder for many germs to grow,",
+   "cap": "THE HEAT MAKES IT | *HARDER* FOR MANY GERMS | TO GROW,",
+   "pause": 0.2
+  },
+  {
+   "say": "and helps switch on your immune defenses.",
+   "cap": "AND HELPS SWITCH ON | YOUR *IMMUNE DEFENSES.*",
+   "pause": 0.45
+  },
+  {
+   "say": "See a doctor if it goes above thirty nine point four,",
+   "cap": "SEE A DOCTOR | IF IT GOES | ABOVE *39.4°C,*",
+   "pause": 0.2
+  },
+  {
+   "say": "lasts more than three days,",
+   "cap": "LASTS MORE THAN | *3 DAYS,*",
+   "pause": 0.2
+  },
+  {
+   "say": "or comes with a stiff neck or confusion.",
+   "cap": "OR COMES WITH | A *STIFF NECK* | OR *CONFUSION.*",
+   "pause": 0.45
+  },
+  {
+   "say": "So that fever isn't your body breaking.",
+   "cap": "SO THAT FEVER | ISN'T YOUR BODY | *BREAKING.*",
+   "pause": 0.2
+  },
+  {
+   "say": "It's your body turning up the heat on the germs.",
+   "cap": "IT'S YOUR BODY | TURNING UP THE HEAT | *ON THE GERMS.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Follow,",
+   "cap": "*FOLLOW*",
+   "pause": 0.15
+  },
+  {
+   "say": "for the stuff school skipped.",
+   "cap": "FOR THE STUFF | SCHOOL *SKIPPED.*",
+   "pause": 0.5
+  }
+ ],
+ "scenes": [
+  {
+   "first": 0,
+   "end": 2,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      0,
+      0.0,
+      "deadpan"
+     ],
+     [
+      1,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "thermometer",
+     "x": 840,
+     "y": 1010,
+     "s": 0.9,
+     "slot": "right",
+     "at": [
+      0,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [
+      [
+       0,
+       1.2,
+       "hot"
+      ]
+     ],
+     "args": {
+      "level": 0.45,
+      "level_hot": 0.85
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "virus",
+     "x": 520,
+     "y": 1300,
+     "s": 0.8,
+     "slot": "low_left",
+     "at": [
+      0,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 2,
+   "end": 6,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      2,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "brain",
+     "x": 660,
+     "y": 1010,
+     "s": 1.5,
+     "slot": "center",
+     "at": [
+      2,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "HYPOTHALAMUS",
+     "sub": null,
+     "x": 680,
+     "y": 1300,
+     "color": "red",
+     "rot": -0.12,
+     "size": 54,
+     "at": [
+      3,
+      0.2
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 6,
+   "end": 9,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      6,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "thermometer",
+     "x": 520,
+     "y": 1300,
+     "s": 0.7,
+     "slot": "low_left",
+     "at": [
+      6,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "level": 0.45,
+      "color": "blue"
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "flame",
+     "x": 820,
+     "y": 1560,
+     "s": 1.2,
+     "slot": "floor_right",
+     "at": [
+      7,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": "MAKING HEAT",
+     "flip": false
+    },
+    {
+     "type": "particles",
+     "kind": "snow",
+     "area": "all",
+     "at": [
+      6,
+      0.0
+     ],
+     "until": [
+      7,
+      0.0
+     ]
+    }
+   ]
+  },
+  {
+   "first": 9,
+   "end": 11,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      9,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "big_number",
+     "x": 660,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "center",
+     "at": [
+      9,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "value": 38,
+      "suffix": "°C",
+      "color": "red"
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "thermometer",
+     "x": 520,
+     "y": 1300,
+     "s": 0.7,
+     "slot": "low_left",
+     "at": [
+      9,
+      0.6
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "virus",
+     "x": 860,
+     "y": 1300,
+     "s": 0.7,
+     "slot": "low_right",
+     "at": [
+      10,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 11,
+   "end": 13,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      11,
+      0.0,
+      "deadpan"
+     ],
+     [
+      12,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "virus",
+     "x": 660,
+     "y": 1010,
+     "s": 1.4,
+     "slot": "center",
+     "at": [
+      11,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "TOO HOT",
+     "sub": null,
+     "x": 680,
+     "y": 1300,
+     "color": "red",
+     "rot": -0.12,
+     "size": 64,
+     "at": [
+      11,
+      1.0
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 13,
+   "end": 16,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      13,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "warning",
+     "x": 660,
+     "y": 1010,
+     "s": 1.2,
+     "slot": "center",
+     "at": [
+      13,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 16,
+   "end": 18,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      16,
+      0.0,
+      "deadpan"
+     ],
+     [
+      17,
+      0.5,
+      "wave"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "virus",
+     "x": 840,
+     "y": 1010,
+     "s": 0.9,
+     "slot": "right",
+     "at": [
+      16,
+      0.0
+     ],
+     "until": [
+      17,
+      0.3
+     ],
+     "in": "none",
+     "out": "slide_right",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 18,
+   "end": 20,
+   "outro": true,
+   "doc": {
+    "x": 540,
+    "s": 2.4,
+    "face": 1,
+    "poses": [
+     [
+      18,
+      0.0,
+      "wave"
+     ]
+    ]
+   },
+   "people": [],
+   "els": []
+  }
+ ],
+ "cover": {
+  "big": [
+   "FEVER IS",
+   "*ON PURPOSE*"
+  ]
+ },
+ "sources": [
+  {
+   "fact": "MSD Manual Professional: the body's thermostat (in the hypothalamus) resets at a higher temperature; fever results when something raises the hypothalamic set point; exogenous pyrogens induce release of endogenous pyrogens (IL-1, TNF-alpha, IL-6); vasoconstriction shunts blood from the periphery to decrease heat loss and shivering increases heat production; fever stimulates immunologic mechanisms and inhibits the growth of some microorganisms",
+   "url": "https://www.msdmanuals.com/professional/infectious-diseases/biology-of-infectious-disease/fever",
+   "fetched": "2026-11-21"
+  },
+  {
+   "fact": "MSD Manual Consumer: fever occurs when the body's thermostat resets at a higher temperature, primarily in response to infection; pyrogens are usually produced by white blood cells (monocytes and macrophages); fever can make it more difficult for microorganisms to grow; 100.4 F (38 C) at any time after early morning is elevated",
+   "url": "https://www.msdmanuals.com/home/infections/biology-of-infectious-disease/fever-in-adults",
+   "fetched": "2026-11-21"
+  },
+  {
+   "fact": "Cleveland Clinic: providers most often say a fever is 100.4 F (38 C); adult fevers under 103 F (39.4 C) typically aren't dangerous, above that call your provider; an infection fever should pass within three to four days, call if it lingers; go to the ER with fever plus stiff neck, confusion, severe headache",
+   "url": "https://my.clevelandclinic.org/health/symptoms/10880-fever",
+   "fetched": "2026-11-21"
+  },
+  {
+   "fact": "NHS: a high temperature is usually considered to be 38C or above; it's often caused by your body fighting an infection",
+   "url": "https://www.nhs.uk/symptoms/fever-in-adults/",
+   "fetched": "2026-11-21"
+  },
+  {
+   "fact": "Cleveland Clinic, Chills: chills are your body's way of raising its core temperature; shivering muscles contract and relax, which warms the body",
+   "url": "https://my.clevelandclinic.org/health/symptoms/21476-chills",
+   "fetched": "2026-11-21"
+  }
+ ],
+ "math": [
+  {
+   "expr": "38",
+   "expect": 38,
+   "note": "NHS and Cleveland Clinic: fever usually 38 C (100.4 F) or above"
+  },
+  {
+   "expr": "round((100.4 - 32) * 5 / 9, 1)",
+   "expect": 38.0,
+   "note": "100.4 F = 38 C"
+  },
+  {
+   "expr": "round((103 - 32) * 5 / 9, 1)",
+   "expect": 39.4,
+   "note": "Cleveland Clinic: above 103 F (39.4 C) call your provider"
+  },
+  {
+   "expr": "3",
+   "expect": 3,
+   "note": "Cleveland Clinic: infection fever should pass within three to four days; call if it lingers longer"
+  }
+ ],
+ "post": {
+  "slot": "morning",
+  "post_at": "2026-11-21T07:30:00+05:30",
+  "instagram_caption": "Your brain gives you a fever on purpose 🌡️\n\nWhen germs get in, white blood cells release chemicals called pyrogens, and the thermostat in your hypothalamus resets higher. Normal suddenly feels cold, so you shiver to make heat and blood moves away from your skin to keep it in. The extra heat makes it harder for many germs to grow and helps your immune defenses.\n\nSee a doctor if it goes above 39.4°C (103°F), lasts more than 3 days, or comes with a stiff neck or confusion.\n\nSources: MSD Manual, Cleveland Clinic, NHS.\n\nDo you get the shivers or the sweats first when you're sick?\n\n#docstick #fever #immunesystem #bodyfacts #healthfacts",
+  "youtube_title": "Your Brain Gives You a Fever on Purpose",
+  "youtube_description": "A fever is not your body breaking. When germs get in, white blood cells release pyrogens and the thermostat in your hypothalamus resets higher, so you shiver and feel cold until you reach the new temperature. The heat makes it harder for many germs to grow and helps your immune defenses. See a doctor if it goes above 39.4°C (103°F), lasts more than 3 days, or comes with a stiff neck or confusion.\n\nEducational only, not medical advice.\n\nSources:\n• MSD Manual Professional, \"Fever\" (fetched Nov 21, 2026)\n• MSD Manual Consumer, \"Fever in Adults\" (fetched Nov 21, 2026)\n• Cleveland Clinic, \"Fever: What Is Considered a Fever?\" (fetched Nov 21, 2026)\n• Cleveland Clinic, \"Chills: Causes & Treatment\" (fetched Nov 21, 2026)\n• NHS, \"High temperature (fever) in adults\" (fetched Nov 21, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#Fever #BodyFacts #Shorts"
+ }
+}

@@ -1,0 +1,249 @@
+{
+ "id": "008_fever_on_purpose",
+ "beats": [
+  {
+   "say": "When germs get in, your brain cranks up the heat.",
+   "cap": "WHEN GERMS GET IN, | YOUR BRAIN | *CRANKS UP THE HEAT.*",
+   "show": {
+    "kind": "hook",
+    "prop": {
+     "name": "thermometer",
+     "size": 0.9,
+     "args": {
+      "level": 0.45,
+      "level_hot": 0.85
+     },
+     "states": {
+      "0+1.2": "hot"
+     },
+     "slot": "right"
+    },
+    "prop2": {
+     "name": "virus",
+     "size": 0.8,
+     "at": "0",
+     "in": "none",
+     "slot": "low_left"
+    }
+   }
+  },
+  {
+   "say": "On purpose.",
+   "cap": "ON *PURPOSE.*"
+  },
+  {
+   "say": "Yes. Really.",
+   "cap": "YES. *REALLY.*",
+   "show": {
+    "kind": "explain",
+    "prop": {
+     "name": "brain",
+     "size": 1.5
+    },
+    "stamp": {
+     "text": "HYPOTHALAMUS",
+     "at": "1+0.2"
+    }
+   }
+  },
+  {
+   "say": "Your body's thermostat sits in your brain, in the hypothalamus.",
+   "cap": "YOUR BODY'S *THERMOSTAT* | SITS IN YOUR BRAIN, | IN THE *HYPOTHALAMUS.*"
+  },
+  {
+   "say": "Germs make your white blood cells release chemicals called pyrogens.",
+   "cap": "GERMS MAKE YOUR | WHITE BLOOD CELLS | RELEASE CHEMICALS | CALLED *PYROGENS.*"
+  },
+  {
+   "say": "And the thermostat resets higher.",
+   "cap": "AND THE THERMOSTAT | RESETS *HIGHER.*"
+  },
+  {
+   "say": "Suddenly, normal feels too cold.",
+   "cap": "SUDDENLY, NORMAL | FEELS *TOO COLD.*",
+   "show": {
+    "kind": "pair",
+    "left": {
+     "name": "thermometer",
+     "size": 0.7,
+     "args": {
+      "level": 0.45,
+      "color": "blue"
+     }
+    },
+    "right": {
+     "name": "flame",
+     "size": 1.2,
+     "label": "MAKING HEAT",
+     "slot": "floor_right"
+    },
+    "right_at": "1",
+    "particles": [
+     {
+      "kind": "snow",
+      "area": "all",
+      "at": "0",
+      "until": "1"
+     }
+    ]
+   }
+  },
+  {
+   "say": "So you shiver to make heat,",
+   "cap": "SO YOU *SHIVER* | TO MAKE HEAT,"
+  },
+  {
+   "say": "and blood moves away from your skin to keep it in.",
+   "cap": "AND BLOOD MOVES | AWAY FROM YOUR SKIN | TO *KEEP IT IN.*"
+  },
+  {
+   "say": "A fever usually means thirty eight degrees Celsius or more.",
+   "cap": "A FEVER USUALLY MEANS | *38°C* OR MORE.",
+   "show": {
+    "kind": "number",
+    "number": {
+     "value": 38,
+     "suffix": "°C",
+     "color": "red"
+    },
+    "left": "thermometer",
+    "right": {
+     "name": "virus",
+     "size": 0.7
+    },
+    "right_at": "1"
+   }
+  },
+  {
+   "say": "Why bother?",
+   "cap": "WHY *BOTHER?*"
+  },
+  {
+   "say": "The heat makes it harder for many germs to grow,",
+   "cap": "THE HEAT MAKES IT | *HARDER* FOR MANY GERMS | TO GROW,",
+   "show": {
+    "kind": "stamp",
+    "prop": {
+     "name": "virus",
+     "size": 1.4,
+     "slot": "center"
+    },
+    "stamp": {
+     "text": "TOO HOT",
+     "at": "0+1.0",
+     "slot": "low"
+    },
+    "poses": {
+     "1": "point"
+    }
+   }
+  },
+  {
+   "say": "and helps switch on your immune defenses.",
+   "cap": "AND HELPS SWITCH ON | YOUR *IMMUNE DEFENSES.*"
+  },
+  {
+   "say": "See a doctor if it goes above thirty nine point four,",
+   "cap": "SEE A DOCTOR | IF IT GOES | ABOVE *39.4°C,*",
+   "show": {
+    "kind": "explain",
+    "prop": {
+     "name": "warning",
+     "size": 1.2
+    },
+    "pose": "point"
+   }
+  },
+  {
+   "say": "lasts more than three days,",
+   "cap": "LASTS MORE THAN | *3 DAYS,*"
+  },
+  {
+   "say": "or comes with a stiff neck or confusion.",
+   "cap": "OR COMES WITH | A *STIFF NECK* | OR *CONFUSION.*"
+  },
+  {
+   "say": "So that fever isn't your body breaking.",
+   "cap": "SO THAT FEVER | ISN'T YOUR BODY | *BREAKING.*",
+   "show": {
+    "kind": "exit",
+    "prop": {
+     "name": "virus",
+     "size": 0.9,
+     "slot": "right"
+    },
+    "leave_at": "1+0.3",
+    "pose": "deadpan",
+    "poses": {
+     "1+0.5": "wave"
+    }
+   }
+  },
+  {
+   "say": "It's your body turning up the heat on the germs.",
+   "cap": "IT'S YOUR BODY | TURNING UP THE HEAT | *ON THE GERMS.*"
+  }
+ ],
+ "cover": {
+  "big": [
+   "FEVER IS",
+   "*ON PURPOSE*"
+  ]
+ },
+ "sources": [
+  {
+   "fact": "MSD Manual Professional: the body's thermostat (in the hypothalamus) resets at a higher temperature; fever results when something raises the hypothalamic set point; exogenous pyrogens induce release of endogenous pyrogens (IL-1, TNF-alpha, IL-6); vasoconstriction shunts blood from the periphery to decrease heat loss and shivering increases heat production; fever stimulates immunologic mechanisms and inhibits the growth of some microorganisms",
+   "url": "https://www.msdmanuals.com/professional/infectious-diseases/biology-of-infectious-disease/fever",
+   "fetched": "2026-11-21"
+  },
+  {
+   "fact": "MSD Manual Consumer: fever occurs when the body's thermostat resets at a higher temperature, primarily in response to infection; pyrogens are usually produced by white blood cells (monocytes and macrophages); fever can make it more difficult for microorganisms to grow; 100.4 F (38 C) at any time after early morning is elevated",
+   "url": "https://www.msdmanuals.com/home/infections/biology-of-infectious-disease/fever-in-adults",
+   "fetched": "2026-11-21"
+  },
+  {
+   "fact": "Cleveland Clinic: providers most often say a fever is 100.4 F (38 C); adult fevers under 103 F (39.4 C) typically aren't dangerous, above that call your provider; an infection fever should pass within three to four days, call if it lingers; go to the ER with fever plus stiff neck, confusion, severe headache",
+   "url": "https://my.clevelandclinic.org/health/symptoms/10880-fever",
+   "fetched": "2026-11-21"
+  },
+  {
+   "fact": "NHS: a high temperature is usually considered to be 38C or above; it's often caused by your body fighting an infection",
+   "url": "https://www.nhs.uk/symptoms/fever-in-adults/",
+   "fetched": "2026-11-21"
+  },
+  {
+   "fact": "Cleveland Clinic, Chills: chills are your body's way of raising its core temperature; shivering muscles contract and relax, which warms the body",
+   "url": "https://my.clevelandclinic.org/health/symptoms/21476-chills",
+   "fetched": "2026-11-21"
+  }
+ ],
+ "math": [
+  {
+   "expr": "38",
+   "expect": 38,
+   "note": "NHS and Cleveland Clinic: fever usually 38 C (100.4 F) or above"
+  },
+  {
+   "expr": "round((100.4 - 32) * 5 / 9, 1)",
+   "expect": 38.0,
+   "note": "100.4 F = 38 C"
+  },
+  {
+   "expr": "round((103 - 32) * 5 / 9, 1)",
+   "expect": 39.4,
+   "note": "Cleveland Clinic: above 103 F (39.4 C) call your provider"
+  },
+  {
+   "expr": "3",
+   "expect": 3,
+   "note": "Cleveland Clinic: infection fever should pass within three to four days; call if it lingers longer"
+  }
+ ],
+ "post": {
+  "slot": "morning",
+  "post_at": "2026-11-21T07:30:00+05:30",
+  "instagram_caption": "Your brain gives you a fever on purpose 🌡️\n\nWhen germs get in, white blood cells release chemicals called pyrogens, and the thermostat in your hypothalamus resets higher. Normal suddenly feels cold, so you shiver to make heat and blood moves away from your skin to keep it in. The extra heat makes it harder for many germs to grow and helps your immune defenses.\n\nSee a doctor if it goes above 39.4°C (103°F), lasts more than 3 days, or comes with a stiff neck or confusion.\n\nSources: MSD Manual, Cleveland Clinic, NHS.\n\nDo you get the shivers or the sweats first when you're sick?\n\n#docstick #fever #immunesystem #bodyfacts #healthfacts",
+  "youtube_title": "Your Brain Gives You a Fever on Purpose",
+  "youtube_description": "A fever is not your body breaking. When germs get in, white blood cells release pyrogens and the thermostat in your hypothalamus resets higher, so you shiver and feel cold until you reach the new temperature. The heat makes it harder for many germs to grow and helps your immune defenses. See a doctor if it goes above 39.4°C (103°F), lasts more than 3 days, or comes with a stiff neck or confusion.\n\nEducational only, not medical advice.\n\nSources:\n• MSD Manual Professional, \"Fever\" (fetched Nov 21, 2026)\n• MSD Manual Consumer, \"Fever in Adults\" (fetched Nov 21, 2026)\n• Cleveland Clinic, \"Fever: What Is Considered a Fever?\" (fetched Nov 21, 2026)\n• Cleveland Clinic, \"Chills: Causes & Treatment\" (fetched Nov 21, 2026)\n• NHS, \"High temperature (fever) in adults\" (fetched Nov 21, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#Fever #BodyFacts #Shorts"
+ }
+}
