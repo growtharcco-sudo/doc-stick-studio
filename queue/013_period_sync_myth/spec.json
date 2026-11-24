@@ -1,0 +1,584 @@
+{
+ "id": "013_period_sync_myth",
+ "voice": "am_michael",
+ "speed": 1.0,
+ "phrases": [
+  {
+   "say": "Do periods really sync when you live together?",
+   "cap": "DO PERIODS REALLY | *SYNC* WHEN YOU | LIVE TOGETHER?",
+   "pause": 0.2
+  },
+  {
+   "say": "Probably not.",
+   "cap": "PROBABLY *NOT.*",
+   "pause": 0.45
+  },
+  {
+   "say": "The idea comes from a nineteen seventy one study",
+   "cap": "THE IDEA COMES FROM | A *1971* STUDY",
+   "pause": 0.2
+  },
+  {
+   "say": "of one hundred thirty five college students living in dorms.",
+   "cap": "OF *135* COLLEGE | STUDENTS LIVING | IN DORMS.",
+   "pause": 0.45
+  },
+  {
+   "say": "It got famous. Later studies didn't find it.",
+   "cap": "IT GOT *FAMOUS.* | LATER STUDIES | *DIDN'T* FIND IT.",
+   "pause": 0.45
+  },
+  {
+   "say": "A big app study with Oxford researchers tracked three hundred sixty pairs of women.",
+   "cap": "A BIG *APP STUDY* | WITH OXFORD RESEARCHERS | TRACKED *360 PAIRS* | OF WOMEN.",
+   "pause": 0.2
+  },
+  {
+   "say": "About seventy six percent drifted further apart.",
+   "cap": "ABOUT *76%* DRIFTED | FURTHER *APART.*",
+   "pause": 0.2
+  },
+  {
+   "say": "And living together didn't make syncing more likely.",
+   "cap": "AND LIVING TOGETHER | *DIDN'T* MAKE SYNCING | MORE LIKELY.",
+   "pause": 0.45
+  },
+  {
+   "say": "So why does it feel real?",
+   "cap": "SO WHY DOES IT | FEEL *REAL?*",
+   "pause": 0.2
+  },
+  {
+   "say": "Cycles have different lengths, and a period lasts several days.",
+   "cap": "CYCLES HAVE | DIFFERENT *LENGTHS,* | AND A PERIOD LASTS | SEVERAL DAYS.",
+   "pause": 0.2
+  },
+  {
+   "say": "So overlaps happen by pure chance.",
+   "cap": "SO OVERLAPS HAPPEN | BY PURE *CHANCE.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Your periods aren't syncing.",
+   "cap": "YOUR PERIODS | AREN'T *SYNCING.*",
+   "pause": 0.2
+  },
+  {
+   "say": "They're just bumping into each other in the hallway.",
+   "cap": "THEY'RE JUST | *BUMPING INTO* | EACH OTHER | IN THE HALLWAY.",
+   "pause": 0.45
+  },
+  {
+   "say": "Follow,",
+   "cap": "*FOLLOW*",
+   "pause": 0.15
+  },
+  {
+   "say": "for the stuff school skipped.",
+   "cap": "FOR THE STUFF | SCHOOL *SKIPPED.*",
+   "pause": 0.5
+  }
+ ],
+ "scenes": [
+  {
+   "first": 0,
+   "end": 2,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      0,
+      0.0,
+      "deadpan"
+     ],
+     [
+      1,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [
+    {
+     "kind": "girl",
+     "x": 820,
+     "s": 2.25,
+     "face": -1,
+     "poses": [
+      [
+       0,
+       0.0,
+       "deadpan"
+      ],
+      [
+       1,
+       0.3,
+       "shocked"
+      ]
+     ],
+     "at": [
+      0,
+      0.0
+     ],
+     "in": "none"
+    }
+   ],
+   "els": [
+    {
+     "type": "prop",
+     "name": "calendar",
+     "x": 520,
+     "y": 1010,
+     "s": 1.1,
+     "slot": "left",
+     "at": [
+      0,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [],
+     "args": {
+      "top": "PERIOD",
+      "big": "?"
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 2,
+   "end": 4,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      2,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "book",
+     "x": 660,
+     "y": 1010,
+     "s": 1.4,
+     "slot": "center",
+     "at": [
+      2,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "title": "1971"
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "135 STUDENTS",
+     "sub": null,
+     "x": 680,
+     "y": 1300,
+     "color": "red",
+     "rot": -0.12,
+     "size": 54,
+     "at": [
+      3,
+      0.3
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 4,
+   "end": 5,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      4,
+      0.0,
+      "deadpan"
+     ],
+     [
+      4,
+      1.6,
+      "shrug"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "book",
+     "x": 660,
+     "y": 1010,
+     "s": 1.2,
+     "slot": "center",
+     "at": [
+      4,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "title": "1971"
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "NOT REPEATED",
+     "sub": null,
+     "x": 680,
+     "y": 1300,
+     "color": "red",
+     "rot": -0.12,
+     "size": 64,
+     "at": [
+      4,
+      1.4
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 5,
+   "end": 8,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      5,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "ring",
+     "x": 660,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "center",
+     "at": [
+      5,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "value": 76,
+      "line1": "DRIFTED",
+      "line2": "APART"
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "phone",
+     "x": 520,
+     "y": 1300,
+     "s": 0.7,
+     "slot": "low_left",
+     "at": [
+      5,
+      0.6
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "calendar",
+     "x": 860,
+     "y": 1300,
+     "s": 0.8,
+     "slot": "low_right",
+     "at": [
+      5,
+      1.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "top": "PAIRS",
+      "big": "360"
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 8,
+   "end": 11,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      8,
+      0.0,
+      "think"
+     ],
+     [
+      9,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "calendar",
+     "x": 520,
+     "y": 1300,
+     "s": 1.1,
+     "slot": "low_left",
+     "at": [
+      8,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "top": "HER",
+      "big": "28"
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "calendar",
+     "x": 860,
+     "y": 1300,
+     "s": 1.1,
+     "slot": "low_right",
+     "at": [
+      8,
+      0.6
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "top": "YOU",
+      "big": "31"
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 11,
+   "end": 13,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      11,
+      0.0,
+      "deadpan"
+     ],
+     [
+      12,
+      0.0,
+      "shrug"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "calendar",
+     "x": 520,
+     "y": 1300,
+     "s": 1.1,
+     "slot": "low_left",
+     "at": [
+      11,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [],
+     "args": {
+      "top": "HER",
+      "big": "28"
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "calendar",
+     "x": 860,
+     "y": 1300,
+     "s": 1.1,
+     "slot": "low_right",
+     "at": [
+      11,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [],
+     "args": {
+      "top": "YOU",
+      "big": "31"
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "COINCIDENCE",
+     "sub": null,
+     "x": 660,
+     "y": 1010,
+     "color": "red",
+     "rot": -0.12,
+     "size": 64,
+     "at": [
+      11,
+      0.8
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 13,
+   "end": 15,
+   "outro": true,
+   "doc": {
+    "x": 540,
+    "s": 2.4,
+    "face": 1,
+    "poses": [
+     [
+      13,
+      0.0,
+      "wave"
+     ]
+    ]
+   },
+   "people": [],
+   "els": []
+  }
+ ],
+ "cover": {
+  "big": [
+   "PERIOD SYNC?",
+   "*PROBABLY NOT*"
+  ]
+ },
+ "sources": [
+  {
+   "fact": "Scientific American, 'Do Women Who Live Together Menstruate Together?': menstrual synchrony was first demonstrated in a 1971 paper in Nature by Martha McClintock, who asked 135 college girls living in dorms; a later study following 186 female students in dorms for a year saw no evidence, but plenty of random overlaps; women often have cycles of different lengths, so they randomly phase in and out of synchrony",
+   "url": "https://www.scientificamerican.com/article/do-women-who-live-together-menstruate-together/",
+   "fetched": "2026-11-25"
+  },
+  {
+   "fact": "Live Science, 'Women's Periods Don't Really Sync Up When They Live Together' (2017): Clue app and University of Oxford study of 360 pairs of women; 273 pairs' cycles diverged, just 79 converged; living together did not increase the likelihood of cycle alignment; overlapping menses are not surprising because two cycles are on average about a week apart and a period typically lasts at least five days",
+   "url": "https://www.livescience.com/58687-menstrual-cycle-sync-myth.html",
+   "fetched": "2026-11-25"
+  },
+  {
+   "fact": "FIGO, 'Period syncing myth debunked': out of 1,500 responses there were 360 pairs; 273 pairs had larger gaps between start dates, just 79 got closer together",
+   "url": "https://www.figo.org/es/node/1044",
+   "fetched": "2026-11-25"
+  }
+ ],
+ "math": [
+  {
+   "expr": "1971",
+   "expect": 1971,
+   "note": "Scientific American: McClintock, Nature, 1971"
+  },
+  {
+   "expr": "135",
+   "expect": 135,
+   "note": "Scientific American: 135 college girls living in dorms"
+  },
+  {
+   "expr": "360",
+   "expect": 360,
+   "note": "Live Science and FIGO: 360 pairs"
+  },
+  {
+   "expr": "round(273 / 360 * 100)",
+   "expect": 76,
+   "note": "273 of 360 pairs diverged (Live Science, FIGO)"
+  },
+  {
+   "expr": "28",
+   "expect": 28,
+   "note": "example cycle length on a calendar prop (Live Science uses 28-day cycles as its example)"
+  },
+  {
+   "expr": "31",
+   "expect": 31,
+   "note": "example of a different cycle length on a calendar prop, illustrative only"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-25T23:30:00+05:30",
+  "instagram_caption": "Do periods really sync when you live together? 📅\n\nThe idea comes from a 1971 study of 135 college students in dorms. Later studies didn't find it: an app study with University of Oxford researchers tracked 360 pairs of women, and about 76% drifted further apart. Living together didn't make syncing more likely.\n\nCycles have different lengths and periods last several days, so overlaps happen by pure chance.\n\nSources: Scientific American, Live Science, FIGO.\n\nDid you ever think your period synced with someone's?\n\n#docstick #periods #menstruation #mythbusting #sexeducation",
+  "youtube_title": "Do Periods Really Sync When You Live Together?",
+  "youtube_description": "Period syncing comes from a 1971 study of 135 college students in dorms. Later studies didn't find it: in an app study with Oxford researchers, 273 of 360 pairs of women drifted further apart, and living together didn't make syncing more likely. Overlaps happen by chance because cycles have different lengths.\n\nEducational only, not medical advice.\n\nSources:\n• Scientific American, \"Do Women Who Live Together Menstruate Together?\" (fetched Nov 25, 2026)\n• Live Science, \"Women's Periods Don't Really Sync Up When They Live Together\" (fetched Nov 25, 2026)\n• FIGO, \"Period syncing myth debunked\" (fetched Nov 25, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#Periods #SexEducation #Shorts"
+ }
+}

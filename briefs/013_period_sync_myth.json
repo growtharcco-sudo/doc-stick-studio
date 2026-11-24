@@ -1,0 +1,239 @@
+{
+ "id": "013_period_sync_myth",
+ "beats": [
+  {
+   "say": "Do periods really sync when you live together?",
+   "cap": "DO PERIODS REALLY | *SYNC* WHEN YOU | LIVE TOGETHER?",
+   "show": {
+    "kind": "hook",
+    "person": "girl",
+    "prop": {
+     "name": "calendar",
+     "size": 1.1,
+     "args": {
+      "top": "PERIOD",
+      "big": "?"
+     }
+    }
+   }
+  },
+  {
+   "say": "Probably not.",
+   "cap": "PROBABLY *NOT.*"
+  },
+  {
+   "say": "The idea comes from a nineteen seventy one study",
+   "cap": "THE IDEA COMES FROM | A *1971* STUDY",
+   "show": {
+    "kind": "explain",
+    "prop": {
+     "name": "book",
+     "size": 1.4,
+     "args": {
+      "title": "1971"
+     }
+    },
+    "stamp": {
+     "text": "135 STUDENTS",
+     "at": "1+0.3"
+    }
+   }
+  },
+  {
+   "say": "of one hundred thirty five college students living in dorms.",
+   "cap": "OF *135* COLLEGE | STUDENTS LIVING | IN DORMS."
+  },
+  {
+   "say": "It got famous. Later studies didn't find it.",
+   "cap": "IT GOT *FAMOUS.* | LATER STUDIES | *DIDN'T* FIND IT.",
+   "show": {
+    "kind": "stamp",
+    "prop": {
+     "name": "book",
+     "slot": "center",
+     "size": 1.2,
+     "args": {
+      "title": "1971"
+     }
+    },
+    "stamp": {
+     "text": "NOT REPEATED",
+     "slot": "low",
+     "at": "0+1.4"
+    },
+    "poses": {
+     "0+1.6": "shrug"
+    }
+   }
+  },
+  {
+   "say": "A big app study with Oxford researchers tracked three hundred sixty pairs of women.",
+   "cap": "A BIG *APP STUDY* | WITH OXFORD RESEARCHERS | TRACKED *360 PAIRS* | OF WOMEN.",
+   "show": {
+    "kind": "number",
+    "ring": {
+     "value": 76,
+     "line1": "DRIFTED",
+     "line2": "APART"
+    },
+    "left": "phone",
+    "right": {
+     "name": "calendar",
+     "args": {
+      "top": "PAIRS",
+      "big": "360"
+     }
+    },
+    "right_at": "0+1.0"
+   }
+  },
+  {
+   "say": "About seventy six percent drifted further apart.",
+   "cap": "ABOUT *76%* DRIFTED | FURTHER *APART.*"
+  },
+  {
+   "say": "And living together didn't make syncing more likely.",
+   "cap": "AND LIVING TOGETHER | *DIDN'T* MAKE SYNCING | MORE LIKELY."
+  },
+  {
+   "say": "So why does it feel real?",
+   "cap": "SO WHY DOES IT | FEEL *REAL?*",
+   "show": {
+    "kind": "pair",
+    "left": {
+     "name": "calendar",
+     "size": 1.1,
+     "args": {
+      "top": "HER",
+      "big": "28"
+     }
+    },
+    "right": {
+     "name": "calendar",
+     "size": 1.1,
+     "args": {
+      "top": "YOU",
+      "big": "31"
+     }
+    },
+    "right_at": "0+0.6",
+    "pose": "think",
+    "poses": {
+     "1": "point"
+    }
+   }
+  },
+  {
+   "say": "Cycles have different lengths, and a period lasts several days.",
+   "cap": "CYCLES HAVE | DIFFERENT *LENGTHS,* | AND A PERIOD LASTS | SEVERAL DAYS."
+  },
+  {
+   "say": "So overlaps happen by pure chance.",
+   "cap": "SO OVERLAPS HAPPEN | BY PURE *CHANCE.*"
+  },
+  {
+   "say": "Your periods aren't syncing.",
+   "cap": "YOUR PERIODS | AREN'T *SYNCING.*",
+   "show": {
+    "kind": "pair",
+    "left": {
+     "name": "calendar",
+     "size": 1.1,
+     "args": {
+      "top": "HER",
+      "big": "28"
+     },
+     "in": "none"
+    },
+    "right": {
+     "name": "calendar",
+     "size": 1.1,
+     "args": {
+      "top": "YOU",
+      "big": "31"
+     },
+     "in": "none"
+    },
+    "right_at": "0",
+    "pose": "deadpan",
+    "poses": {
+     "1": "shrug"
+    },
+    "stamps": [
+     {
+      "text": "COINCIDENCE",
+      "slot": "center",
+      "at": "0+0.8",
+      "size": 64
+     }
+    ]
+   }
+  },
+  {
+   "say": "They're just bumping into each other in the hallway.",
+   "cap": "THEY'RE JUST | *BUMPING INTO* | EACH OTHER | IN THE HALLWAY."
+  }
+ ],
+ "cover": {
+  "big": [
+   "PERIOD SYNC?",
+   "*PROBABLY NOT*"
+  ]
+ },
+ "sources": [
+  {
+   "fact": "Scientific American, 'Do Women Who Live Together Menstruate Together?': menstrual synchrony was first demonstrated in a 1971 paper in Nature by Martha McClintock, who asked 135 college girls living in dorms; a later study following 186 female students in dorms for a year saw no evidence, but plenty of random overlaps; women often have cycles of different lengths, so they randomly phase in and out of synchrony",
+   "url": "https://www.scientificamerican.com/article/do-women-who-live-together-menstruate-together/",
+   "fetched": "2026-11-25"
+  },
+  {
+   "fact": "Live Science, 'Women's Periods Don't Really Sync Up When They Live Together' (2017): Clue app and University of Oxford study of 360 pairs of women; 273 pairs' cycles diverged, just 79 converged; living together did not increase the likelihood of cycle alignment; overlapping menses are not surprising because two cycles are on average about a week apart and a period typically lasts at least five days",
+   "url": "https://www.livescience.com/58687-menstrual-cycle-sync-myth.html",
+   "fetched": "2026-11-25"
+  },
+  {
+   "fact": "FIGO, 'Period syncing myth debunked': out of 1,500 responses there were 360 pairs; 273 pairs had larger gaps between start dates, just 79 got closer together",
+   "url": "https://www.figo.org/es/node/1044",
+   "fetched": "2026-11-25"
+  }
+ ],
+ "math": [
+  {
+   "expr": "1971",
+   "expect": 1971,
+   "note": "Scientific American: McClintock, Nature, 1971"
+  },
+  {
+   "expr": "135",
+   "expect": 135,
+   "note": "Scientific American: 135 college girls living in dorms"
+  },
+  {
+   "expr": "360",
+   "expect": 360,
+   "note": "Live Science and FIGO: 360 pairs"
+  },
+  {
+   "expr": "round(273 / 360 * 100)",
+   "expect": 76,
+   "note": "273 of 360 pairs diverged (Live Science, FIGO)"
+  },
+  {
+   "expr": "28",
+   "expect": 28,
+   "note": "example cycle length on a calendar prop (Live Science uses 28-day cycles as its example)"
+  },
+  {
+   "expr": "31",
+   "expect": 31,
+   "note": "example of a different cycle length on a calendar prop, illustrative only"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-25T23:30:00+05:30",
+  "instagram_caption": "Do periods really sync when you live together? 📅\n\nThe idea comes from a 1971 study of 135 college students in dorms. Later studies didn't find it: an app study with University of Oxford researchers tracked 360 pairs of women, and about 76% drifted further apart. Living together didn't make syncing more likely.\n\nCycles have different lengths and periods last several days, so overlaps happen by pure chance.\n\nSources: Scientific American, Live Science, FIGO.\n\nDid you ever think your period synced with someone's?\n\n#docstick #periods #menstruation #mythbusting #sexeducation",
+  "youtube_title": "Do Periods Really Sync When You Live Together?",
+  "youtube_description": "Period syncing comes from a 1971 study of 135 college students in dorms. Later studies didn't find it: in an app study with Oxford researchers, 273 of 360 pairs of women drifted further apart, and living together didn't make syncing more likely. Overlaps happen by chance because cycles have different lengths.\n\nEducational only, not medical advice.\n\nSources:\n• Scientific American, \"Do Women Who Live Together Menstruate Together?\" (fetched Nov 25, 2026)\n• Live Science, \"Women's Periods Don't Really Sync Up When They Live Together\" (fetched Nov 25, 2026)\n• FIGO, \"Period syncing myth debunked\" (fetched Nov 25, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#Periods #SexEducation #Shorts"
+ }
+}

@@ -9,6 +9,7 @@ Sex ed / relationships (about 1 in 3)
 - [ ] Your heart rate during a kiss / kissing burns calories (check the real number)
 - [ ] The "morning wood" is a nightly health check (nocturnal erections, sleep cycles)
 - [x] Why men have nipples (009)
+- [x] Period syncing: roommates' periods probably don't sync (013)
 - [ ] Consent explained with a cup of tea, stick-figure version
 - [x] Puberty: why voices crack (larynx growth) (004)
 
