@@ -17,7 +17,7 @@ Everything else about the body
 - [x] Hiccups are a leftover from our fish-like ancestors (hypothesis, say so) (010)
 - [x] Brain freeze: your brain doesn't feel pain, so why does it hurt? (006)
 - [x] You're taller in the morning than at night (005)
-- [ ] Your stomach makes a new lining every few days so it doesn't digest itself
+- [x] Your stomach makes a new lining every few days so it doesn't digest itself (012)
 - [x] Goosebumps: leftover fur-fluffing reflex (003)
 - [ ] You shed about a million skin cells a day? (check the real number)
 - [ ] Why yawns are contagious

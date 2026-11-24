@@ -623,3 +623,62 @@ def tadpole(c, st):
 
 def draw(c, name, st):
     PROPS[name].draw(c, st)
+
+
+@prop("stomach", (-135, -155, 130, 140), "center",
+      "cartoon stomach bag (pink, J-shaped) with a little face. args.acid true = bubbling green acid inside; "
+      "args.coat true or state 'coat' = a thick blue mucus layer lines the wall; args.face false = no face")
+def stomach(c, st):
+    def outline():
+        c.move_to(-58, -150); c.line_to(-26, -150); c.line_to(-26, -100)
+        c.curve_to(10, -125, 128, -118, 122, -10); c.curve_to(117, 92, 40, 138, -30, 128)
+        c.curve_to(-80, 122, -108, 98, -122, 72); c.line_to(-132, 40); c.line_to(-100, 30)
+        c.curve_to(-72, 66, -12, 74, 8, 36); c.curve_to(26, 0, -12, -42, -58, -72); c.close_path()
+    outline(); fillstroke(c, PINK, INK, 6)
+    if st.args.get("acid"):
+        c.save(); outline(); c.clip()
+        lvl = 20 + math.sin(st.t * 2.2) * 6
+        c.move_to(-140, lvl)
+        for i in range(9): c.line_to(-140 + i * 35, lvl + math.sin(st.t * 3 + i) * 6)
+        c.line_to(160, 160); c.line_to(-140, 160); c.close_path(); c.set_source_rgb(0.60, 0.86, 0.28); c.fill()
+        for i in range(5):
+            ph = (st.t * 0.7 + i / 5) % 1; bx = -40 + i * 32 + math.sin(st.t + i) * 6
+            c.arc(bx, 110 - ph * 80, 6 + 3 * (i % 2), 0, 2 * math.pi); c.set_source_rgba(1, 1, 1, 0.8 * (1 - ph)); c.fill()
+        c.restore()
+    if st.args.get("coat") or st.state == "coat":
+        k = ease_out((st.since if st.state == "coat" else st.age) / 0.6)
+        c.save(); outline(); c.clip(); outline(); c.set_source_rgba(0.45, 0.72, 0.98, k); c.set_line_width(34); c.stroke(); c.restore()
+        outline(); stroke(c, INK, 6)
+    if st.args.get("face", True):
+        for ex in (50, 86):
+            if (st.t % 3.1) < 0.12: c.move_to(ex - 8, -40); c.line_to(ex + 8, -40); stroke(c, INK, 4)
+            else: c.arc(ex, -40, 7, 0, 2 * math.pi); c.set_source_rgb(*INK); c.fill()
+        c.move_to(56, -14); c.line_to(80, -14); stroke(c, INK, 4)
+
+
+@prop("bone", (-115, -45, 115, 45), "center", "cartoon bone (white, dog-bone shape), lying flat. args.color")
+def bone(c, st):
+    c.save(); c.rotate(math.sin(st.t * 1.5) * 0.04)
+    c.move_to(-75, -18); c.line_to(75, -18)
+    c.arc(82, -20, 24, math.pi * 0.95, math.pi * 2.3); c.arc(82, 20, 24, math.pi * 1.7, math.pi * 3.05)
+    c.line_to(-75, 18)
+    c.arc(-82, 20, 24, math.pi * -0.05, math.pi * 1.3); c.arc(-82, -20, 24, math.pi * 0.7, math.pi * 2.05)
+    c.close_path(); fillstroke(c, col(st.args.get("color"), (0.98, 0.95, 0.86)), INK, 6)
+    c.restore()
+
+
+@prop("yawn_face", (-115, -165, 150, 115), "center",
+      "round yellow sleepy face that yawns over and over (contagious yawning). args.period seconds per yawn (default 3)")
+def yawn_face(c, st):
+    per = st.args.get("period", 3.0); ph = (st.age % per) / per
+    o = math.sin(min(ph / 0.7, 1) * math.pi) ** 1.5
+    c.arc(0, 0, 108, 0, 2 * math.pi); fillstroke(c, YELLOW, INK, 6)
+    for ex in (-40, 40):
+        c.move_to(ex - 22, -30 - o * 4); c.curve_to(ex - 8, -20 + o * 6, ex + 8, -20 + o * 6, ex + 22, -30 - o * 4); stroke(c, INK, 5)
+    for ex in (-46, 46):
+        c.move_to(ex - 16, -52 - o * 10); c.line_to(ex + 16, -56 - o * 6); stroke(c, INK, 4)
+    ellipse(c, 0, 40, 26 + 10 * o, 8 + 42 * o); fillstroke(c, (0.55, 0.12, 0.15), INK, 5)
+    if o > 0.4:
+        ellipse(c, 0, 40 + 24 * o, 14 * o, 10 * o); c.set_source_rgb(*PINK); c.fill()
+    for i, (zx, zy, zs) in enumerate(((95, -110, 30), (122, -145, 22))):
+        if o * 1.4 - i * 0.3 > 0.5: text(c, "Z", zx, zy, zs, INK)

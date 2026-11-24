@@ -1,0 +1,443 @@
+{
+ "id": "012_stomach_acid_bag",
+ "voice": "am_michael",
+ "speed": 1.0,
+ "phrases": [
+  {
+   "say": "Your stomach is a bag of acid.",
+   "cap": "YOUR STOMACH IS | A BAG OF *ACID.*",
+   "pause": 0.2
+  },
+  {
+   "say": "So why doesn't it digest itself?",
+   "cap": "SO WHY DOESN'T IT | *DIGEST ITSELF?*",
+   "pause": 0.45
+  },
+  {
+   "say": "The fluid inside can hit a pH of one, or even lower.",
+   "cap": "THE FLUID INSIDE | CAN HIT *PH 1,* | OR EVEN LOWER.",
+   "pause": 0.2
+  },
+  {
+   "say": "That's about ten times as acidic as lemon juice.",
+   "cap": "THAT'S ABOUT | *10 TIMES* AS ACIDIC | AS LEMON JUICE.",
+   "pause": 0.45
+  },
+  {
+   "say": "The trick is a thick layer of mucus.",
+   "cap": "THE TRICK IS | A THICK LAYER | OF *MUCUS.*",
+   "pause": 0.2
+  },
+  {
+   "say": "It's packed with bicarbonate, which neutralises acid that sneaks in.",
+   "cap": "IT'S PACKED WITH | *BICARBONATE,* | WHICH NEUTRALISES | ACID THAT SNEAKS IN.",
+   "pause": 0.45
+  },
+  {
+   "say": "Even so, the cells lining your stomach don't last long.",
+   "cap": "EVEN SO, | THE CELLS LINING | YOUR STOMACH | DON'T LAST *LONG.*",
+   "pause": 0.2
+  },
+  {
+   "say": "They get replaced about every four to six days.",
+   "cap": "THEY GET *REPLACED* | ABOUT EVERY | *4 TO 6 DAYS.*",
+   "pause": 0.45
+  },
+  {
+   "say": "So your stomach doesn't avoid the acid.",
+   "cap": "SO YOUR STOMACH | DOESN'T *AVOID* | THE ACID.",
+   "pause": 0.2
+  },
+  {
+   "say": "It just keeps rebuilding the walls.",
+   "cap": "IT JUST KEEPS | *REBUILDING* THE WALLS.",
+   "pause": 0.45
+  },
+  {
+   "say": "Follow,",
+   "cap": "*FOLLOW*",
+   "pause": 0.15
+  },
+  {
+   "say": "for the stuff school skipped.",
+   "cap": "FOR THE STUFF | SCHOOL *SKIPPED.*",
+   "pause": 0.5
+  }
+ ],
+ "scenes": [
+  {
+   "first": 0,
+   "end": 2,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      0,
+      0.0,
+      "deadpan"
+     ],
+     [
+      1,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "stomach",
+     "x": 840,
+     "y": 1010,
+     "s": 1.5,
+     "slot": "right",
+     "at": [
+      0,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [],
+     "args": {
+      "acid": true
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 2,
+   "end": 4,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      2,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "big_number",
+     "x": 660,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "center",
+     "at": [
+      2,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "value": 1,
+      "prefix": "PH ",
+      "color": "red"
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "stomach",
+     "x": 520,
+     "y": 1300,
+     "s": 0.7,
+     "slot": "low_left",
+     "at": [
+      2,
+      0.6
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "acid": true
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "warning",
+     "x": 860,
+     "y": 1300,
+     "s": 0.8,
+     "slot": "low_right",
+     "at": [
+      3,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 4,
+   "end": 6,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      4,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "stomach",
+     "x": 660,
+     "y": 1010,
+     "s": 1.6,
+     "slot": "center",
+     "at": [
+      4,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [
+      [
+       4,
+       1.2,
+       "coat"
+      ]
+     ],
+     "args": {
+      "acid": true
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "MUCUS SHIELD",
+     "sub": null,
+     "x": 680,
+     "y": 1300,
+     "color": "red",
+     "rot": -0.12,
+     "size": 54,
+     "at": [
+      5,
+      0.2
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 6,
+   "end": 8,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      6,
+      0.0,
+      "deadpan"
+     ],
+     [
+      7,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "calendar",
+     "x": 660,
+     "y": 1010,
+     "s": 1.4,
+     "slot": "center",
+     "at": [
+      7,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "top": "DAYS",
+      "big": "4-6"
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "REPLACED",
+     "sub": null,
+     "x": 680,
+     "y": 1300,
+     "color": "red",
+     "rot": -0.12,
+     "size": 54,
+     "at": [
+      7,
+      0.6
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 8,
+   "end": 10,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      8,
+      0.0,
+      "deadpan"
+     ],
+     [
+      9,
+      0.0,
+      "point"
+     ],
+     [
+      9,
+      1.2,
+      "wave"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "stomach",
+     "x": 840,
+     "y": 1010,
+     "s": 1.5,
+     "slot": "right",
+     "at": [
+      8,
+      0.0
+     ],
+     "until": [
+      9,
+      1.0
+     ],
+     "in": "none",
+     "out": "slide_right",
+     "states": [],
+     "args": {
+      "acid": true,
+      "coat": true
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 10,
+   "end": 12,
+   "outro": true,
+   "doc": {
+    "x": 540,
+    "s": 2.4,
+    "face": 1,
+    "poses": [
+     [
+      10,
+      0.0,
+      "wave"
+     ]
+    ]
+   },
+   "people": [],
+   "els": []
+  }
+ ],
+ "cover": {
+  "big": [
+   "STOMACH ACID",
+   "*VS STOMACH*"
+  ]
+ },
+ "sources": [
+  {
+   "fact": "Scientific American, 'Why don't our digestive acids corrode our stomach linings?': the solution in the stomach lumen may have a pH of one or less, about 10 times as acidic as lemon juice; cells in the mucosa secrete large quantities of protective mucus; bicarbonate (HCO3-) trapped in the mucus neutralises HCl that penetrates it",
+   "url": "https://www.scientificamerican.com/article/why-dont-our-digestive-ac/",
+   "fetched": "2026-11-25"
+  },
+  {
+   "fact": "Live Science, 'Why doesn't stomach acid burn through our stomachs?' (Jan 2026): cells produce a thick, sticky, alkaline layer of mucus rich in bicarbonate that protects the stomach lining from its own acid and enzymes",
+   "url": "https://www.livescience.com/health/why-doesnt-stomach-acid-burn-through-our-stomachs",
+   "fetched": "2026-11-25"
+  },
+  {
+   "fact": "University of Leeds Histology Guide, 'Stomach': surface mucous cells produce a thick coating of mucus that protects the gastric mucosa from acid and enzymes; even so, these cells have to be replaced after 4-6 days",
+   "url": "https://www.histology.leeds.ac.uk/digestive/stomach.php",
+   "fetched": "2026-11-25"
+  }
+ ],
+ "math": [
+  {
+   "expr": "1",
+   "expect": 1,
+   "note": "Scientific American: lumen pH of one or less"
+  },
+  {
+   "expr": "10 ** (2 - 1)",
+   "expect": 10,
+   "note": "Scientific American: about 10 times as acidic as lemon juice (pH scale is logarithmic: pH 1 vs about pH 2)"
+  },
+  {
+   "expr": "4",
+   "expect": 4,
+   "note": "Leeds Histology: lining cells replaced after 4-6 days (low end)"
+  },
+  {
+   "expr": "6",
+   "expect": 6,
+   "note": "Leeds Histology: lining cells replaced after 4-6 days (high end)"
+  }
+ ],
+ "post": {
+  "slot": "morning",
+  "post_at": "2026-11-25T07:30:00+05:30",
+  "instagram_caption": "Your stomach is a bag of acid. So why doesn't it digest itself? 🧪\n\nThe fluid inside can reach a pH of 1 or even lower, about 10 times as acidic as lemon juice. The stomach wall protects itself with a thick layer of mucus packed with bicarbonate, which neutralises acid that sneaks in.\n\nEven so, the cells lining your stomach get replaced about every 4 to 6 days.\n\nSources: Scientific American, Live Science, University of Leeds Histology Guide.\n\nWhich part of your body do you think renews itself fastest?\n\n#docstick #bodyfacts #digestion #stomach #sciencefacts",
+  "youtube_title": "Why Your Stomach Doesn't Digest Itself",
+  "youtube_description": "Stomach fluid can reach a pH of 1 or lower, about 10 times as acidic as lemon juice. A thick layer of bicarbonate-rich mucus protects the stomach wall, and the cells lining it are replaced about every 4 to 6 days.\n\nEducational only, not medical advice.\n\nSources:\n• Scientific American, \"Why don't our digestive acids corrode our stomach linings?\" (fetched Nov 25, 2026)\n• Live Science, \"Why doesn't stomach acid burn through our stomachs?\" (fetched Nov 25, 2026)\n• University of Leeds Histology Guide, \"Stomach\" (fetched Nov 25, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#BodyFacts #Digestion #Shorts"
+ }
+}

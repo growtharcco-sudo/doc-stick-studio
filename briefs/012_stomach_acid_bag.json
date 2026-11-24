@@ -1,0 +1,46 @@
+{
+ "id": "012_stomach_acid_bag",
+ "beats": [
+  {"say": "Your stomach is a bag of acid.", "cap": "YOUR STOMACH IS | A BAG OF *ACID.*",
+   "show": {"kind": "hook", "prop": {"name": "stomach", "slot": "right", "size": 1.5, "args": {"acid": true}}}},
+  {"say": "So why doesn't it digest itself?", "cap": "SO WHY DOESN'T IT | *DIGEST ITSELF?*"},
+  {"say": "The fluid inside can hit a pH of one, or even lower.", "cap": "THE FLUID INSIDE | CAN HIT *PH 1,* | OR EVEN LOWER.",
+   "show": {"kind": "number", "number": {"value": 1, "prefix": "PH ", "color": "red"},
+            "left": {"name": "stomach", "args": {"acid": true}}, "right": "warning", "right_at": "1"}},
+  {"say": "That's about ten times as acidic as lemon juice.", "cap": "THAT'S ABOUT | *10 TIMES* AS ACIDIC | AS LEMON JUICE."},
+  {"say": "The trick is a thick layer of mucus.", "cap": "THE TRICK IS | A THICK LAYER | OF *MUCUS.*",
+   "show": {"kind": "explain", "prop": {"name": "stomach", "size": 1.6, "args": {"acid": true}, "states": {"0+1.2": "coat"}},
+            "stamp": {"text": "MUCUS SHIELD", "at": "1+0.2"}}},
+  {"say": "It's packed with bicarbonate, which neutralises acid that sneaks in.", "cap": "IT'S PACKED WITH | *BICARBONATE,* | WHICH NEUTRALISES | ACID THAT SNEAKS IN."},
+  {"say": "Even so, the cells lining your stomach don't last long.", "cap": "EVEN SO, | THE CELLS LINING | YOUR STOMACH | DON'T LAST *LONG.*",
+   "show": {"kind": "explain", "prop": {"name": "calendar", "size": 1.4, "args": {"top": "DAYS", "big": "4-6"}, "at": "1"},
+            "stamp": {"text": "REPLACED", "at": "1+0.6"}, "pose": "deadpan", "poses": {"1": "point"}}},
+  {"say": "They get replaced about every four to six days.", "cap": "THEY GET *REPLACED* | ABOUT EVERY | *4 TO 6 DAYS.*"},
+  {"say": "So your stomach doesn't avoid the acid.", "cap": "SO YOUR STOMACH | DOESN'T *AVOID* | THE ACID.",
+   "show": {"kind": "exit", "prop": {"name": "stomach", "slot": "right", "size": 1.5, "args": {"acid": true, "coat": true}},
+            "leave_at": "1+1.0", "pose": "deadpan", "poses": {"1": "point", "1+1.2": "wave"}}},
+  {"say": "It just keeps rebuilding the walls.", "cap": "IT JUST KEEPS | *REBUILDING* THE WALLS."}
+ ],
+ "cover": {"big": ["STOMACH ACID", "*VS STOMACH*"]},
+ "sources": [
+  {"fact": "Scientific American, 'Why don't our digestive acids corrode our stomach linings?': the solution in the stomach lumen may have a pH of one or less, about 10 times as acidic as lemon juice; cells in the mucosa secrete large quantities of protective mucus; bicarbonate (HCO3-) trapped in the mucus neutralises HCl that penetrates it",
+   "url": "https://www.scientificamerican.com/article/why-dont-our-digestive-ac/", "fetched": "2026-11-25"},
+  {"fact": "Live Science, 'Why doesn't stomach acid burn through our stomachs?' (Jan 2026): cells produce a thick, sticky, alkaline layer of mucus rich in bicarbonate that protects the stomach lining from its own acid and enzymes",
+   "url": "https://www.livescience.com/health/why-doesnt-stomach-acid-burn-through-our-stomachs", "fetched": "2026-11-25"},
+  {"fact": "University of Leeds Histology Guide, 'Stomach': surface mucous cells produce a thick coating of mucus that protects the gastric mucosa from acid and enzymes; even so, these cells have to be replaced after 4-6 days",
+   "url": "https://www.histology.leeds.ac.uk/digestive/stomach.php", "fetched": "2026-11-25"}
+ ],
+ "math": [
+  {"expr": "1", "expect": 1, "note": "Scientific American: lumen pH of one or less"},
+  {"expr": "10 ** (2 - 1)", "expect": 10, "note": "Scientific American: about 10 times as acidic as lemon juice (pH scale is logarithmic: pH 1 vs about pH 2)"},
+  {"expr": "4", "expect": 4, "note": "Leeds Histology: lining cells replaced after 4-6 days (low end)"},
+  {"expr": "6", "expect": 6, "note": "Leeds Histology: lining cells replaced after 4-6 days (high end)"}
+ ],
+ "post": {
+  "slot": "morning",
+  "post_at": "2026-11-25T07:30:00+05:30",
+  "instagram_caption": "Your stomach is a bag of acid. So why doesn't it digest itself? 🧪\n\nThe fluid inside can reach a pH of 1 or even lower, about 10 times as acidic as lemon juice. The stomach wall protects itself with a thick layer of mucus packed with bicarbonate, which neutralises acid that sneaks in.\n\nEven so, the cells lining your stomach get replaced about every 4 to 6 days.\n\nSources: Scientific American, Live Science, University of Leeds Histology Guide.\n\nWhich part of your body do you think renews itself fastest?\n\n#docstick #bodyfacts #digestion #stomach #sciencefacts",
+  "youtube_title": "Why Your Stomach Doesn't Digest Itself",
+  "youtube_description": "Stomach fluid can reach a pH of 1 or lower, about 10 times as acidic as lemon juice. A thick layer of bicarbonate-rich mucus protects the stomach wall, and the cells lining it are replaced about every 4 to 6 days.\n\nEducational only, not medical advice.\n\nSources:\n• Scientific American, \"Why don't our digestive acids corrode our stomach linings?\" (fetched Nov 25, 2026)\n• Live Science, \"Why doesn't stomach acid burn through our stomachs?\" (fetched Nov 25, 2026)\n• University of Leeds Histology Guide, \"Stomach\" (fetched Nov 25, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#BodyFacts #Digestion #Shorts"
+ }
+}
