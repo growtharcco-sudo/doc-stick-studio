@@ -1,0 +1,520 @@
+{
+ "id": "015_contagious_yawns",
+ "voice": "am_michael",
+ "speed": 1.0,
+ "phrases": [
+  {
+   "say": "Just reading about a yawn can make you yawn.",
+   "cap": "JUST *READING* | ABOUT A YAWN CAN | MAKE YOU *YAWN.*",
+   "pause": 0.2
+  },
+  {
+   "say": "Yes. Even right now.",
+   "cap": "YES. EVEN *RIGHT NOW.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Contagious yawns can be set off by seeing, hearing,",
+   "cap": "CONTAGIOUS YAWNS | CAN BE SET OFF BY | *SEEING, HEARING,*",
+   "pause": 0.2
+  },
+  {
+   "say": "reading, or even thinking about a yawn.",
+   "cap": "*READING,* OR EVEN | *THINKING* ABOUT A YAWN.",
+   "pause": 0.45
+  },
+  {
+   "say": "In a Duke study, three hundred twenty eight people watched a three minute video of yawning.",
+   "cap": "IN A DUKE STUDY, | *328 PEOPLE* WATCHED | A *3 MINUTE* VIDEO | OF YAWNING.",
+   "pause": 0.2
+  },
+  {
+   "say": "About sixty eight percent yawned at least once.",
+   "cap": "ABOUT *68%* YAWNED | AT LEAST ONCE.",
+   "pause": 0.45
+  },
+  {
+   "say": "Is it about empathy? This study found no clear link.",
+   "cap": "IS IT ABOUT *EMPATHY?* | THIS STUDY FOUND | NO CLEAR LINK.",
+   "pause": 0.45
+  },
+  {
+   "say": "Older people caught fewer yawns,",
+   "cap": "OLDER PEOPLE | CAUGHT *FEWER* YAWNS,",
+   "pause": 0.2
+  },
+  {
+   "say": "but age explained only about eight percent of it.",
+   "cap": "BUT AGE EXPLAINED | ONLY ABOUT *8%* OF IT.",
+   "pause": 0.2
+  },
+  {
+   "say": "The rest is still a mystery.",
+   "cap": "THE REST IS | STILL A *MYSTERY.*",
+   "pause": 0.45
+  },
+  {
+   "say": "So if you yawned during this video,",
+   "cap": "SO IF YOU *YAWNED* | DURING THIS VIDEO,",
+   "pause": 0.2
+  },
+  {
+   "say": "it's not boring. It's contagious.",
+   "cap": "IT'S NOT *BORING.* | IT'S *CONTAGIOUS.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Follow,",
+   "cap": "*FOLLOW*",
+   "pause": 0.15
+  },
+  {
+   "say": "for the stuff school skipped.",
+   "cap": "FOR THE STUFF | SCHOOL *SKIPPED.*",
+   "pause": 0.5
+  }
+ ],
+ "scenes": [
+  {
+   "first": 0,
+   "end": 2,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      0,
+      0.0,
+      "deadpan"
+     ],
+     [
+      1,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "yawn_face",
+     "x": 840,
+     "y": 1010,
+     "s": 1.3,
+     "slot": "right",
+     "at": [
+      0,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 2,
+   "end": 4,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      2,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "yawn_face",
+     "x": 660,
+     "y": 1010,
+     "s": 1.4,
+     "slot": "center",
+     "at": [
+      2,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "CONTAGIOUS",
+     "sub": null,
+     "x": 680,
+     "y": 1300,
+     "color": "red",
+     "rot": -0.12,
+     "size": 54,
+     "at": [
+      3,
+      0.2
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 4,
+   "end": 6,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      4,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "ring",
+     "x": 660,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "center",
+     "at": [
+      4,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "value": 68,
+      "line1": "YAWNED AT",
+      "line2": "LEAST ONCE"
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "phone",
+     "x": 520,
+     "y": 1300,
+     "s": 0.7,
+     "slot": "low_left",
+     "at": [
+      4,
+      0.6
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "yawn_face",
+     "x": 860,
+     "y": 1300,
+     "s": 0.45,
+     "slot": "low_right",
+     "at": [
+      5,
+      0.3
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 6,
+   "end": 7,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      6,
+      0.0,
+      "deadpan"
+     ],
+     [
+      6,
+      1.8,
+      "shrug"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "heart",
+     "x": 660,
+     "y": 1010,
+     "s": 1.1,
+     "slot": "center",
+     "at": [
+      6,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "NO CLEAR LINK",
+     "sub": null,
+     "x": 680,
+     "y": 1300,
+     "color": "red",
+     "rot": -0.12,
+     "size": 64,
+     "at": [
+      6,
+      1.6
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 7,
+   "end": 10,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      7,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "big_number",
+     "x": 660,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "center",
+     "at": [
+      7,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "value": 8,
+      "suffix": "%",
+      "color": "red"
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "clock",
+     "x": 520,
+     "y": 1300,
+     "s": 0.7,
+     "slot": "low_left",
+     "at": [
+      7,
+      0.6
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "qmark",
+     "x": 860,
+     "y": 1300,
+     "s": 0.8,
+     "slot": "low_right",
+     "at": [
+      9,
+      0.2
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 10,
+   "end": 12,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      10,
+      0.0,
+      "deadpan"
+     ],
+     [
+      11,
+      0.0,
+      "point"
+     ],
+     [
+      11,
+      1.2,
+      "wave"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "yawn_face",
+     "x": 840,
+     "y": 1010,
+     "s": 1.3,
+     "slot": "right",
+     "at": [
+      10,
+      0.0
+     ],
+     "until": [
+      11,
+      1.0
+     ],
+     "in": "none",
+     "out": "slide_right",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 12,
+   "end": 14,
+   "outro": true,
+   "doc": {
+    "x": 540,
+    "s": 2.4,
+    "face": 1,
+    "poses": [
+     [
+      12,
+      0.0,
+      "wave"
+     ]
+    ]
+   },
+   "people": [],
+   "els": []
+  }
+ ],
+ "cover": {
+  "big": [
+   "TRY NOT",
+   "*TO YAWN*"
+  ]
+ },
+ "sources": [
+  {
+   "fact": "Duke Health, 'Contagious Yawning May Not Be Linked to Empathy; Still Largely Unexplained' (2014): 328 healthy volunteers watched a three-minute video of people yawning; 222 contagiously yawned at least once; as age increased participants were less likely to yawn, but age explained only 8 percent of the variability; no association between contagious yawning and empathy; contagious yawning can be triggered by hearing, seeing or thinking about yawning",
+   "url": "https://corporate.dukehealth.org/news/contagious-yawning-may-not-be-linked-empathy-still-largely-unexplained",
+   "fetched": "2026-11-25"
+  },
+  {
+   "fact": "Bartholomew & Cirulli, PLoS ONE 2014, 'Individual Variation in Contagious Yawning Susceptibility Is Highly Stable and Largely Unexplained by Empathy or Other Known Factors': 328 participants, 3-minute video; 222 (67.7%) yawned at least once; age explained only 8% of variability; no influence of empathy once age is accounted for; contagious yawning can be triggered by hearing, seeing, reading, or thinking about yawning",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3954725",
+   "fetched": "2026-11-25"
+  },
+  {
+   "fact": "University of Washington, Neuroscience for Kids, 'Contagious Yawning': reading about yawning and thinking about yawning are listed as triggers",
+   "url": "https://faculty.washington.edu/chudler/yawnc.html",
+   "fetched": "2026-11-25"
+  }
+ ],
+ "math": [
+  {
+   "expr": "328",
+   "expect": 328,
+   "note": "Duke Health / PLoS ONE: 328 participants"
+  },
+  {
+   "expr": "3",
+   "expect": 3,
+   "note": "Duke Health: three-minute yawning video"
+  },
+  {
+   "expr": "round(222 / 328 * 100)",
+   "expect": 68,
+   "note": "222 of 328 yawned at least once (PLoS ONE: 67.7%)"
+  },
+  {
+   "expr": "8",
+   "expect": 8,
+   "note": "Duke Health: age explained only 8 percent of the variability"
+  },
+  {
+   "expr": "2014",
+   "expect": 2014,
+   "note": "Duke Health / PLoS ONE study published March 2014"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-26T23:30:00+05:30",
+  "instagram_caption": "Just reading about a yawn can make you yawn 🥱\n\nContagious yawns can be set off by seeing, hearing, reading or even thinking about a yawn. In a Duke study, 328 people watched a 3 minute yawning video and about 68% yawned at least once. The study found no clear link to empathy, and age explained only about 8% of who yawned.\n\nThe rest is still a mystery.\n\nSources: Duke Health, PLoS ONE, University of Washington.\n\nDid you yawn while watching this?\n\n#docstick #yawning #brainfacts #bodyfacts #sciencefacts",
+  "youtube_title": "Just Reading About a Yawn Can Make You Yawn",
+  "youtube_description": "Contagious yawns can be triggered by seeing, hearing, reading or thinking about yawning. In a 2014 Duke study, 328 people watched a 3 minute yawning video and about 68% yawned at least once. The study found no clear link to empathy, and age explained only about 8%.\n\nEducational only, not medical advice.\n\nSources:\n• Duke Health, \"Contagious Yawning May Not Be Linked to Empathy; Still Largely Unexplained\" (fetched Nov 25, 2026)\n• PLoS ONE, \"Individual Variation in Contagious Yawning Susceptibility Is Highly Stable and Largely Unexplained by Empathy or Other Known Factors\" (fetched Nov 25, 2026)\n• University of Washington, \"Contagious Yawning\" (fetched Nov 25, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#Yawning #BodyFacts #Shorts"
+ }
+}

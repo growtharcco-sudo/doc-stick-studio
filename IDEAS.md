@@ -22,6 +22,6 @@ Everything else about the body
 - [x] Goosebumps: leftover fur-fluffing reflex (003)
 - [ ] You shed about a million skin cells a day? (check the real number)
 - [x] Babies have about 300 bones, adults 206: they fuse (014)
-- [ ] Why yawns are contagious
+- [x] Why yawns are contagious (015)
 - [ ] Your nose smells in stereo
 - [ ] Sneezes can't happen while you're asleep (REM atonia)

@@ -1,0 +1,184 @@
+{
+ "id": "015_contagious_yawns",
+ "beats": [
+  {
+   "say": "Just reading about a yawn can make you yawn.",
+   "cap": "JUST *READING* | ABOUT A YAWN CAN | MAKE YOU *YAWN.*",
+   "show": {
+    "kind": "hook",
+    "prop": {
+     "name": "yawn_face",
+     "slot": "right",
+     "size": 1.3
+    }
+   }
+  },
+  {
+   "say": "Yes. Even right now.",
+   "cap": "YES. EVEN *RIGHT NOW.*"
+  },
+  {
+   "say": "Contagious yawns can be set off by seeing, hearing,",
+   "cap": "CONTAGIOUS YAWNS | CAN BE SET OFF BY | *SEEING, HEARING,*",
+   "show": {
+    "kind": "explain",
+    "prop": {
+     "name": "yawn_face",
+     "size": 1.4
+    },
+    "stamp": {
+     "text": "CONTAGIOUS",
+     "at": "1+0.2"
+    }
+   }
+  },
+  {
+   "say": "reading, or even thinking about a yawn.",
+   "cap": "*READING,* OR EVEN | *THINKING* ABOUT A YAWN."
+  },
+  {
+   "say": "In a Duke study, three hundred twenty eight people watched a three minute video of yawning.",
+   "cap": "IN A DUKE STUDY, | *328 PEOPLE* WATCHED | A *3 MINUTE* VIDEO | OF YAWNING.",
+   "show": {
+    "kind": "number",
+    "ring": {
+     "value": 68,
+     "line1": "YAWNED AT",
+     "line2": "LEAST ONCE"
+    },
+    "left": "phone",
+    "right": {
+     "name": "yawn_face",
+     "size": 0.45
+    },
+    "right_at": "1+0.3"
+   }
+  },
+  {
+   "say": "About sixty eight percent yawned at least once.",
+   "cap": "ABOUT *68%* YAWNED | AT LEAST ONCE."
+  },
+  {
+   "say": "Is it about empathy? This study found no clear link.",
+   "cap": "IS IT ABOUT *EMPATHY?* | THIS STUDY FOUND | NO CLEAR LINK.",
+   "show": {
+    "kind": "stamp",
+    "prop": {
+     "name": "heart",
+     "slot": "center",
+     "size": 1.1
+    },
+    "stamp": {
+     "text": "NO CLEAR LINK",
+     "slot": "low",
+     "at": "0+1.6"
+    },
+    "poses": {
+     "0+1.8": "shrug"
+    }
+   }
+  },
+  {
+   "say": "Older people caught fewer yawns,",
+   "cap": "OLDER PEOPLE | CAUGHT *FEWER* YAWNS,",
+   "show": {
+    "kind": "number",
+    "number": {
+     "value": 8,
+     "suffix": "%",
+     "color": "red"
+    },
+    "left": "clock",
+    "right": "qmark",
+    "right_at": "2+0.2"
+   }
+  },
+  {
+   "say": "but age explained only about eight percent of it.",
+   "cap": "BUT AGE EXPLAINED | ONLY ABOUT *8%* OF IT."
+  },
+  {
+   "say": "The rest is still a mystery.",
+   "cap": "THE REST IS | STILL A *MYSTERY.*"
+  },
+  {
+   "say": "So if you yawned during this video,",
+   "cap": "SO IF YOU *YAWNED* | DURING THIS VIDEO,",
+   "show": {
+    "kind": "exit",
+    "prop": {
+     "name": "yawn_face",
+     "slot": "right",
+     "size": 1.3
+    },
+    "leave_at": "1+1.0",
+    "pose": "deadpan",
+    "poses": {
+     "1": "point",
+     "1+1.2": "wave"
+    }
+   }
+  },
+  {
+   "say": "it's not boring. It's contagious.",
+   "cap": "IT'S NOT *BORING.* | IT'S *CONTAGIOUS.*"
+  }
+ ],
+ "cover": {
+  "big": [
+   "TRY NOT",
+   "*TO YAWN*"
+  ]
+ },
+ "sources": [
+  {
+   "fact": "Duke Health, 'Contagious Yawning May Not Be Linked to Empathy; Still Largely Unexplained' (2014): 328 healthy volunteers watched a three-minute video of people yawning; 222 contagiously yawned at least once; as age increased participants were less likely to yawn, but age explained only 8 percent of the variability; no association between contagious yawning and empathy; contagious yawning can be triggered by hearing, seeing or thinking about yawning",
+   "url": "https://corporate.dukehealth.org/news/contagious-yawning-may-not-be-linked-empathy-still-largely-unexplained",
+   "fetched": "2026-11-25"
+  },
+  {
+   "fact": "Bartholomew & Cirulli, PLoS ONE 2014, 'Individual Variation in Contagious Yawning Susceptibility Is Highly Stable and Largely Unexplained by Empathy or Other Known Factors': 328 participants, 3-minute video; 222 (67.7%) yawned at least once; age explained only 8% of variability; no influence of empathy once age is accounted for; contagious yawning can be triggered by hearing, seeing, reading, or thinking about yawning",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3954725",
+   "fetched": "2026-11-25"
+  },
+  {
+   "fact": "University of Washington, Neuroscience for Kids, 'Contagious Yawning': reading about yawning and thinking about yawning are listed as triggers",
+   "url": "https://faculty.washington.edu/chudler/yawnc.html",
+   "fetched": "2026-11-25"
+  }
+ ],
+ "math": [
+  {
+   "expr": "328",
+   "expect": 328,
+   "note": "Duke Health / PLoS ONE: 328 participants"
+  },
+  {
+   "expr": "3",
+   "expect": 3,
+   "note": "Duke Health: three-minute yawning video"
+  },
+  {
+   "expr": "round(222 / 328 * 100)",
+   "expect": 68,
+   "note": "222 of 328 yawned at least once (PLoS ONE: 67.7%)"
+  },
+  {
+   "expr": "8",
+   "expect": 8,
+   "note": "Duke Health: age explained only 8 percent of the variability"
+  },
+  {
+   "expr": "2014",
+   "expect": 2014,
+   "note": "Duke Health / PLoS ONE study published March 2014"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-26T23:30:00+05:30",
+  "instagram_caption": "Just reading about a yawn can make you yawn 🥱\n\nContagious yawns can be set off by seeing, hearing, reading or even thinking about a yawn. In a Duke study, 328 people watched a 3 minute yawning video and about 68% yawned at least once. The study found no clear link to empathy, and age explained only about 8% of who yawned.\n\nThe rest is still a mystery.\n\nSources: Duke Health, PLoS ONE, University of Washington.\n\nDid you yawn while watching this?\n\n#docstick #yawning #brainfacts #bodyfacts #sciencefacts",
+  "youtube_title": "Just Reading About a Yawn Can Make You Yawn",
+  "youtube_description": "Contagious yawns can be triggered by seeing, hearing, reading or thinking about yawning. In a 2014 Duke study, 328 people watched a 3 minute yawning video and about 68% yawned at least once. The study found no clear link to empathy, and age explained only about 8%.\n\nEducational only, not medical advice.\n\nSources:\n• Duke Health, \"Contagious Yawning May Not Be Linked to Empathy; Still Largely Unexplained\" (fetched Nov 25, 2026)\n• PLoS ONE, \"Individual Variation in Contagious Yawning Susceptibility Is Highly Stable and Largely Unexplained by Empathy or Other Known Factors\" (fetched Nov 25, 2026)\n• University of Washington, \"Contagious Yawning\" (fetched Nov 25, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#Yawning #BodyFacts #Shorts"
+ }
+}
