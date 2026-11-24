@@ -1,0 +1,468 @@
+{
+ "id": "014_baby_bones_merge",
+ "voice": "am_michael",
+ "speed": 1.0,
+ "phrases": [
+  {
+   "say": "You were born with about three hundred bones.",
+   "cap": "YOU WERE BORN WITH | ABOUT *300 BONES.*",
+   "pause": 0.2
+  },
+  {
+   "say": "Now you have two hundred and six.",
+   "cap": "NOW YOU HAVE *206.*",
+   "pause": 0.45
+  },
+  {
+   "say": "So where did the rest go?",
+   "cap": "SO WHERE DID | THE REST *GO?*",
+   "pause": 0.2
+  },
+  {
+   "say": "They didn't fall out. They fused.",
+   "cap": "THEY DIDN'T FALL OUT. | THEY *FUSED.*",
+   "pause": 0.45
+  },
+  {
+   "say": "As a baby grows, small bones join together into bigger ones.",
+   "cap": "AS A BABY GROWS, | SMALL BONES *JOIN* | INTO BIGGER ONES.",
+   "pause": 0.2
+  },
+  {
+   "say": "And many of them start out as soft cartilage,",
+   "cap": "AND MANY START OUT | AS SOFT *CARTILAGE,*",
+   "pause": 0.2
+  },
+  {
+   "say": "which slowly hardens into bone.",
+   "cap": "WHICH SLOWLY | *HARDENS* INTO BONE.",
+   "pause": 0.45
+  },
+  {
+   "say": "Even your kneecaps start as cartilage.",
+   "cap": "EVEN YOUR *KNEECAPS* | START AS CARTILAGE.",
+   "pause": 0.2
+  },
+  {
+   "say": "They're not fully developed until around age ten to twelve.",
+   "cap": "NOT FULLY DEVELOPED | UNTIL AROUND | *AGE 10 TO 12.*",
+   "pause": 0.45
+  },
+  {
+   "say": "So you didn't lose any bones.",
+   "cap": "SO YOU DIDN'T | *LOSE* ANY BONES.",
+   "pause": 0.2
+  },
+  {
+   "say": "Your skeleton just did a merger.",
+   "cap": "YOUR SKELETON | JUST DID A *MERGER.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Follow,",
+   "cap": "*FOLLOW*",
+   "pause": 0.15
+  },
+  {
+   "say": "for the stuff school skipped.",
+   "cap": "FOR THE STUFF | SCHOOL *SKIPPED.*",
+   "pause": 0.5
+  }
+ ],
+ "scenes": [
+  {
+   "first": 0,
+   "end": 2,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      0,
+      0.0,
+      "deadpan"
+     ],
+     [
+      1,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [
+    {
+     "kind": "boy",
+     "x": 820,
+     "s": 2.25,
+     "face": -1,
+     "poses": [
+      [
+       0,
+       0.0,
+       "deadpan"
+      ],
+      [
+       1,
+       0.3,
+       "shocked"
+      ]
+     ],
+     "at": [
+      0,
+      0.0
+     ],
+     "in": "none"
+    }
+   ],
+   "els": [
+    {
+     "type": "prop",
+     "name": "bone",
+     "x": 520,
+     "y": 1010,
+     "s": 1.4,
+     "slot": "left",
+     "at": [
+      0,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 2,
+   "end": 4,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      2,
+      0.0,
+      "think"
+     ],
+     [
+      3,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "big_number",
+     "x": 660,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "center",
+     "at": [
+      2,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "value": 206,
+      "color": "red"
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "bone",
+     "x": 520,
+     "y": 1300,
+     "s": 0.7,
+     "slot": "low_left",
+     "at": [
+      2,
+      0.6
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "qmark",
+     "x": 860,
+     "y": 1300,
+     "s": 0.8,
+     "slot": "low_right",
+     "at": [
+      2,
+      0.8
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 4,
+   "end": 7,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      4,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "bone",
+     "x": 520,
+     "y": 1300,
+     "s": 0.8,
+     "slot": "low_left",
+     "at": [
+      4,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "bone",
+     "x": 860,
+     "y": 1300,
+     "s": 1.3,
+     "slot": "low_right",
+     "at": [
+      4,
+      1.2
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 7,
+   "end": 9,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      7,
+      0.0,
+      "deadpan"
+     ],
+     [
+      8,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "sign",
+     "x": 820,
+     "y": 1560,
+     "s": 1.0,
+     "slot": "floor_right",
+     "at": [
+      7,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "lines": [
+       "KNEECAPS",
+       "FULLY BONE",
+       "AGE 10 TO 12"
+      ]
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "CARTILAGE FIRST",
+     "sub": null,
+     "x": 660,
+     "y": 830,
+     "color": "red",
+     "rot": -0.12,
+     "size": 54,
+     "at": [
+      7,
+      0.8
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 9,
+   "end": 11,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      9,
+      0.0,
+      "deadpan"
+     ],
+     [
+      10,
+      0.0,
+      "point"
+     ],
+     [
+      10,
+      1.2,
+      "wave"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "bone",
+     "x": 840,
+     "y": 1010,
+     "s": 1.1,
+     "slot": "right",
+     "at": [
+      9,
+      0.0
+     ],
+     "until": [
+      10,
+      1.0
+     ],
+     "in": "none",
+     "out": "slide_right",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 11,
+   "end": 13,
+   "outro": true,
+   "doc": {
+    "x": 540,
+    "s": 2.4,
+    "face": 1,
+    "poses": [
+     [
+      11,
+      0.0,
+      "wave"
+     ]
+    ]
+   },
+   "people": [],
+   "els": []
+  }
+ ],
+ "cover": {
+  "big": [
+   "300 BONES",
+   "*NOW 206*"
+  ]
+ },
+ "sources": [
+  {
+   "fact": "Cleveland Clinic, 'How Many Bones Do Babies Have?': a newborn has 275 to 300 bones, while most adults have 206; as a baby grows, their smaller bones join together to create larger bones; many baby bones start as cartilage and fuse and harden through ossification",
+   "url": "https://health.clevelandclinic.org/how-many-bones-does-a-baby-have",
+   "fetched": "2026-11-25"
+  },
+  {
+   "fact": "Cleveland Clinic, '15 Facts About Your Bones and Skeletal System': you were born with around 300 bones and have 206 now; your skeleton fuses together as you grow; kneecaps start as cartilage that hardens over time and are not fully developed until around age 10 or 12",
+   "url": "https://health.clevelandclinic.org/facts-about-the-skeletal-system",
+   "fetched": "2026-11-25"
+  },
+  {
+   "fact": "Popular Science, 'You'll never have as many bones as you did at birth': newborns can have more than 300 distinct bones; the extra bones fuse together as they develop, starting as cartilage that bone cells ossify; the adult skeleton has 206 bones",
+   "url": "https://www.popsci.com/story/health/bones-human-skeleton/",
+   "fetched": "2026-11-25"
+  }
+ ],
+ "math": [
+  {
+   "expr": "300",
+   "expect": 300,
+   "note": "Cleveland Clinic: born with around 300 bones (275 to 300)"
+  },
+  {
+   "expr": "206",
+   "expect": 206,
+   "note": "Cleveland Clinic: most adults have 206 bones"
+  },
+  {
+   "expr": "10",
+   "expect": 10,
+   "note": "Cleveland Clinic: kneecaps fully developed around age 10 or 12 (low end)"
+  },
+  {
+   "expr": "12",
+   "expect": 12,
+   "note": "Cleveland Clinic: kneecaps fully developed around age 10 or 12 (high end)"
+  }
+ ],
+ "post": {
+  "slot": "morning",
+  "post_at": "2026-11-26T07:30:00+05:30",
+  "instagram_caption": "You were born with about 300 bones. Now you have 206 🦴\n\nThey didn't fall out. As a baby grows, small bones join together into bigger ones, and many start as soft cartilage that slowly hardens into bone. Even your kneecaps start as cartilage and aren't fully developed until around age 10 to 12.\n\nSo you didn't lose any bones. Your skeleton just did a merger.\n\nSources: Cleveland Clinic, Popular Science.\n\nWhich body fact from childhood surprised you most?\n\n#docstick #bodyfacts #bones #skeleton #sciencefacts",
+  "youtube_title": "You Were Born With About 300 Bones",
+  "youtube_description": "Newborns have about 300 bones (275 to 300), while most adults have 206. As a baby grows, small bones fuse into bigger ones, and many start as cartilage that hardens into bone. Even kneecaps aren't fully developed until around age 10 to 12.\n\nEducational only, not medical advice.\n\nSources:\n• Cleveland Clinic, \"How Many Bones Do Babies Have?\" (fetched Nov 25, 2026)\n• Cleveland Clinic, \"15 Facts About Your Bones and Skeletal System\" (fetched Nov 25, 2026)\n• Popular Science, \"You'll never have as many bones as you did at birth\" (fetched Nov 25, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#BodyFacts #Bones #Shorts"
+ }
+}

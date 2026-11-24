@@ -1,0 +1,172 @@
+{
+ "id": "014_baby_bones_merge",
+ "beats": [
+  {
+   "say": "You were born with about three hundred bones.",
+   "cap": "YOU WERE BORN WITH | ABOUT *300 BONES.*",
+   "show": {
+    "kind": "hook",
+    "person": "boy",
+    "prop": {
+     "name": "bone",
+     "size": 1.4
+    }
+   }
+  },
+  {
+   "say": "Now you have two hundred and six.",
+   "cap": "NOW YOU HAVE *206.*"
+  },
+  {
+   "say": "So where did the rest go?",
+   "cap": "SO WHERE DID | THE REST *GO?*",
+   "show": {
+    "kind": "number",
+    "number": {
+     "value": 206,
+     "color": "red"
+    },
+    "left": "bone",
+    "right": "qmark",
+    "right_at": "0+0.8",
+    "pose": "think",
+    "poses": {
+     "1": "point"
+    }
+   }
+  },
+  {
+   "say": "They didn't fall out. They fused.",
+   "cap": "THEY DIDN'T FALL OUT. | THEY *FUSED.*"
+  },
+  {
+   "say": "As a baby grows, small bones join together into bigger ones.",
+   "cap": "AS A BABY GROWS, | SMALL BONES *JOIN* | INTO BIGGER ONES.",
+   "show": {
+    "kind": "pair",
+    "left": {
+     "name": "bone",
+     "size": 0.8
+    },
+    "right": {
+     "name": "bone",
+     "size": 1.3
+    },
+    "right_at": "0+1.2"
+   }
+  },
+  {
+   "say": "And many of them start out as soft cartilage,",
+   "cap": "AND MANY START OUT | AS SOFT *CARTILAGE,*"
+  },
+  {
+   "say": "which slowly hardens into bone.",
+   "cap": "WHICH SLOWLY | *HARDENS* INTO BONE."
+  },
+  {
+   "say": "Even your kneecaps start as cartilage.",
+   "cap": "EVEN YOUR *KNEECAPS* | START AS CARTILAGE.",
+   "show": {
+    "kind": "stamp",
+    "prop": {
+     "name": "sign",
+     "slot": "floor_right",
+     "args": {
+      "lines": [
+       "KNEECAPS",
+       "FULLY BONE",
+       "AGE 10 TO 12"
+      ]
+     }
+    },
+    "stamp": {
+     "text": "CARTILAGE FIRST",
+     "slot": "high",
+     "at": "0+0.8",
+     "size": 54
+    },
+    "poses": {
+     "1": "point"
+    }
+   }
+  },
+  {
+   "say": "They're not fully developed until around age ten to twelve.",
+   "cap": "NOT FULLY DEVELOPED | UNTIL AROUND | *AGE 10 TO 12.*"
+  },
+  {
+   "say": "So you didn't lose any bones.",
+   "cap": "SO YOU DIDN'T | *LOSE* ANY BONES.",
+   "show": {
+    "kind": "exit",
+    "prop": {
+     "name": "bone",
+     "slot": "right",
+     "size": 1.1
+    },
+    "leave_at": "1+1.0",
+    "pose": "deadpan",
+    "poses": {
+     "1": "point",
+     "1+1.2": "wave"
+    }
+   }
+  },
+  {
+   "say": "Your skeleton just did a merger.",
+   "cap": "YOUR SKELETON | JUST DID A *MERGER.*"
+  }
+ ],
+ "cover": {
+  "big": [
+   "300 BONES",
+   "*NOW 206*"
+  ]
+ },
+ "sources": [
+  {
+   "fact": "Cleveland Clinic, 'How Many Bones Do Babies Have?': a newborn has 275 to 300 bones, while most adults have 206; as a baby grows, their smaller bones join together to create larger bones; many baby bones start as cartilage and fuse and harden through ossification",
+   "url": "https://health.clevelandclinic.org/how-many-bones-does-a-baby-have",
+   "fetched": "2026-11-25"
+  },
+  {
+   "fact": "Cleveland Clinic, '15 Facts About Your Bones and Skeletal System': you were born with around 300 bones and have 206 now; your skeleton fuses together as you grow; kneecaps start as cartilage that hardens over time and are not fully developed until around age 10 or 12",
+   "url": "https://health.clevelandclinic.org/facts-about-the-skeletal-system",
+   "fetched": "2026-11-25"
+  },
+  {
+   "fact": "Popular Science, 'You'll never have as many bones as you did at birth': newborns can have more than 300 distinct bones; the extra bones fuse together as they develop, starting as cartilage that bone cells ossify; the adult skeleton has 206 bones",
+   "url": "https://www.popsci.com/story/health/bones-human-skeleton/",
+   "fetched": "2026-11-25"
+  }
+ ],
+ "math": [
+  {
+   "expr": "300",
+   "expect": 300,
+   "note": "Cleveland Clinic: born with around 300 bones (275 to 300)"
+  },
+  {
+   "expr": "206",
+   "expect": 206,
+   "note": "Cleveland Clinic: most adults have 206 bones"
+  },
+  {
+   "expr": "10",
+   "expect": 10,
+   "note": "Cleveland Clinic: kneecaps fully developed around age 10 or 12 (low end)"
+  },
+  {
+   "expr": "12",
+   "expect": 12,
+   "note": "Cleveland Clinic: kneecaps fully developed around age 10 or 12 (high end)"
+  }
+ ],
+ "post": {
+  "slot": "morning",
+  "post_at": "2026-11-26T07:30:00+05:30",
+  "instagram_caption": "You were born with about 300 bones. Now you have 206 🦴\n\nThey didn't fall out. As a baby grows, small bones join together into bigger ones, and many start as soft cartilage that slowly hardens into bone. Even your kneecaps start as cartilage and aren't fully developed until around age 10 to 12.\n\nSo you didn't lose any bones. Your skeleton just did a merger.\n\nSources: Cleveland Clinic, Popular Science.\n\nWhich body fact from childhood surprised you most?\n\n#docstick #bodyfacts #bones #skeleton #sciencefacts",
+  "youtube_title": "You Were Born With About 300 Bones",
+  "youtube_description": "Newborns have about 300 bones (275 to 300), while most adults have 206. As a baby grows, small bones fuse into bigger ones, and many start as cartilage that hardens into bone. Even kneecaps aren't fully developed until around age 10 to 12.\n\nEducational only, not medical advice.\n\nSources:\n• Cleveland Clinic, \"How Many Bones Do Babies Have?\" (fetched Nov 25, 2026)\n• Cleveland Clinic, \"15 Facts About Your Bones and Skeletal System\" (fetched Nov 25, 2026)\n• Popular Science, \"You'll never have as many bones as you did at birth\" (fetched Nov 25, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#BodyFacts #Bones #Shorts"
+ }
+}
