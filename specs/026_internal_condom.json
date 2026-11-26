@@ -1,0 +1,494 @@
+{
+ "id": "026_internal_condom",
+ "voice": "am_michael",
+ "speed": 1.0,
+ "phrases": [
+  {
+   "say": "There's a condom you can put in eight hours before sex.",
+   "cap": "THERE'S A CONDOM | YOU CAN PUT IN | *8 HOURS* BEFORE SEX.",
+   "pause": 0.2
+  },
+  {
+   "say": "And most people have never seen one.",
+   "cap": "AND MOST PEOPLE | HAVE *NEVER SEEN ONE.*",
+   "pause": 0.45
+  },
+  {
+   "say": "It's the internal condom. Also called the female condom.",
+   "cap": "IT'S THE | *INTERNAL CONDOM.* | ALSO CALLED THE | *FEMALE CONDOM.*",
+   "pause": 0.2
+  },
+  {
+   "say": "It goes inside the vagina, not on the penis.",
+   "cap": "IT GOES *INSIDE* | THE VAGINA, | NOT ON THE PENIS.",
+   "pause": 0.2
+  },
+  {
+   "say": "Soft, thin plastic, with a ring at each end.",
+   "cap": "SOFT, THIN PLASTIC, | WITH A *RING* | AT EACH END.",
+   "pause": 0.45
+  },
+  {
+   "say": "Used correctly every time, it's up to ninety five percent effective.",
+   "cap": "USED CORRECTLY | EVERY TIME: | UP TO *95%* EFFECTIVE.",
+   "pause": 0.45
+  },
+  {
+   "say": "With real life mistakes, about seventy nine percent.",
+   "cap": "WITH REAL LIFE | *MISTAKES:* | ABOUT *79%.*",
+   "pause": 0.2
+  },
+  {
+   "say": "It also helps protect against sexually transmitted infections.",
+   "cap": "IT ALSO HELPS | *PROTECT* AGAINST | SEXUALLY TRANSMITTED | INFECTIONS.",
+   "pause": 0.45
+  },
+  {
+   "say": "One rule.",
+   "cap": "*ONE RULE.*",
+   "pause": 0.2
+  },
+  {
+   "say": "Never wear it together with a normal condom.",
+   "cap": "NEVER WEAR IT | WITH A *NORMAL* CONDOM.",
+   "pause": 0.2
+  },
+  {
+   "say": "They can make each other split.",
+   "cap": "THEY CAN MAKE | EACH OTHER *SPLIT.*",
+   "pause": 0.2
+  },
+  {
+   "say": "Two condoms. Zero condoms.",
+   "cap": "*TWO* CONDOMS. | *ZERO* CONDOMS.",
+   "pause": 0.45
+  },
+  {
+   "say": "So now you know.",
+   "cap": "SO NOW | *YOU KNOW.*",
+   "pause": 0.2
+  },
+  {
+   "say": "Tell a friend who didn't.",
+   "cap": "TELL A FRIEND | WHO *DIDN'T.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Follow,",
+   "cap": "*FOLLOW*",
+   "pause": 0.15
+  },
+  {
+   "say": "for the stuff school skipped.",
+   "cap": "FOR THE STUFF | SCHOOL *SKIPPED.*",
+   "pause": 0.5
+  }
+ ],
+ "scenes": [
+  {
+   "first": 0,
+   "end": 2,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      0,
+      0.0,
+      "deadpan"
+     ],
+     [
+      1,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "sign",
+     "x": 820,
+     "y": 1560,
+     "s": 1.3,
+     "slot": "floor_right",
+     "at": [
+      0,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [],
+     "args": {
+      "lines": [
+       "PUT IN",
+       "8 HOURS EARLY"
+      ]
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "clock",
+     "x": 860,
+     "y": 830,
+     "s": 0.8,
+     "slot": "high_right",
+     "at": [
+      0,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [],
+     "args": {
+      "fast": true
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 2,
+   "end": 5,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      2,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "internal_condom",
+     "x": 660,
+     "y": 1010,
+     "s": 1.5,
+     "slot": "center",
+     "at": [
+      2,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 5,
+   "end": 6,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      5,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "ring",
+     "x": 660,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "center",
+     "at": [
+      5,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "value": 95,
+      "line1": "USED",
+      "line2": "CORRECTLY"
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 6,
+   "end": 8,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      6,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "ring",
+     "x": 660,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "center",
+     "at": [
+      6,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "value": 79,
+      "color": "red",
+      "line1": "WITH",
+      "line2": "MISTAKES"
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "shield",
+     "x": 860,
+     "y": 1300,
+     "s": 0.8,
+     "slot": "low_right",
+     "at": [
+      7,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": "STI PROTECTION",
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 8,
+   "end": 12,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      8,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "condom",
+     "x": 520,
+     "y": 1300,
+     "s": 1.2,
+     "slot": "low_left",
+     "at": [
+      8,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "internal_condom",
+     "x": 860,
+     "y": 1300,
+     "s": 1.5,
+     "slot": "low_right",
+     "at": [
+      8,
+      0.4
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "DON'T DOUBLE UP",
+     "sub": null,
+     "x": 660,
+     "y": 830,
+     "color": "red",
+     "rot": -0.12,
+     "size": 58,
+     "at": [
+      9,
+      0.3
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 12,
+   "end": 14,
+   "doc": null,
+   "people": [
+    {
+     "kind": "girl",
+     "x": 300,
+     "s": 2.25,
+     "face": 1,
+     "poses": [
+      [
+       12,
+       0.0,
+       "wave"
+      ]
+     ],
+     "at": [
+      12,
+      0.0
+     ],
+     "in": "none"
+    }
+   ],
+   "els": [
+    {
+     "type": "prop",
+     "name": "sign",
+     "x": 820,
+     "y": 1560,
+     "s": 1.0,
+     "slot": "floor_right",
+     "at": [
+      12,
+      0.5
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "lines": [
+       "TELL A FRIEND",
+       "WHO DIDN'T"
+      ]
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 14,
+   "end": 16,
+   "outro": true,
+   "doc": {
+    "x": 540,
+    "s": 2.4,
+    "face": 1,
+    "poses": [
+     [
+      14,
+      0.0,
+      "wave"
+     ]
+    ]
+   },
+   "people": [],
+   "els": []
+  }
+ ],
+ "cover": {
+  "big": [
+   "8 HOURS",
+   "*BEFORE SEX?*"
+  ]
+ },
+ "sources": [
+  {
+   "fact": "Internal (female) condoms are made of soft thin polyurethane, worn inside the vagina, can be put in up to 8 hours before sex; 95% effective used correctly, 79% typical",
+   "url": "https://nhsinform.scot/healthy-living/contraception/internal-condoms",
+   "fetched": "2026-11-27"
+  },
+  {
+   "fact": "Up to 95% effective if used correctly every time, 79% if not; help prevent pregnancy and reduce STI risk; do not use with an external condom, it can make one or both split",
+   "url": "https://www.nhs.uk/contraception/methods-of-contraception/internal-condoms/",
+   "fetched": "2026-11-27"
+  },
+  {
+   "fact": "A tube made of soft plastic or rubber with a ring at each end; can be inserted up to 8 hours before sex",
+   "url": "https://healthy.kaiserpermanente.org/health-wellness/health-encyclopedia/he.sig51936",
+   "fetched": "2026-11-27"
+  },
+  {
+   "fact": "Female condoms may be placed up to 8 hours before intercourse; 95% effective used correctly all the time",
+   "url": "https://medlineplus.gov/ency/article/004002.htm",
+   "fetched": "2026-11-27"
+  }
+ ],
+ "math": [
+  {
+   "expr": "8",
+   "expect": 8,
+   "note": "up to 8 hours before sex (NHS inform, MedlinePlus)"
+  },
+  {
+   "expr": "95",
+   "expect": 95,
+   "note": "95% with correct use (NHS)"
+  },
+  {
+   "expr": "79",
+   "expect": 79,
+   "note": "79% with typical use (NHS)"
+  }
+ ],
+ "post": {
+  "slot": "idea",
+  "post_at": "2026-12-03T18:30:00+05:30",
+  "instagram_caption": "There's a condom you can put in 8 hours before sex ⏰\n\nIt's the internal (female) condom: a soft, thin sleeve with a ring at each end that goes inside the vagina. Used correctly every time it's up to 95% effective (about 79% with real-life mistakes), and it also helps protect against STIs.\n\nOne rule: never use it together with a normal condom. They can make each other split.\n\nSources: NHS, NHS inform, MedlinePlus, Kaiser Permanente.\n\nDid you know female condoms existed?\n\n#docstick #contraception #womenshealth #sexeducation #bodyfacts",
+  "youtube_title": "The Condom You Can Put In 8 Hours Before Sex",
+  "youtube_description": "The internal (female) condom goes inside the vagina and can be put in up to 8 hours before sex. Used correctly every time it is up to 95% effective (about 79% with typical use), and it helps protect against STIs. Never use it together with a normal condom: they can make each other split.\n\nEducational only, not medical advice.\n\nSources:\n• NHS, \"Internal condoms\" (fetched Nov 27, 2026)\n• NHS inform, \"Internal condoms\" (fetched Nov 27, 2026)\n• MedlinePlus, \"Female condoms\" (fetched Nov 27, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#Contraception #SexEducation #Shorts"
+ }
+}

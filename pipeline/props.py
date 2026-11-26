@@ -741,3 +741,14 @@ def cereal(c, st):
         ellipse(c, x, y, 20, 10); fillstroke(c, (0.98, 0.78, 0.30), (0.70, 0.45, 0.10), 3)
     c.move_to(-115, -10); c.curve_to(-110, 60, 110, 60, 115, -10); c.close_path(); fillstroke(c, WHITE, INK, 6)
     c.move_to(-90, 18); c.curve_to(-40, 34, 40, 34, 90, 18); stroke(c, (0.25, 0.55, 0.90), 6)
+
+
+@prop("internal_condom", (-80, -110, 80, 110), "center",
+      "internal (female) condom: a soft clear sleeve with a ring at each end, shown upright, cartoon only")
+def internal_condom(c, st):
+    sw = math.sin(st.t * 2) * 3
+    c.move_to(-48, -80); c.curve_to(-60 + sw, -20, -40, 50, -30, 85); c.line_to(30, 85); c.curve_to(40, 50, 60 - sw, -20, 48, -80); c.close_path()
+    c.set_source_rgba(0.80, 0.92, 0.98, 0.85); c.fill_preserve(); stroke(c, (0.30, 0.55, 0.75), 5)
+    ellipse(c, 0, -80, 55, 18); c.set_source_rgba(1, 1, 1, 0.9); c.fill_preserve(); stroke(c, (0.30, 0.55, 0.75), 7)
+    ellipse(c, 0, 85, 32, 11); stroke(c, (0.30, 0.55, 0.75), 6)
+    c.move_to(-28, -40); c.curve_to(-32, 0, -24, 40, -18, 60); c.set_source_rgba(1, 1, 1, 0.8); c.set_line_width(6); c.stroke()
