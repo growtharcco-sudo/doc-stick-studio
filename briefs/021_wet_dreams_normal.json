@@ -1,0 +1,217 @@
+{
+ "id": "021_wet_dreams_normal",
+ "beats": [
+  {
+   "say": "Up to nine in ten boys go through this.",
+   "cap": "UP TO *9 IN 10* BOYS | GO THROUGH THIS.",
+   "show": {
+    "kind": "hook",
+    "prop": {
+     "name": "bed",
+     "size": 1.2,
+     "args": {
+      "state": "zzz"
+     }
+    },
+    "add_props": [
+     {
+      "name": "qmark",
+      "slot": "high_right",
+      "size": 0.8,
+      "at": "1"
+     }
+    ]
+   }
+  },
+  {
+   "say": "And almost nobody explains it.",
+   "cap": "AND ALMOST NOBODY | *EXPLAINS IT.*"
+  },
+  {
+   "say": "Wet dreams.",
+   "cap": "*WET DREAMS.*",
+   "show": {
+    "kind": "explain",
+    "prop": {
+     "name": "book",
+     "args": {
+      "title": "PUBERTY"
+     }
+    },
+    "stamp": {
+     "text": "NOCTURNAL EMISSIONS",
+     "at": "1",
+     "size": 46
+    }
+   }
+  },
+  {
+   "say": "The medical name is nocturnal emissions.",
+   "cap": "THE MEDICAL NAME: | *NOCTURNAL* | *EMISSIONS.*"
+  },
+  {
+   "say": "In puberty, testosterone goes up.",
+   "cap": "IN PUBERTY, | *TESTOSTERONE* | GOES UP.",
+   "show": {
+    "kind": "pair",
+    "left": {
+     "name": "brain",
+     "size": 0.8
+    },
+    "right": {
+     "name": "arrow_up",
+     "label": "TESTOSTERONE"
+    },
+    "right_at": "0+0.8"
+   }
+  },
+  {
+   "say": "And the testicles start making millions of sperm every day.",
+   "cap": "AND THE TESTICLES | START MAKING | *MILLIONS* OF SPERM | EVERY DAY."
+  },
+  {
+   "say": "Sometimes, during sleep, some gets released.",
+   "cap": "SOMETIMES, | DURING *SLEEP,* | SOME GETS *RELEASED.*",
+   "show": {
+    "kind": "stamp",
+    "prop": {
+     "name": "bed",
+     "size": 1.2,
+     "args": {
+      "state": "zzz"
+     }
+    },
+    "stamp": {
+     "text": "AUTOMATIC",
+     "at": "1+0.3"
+    }
+   }
+  },
+  {
+   "say": "You can't control it, and you can't stop it.",
+   "cap": "YOU *CAN'T CONTROL IT,* | AND YOU | *CAN'T STOP IT.*"
+  },
+  {
+   "say": "It often starts around twelve or thirteen.",
+   "cap": "IT OFTEN STARTS | AROUND *12 OR 13.*",
+   "show": {
+    "kind": "pair",
+    "left": {
+     "name": "calendar",
+     "args": {
+      "top": "AGE",
+      "big": "12"
+     }
+    },
+    "right": {
+     "name": "calendar",
+     "args": {
+      "top": "AGE",
+      "big": "13"
+     }
+    },
+    "right_at": "0+0.6"
+   }
+  },
+  {
+   "say": "And it gets less common as you get older.",
+   "cap": "AND IT GETS | *LESS COMMON* | AS YOU GET OLDER."
+  },
+  {
+   "say": "Some guys never have one. Also normal.",
+   "cap": "SOME GUYS | *NEVER* HAVE ONE. | ALSO *NORMAL.*",
+   "show": {
+    "kind": "solo",
+    "person": "girl",
+    "person_pose": "wave",
+    "prop": {
+     "name": "sign",
+     "args": {
+      "lines": [
+       "GIRLS CAN",
+       "HAVE THEM TOO"
+      ]
+     }
+    },
+    "prop_at": "1"
+   }
+  },
+  {
+   "say": "And yes, girls can have them too.",
+   "cap": "AND YES, | *GIRLS* CAN | HAVE THEM TOO."
+  },
+  {
+   "say": "It's not a health problem.",
+   "cap": "IT'S NOT A | *HEALTH PROBLEM.*",
+   "show": {
+    "kind": "verdict",
+    "verdict": "true",
+    "props": [
+     {
+      "name": "bed",
+      "size": 1.0,
+      "args": {
+       "state": "zzz"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "say": "So. Wash the sheets. Move on.",
+   "cap": "SO. *WASH THE SHEETS.* | *MOVE ON.*"
+  }
+ ],
+ "cover": {
+  "big": [
+   "WET DREAMS?",
+   "*100% NORMAL.*"
+  ]
+ },
+ "sources": [
+  {
+   "fact": "Wet dreams (nocturnal emissions) are most common during puberty; rising hormones fuel them; often start around 12 or 13; researchers estimate 70% to 90% of boys have them; also normal to have none; girls can have them too; less common with age; nothing you can do to prevent them",
+   "url": "https://health.clevelandclinic.org/wet-dreams",
+   "fetched": "2026-11-26"
+  },
+  {
+   "fact": "Wet dreams happen because testosterone rises during puberty; you can't stop them; they are a normal part of growing up and aren't a health problem",
+   "url": "https://kidshealth.org/en/teens/expert-wet-dreams.html",
+   "fetched": "2026-11-26"
+  },
+  {
+   "fact": "When puberty begins, the testicles start to make millions of sperm every day; the medical term is nocturnal emissions",
+   "url": "https://www.fpa.org.uk/wet-dreams/",
+   "fetched": "2026-11-26"
+  }
+ ],
+ "math": [
+  {
+   "expr": "90 / 100 * 10",
+   "expect": 9,
+   "note": "up to 90% of boys = 9 in 10 (Cleveland Clinic: 70% to 90%)"
+  },
+  {
+   "expr": "12",
+   "expect": 12,
+   "note": "often starts around 12 or 13 (Cleveland Clinic)"
+  },
+  {
+   "expr": "13",
+   "expect": 13,
+   "note": "often starts around 12 or 13 (Cleveland Clinic)"
+  },
+  {
+   "expr": "100",
+   "expect": 100,
+   "note": "cover: 100% normal = 'a healthy and normal' part of growing up (Cleveland Clinic)"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-28T23:30:00+05:30",
+  "instagram_caption": "Up to 9 in 10 boys go through this, and almost nobody explains it 🛏️\n\nWet dreams (nocturnal emissions) start in puberty, when testosterone rises and the body starts making millions of sperm a day. They often begin around 12 or 13, you can't control them, and they get less common with age. Some people never have one, and girls can have them too.\n\nIt's not a health problem. Wash the sheets, move on.\n\nSources: Cleveland Clinic, KidsHealth, FPA.\n\nDid anyone ever explain this to you at school?\n\n#docstick #puberty #sexeducation #bodyfacts #teenhealth",
+  "youtube_title": "Wet Dreams: The Puberty Talk Nobody Gave You",
+  "youtube_description": "Wet dreams (nocturnal emissions) start in puberty, when testosterone rises. Up to 9 in 10 boys have them, often from around 12 or 13. You can't control them, they get less common with age, some people never have one, and girls can have them too. They are not a health problem.\n\nEducational only, not medical advice.\n\nSources:\n• Cleveland Clinic, \"Are wet dreams normal and healthy?\" (fetched Nov 26, 2026)\n• KidsHealth, \"What are wet dreams?\" (fetched Nov 26, 2026)\n• FPA, \"What are wet dreams?\" (fetched Nov 26, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#Puberty #SexEducation #Shorts"
+ }
+}
