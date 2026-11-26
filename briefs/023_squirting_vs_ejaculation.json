@@ -1,0 +1,175 @@
+{
+ "id": "023_squirting_vs_ejaculation",
+ "beats": [
+  {
+   "say": "Squirting and female ejaculation are not the same thing.",
+   "cap": "SQUIRTING AND | FEMALE EJACULATION | ARE *NOT THE SAME.*",
+   "show": {
+    "kind": "hook",
+    "person": "girl",
+    "prop": {
+     "name": "qmark",
+     "size": 1.0
+    },
+    "person_poses": {
+     "1": "think"
+    }
+   }
+  },
+  {
+   "say": "Scientists actually checked.",
+   "cap": "SCIENTISTS | ACTUALLY *CHECKED.*"
+  },
+  {
+   "say": "Female ejaculation is tiny. About one millilitre.",
+   "cap": "FEMALE EJACULATION | IS *TINY.* | ABOUT *1 ML.*",
+   "show": {
+    "kind": "number",
+    "number": {
+     "value": 1,
+     "suffix": " ML",
+     "color": "red"
+    },
+    "right": {
+     "name": "drop",
+     "size": 1.1,
+     "args": {
+      "color": "pink"
+     },
+     "label": "THICK, MILKY"
+    },
+    "right_at": "0+1.2"
+   }
+  },
+  {
+   "say": "A thick, milky fluid from the Skene's glands.",
+   "cap": "A THICK, *MILKY* FLUID | FROM THE | *SKENE'S GLANDS.*"
+  },
+  {
+   "say": "Some doctors call them the female prostate.",
+   "cap": "SOME CALL THEM | THE *FEMALE PROSTATE.*"
+  },
+  {
+   "say": "Squirting is a whole different system.",
+   "cap": "SQUIRTING IS | A WHOLE *DIFFERENT* | SYSTEM.",
+   "show": {
+    "kind": "pair",
+    "left": {
+     "name": "drop",
+     "size": 0.8,
+     "args": {
+      "color": "pink"
+     },
+     "label": "EJACULATION"
+    },
+    "right": {
+     "name": "drop",
+     "size": 2.4,
+     "label": "SQUIRTING"
+    },
+    "right_at": "0+0.8",
+    "stamps": [
+     {
+      "text": "FROM THE BLADDER",
+      "slot": "high",
+      "at": "1+0.4",
+      "size": 50
+     }
+    ]
+   }
+  },
+  {
+   "say": "It's a much bigger gush, and it comes from the bladder.",
+   "cap": "A MUCH *BIGGER* GUSH, | FROM THE *BLADDER.*"
+  },
+  {
+   "say": "Studies found it's mostly like diluted urine.",
+   "cap": "STUDIES FOUND | IT'S MOSTLY LIKE | *DILUTED URINE.*"
+  },
+  {
+   "say": "And yes, both can happen at the same time.",
+   "cap": "AND YES, BOTH | CAN HAPPEN | AT THE *SAME TIME.*",
+   "show": {
+    "kind": "verdict",
+    "verdict": "true",
+    "props": [
+     {
+      "name": "sign",
+      "size": 1.2,
+      "args": {
+       "lines": [
+        "DIFFERENT",
+        "BUT BOTH REAL"
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "say": "Different source. Different amount.",
+   "cap": "*DIFFERENT* SOURCE. | *DIFFERENT* AMOUNT."
+  },
+  {
+   "say": "Same awkward silence in sex ed.",
+   "cap": "SAME AWKWARD | *SILENCE* | IN SEX ED.",
+   "show": {
+    "kind": "explain",
+    "prop": {
+     "name": "book",
+     "args": {
+      "title": "SEX ED"
+     }
+    },
+    "pose": "deadpan",
+    "stamp": {
+     "text": "SKIPPED",
+     "at": "0+0.9",
+     "size": 64
+    }
+   }
+  }
+ ],
+ "cover": {
+  "big": [
+   "SQUIRTING VS",
+   "*EJACULATION*"
+  ]
+ },
+ "sources": [
+  {
+   "fact": "Review (Clinical Anatomy 2022): squirting fluid is similar to urine and expelled by the bladder; female ejaculation is a very small amount of secretion from the paraurethral (Skene's) glands with high PSA; both can occur simultaneously; mechanisms entirely different",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/35388532/",
+   "fetched": "2026-11-26"
+  },
+  {
+   "fact": "Case study: real female ejaculation is a scanty, thick, whitish fluid from the female prostate; squirting is diluted fluid from the urinary bladder; two different phenomena",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/21995650/",
+   "fetched": "2026-11-26"
+  },
+  {
+   "fact": "Female ejaculation is about 1 ml of thick white milky fluid from the paraurethral (Skene's) glands, also called the female prostate",
+   "url": "https://helloclue.com/articles/sex/female-ejaculation-and-squirting-what-s-the-difference",
+   "fetched": "2026-11-26"
+  },
+  {
+   "fact": "2015 Journal of Sexual Medicine study: the bladder filled before and was empty after squirting; small amounts of PSA detected",
+   "url": "https://drjengunter.com/2015/01/10/squirting-during-sex-is-urine-new-study",
+   "fetched": "2026-11-26"
+  }
+ ],
+ "math": [
+  {
+   "expr": "1",
+   "expect": 1,
+   "note": "about 1 ml (Clue, citing the 2022 review)"
+  }
+ ],
+ "post": {
+  "slot": "idea",
+  "post_at": "2026-11-30T18:30:00+05:30",
+  "instagram_caption": "They're not the same thing 💧\n\nFemale ejaculation is tiny, about 1 ml of thick, milky fluid from the Skene's glands, sometimes called the female prostate. Squirting is a much bigger gush from the bladder, and studies found it's mostly like diluted urine. Both can happen at the same time.\n\nDifferent source, different amount. Same awkward silence in sex ed.\n\nSources: Clinical Anatomy review (2022), Journal of Sexual Medicine, Clue.\n\nDid you know these were two different things?\n\n#docstick #womenshealth #sexeducation #bodyfacts #mythbusting",
+  "youtube_title": "Squirting vs Female Ejaculation: Not the Same Thing",
+  "youtube_description": "Female ejaculation is about 1 ml of thick, milky fluid from the Skene's glands (the 'female prostate'). Squirting is a much larger release from the bladder that studies found is mostly like diluted urine. Both can happen at the same time.\n\nEducational only, not medical advice.\n\nSources:\n• Clinical Anatomy (2022), \"Female ejaculation and squirting\" review, PubMed 35388532 (fetched Nov 26, 2026)\n• Journal of Sexual Medicine (2011), \"New insights from one case of female ejaculation\", PubMed 21995650 (fetched Nov 26, 2026)\n• Clue, \"Female ejaculation and squirting: what's the difference?\" (fetched Nov 26, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#WomensHealth #SexEducation #Shorts"
+ }
+}

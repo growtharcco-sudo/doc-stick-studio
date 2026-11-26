@@ -1,0 +1,456 @@
+{
+ "id": "023_squirting_vs_ejaculation",
+ "voice": "am_michael",
+ "speed": 1.0,
+ "phrases": [
+  {
+   "say": "Squirting and female ejaculation are not the same thing.",
+   "cap": "SQUIRTING AND | FEMALE EJACULATION | ARE *NOT THE SAME.*",
+   "pause": 0.2
+  },
+  {
+   "say": "Scientists actually checked.",
+   "cap": "SCIENTISTS | ACTUALLY *CHECKED.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Female ejaculation is tiny. About one millilitre.",
+   "cap": "FEMALE EJACULATION | IS *TINY.* | ABOUT *1 ML.*",
+   "pause": 0.2
+  },
+  {
+   "say": "A thick, milky fluid from the Skene's glands.",
+   "cap": "A THICK, *MILKY* FLUID | FROM THE | *SKENE'S GLANDS.*",
+   "pause": 0.2
+  },
+  {
+   "say": "Some doctors call them the female prostate.",
+   "cap": "SOME CALL THEM | THE *FEMALE PROSTATE.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Squirting is a whole different system.",
+   "cap": "SQUIRTING IS | A WHOLE *DIFFERENT* | SYSTEM.",
+   "pause": 0.2
+  },
+  {
+   "say": "It's a much bigger gush, and it comes from the bladder.",
+   "cap": "A MUCH *BIGGER* GUSH, | FROM THE *BLADDER.*",
+   "pause": 0.2
+  },
+  {
+   "say": "Studies found it's mostly like diluted urine.",
+   "cap": "STUDIES FOUND | IT'S MOSTLY LIKE | *DILUTED URINE.*",
+   "pause": 0.45
+  },
+  {
+   "say": "And yes, both can happen at the same time.",
+   "cap": "AND YES, BOTH | CAN HAPPEN | AT THE *SAME TIME.*",
+   "pause": 0.2
+  },
+  {
+   "say": "Different source. Different amount.",
+   "cap": "*DIFFERENT* SOURCE. | *DIFFERENT* AMOUNT.",
+   "pause": 0.45
+  },
+  {
+   "say": "Same awkward silence in sex ed.",
+   "cap": "SAME AWKWARD | *SILENCE* | IN SEX ED.",
+   "pause": 0.45
+  },
+  {
+   "say": "Follow,",
+   "cap": "*FOLLOW*",
+   "pause": 0.15
+  },
+  {
+   "say": "for the stuff school skipped.",
+   "cap": "FOR THE STUFF | SCHOOL *SKIPPED.*",
+   "pause": 0.5
+  }
+ ],
+ "scenes": [
+  {
+   "first": 0,
+   "end": 2,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      0,
+      0.0,
+      "deadpan"
+     ],
+     [
+      1,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [
+    {
+     "kind": "girl",
+     "x": 820,
+     "s": 2.25,
+     "face": -1,
+     "poses": [
+      [
+       0,
+       0.0,
+       "deadpan"
+      ],
+      [
+       1,
+       0.0,
+       "think"
+      ]
+     ],
+     "at": [
+      0,
+      0.0
+     ],
+     "in": "none"
+    }
+   ],
+   "els": [
+    {
+     "type": "prop",
+     "name": "qmark",
+     "x": 520,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "left",
+     "at": [
+      0,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 2,
+   "end": 5,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      2,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "big_number",
+     "x": 660,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "center",
+     "at": [
+      2,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "value": 1,
+      "suffix": " ML",
+      "color": "red"
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "drop",
+     "x": 860,
+     "y": 1300,
+     "s": 1.1,
+     "slot": "low_right",
+     "at": [
+      2,
+      1.2
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "color": "pink"
+     },
+     "label": "THICK, MILKY",
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 5,
+   "end": 8,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      5,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "drop",
+     "x": 520,
+     "y": 1300,
+     "s": 0.8,
+     "slot": "low_left",
+     "at": [
+      5,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "color": "pink"
+     },
+     "label": "EJACULATION",
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "drop",
+     "x": 860,
+     "y": 1300,
+     "s": 2.4,
+     "slot": "low_right",
+     "at": [
+      5,
+      0.8
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": "SQUIRTING",
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "FROM THE BLADDER",
+     "sub": null,
+     "x": 660,
+     "y": 830,
+     "color": "red",
+     "rot": -0.12,
+     "size": 50,
+     "at": [
+      6,
+      0.4
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 8,
+   "end": 10,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      8,
+      0.0,
+      "deadpan"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "sign",
+     "x": 640,
+     "y": 1560,
+     "s": 1.2,
+     "slot": "floor_center",
+     "at": [
+      8,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [],
+     "args": {
+      "lines": [
+       "DIFFERENT",
+       "BUT BOTH REAL"
+      ]
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "check",
+     "x": 660,
+     "y": 830,
+     "s": 1.0,
+     "slot": "high",
+     "at": [
+      8,
+      0.7
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 10,
+   "end": 11,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      10,
+      0.0,
+      "deadpan"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "book",
+     "x": 660,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "center",
+     "at": [
+      10,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "title": "SEX ED"
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "SKIPPED",
+     "sub": null,
+     "x": 680,
+     "y": 1300,
+     "color": "red",
+     "rot": -0.12,
+     "size": 64,
+     "at": [
+      10,
+      0.9
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 11,
+   "end": 13,
+   "outro": true,
+   "doc": {
+    "x": 540,
+    "s": 2.4,
+    "face": 1,
+    "poses": [
+     [
+      11,
+      0.0,
+      "wave"
+     ]
+    ]
+   },
+   "people": [],
+   "els": []
+  }
+ ],
+ "cover": {
+  "big": [
+   "SQUIRTING VS",
+   "*EJACULATION*"
+  ]
+ },
+ "sources": [
+  {
+   "fact": "Review (Clinical Anatomy 2022): squirting fluid is similar to urine and expelled by the bladder; female ejaculation is a very small amount of secretion from the paraurethral (Skene's) glands with high PSA; both can occur simultaneously; mechanisms entirely different",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/35388532/",
+   "fetched": "2026-11-26"
+  },
+  {
+   "fact": "Case study: real female ejaculation is a scanty, thick, whitish fluid from the female prostate; squirting is diluted fluid from the urinary bladder; two different phenomena",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/21995650/",
+   "fetched": "2026-11-26"
+  },
+  {
+   "fact": "Female ejaculation is about 1 ml of thick white milky fluid from the paraurethral (Skene's) glands, also called the female prostate",
+   "url": "https://helloclue.com/articles/sex/female-ejaculation-and-squirting-what-s-the-difference",
+   "fetched": "2026-11-26"
+  },
+  {
+   "fact": "2015 Journal of Sexual Medicine study: the bladder filled before and was empty after squirting; small amounts of PSA detected",
+   "url": "https://drjengunter.com/2015/01/10/squirting-during-sex-is-urine-new-study",
+   "fetched": "2026-11-26"
+  }
+ ],
+ "math": [
+  {
+   "expr": "1",
+   "expect": 1,
+   "note": "about 1 ml (Clue, citing the 2022 review)"
+  }
+ ],
+ "post": {
+  "slot": "idea",
+  "post_at": "2026-11-30T18:30:00+05:30",
+  "instagram_caption": "They're not the same thing 💧\n\nFemale ejaculation is tiny, about 1 ml of thick, milky fluid from the Skene's glands, sometimes called the female prostate. Squirting is a much bigger gush from the bladder, and studies found it's mostly like diluted urine. Both can happen at the same time.\n\nDifferent source, different amount. Same awkward silence in sex ed.\n\nSources: Clinical Anatomy review (2022), Journal of Sexual Medicine, Clue.\n\nDid you know these were two different things?\n\n#docstick #womenshealth #sexeducation #bodyfacts #mythbusting",
+  "youtube_title": "Squirting vs Female Ejaculation: Not the Same Thing",
+  "youtube_description": "Female ejaculation is about 1 ml of thick, milky fluid from the Skene's glands (the 'female prostate'). Squirting is a much larger release from the bladder that studies found is mostly like diluted urine. Both can happen at the same time.\n\nEducational only, not medical advice.\n\nSources:\n• Clinical Anatomy (2022), \"Female ejaculation and squirting\" review, PubMed 35388532 (fetched Nov 26, 2026)\n• Journal of Sexual Medicine (2011), \"New insights from one case of female ejaculation\", PubMed 21995650 (fetched Nov 26, 2026)\n• Clue, \"Female ejaculation and squirting: what's the difference?\" (fetched Nov 26, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#WomensHealth #SexEducation #Shorts"
+ }
+}
