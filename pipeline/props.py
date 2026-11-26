@@ -408,7 +408,8 @@ def bed(c, st):
             text(c, "Z", -60 + ph * 80 + i * 10, -130 - ph * 120, 40 + i * 6, (0.4, 0.4, 0.5))
 
 
-@prop("sign", (-170, -330, 170, 0), "ground", "wooden sign on a post. args.lines (1 to 3 short lines)")
+@prop("sign", (-170, -330, 170, 0), "ground",
+      "wooden sign on a post. args.lines (1 to 3 short lines). state 'crossed' = a red X slams onto the board (use this, not bigx)")
 def sign(c, st):
     c.rectangle(-10, -180, 20, 180); fillstroke(c, BROWN, DBROWN, 4)
     rrect(c, -165, -325, 330, 160, 14); fillstroke(c, (0.93, 0.80, 0.55), DBROWN, 6)
@@ -417,6 +418,11 @@ def sign(c, st):
     while size > 22 and max(text_w(c, ln, size) for ln in lines) > 290: size -= 2   # always fits the board
     for i, ln in enumerate(lines):
         text(c, ln, 0, -245 + (i - (n - 1) / 2) * (size + 8) + 16, size, DBROWN)
+    if st.state == "crossed":
+        k = clamp(st.since / 0.25); s = 1 + 0.6 * (1 - ease_out(k))
+        c.save(); c.translate(0, -245); c.scale(s, s)
+        c.move_to(-140, -62); c.line_to(140, 62); c.move_to(140, -62); c.line_to(-140, 62)
+        c.set_source_rgba(*RED, min(0.9, k * 3)); c.set_line_width(13); c.set_line_cap(1); c.stroke(); c.restore()
 
 
 @prop("bubble", (-200, -95, 200, 95), "center",

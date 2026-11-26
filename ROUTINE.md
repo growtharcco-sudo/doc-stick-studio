@@ -59,13 +59,14 @@ Write `briefs/<NNN>_<slug>.json` (NNN = next number after the highest in specs/ 
   | `pair` | two things side by side (comparison, before/after) | `left`, `right`, `right_at` |
   | `number` | a ring that counts up (`ring`: value, line1, line2) or a big number (`number`) | `ring`/`number`, `left`, `right` |
   | `stamp` | one thing on the floor, then NO EVIDENCE / MYTH / TRUE slams on | `prop`, `stamp` |
-  | `verdict` | the payoff: floor props + red X, or green check with `"verdict": "true"` | `props`, `verdict` |
+  | `verdict` | the payoff: floor props + red X (a sign crosses itself out), or green check with `"verdict": "true"` | `props`, `verdict` |
   | `exit` | callback: the hook object leaves, Doc waves | `prop`, `leave_at`, `pose` |
   | `solo` | no Doc: a person (e.g. `sit_laptop`) + things on the right | `person`, `person_pose`, `prop`, `prop2` |
   | `censored` | implied intimacy, never shown: bed + CENSORED stamp | `text` |
   Every kind also takes `poses` (Doc), `add_props`, `stamps`, `particles`. Only when no kind fits, write a custom
   element-level scene (no `kind`, see `briefs/002_built_in_air_conditioner.json`).
 - Beat 0 is a `hook` (or `patient`) so the hook image is on frame 0.
+- To cross out a sign, give it `"states": {"2": "crossed"}`. Never put a separate bigx over a sign.
 - A topic needs an object that isn't in props.py (like the crocodile)? Add it to `pipeline/props.py` with `@prop`
   in the same flat cartoon style (thick dark outline, flat fills, no gradients, nothing anatomical or sexual) and an honest bbox.
 - If `kit.py` prints LAYOUT PROBLEMS, change the slot or size it names and run it again until "layout ok".

@@ -131,32 +131,19 @@
      "until": null,
      "in": "none",
      "out": "none",
-     "states": [],
+     "states": [
+      [
+       2,
+       0.0,
+       "crossed"
+      ]
+     ],
      "args": {
       "lines": [
        "WARNING:",
        "YOU'LL GO BLIND"
       ]
      },
-     "label": null,
-     "flip": false
-    },
-    {
-     "type": "prop",
-     "name": "bigx",
-     "x": 860,
-     "y": 1300,
-     "s": 0.9,
-     "slot": "low_right",
-     "at": [
-      2,
-      0.0
-     ],
-     "until": null,
-     "in": "pop",
-     "out": "none",
-     "states": [],
-     "args": {},
      "label": null,
      "flip": false
     }

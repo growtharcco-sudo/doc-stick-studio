@@ -14,16 +14,11 @@
        "WARNING:",
        "YOU'LL GO BLIND"
       ]
+     },
+     "states": {
+      "2": "crossed"
      }
-    },
-    "add_props": [
-     {
-      "name": "bigx",
-      "slot": "low_right",
-      "size": 0.9,
-      "at": "2"
-     }
-    ]
+    }
    }
   },
   {

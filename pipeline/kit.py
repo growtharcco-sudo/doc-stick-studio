@@ -127,7 +127,10 @@ def k_verdict(f):
     """The payoff: 1 or 2 floor props (floor_center, floor_far) + a big red X (false) or a green check ("verdict": "true")."""
     props = [_p(x, s, **{"in": "none"}) for x, s in zip(f["props"], ("floor_center", "floor_far"))]
     mark = "check" if f.get("verdict") == "true" else "bigx"
-    props.append({"name": mark, "slot": "low" if mark == "bigx" else "high", "at": "0+0.7"})
+    if mark == "bigx" and props[0]["name"] == "sign":          # a sign crosses itself out, centred on the board
+        props[0]["states"] = {"0+0.7": "crossed"}
+    else:
+        props.append({"name": mark, "slot": "low" if mark == "bigx" else "high", "at": "0+0.7"})
     return {"doc": _doc("deadpan", f), "props": props}
 
 

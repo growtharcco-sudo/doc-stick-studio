@@ -116,32 +116,19 @@
      "until": null,
      "in": "none",
      "out": "none",
-     "states": [],
+     "states": [
+      [
+       0,
+       1.2,
+       "crossed"
+      ]
+     ],
      "args": {
       "lines": [
        "AVERAGE:",
        "6 INCHES"
       ]
      },
-     "label": null,
-     "flip": false
-    },
-    {
-     "type": "prop",
-     "name": "bigx",
-     "x": 860,
-     "y": 1300,
-     "s": 0.9,
-     "slot": "low_right",
-     "at": [
-      0,
-      1.2
-     ],
-     "until": null,
-     "in": "pop",
-     "out": "none",
-     "states": [],
-     "args": {},
      "label": null,
      "flip": false
     }
@@ -318,32 +305,19 @@
      "until": null,
      "in": "none",
      "out": "none",
-     "states": [],
+     "states": [
+      [
+       5,
+       0.7,
+       "crossed"
+      ]
+     ],
      "args": {
       "lines": [
        "AVERAGE:",
        "6 INCHES"
       ]
      },
-     "label": null,
-     "flip": false
-    },
-    {
-     "type": "prop",
-     "name": "bigx",
-     "x": 680,
-     "y": 1300,
-     "s": 1.0,
-     "slot": "low",
-     "at": [
-      5,
-      0.7
-     ],
-     "until": null,
-     "in": "pop",
-     "out": "none",
-     "states": [],
-     "args": {},
      "label": null,
      "flip": false
     }
