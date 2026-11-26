@@ -1,0 +1,181 @@
+{
+ "id": "029_cant_tickle_yourself",
+ "beats": [
+  {
+   "say": "You can't tickle yourself.",
+   "cap": "YOU *CAN'T TICKLE* | YOURSELF.",
+   "show": {
+    "kind": "hook",
+    "prop": {
+     "name": "feather",
+     "size": 1.2,
+     "slot": "center"
+    },
+    "add_props": [
+     {
+      "name": "qmark",
+      "slot": "high_right",
+      "size": 0.7,
+      "at": "1"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Your brain spoils the surprise.",
+   "cap": "YOUR BRAIN | *SPOILS THE SURPRISE.*"
+  },
+  {
+   "say": "When you move, a part of your brain called the cerebellum",
+   "cap": "WHEN YOU MOVE, | A PART OF | YOUR BRAIN CALLED | THE *CEREBELLUM*",
+   "show": {
+    "kind": "explain",
+    "prop": {
+     "name": "brain",
+     "size": 1.1
+    },
+    "stamp": {
+     "text": "CEREBELLUM",
+     "at": "0+1.2",
+     "size": 54
+    }
+   }
+  },
+  {
+   "say": "predicts exactly what you're about to feel.",
+   "cap": "*PREDICTS* EXACTLY | WHAT YOU'RE | ABOUT TO FEEL."
+  },
+  {
+   "say": "Then it turns the feeling down before it arrives.",
+   "cap": "THEN IT TURNS | THE FEELING *DOWN* | BEFORE IT ARRIVES.",
+   "show": {
+    "kind": "pair",
+    "left": {
+     "name": "brain",
+     "size": 0.8
+    },
+    "right": {
+     "name": "arrow_down",
+     "size": 0.9,
+     "label": "TICKLE"
+    },
+    "right_at": "0+0.6"
+   }
+  },
+  {
+   "say": "Someone else's fingers? No prediction. Full tickle.",
+   "cap": "SOMEONE ELSE'S | FINGERS? | *NO PREDICTION.* | *FULL TICKLE.*",
+   "show": {
+    "kind": "solo",
+    "person": "boy",
+    "person_pose": "shocked",
+    "prop": {
+     "name": "feather",
+     "size": 1.0,
+     "slot": "left",
+     "at": "0+0.5"
+    }
+   }
+  },
+  {
+   "say": "Scientists tested this with a tickle robot.",
+   "cap": "SCIENTISTS TESTED | THIS WITH A | *TICKLE ROBOT.*",
+   "show": {
+    "kind": "number",
+    "number": {
+     "value": 0.2,
+     "decimals": 1,
+     "suffix": " SEC"
+    },
+    "left": {
+     "name": "feather",
+     "size": 0.8
+    },
+    "right": {
+     "name": "clock",
+     "size": 0.8
+    },
+    "right_at": "1"
+   }
+  },
+  {
+   "say": "People moved it themselves, and it tickled their hand.",
+   "cap": "PEOPLE MOVED IT | *THEMSELVES,* | AND IT TICKLED | THEIR HAND."
+  },
+  {
+   "say": "Add a delay of up to a fifth of a second,",
+   "cap": "ADD A DELAY | OF UP TO | *A FIFTH OF A SECOND,*"
+  },
+  {
+   "say": "and their own tickle felt more tickly.",
+   "cap": "AND THEIR OWN | TICKLE FELT | *MORE TICKLY.*"
+  },
+  {
+   "say": "The longer the delay, the more tickly it felt.",
+   "cap": "THE *LONGER* THE DELAY, | THE MORE | *TICKLY* IT FELT."
+  },
+  {
+   "say": "So your brain isn't broken.",
+   "cap": "SO YOUR BRAIN | *ISN'T BROKEN.*",
+   "show": {
+    "kind": "exit",
+    "prop": {
+     "name": "feather",
+     "size": 1.0,
+     "slot": "right"
+    },
+    "leave_at": "1+0.6",
+    "pose": "deadpan",
+    "poses": {
+     "1+0.8": "wave"
+    }
+   }
+  },
+  {
+   "say": "It's just a massive spoiler.",
+   "cap": "IT'S JUST A | *MASSIVE SPOILER.*"
+  }
+ ],
+ "cover": {
+  "big": [
+   "CAN'T TICKLE",
+   "*YOURSELF?*"
+  ]
+ },
+ "sources": [
+  {
+   "fact": "Sarah-Jayne Blakemore (UCL): the cerebellum can predict sensations when your own movement causes them; the prediction is used to cancel the response of other brain areas; a small delay between your movement and the tickle makes it feel tickly, and the longer the delay, the more tickly it feels",
+   "url": "https://www.scientificamerican.com/article/why-cant-a-person-tickle/",
+   "fetched": "2026-11-27"
+  },
+  {
+   "fact": "Blakemore, Wolpert and Frith 1998, Nature Neuroscience: the cerebellum is involved in predicting the sensory consequences of movements; with a robot interface, a progressive increase in tickly rating as the delay was increased between 0 and 200 ms",
+   "url": "https://web.math.princeton.edu/~sswang/autism/blakemore_frith98_NN.pdf",
+   "fetched": "2026-11-27"
+  },
+  {
+   "fact": "UCL: you can't tickle yourself because the cerebellum tamps down the brain's response ahead of time (Prof Sarah-Jayne Blakemore)",
+   "url": "https://www.ucl.ac.uk/news/headlines/2016/sep/why-cant-i-tickle-myself",
+   "fetched": "2026-11-27"
+  }
+ ],
+ "math": [
+  {
+   "expr": "200 / 1000",
+   "expect": 0.2,
+   "note": "200 ms = 0.2 s, a fifth of a second (Blakemore et al. delay range 0 to 200 ms)"
+  },
+  {
+   "expr": "1 / 5",
+   "expect": 0.2,
+   "note": "a fifth of a second = 0.2 s"
+  }
+ ],
+ "post": {
+  "slot": "morning",
+  "post_at": "2026-11-28T07:30:00+05:30",
+  "instagram_caption": "You can't tickle yourself. Your brain spoils the surprise 🪶\n\nWhen you move, your cerebellum predicts exactly what you're about to feel and turns the feeling down before it arrives. In tickle robot experiments, adding a delay of up to a fifth of a second made people's own tickles feel more tickly.\n\nSomeone else's fingers can't be predicted, so you get the full tickle.\n\nSources: Scientific American (Sarah-Jayne Blakemore), Nature Neuroscience 1998, UCL.\n\nWhere are you most ticklish?\n\n#docstick #brain #bodyfacts #weirdfacts #neuroscience",
+  "youtube_title": "Why You Can't Tickle Yourself",
+  "youtube_description": "You can't tickle yourself because your cerebellum predicts the feeling of your own movements and turns it down before it arrives. In tickle robot experiments, adding a delay of up to a fifth of a second between people's movement and the tickle made it feel more tickly.\n\nEducational only, not medical advice.\n\nSources:\n• Scientific American, \"Why can't a person tickle himself?\" (fetched Nov 27, 2026)\n• Nature Neuroscience, \"Central cancellation of self-produced tickle sensation\" (fetched Nov 27, 2026)\n• UCL News, \"Why can't I tickle myself?\" (fetched Nov 27, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#Brain #Science #Shorts"
+ }
+}

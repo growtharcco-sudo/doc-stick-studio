@@ -1,0 +1,489 @@
+{
+ "id": "029_cant_tickle_yourself",
+ "voice": "am_michael",
+ "speed": 1.0,
+ "phrases": [
+  {
+   "say": "You can't tickle yourself.",
+   "cap": "YOU *CAN'T TICKLE* | YOURSELF.",
+   "pause": 0.2
+  },
+  {
+   "say": "Your brain spoils the surprise.",
+   "cap": "YOUR BRAIN | *SPOILS THE SURPRISE.*",
+   "pause": 0.45
+  },
+  {
+   "say": "When you move, a part of your brain called the cerebellum",
+   "cap": "WHEN YOU MOVE, | A PART OF | YOUR BRAIN CALLED | THE *CEREBELLUM*",
+   "pause": 0.2
+  },
+  {
+   "say": "predicts exactly what you're about to feel.",
+   "cap": "*PREDICTS* EXACTLY | WHAT YOU'RE | ABOUT TO FEEL.",
+   "pause": 0.45
+  },
+  {
+   "say": "Then it turns the feeling down before it arrives.",
+   "cap": "THEN IT TURNS | THE FEELING *DOWN* | BEFORE IT ARRIVES.",
+   "pause": 0.45
+  },
+  {
+   "say": "Someone else's fingers? No prediction. Full tickle.",
+   "cap": "SOMEONE ELSE'S | FINGERS? | *NO PREDICTION.* | *FULL TICKLE.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Scientists tested this with a tickle robot.",
+   "cap": "SCIENTISTS TESTED | THIS WITH A | *TICKLE ROBOT.*",
+   "pause": 0.2
+  },
+  {
+   "say": "People moved it themselves, and it tickled their hand.",
+   "cap": "PEOPLE MOVED IT | *THEMSELVES,* | AND IT TICKLED | THEIR HAND.",
+   "pause": 0.2
+  },
+  {
+   "say": "Add a delay of up to a fifth of a second,",
+   "cap": "ADD A DELAY | OF UP TO | *A FIFTH OF A SECOND,*",
+   "pause": 0.2
+  },
+  {
+   "say": "and their own tickle felt more tickly.",
+   "cap": "AND THEIR OWN | TICKLE FELT | *MORE TICKLY.*",
+   "pause": 0.2
+  },
+  {
+   "say": "The longer the delay, the more tickly it felt.",
+   "cap": "THE *LONGER* THE DELAY, | THE MORE | *TICKLY* IT FELT.",
+   "pause": 0.45
+  },
+  {
+   "say": "So your brain isn't broken.",
+   "cap": "SO YOUR BRAIN | *ISN'T BROKEN.*",
+   "pause": 0.2
+  },
+  {
+   "say": "It's just a massive spoiler.",
+   "cap": "IT'S JUST A | *MASSIVE SPOILER.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Follow,",
+   "cap": "*FOLLOW*",
+   "pause": 0.15
+  },
+  {
+   "say": "for the stuff school skipped.",
+   "cap": "FOR THE STUFF | SCHOOL *SKIPPED.*",
+   "pause": 0.5
+  }
+ ],
+ "scenes": [
+  {
+   "first": 0,
+   "end": 2,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      0,
+      0.0,
+      "deadpan"
+     ],
+     [
+      1,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "feather",
+     "x": 660,
+     "y": 1010,
+     "s": 1.2,
+     "slot": "center",
+     "at": [
+      0,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "qmark",
+     "x": 860,
+     "y": 830,
+     "s": 0.7,
+     "slot": "high_right",
+     "at": [
+      1,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 2,
+   "end": 4,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      2,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "brain",
+     "x": 660,
+     "y": 1010,
+     "s": 1.1,
+     "slot": "center",
+     "at": [
+      2,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "CEREBELLUM",
+     "sub": null,
+     "x": 680,
+     "y": 1300,
+     "color": "red",
+     "rot": -0.12,
+     "size": 54,
+     "at": [
+      2,
+      1.2
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 4,
+   "end": 5,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      4,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "brain",
+     "x": 520,
+     "y": 1300,
+     "s": 0.8,
+     "slot": "low_left",
+     "at": [
+      4,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "arrow_down",
+     "x": 860,
+     "y": 1300,
+     "s": 0.9,
+     "slot": "low_right",
+     "at": [
+      4,
+      0.6
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": "TICKLE",
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 5,
+   "end": 6,
+   "doc": null,
+   "people": [
+    {
+     "kind": "boy",
+     "x": 300,
+     "s": 2.25,
+     "face": 1,
+     "poses": [
+      [
+       5,
+       0.0,
+       "shocked"
+      ]
+     ],
+     "at": [
+      5,
+      0.0
+     ],
+     "in": "none"
+    }
+   ],
+   "els": [
+    {
+     "type": "prop",
+     "name": "feather",
+     "x": 520,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "left",
+     "at": [
+      5,
+      0.5
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 6,
+   "end": 11,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      6,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "big_number",
+     "x": 660,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "center",
+     "at": [
+      6,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "value": 0.2,
+      "decimals": 1,
+      "suffix": " SEC"
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "feather",
+     "x": 520,
+     "y": 1300,
+     "s": 0.8,
+     "slot": "low_left",
+     "at": [
+      6,
+      0.6
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "clock",
+     "x": 860,
+     "y": 1300,
+     "s": 0.8,
+     "slot": "low_right",
+     "at": [
+      7,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 11,
+   "end": 13,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      11,
+      0.0,
+      "deadpan"
+     ],
+     [
+      12,
+      0.8,
+      "wave"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "feather",
+     "x": 840,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "right",
+     "at": [
+      11,
+      0.0
+     ],
+     "until": [
+      12,
+      0.6
+     ],
+     "in": "none",
+     "out": "slide_right",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 13,
+   "end": 15,
+   "outro": true,
+   "doc": {
+    "x": 540,
+    "s": 2.4,
+    "face": 1,
+    "poses": [
+     [
+      13,
+      0.0,
+      "wave"
+     ]
+    ]
+   },
+   "people": [],
+   "els": []
+  }
+ ],
+ "cover": {
+  "big": [
+   "CAN'T TICKLE",
+   "*YOURSELF?*"
+  ]
+ },
+ "sources": [
+  {
+   "fact": "Sarah-Jayne Blakemore (UCL): the cerebellum can predict sensations when your own movement causes them; the prediction is used to cancel the response of other brain areas; a small delay between your movement and the tickle makes it feel tickly, and the longer the delay, the more tickly it feels",
+   "url": "https://www.scientificamerican.com/article/why-cant-a-person-tickle/",
+   "fetched": "2026-11-27"
+  },
+  {
+   "fact": "Blakemore, Wolpert and Frith 1998, Nature Neuroscience: the cerebellum is involved in predicting the sensory consequences of movements; with a robot interface, a progressive increase in tickly rating as the delay was increased between 0 and 200 ms",
+   "url": "https://web.math.princeton.edu/~sswang/autism/blakemore_frith98_NN.pdf",
+   "fetched": "2026-11-27"
+  },
+  {
+   "fact": "UCL: you can't tickle yourself because the cerebellum tamps down the brain's response ahead of time (Prof Sarah-Jayne Blakemore)",
+   "url": "https://www.ucl.ac.uk/news/headlines/2016/sep/why-cant-i-tickle-myself",
+   "fetched": "2026-11-27"
+  }
+ ],
+ "math": [
+  {
+   "expr": "200 / 1000",
+   "expect": 0.2,
+   "note": "200 ms = 0.2 s, a fifth of a second (Blakemore et al. delay range 0 to 200 ms)"
+  },
+  {
+   "expr": "1 / 5",
+   "expect": 0.2,
+   "note": "a fifth of a second = 0.2 s"
+  }
+ ],
+ "post": {
+  "slot": "morning",
+  "post_at": "2026-11-28T07:30:00+05:30",
+  "instagram_caption": "You can't tickle yourself. Your brain spoils the surprise 🪶\n\nWhen you move, your cerebellum predicts exactly what you're about to feel and turns the feeling down before it arrives. In tickle robot experiments, adding a delay of up to a fifth of a second made people's own tickles feel more tickly.\n\nSomeone else's fingers can't be predicted, so you get the full tickle.\n\nSources: Scientific American (Sarah-Jayne Blakemore), Nature Neuroscience 1998, UCL.\n\nWhere are you most ticklish?\n\n#docstick #brain #bodyfacts #weirdfacts #neuroscience",
+  "youtube_title": "Why You Can't Tickle Yourself",
+  "youtube_description": "You can't tickle yourself because your cerebellum predicts the feeling of your own movements and turns it down before it arrives. In tickle robot experiments, adding a delay of up to a fifth of a second between people's movement and the tickle made it feel more tickly.\n\nEducational only, not medical advice.\n\nSources:\n• Scientific American, \"Why can't a person tickle himself?\" (fetched Nov 27, 2026)\n• Nature Neuroscience, \"Central cancellation of self-produced tickle sensation\" (fetched Nov 27, 2026)\n• UCL News, \"Why can't I tickle myself?\" (fetched Nov 27, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#Brain #Science #Shorts"
+ }
+}
