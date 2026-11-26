@@ -725,3 +725,13 @@ def ruler(c, st):
     for i, n in enumerate(range(0, 31, 10)):
         text(c, str(n), -180 + n * 12, 22, 22, (0.35, 0.25, 0.05))
     c.restore()
+
+
+@prop("cereal", (-120, -90, 120, 70), "center", "bowl of corn flakes with a spoon (breakfast, diet, Kellogg history)")
+def cereal(c, st):
+    c.move_to(-70, -40); c.line_to(80, -95); stroke(c, GREY, 10)
+    for i in range(9):
+        x = -80 + (i % 5) * 38 + (i // 5) * 18; y = -18 - (i // 5) * 16 + math.sin(st.t * 3 + i) * 2
+        ellipse(c, x, y, 20, 10); fillstroke(c, (0.98, 0.78, 0.30), (0.70, 0.45, 0.10), 3)
+    c.move_to(-115, -10); c.curve_to(-110, 60, 110, 60, 115, -10); c.close_path(); fillstroke(c, WHITE, INK, 6)
+    c.move_to(-90, 18); c.curve_to(-40, 34, 40, 34, 90, 18); stroke(c, (0.25, 0.55, 0.90), 6)

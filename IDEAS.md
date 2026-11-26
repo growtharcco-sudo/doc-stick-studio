@@ -29,3 +29,4 @@ Everything else about the body
 - [x] Six inches is a myth: the real average and small penis anxiety (022)
 - [x] Squirting vs female ejaculation: not the same thing (023)
 - [x] Can you satisfy her? 84% satisfied, 18% from intercourse alone (024)
+- [x] Masturbation myths: blindness, hairy palms, Kellogg's corn flakes (025)
