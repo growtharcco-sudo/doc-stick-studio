@@ -1,0 +1,172 @@
+{
+ "id": "030_stomach_growl_cleaning",
+ "beats": [
+  {
+   "say": "That stomach growl? It's the cleaning crew.",
+   "cap": "THAT STOMACH | *GROWL?* | IT'S THE | *CLEANING CREW.*",
+   "show": {
+    "kind": "hook",
+    "prop": {
+     "name": "broom",
+     "size": 1.0
+    },
+    "prop2": {
+     "name": "stomach",
+     "size": 0.9,
+     "slot": "center",
+     "in": "none",
+     "at": "0"
+    }
+   }
+  },
+  {
+   "say": "Yes. Really.",
+   "cap": "YES. *REALLY.*"
+  },
+  {
+   "say": "About two hours after your stomach and gut go empty,",
+   "cap": "ABOUT *2 HOURS* | AFTER YOUR STOMACH | AND GUT GO *EMPTY,*",
+   "show": {
+    "kind": "explain",
+    "prop": {
+     "name": "stomach",
+     "size": 1.2
+    },
+    "stamp": {
+     "text": "HOUSEKEEPING",
+     "at": "1+0.4",
+     "size": 54
+    }
+   }
+  },
+  {
+   "say": "strong waves start sweeping them clean.",
+   "cap": "STRONG *WAVES* | START *SWEEPING* | THEM CLEAN."
+  },
+  {
+   "say": "Mucus, leftover food, bacteria. Out it goes.",
+   "cap": "MUCUS, | LEFTOVER FOOD, | *BACTERIA.* | OUT IT GOES.",
+   "show": {
+    "kind": "pair",
+    "left": {
+     "name": "bacteria",
+     "size": 0.8
+    },
+    "right": {
+     "name": "broom",
+     "size": 0.9,
+     "slot": "floor_right"
+    },
+    "right_at": "0+0.6"
+   }
+  },
+  {
+   "say": "Doctors call it the migrating motor complex.",
+   "cap": "DOCTORS CALL IT | THE *MIGRATING* | *MOTOR COMPLEX.*"
+  },
+  {
+   "say": "It repeats every hour or two, until you eat.",
+   "cap": "IT REPEATS | EVERY *HOUR OR TWO,* | UNTIL YOU *EAT.*",
+   "show": {
+    "kind": "explain",
+    "prop": {
+     "name": "clock",
+     "size": 1.1,
+     "args": {
+      "fast": true
+     }
+    }
+   }
+  },
+  {
+   "say": "Then it stops.",
+   "cap": "THEN IT *STOPS.*"
+  },
+  {
+   "say": "Your gut can rumble when it's full, too.",
+   "cap": "YOUR GUT CAN | RUMBLE WHEN | IT'S *FULL,* TOO.",
+   "show": {
+    "kind": "explain",
+    "prop": {
+     "name": "sign",
+     "size": 1.0,
+     "slot": "floor_right",
+     "args": {
+      "lines": [
+       "BORBORYGMI"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "say": "It's just louder when there's nothing inside to muffle it.",
+   "cap": "IT'S JUST *LOUDER* | WHEN THERE'S | *NOTHING INSIDE* | TO MUFFLE IT."
+  },
+  {
+   "say": "The ancient Greeks called the sound borborygmi.",
+   "cap": "THE ANCIENT GREEKS | CALLED THE SOUND | *BORBORYGMI.*"
+  },
+  {
+   "say": "Which means rumbling. Say it slowly.",
+   "cap": "WHICH MEANS | *RUMBLING.* | SAY IT *SLOWLY.*"
+  },
+  {
+   "say": "So your stomach isn't angry.",
+   "cap": "SO YOUR STOMACH | *ISN'T ANGRY.*",
+   "show": {
+    "kind": "exit",
+    "prop": {
+     "name": "broom",
+     "size": 1.0
+    },
+    "leave_at": "0+1.2",
+    "pose": "deadpan",
+    "poses": {
+     "1": "wave"
+    }
+   }
+  },
+  {
+   "say": "It's vacuuming.",
+   "cap": "IT'S *VACUUMING.*"
+  }
+ ],
+ "cover": {
+  "big": [
+   "THAT GROWL?",
+   "*IT'S CLEANING*"
+  ]
+ },
+ "sources": [
+  {
+   "fact": "Mark A. W. Andrews: growling is gut walls squeezing gas and fluid; migrating myoelectric complexes start after the stomach and small intestine have been empty for approximately two hours and clear out mucus, remaining foodstuffs and bacteria; they repeat every one to two hours until the next meal and subside after feeding; growling can occur on an empty or full stomach but is louder when empty; borborygmi is onomatopoeic, named by the ancient Greeks, and translates as rumbling",
+   "url": "https://www.scientificamerican.com/article/why-does-your-stomach-gro/",
+   "fetched": "2026-11-27"
+  },
+  {
+   "fact": "Colorado State University VIVO Pathophysiology: the migrating motor complex is thought to serve a housekeeping role, sweeping residual undigested material through the digestive tube; it recurs every 1.5 to 2 hours; ingesting food abolishes it; migrating motor complexes can be noisy and are the cause of growling",
+   "url": "https://vivo.colostate.edu/hbooks/pathphys/digestion/stomach/mmcomplex.html",
+   "fetched": "2026-11-27"
+  }
+ ],
+ "math": [
+  {
+   "expr": "2",
+   "expect": 2,
+   "note": "Scientific American: starts after about two hours empty"
+  },
+  {
+   "expr": "(1.5 >= 1) and (2 <= 2)",
+   "expect": true,
+   "note": "CSU 1.5 to 2 h sits inside Scientific American's every 1 to 2 hours, so 'every hour or two'"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-28T23:30:00+05:30",
+  "instagram_caption": "That stomach growl? It's the cleaning crew 🧹\n\nAbout two hours after your stomach and small intestine empty, strong waves called the migrating motor complex sweep out mucus, leftover food and bacteria. They repeat every hour or two until you eat. Your gut can rumble when it's full too, it's just louder when there's nothing inside to muffle it.\n\nThe ancient Greeks called the sound borborygmi, which means rumbling. Say it slowly.\n\nSources: Scientific American, Colorado State University.\n\nWhat's the most embarrassing place your stomach has growled?\n\n#docstick #digestion #bodyfacts #weirdfacts #guthealth",
+  "youtube_title": "Your Stomach Growl Is the Cleaning Crew",
+  "youtube_description": "About two hours after your stomach and small intestine go empty, waves called the migrating motor complex sweep out mucus, leftover food and bacteria, repeating every hour or two until you eat. That's a big part of the growling, which is louder when there's nothing inside to muffle it. The ancient Greeks called it borborygmi: rumbling.\n\nEducational only, not medical advice.\n\nSources:\n• Scientific American, \"Why does your stomach growl when you are hungry?\" (fetched Nov 27, 2026)\n• Colorado State University, \"The Migrating Motor Complex\" (fetched Nov 27, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#Digestion #BodyFacts #Shorts"
+ }
+}

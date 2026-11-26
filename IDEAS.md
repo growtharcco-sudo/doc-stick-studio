@@ -20,6 +20,7 @@ Everything else about the body
 - [x] Brain freeze: your brain doesn't feel pain, so why does it hurt? (006)
 - [x] You're taller in the morning than at night (005)
 - [x] Your stomach makes a new lining every few days so it doesn't digest itself (012)
+- [x] Stomach growls are the gut's cleaning crew (migrating motor complex) (030)
 - [x] Goosebumps: leftover fur-fluffing reflex (003)
 - [ ] You shed about a million skin cells a day? (check the real number)
 - [x] Babies have about 300 bones, adults 206: they fuse (014)

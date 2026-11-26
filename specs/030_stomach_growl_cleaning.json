@@ -1,0 +1,445 @@
+{
+ "id": "030_stomach_growl_cleaning",
+ "voice": "am_michael",
+ "speed": 1.0,
+ "phrases": [
+  {
+   "say": "That stomach growl? It's the cleaning crew.",
+   "cap": "THAT STOMACH | *GROWL?* | IT'S THE | *CLEANING CREW.*",
+   "pause": 0.2
+  },
+  {
+   "say": "Yes. Really.",
+   "cap": "YES. *REALLY.*",
+   "pause": 0.45
+  },
+  {
+   "say": "About two hours after your stomach and gut go empty,",
+   "cap": "ABOUT *2 HOURS* | AFTER YOUR STOMACH | AND GUT GO *EMPTY,*",
+   "pause": 0.2
+  },
+  {
+   "say": "strong waves start sweeping them clean.",
+   "cap": "STRONG *WAVES* | START *SWEEPING* | THEM CLEAN.",
+   "pause": 0.45
+  },
+  {
+   "say": "Mucus, leftover food, bacteria. Out it goes.",
+   "cap": "MUCUS, | LEFTOVER FOOD, | *BACTERIA.* | OUT IT GOES.",
+   "pause": 0.2
+  },
+  {
+   "say": "Doctors call it the migrating motor complex.",
+   "cap": "DOCTORS CALL IT | THE *MIGRATING* | *MOTOR COMPLEX.*",
+   "pause": 0.45
+  },
+  {
+   "say": "It repeats every hour or two, until you eat.",
+   "cap": "IT REPEATS | EVERY *HOUR OR TWO,* | UNTIL YOU *EAT.*",
+   "pause": 0.2
+  },
+  {
+   "say": "Then it stops.",
+   "cap": "THEN IT *STOPS.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Your gut can rumble when it's full, too.",
+   "cap": "YOUR GUT CAN | RUMBLE WHEN | IT'S *FULL,* TOO.",
+   "pause": 0.2
+  },
+  {
+   "say": "It's just louder when there's nothing inside to muffle it.",
+   "cap": "IT'S JUST *LOUDER* | WHEN THERE'S | *NOTHING INSIDE* | TO MUFFLE IT.",
+   "pause": 0.2
+  },
+  {
+   "say": "The ancient Greeks called the sound borborygmi.",
+   "cap": "THE ANCIENT GREEKS | CALLED THE SOUND | *BORBORYGMI.*",
+   "pause": 0.2
+  },
+  {
+   "say": "Which means rumbling. Say it slowly.",
+   "cap": "WHICH MEANS | *RUMBLING.* | SAY IT *SLOWLY.*",
+   "pause": 0.45
+  },
+  {
+   "say": "So your stomach isn't angry.",
+   "cap": "SO YOUR STOMACH | *ISN'T ANGRY.*",
+   "pause": 0.2
+  },
+  {
+   "say": "It's vacuuming.",
+   "cap": "IT'S *VACUUMING.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Follow,",
+   "cap": "*FOLLOW*",
+   "pause": 0.15
+  },
+  {
+   "say": "for the stuff school skipped.",
+   "cap": "FOR THE STUFF | SCHOOL *SKIPPED.*",
+   "pause": 0.5
+  }
+ ],
+ "scenes": [
+  {
+   "first": 0,
+   "end": 2,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      0,
+      0.0,
+      "deadpan"
+     ],
+     [
+      1,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "broom",
+     "x": 820,
+     "y": 1560,
+     "s": 1.0,
+     "slot": "floor_right",
+     "at": [
+      0,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "stomach",
+     "x": 660,
+     "y": 1010,
+     "s": 0.9,
+     "slot": "center",
+     "at": [
+      0,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 2,
+   "end": 4,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      2,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "stomach",
+     "x": 660,
+     "y": 1010,
+     "s": 1.2,
+     "slot": "center",
+     "at": [
+      2,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "HOUSEKEEPING",
+     "sub": null,
+     "x": 680,
+     "y": 1300,
+     "color": "red",
+     "rot": -0.12,
+     "size": 54,
+     "at": [
+      3,
+      0.4
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 4,
+   "end": 6,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      4,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "bacteria",
+     "x": 520,
+     "y": 1300,
+     "s": 0.8,
+     "slot": "low_left",
+     "at": [
+      4,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "broom",
+     "x": 820,
+     "y": 1560,
+     "s": 0.9,
+     "slot": "floor_right",
+     "at": [
+      4,
+      0.6
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 6,
+   "end": 8,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      6,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "clock",
+     "x": 660,
+     "y": 1010,
+     "s": 1.1,
+     "slot": "center",
+     "at": [
+      6,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "fast": true
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 8,
+   "end": 12,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      8,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "sign",
+     "x": 820,
+     "y": 1560,
+     "s": 1.0,
+     "slot": "floor_right",
+     "at": [
+      8,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "lines": [
+       "BORBORYGMI"
+      ]
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 12,
+   "end": 14,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      12,
+      0.0,
+      "deadpan"
+     ],
+     [
+      13,
+      0.0,
+      "wave"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "broom",
+     "x": 820,
+     "y": 1560,
+     "s": 1.0,
+     "slot": "floor_right",
+     "at": [
+      12,
+      0.0
+     ],
+     "until": [
+      12,
+      1.2
+     ],
+     "in": "none",
+     "out": "slide_right",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 14,
+   "end": 16,
+   "outro": true,
+   "doc": {
+    "x": 540,
+    "s": 2.4,
+    "face": 1,
+    "poses": [
+     [
+      14,
+      0.0,
+      "wave"
+     ]
+    ]
+   },
+   "people": [],
+   "els": []
+  }
+ ],
+ "cover": {
+  "big": [
+   "THAT GROWL?",
+   "*IT'S CLEANING*"
+  ]
+ },
+ "sources": [
+  {
+   "fact": "Mark A. W. Andrews: growling is gut walls squeezing gas and fluid; migrating myoelectric complexes start after the stomach and small intestine have been empty for approximately two hours and clear out mucus, remaining foodstuffs and bacteria; they repeat every one to two hours until the next meal and subside after feeding; growling can occur on an empty or full stomach but is louder when empty; borborygmi is onomatopoeic, named by the ancient Greeks, and translates as rumbling",
+   "url": "https://www.scientificamerican.com/article/why-does-your-stomach-gro/",
+   "fetched": "2026-11-27"
+  },
+  {
+   "fact": "Colorado State University VIVO Pathophysiology: the migrating motor complex is thought to serve a housekeeping role, sweeping residual undigested material through the digestive tube; it recurs every 1.5 to 2 hours; ingesting food abolishes it; migrating motor complexes can be noisy and are the cause of growling",
+   "url": "https://vivo.colostate.edu/hbooks/pathphys/digestion/stomach/mmcomplex.html",
+   "fetched": "2026-11-27"
+  }
+ ],
+ "math": [
+  {
+   "expr": "2",
+   "expect": 2,
+   "note": "Scientific American: starts after about two hours empty"
+  },
+  {
+   "expr": "(1.5 >= 1) and (2 <= 2)",
+   "expect": true,
+   "note": "CSU 1.5 to 2 h sits inside Scientific American's every 1 to 2 hours, so 'every hour or two'"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-28T23:30:00+05:30",
+  "instagram_caption": "That stomach growl? It's the cleaning crew 🧹\n\nAbout two hours after your stomach and small intestine empty, strong waves called the migrating motor complex sweep out mucus, leftover food and bacteria. They repeat every hour or two until you eat. Your gut can rumble when it's full too, it's just louder when there's nothing inside to muffle it.\n\nThe ancient Greeks called the sound borborygmi, which means rumbling. Say it slowly.\n\nSources: Scientific American, Colorado State University.\n\nWhat's the most embarrassing place your stomach has growled?\n\n#docstick #digestion #bodyfacts #weirdfacts #guthealth",
+  "youtube_title": "Your Stomach Growl Is the Cleaning Crew",
+  "youtube_description": "About two hours after your stomach and small intestine go empty, waves called the migrating motor complex sweep out mucus, leftover food and bacteria, repeating every hour or two until you eat. That's a big part of the growling, which is louder when there's nothing inside to muffle it. The ancient Greeks called it borborygmi: rumbling.\n\nEducational only, not medical advice.\n\nSources:\n• Scientific American, \"Why does your stomach growl when you are hungry?\" (fetched Nov 27, 2026)\n• Colorado State University, \"The Migrating Motor Complex\" (fetched Nov 27, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#Digestion #BodyFacts #Shorts"
+ }
+}
