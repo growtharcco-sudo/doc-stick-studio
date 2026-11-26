@@ -1,0 +1,50 @@
+{
+ "id": "024_can_you_satisfy_her",
+ "beats": [
+  {"say": "Can you satisfy her?", "cap": "CAN YOU | *SATISFY HER?*",
+   "show": {"kind": "hook", "prop": {"name": "sign", "size": 1.3, "args": {"lines": ["SHE NEEDS", "10 INCHES"]}},
+            "add_props": [{"name": "bigx", "slot": "low_right", "size": 0.9, "at": "2"}]}},
+  {"say": "Most guys think it's all about size.", "cap": "MOST GUYS THINK | IT'S ALL ABOUT *SIZE.*"},
+  {"say": "Science says: not even close.", "cap": "SCIENCE SAYS: | *NOT EVEN CLOSE.*"},
+
+  {"say": "A survey asked over twenty six thousand women.", "cap": "A SURVEY ASKED | OVER *26,000* WOMEN.",
+   "show": {"kind": "number", "ring": {"value": 84, "line1": "VERY SATISFIED", "line2": "WITH HIS SIZE"}}},
+  {"say": "Eighty four percent were very satisfied with their partner's size.", "cap": "*84%* WERE | VERY SATISFIED | WITH THEIR PARTNER'S SIZE."},
+
+  {"say": "Here's the bigger secret.", "cap": "HERE'S THE | *BIGGER SECRET.*",
+   "show": {"kind": "number", "ring": {"value": 18, "color": "red", "line1": "ORGASM FROM", "line2": "INTERCOURSE ALONE"}}},
+  {"say": "Only about eighteen percent of women orgasm from intercourse alone.", "cap": "ONLY ABOUT *18%* | OF WOMEN ORGASM | FROM *INTERCOURSE ALONE.*"},
+  {"say": "Most need clitoral stimulation.", "cap": "MOST NEED | *CLITORAL STIMULATION.*"},
+
+  {"say": "So what actually matters?", "cap": "SO WHAT | ACTUALLY *MATTERS?*",
+   "show": {"kind": "patient", "person": "girl", "question": ["SO WHAT", "MATTERS?"]}},
+  {"say": "Time. Attention. And asking what she likes.", "cap": "*TIME.* *ATTENTION.* | AND *ASKING* | WHAT SHE LIKES."},
+
+  {"say": "Ten inches? Not required.", "cap": "TEN INCHES? | *NOT REQUIRED.*",
+   "show": {"kind": "verdict", "props": [{"name": "sign", "size": 1.3, "args": {"lines": ["SHE NEEDS", "10 INCHES"]}}]}},
+  {"say": "Talking to her works better than any ruler.", "cap": "TALKING TO HER | WORKS BETTER | THAN ANY *RULER.*",
+   "show": {"kind": "explain", "prop": "heart", "stamp": {"text": "COMMUNICATION", "at": "0+0.8", "size": 56}}}
+ ],
+ "cover": {"big": ["CAN YOU", "*SATISFY HER?*"]},
+ "sources": [
+  {"fact": "UCLA and Cal State LA survey of 26,437 women aged 18 to 65: 84% very satisfied with partner's size, 14% wished larger, 2% smaller; fewer than about 20% of women reliably orgasm from intercourse alone",
+   "url": "https://psychologytoday.com/us/blog/all-about-sex/202112/the-last-word-the-length-men-s-erections", "fetched": "2026-11-26"},
+  {"fact": "Herbenick et al. (Indiana University), 1,055 women: about 18% orgasm from vaginal intercourse alone; 36% need clitoral stimulation; another 36% say it enhances orgasm; better orgasms reported with more time",
+   "url": "https://www.news-medical.net/news/20170829/Study-assesses-experiences-related-to-female-orgasm.aspx", "fetched": "2026-11-26"},
+  {"fact": "Most women need direct clitoral stimulation to experience orgasm; penis size does not matter for most women's satisfaction",
+   "url": "https://www.psychologytoday.com/us/blog/all-about-sex/200903/the-most-important-sexual-statistic", "fetched": "2026-11-26"}
+ ],
+ "math": [
+  {"expr": "1 if 26437 > 26000 else 0", "expect": 1, "note": "26,437 women surveyed = over 26,000"},
+  {"expr": "84", "expect": 84, "note": "84% very satisfied (UCLA / Cal State LA)"},
+  {"expr": "18", "expect": 18, "note": "about 18% orgasm from intercourse alone (Herbenick)"},
+  {"expr": "10", "expect": 10, "note": "the '10 inches' myth being debunked, not a reported figure"}
+ ],
+ "post": {
+  "slot": "idea",
+  "post_at": "2026-12-01T18:30:00+05:30",
+  "instagram_caption": "Can you satisfy her? Spoiler: it's not about the ruler 📏\n\nIn a survey of over 26,000 women, 84% were very satisfied with their partner's size. And only about 18% of women orgasm from intercourse alone: most need clitoral stimulation.\n\nWhat actually matters: time, attention, and asking what she likes.\n\nSources: UCLA and Cal State LA survey, Indiana University (Herbenick et al.).\n\nWhat's a myth you believed until now?\n\n#docstick #relationships #sexeducation #bodyfacts #mythbusting",
+  "youtube_title": "Can You Satisfy Her? Size Is Not the Answer",
+  "youtube_description": "In a survey of 26,437 women, 84% were very satisfied with their partner's size. Only about 18% of women orgasm from intercourse alone, and most need clitoral stimulation. What matters more: time, attention and communication.\n\nEducational only, not medical advice.\n\nSources:\n• Psychology Today, \"The last word on the length of men's erections\" (UCLA / Cal State LA survey) (fetched Nov 26, 2026)\n• News Medical, \"Study assesses experiences related to female orgasm\" (Herbenick et al.) (fetched Nov 26, 2026)\n• Psychology Today, \"The most important sexual statistic\" (fetched Nov 26, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#Relationships #SexEducation #Shorts"
+ }
+}

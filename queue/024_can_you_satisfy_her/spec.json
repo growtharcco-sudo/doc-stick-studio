@@ -1,0 +1,485 @@
+{
+ "id": "024_can_you_satisfy_her",
+ "voice": "am_michael",
+ "speed": 1.0,
+ "phrases": [
+  {
+   "say": "Can you satisfy her?",
+   "cap": "CAN YOU | *SATISFY HER?*",
+   "pause": 0.2
+  },
+  {
+   "say": "Most guys think it's all about size.",
+   "cap": "MOST GUYS THINK | IT'S ALL ABOUT *SIZE.*",
+   "pause": 0.2
+  },
+  {
+   "say": "Science says: not even close.",
+   "cap": "SCIENCE SAYS: | *NOT EVEN CLOSE.*",
+   "pause": 0.45
+  },
+  {
+   "say": "A survey asked over twenty six thousand women.",
+   "cap": "A SURVEY ASKED | OVER *26,000* WOMEN.",
+   "pause": 0.2
+  },
+  {
+   "say": "Eighty four percent were very satisfied with their partner's size.",
+   "cap": "*84%* WERE | VERY SATISFIED | WITH THEIR PARTNER'S SIZE.",
+   "pause": 0.45
+  },
+  {
+   "say": "Here's the bigger secret.",
+   "cap": "HERE'S THE | *BIGGER SECRET.*",
+   "pause": 0.2
+  },
+  {
+   "say": "Only about eighteen percent of women orgasm from intercourse alone.",
+   "cap": "ONLY ABOUT *18%* | OF WOMEN ORGASM | FROM *INTERCOURSE ALONE.*",
+   "pause": 0.2
+  },
+  {
+   "say": "Most need clitoral stimulation.",
+   "cap": "MOST NEED | *CLITORAL STIMULATION.*",
+   "pause": 0.45
+  },
+  {
+   "say": "So what actually matters?",
+   "cap": "SO WHAT | ACTUALLY *MATTERS?*",
+   "pause": 0.2
+  },
+  {
+   "say": "Time. Attention. And asking what she likes.",
+   "cap": "*TIME.* *ATTENTION.* | AND *ASKING* | WHAT SHE LIKES.",
+   "pause": 0.45
+  },
+  {
+   "say": "Ten inches? Not required.",
+   "cap": "TEN INCHES? | *NOT REQUIRED.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Talking to her works better than any ruler.",
+   "cap": "TALKING TO HER | WORKS BETTER | THAN ANY *RULER.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Follow,",
+   "cap": "*FOLLOW*",
+   "pause": 0.15
+  },
+  {
+   "say": "for the stuff school skipped.",
+   "cap": "FOR THE STUFF | SCHOOL *SKIPPED.*",
+   "pause": 0.5
+  }
+ ],
+ "scenes": [
+  {
+   "first": 0,
+   "end": 3,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      0,
+      0.0,
+      "deadpan"
+     ],
+     [
+      1,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "sign",
+     "x": 820,
+     "y": 1560,
+     "s": 1.3,
+     "slot": "floor_right",
+     "at": [
+      0,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [],
+     "args": {
+      "lines": [
+       "SHE NEEDS",
+       "10 INCHES"
+      ]
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "bigx",
+     "x": 860,
+     "y": 1300,
+     "s": 0.9,
+     "slot": "low_right",
+     "at": [
+      2,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 3,
+   "end": 5,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      3,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "ring",
+     "x": 660,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "center",
+     "at": [
+      3,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "value": 84,
+      "line1": "VERY SATISFIED",
+      "line2": "WITH HIS SIZE"
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 5,
+   "end": 8,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      5,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "ring",
+     "x": 660,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "center",
+     "at": [
+      5,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "value": 18,
+      "color": "red",
+      "line1": "ORGASM FROM",
+      "line2": "INTERCOURSE ALONE"
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 8,
+   "end": 10,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      8,
+      0.0,
+      "deadpan"
+     ],
+     [
+      9,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [
+    {
+     "kind": "girl",
+     "x": 820,
+     "s": 2.25,
+     "face": -1,
+     "poses": [
+      [
+       8,
+       0.0,
+       "think"
+      ]
+     ],
+     "at": [
+      8,
+      0.0
+     ],
+     "in": "slide"
+    }
+   ],
+   "els": [
+    {
+     "type": "prop",
+     "name": "bubble",
+     "x": 860,
+     "y": 830,
+     "s": 0.85,
+     "slot": "high_right",
+     "at": [
+      8,
+      0.5
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "lines": [
+       "SO WHAT",
+       "MATTERS?"
+      ],
+      "tail": "right"
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 10,
+   "end": 11,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      10,
+      0.0,
+      "deadpan"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "sign",
+     "x": 640,
+     "y": 1560,
+     "s": 1.3,
+     "slot": "floor_center",
+     "at": [
+      10,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [],
+     "args": {
+      "lines": [
+       "SHE NEEDS",
+       "10 INCHES"
+      ]
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "bigx",
+     "x": 680,
+     "y": 1300,
+     "s": 1.0,
+     "slot": "low",
+     "at": [
+      10,
+      0.7
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 11,
+   "end": 12,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      11,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "heart",
+     "x": 660,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "center",
+     "at": [
+      11,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "COMMUNICATION",
+     "sub": null,
+     "x": 680,
+     "y": 1300,
+     "color": "red",
+     "rot": -0.12,
+     "size": 56,
+     "at": [
+      11,
+      0.8
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 12,
+   "end": 14,
+   "outro": true,
+   "doc": {
+    "x": 540,
+    "s": 2.4,
+    "face": 1,
+    "poses": [
+     [
+      12,
+      0.0,
+      "wave"
+     ]
+    ]
+   },
+   "people": [],
+   "els": []
+  }
+ ],
+ "cover": {
+  "big": [
+   "CAN YOU",
+   "*SATISFY HER?*"
+  ]
+ },
+ "sources": [
+  {
+   "fact": "UCLA and Cal State LA survey of 26,437 women aged 18 to 65: 84% very satisfied with partner's size, 14% wished larger, 2% smaller; fewer than about 20% of women reliably orgasm from intercourse alone",
+   "url": "https://psychologytoday.com/us/blog/all-about-sex/202112/the-last-word-the-length-men-s-erections",
+   "fetched": "2026-11-26"
+  },
+  {
+   "fact": "Herbenick et al. (Indiana University), 1,055 women: about 18% orgasm from vaginal intercourse alone; 36% need clitoral stimulation; another 36% say it enhances orgasm; better orgasms reported with more time",
+   "url": "https://www.news-medical.net/news/20170829/Study-assesses-experiences-related-to-female-orgasm.aspx",
+   "fetched": "2026-11-26"
+  },
+  {
+   "fact": "Most women need direct clitoral stimulation to experience orgasm; penis size does not matter for most women's satisfaction",
+   "url": "https://www.psychologytoday.com/us/blog/all-about-sex/200903/the-most-important-sexual-statistic",
+   "fetched": "2026-11-26"
+  }
+ ],
+ "math": [
+  {
+   "expr": "1 if 26437 > 26000 else 0",
+   "expect": 1,
+   "note": "26,437 women surveyed = over 26,000"
+  },
+  {
+   "expr": "84",
+   "expect": 84,
+   "note": "84% very satisfied (UCLA / Cal State LA)"
+  },
+  {
+   "expr": "18",
+   "expect": 18,
+   "note": "about 18% orgasm from intercourse alone (Herbenick)"
+  },
+  {
+   "expr": "10",
+   "expect": 10,
+   "note": "the '10 inches' myth being debunked, not a reported figure"
+  }
+ ],
+ "post": {
+  "slot": "idea",
+  "post_at": "2026-12-01T18:30:00+05:30",
+  "instagram_caption": "Can you satisfy her? Spoiler: it's not about the ruler 📏\n\nIn a survey of over 26,000 women, 84% were very satisfied with their partner's size. And only about 18% of women orgasm from intercourse alone: most need clitoral stimulation.\n\nWhat actually matters: time, attention, and asking what she likes.\n\nSources: UCLA and Cal State LA survey, Indiana University (Herbenick et al.).\n\nWhat's a myth you believed until now?\n\n#docstick #relationships #sexeducation #bodyfacts #mythbusting",
+  "youtube_title": "Can You Satisfy Her? Size Is Not the Answer",
+  "youtube_description": "In a survey of 26,437 women, 84% were very satisfied with their partner's size. Only about 18% of women orgasm from intercourse alone, and most need clitoral stimulation. What matters more: time, attention and communication.\n\nEducational only, not medical advice.\n\nSources:\n• Psychology Today, \"The last word on the length of men's erections\" (UCLA / Cal State LA survey) (fetched Nov 26, 2026)\n• News Medical, \"Study assesses experiences related to female orgasm\" (Herbenick et al.) (fetched Nov 26, 2026)\n• Psychology Today, \"The most important sexual statistic\" (fetched Nov 26, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#Relationships #SexEducation #Shorts"
+ }
+}

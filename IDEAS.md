@@ -28,3 +28,4 @@ Everything else about the body
 - [x] Wet dreams: up to 9 in 10 boys, nobody explains it (021)
 - [x] Six inches is a myth: the real average and small penis anxiety (022)
 - [x] Squirting vs female ejaculation: not the same thing (023)
+- [x] Can you satisfy her? 84% satisfied, 18% from intercourse alone (024)
