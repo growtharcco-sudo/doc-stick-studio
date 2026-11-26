@@ -713,3 +713,15 @@ def sleeper(c, st):
     for i in range(3):
         ph = (st.t * 0.6 + i / 3) % 1
         text(c, "Z", -80 + ph * 60 + i * 8, -150 - ph * 90, 34 + i * 6, (0.4, 0.4, 0.5))
+
+
+@prop("ruler", (-200, -40, 200, 40), "center", "yellow wooden ruler with tick marks (length, size, measuring)")
+def ruler(c, st):
+    c.save(); c.rotate(-0.08)
+    rrect(c, -195, -35, 390, 70, 8); fillstroke(c, (0.98, 0.82, 0.30), (0.55, 0.40, 0.10), 6)
+    for i in range(31):
+        x = -180 + i * 12; h = 26 if i % 5 == 0 else 14
+        c.move_to(x, -35); c.line_to(x, -35 + h); stroke(c, (0.35, 0.25, 0.05), 3)
+    for i, n in enumerate(range(0, 31, 10)):
+        text(c, str(n), -180 + n * 12, 22, 22, (0.35, 0.25, 0.05))
+    c.restore()

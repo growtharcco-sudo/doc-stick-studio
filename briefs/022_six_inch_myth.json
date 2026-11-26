@@ -1,0 +1,218 @@
+{
+ "id": "022_six_inch_myth",
+ "beats": [
+  {
+   "say": "Six inches is a myth.",
+   "cap": "*6 INCHES* | IS A *MYTH.*",
+   "show": {
+    "kind": "hook",
+    "prop": {
+     "name": "sign",
+     "args": {
+      "lines": [
+       "AVERAGE:",
+       "6 INCHES"
+      ]
+     },
+     "size": 1.3
+    },
+    "add_props": [
+     {
+      "name": "bigx",
+      "slot": "low_right",
+      "size": 0.9,
+      "at": "0+1.2"
+     }
+    ]
+   }
+  },
+  {
+   "say": "The biggest study ever measured more than fifteen thousand men.",
+   "cap": "THE BIGGEST STUDY EVER | MEASURED OVER | *15,000 MEN.*"
+  },
+  {
+   "say": "Measured by doctors, not by guesses.",
+   "cap": "MEASURED BY *DOCTORS,* | NOT BY GUESSES.",
+   "show": {
+    "kind": "number",
+    "number": {
+     "value": 15521
+    },
+    "left": {
+     "name": "ruler",
+     "size": 0.6
+    },
+    "right": {
+     "name": "check",
+     "size": 0.7
+    },
+    "right_at": "0+0.9"
+   }
+  },
+  {
+   "say": "The real average?",
+   "cap": "THE *REAL* AVERAGE?",
+   "show": {
+    "kind": "number",
+    "number": {
+     "value": 13.1,
+     "decimals": 1,
+     "suffix": " CM",
+     "color": "red"
+    },
+    "right": {
+     "name": "ruler",
+     "size": 0.8,
+     "label": "ABOUT 5.2 INCHES"
+    },
+    "right_at": "1"
+   }
+  },
+  {
+   "say": "Thirteen point one centimetres. About five point two inches.",
+   "cap": "*13.1 CM.* | ABOUT *5.2 INCHES.*"
+  },
+  {
+   "say": "Not six. And definitely not what the internet shows you.",
+   "cap": "NOT SIX. | AND DEFINITELY *NOT* | WHAT THE *INTERNET* | SHOWS YOU.",
+   "show": {
+    "kind": "verdict",
+    "props": [
+     {
+      "name": "sign",
+      "args": {
+       "lines": [
+        "AVERAGE:",
+        "6 INCHES"
+       ]
+      },
+      "size": 1.3
+     }
+    ]
+   }
+  },
+  {
+   "say": "Now the twist.",
+   "cap": "NOW THE *TWIST.*",
+   "show": {
+    "kind": "patient",
+    "person": "boy",
+    "question": [
+     "AM I",
+     "BELOW AVERAGE?"
+    ]
+   }
+  },
+  {
+   "say": "Lots of men who are totally average think they're below average.",
+   "cap": "LOTS OF MEN WHO ARE | *TOTALLY AVERAGE* | THINK THEY'RE | *BELOW AVERAGE.*"
+  },
+  {
+   "say": "Doctors even have a name for it.",
+   "cap": "DOCTORS EVEN | HAVE A *NAME* FOR IT.",
+   "show": {
+    "kind": "explain",
+    "prop": "brain",
+    "stamp": {
+     "text": "SMALL PENIS ANXIETY",
+     "at": "1+0.2",
+     "size": 44
+    }
+   }
+  },
+  {
+   "say": "Small penis anxiety.",
+   "cap": "*SMALL PENIS ANXIETY.*"
+  },
+  {
+   "say": "So, does size matter?",
+   "cap": "SO, DOES | *SIZE MATTER?*",
+   "show": {
+    "kind": "verdict",
+    "verdict": "true",
+    "props": [
+     {
+      "name": "sign",
+      "args": {
+       "lines": [
+        "YOU'RE",
+        "PROBABLY FINE"
+       ]
+      },
+      "size": 1.3
+     }
+    ]
+   }
+  },
+  {
+   "say": "Here's what matters. Most guys who worry are completely normal.",
+   "cap": "MOST GUYS | WHO WORRY ARE | *COMPLETELY NORMAL.*"
+  },
+  {
+   "say": "Put the ruler down.",
+   "cap": "PUT THE *RULER* DOWN."
+  }
+ ],
+ "cover": {
+  "big": [
+   "6 INCHES?",
+   "*THAT'S A MYTH.*"
+  ]
+ },
+ "sources": [
+  {
+   "fact": "Review of 17 studies, 15,521 men measured by health professionals: average erect length 13.12 cm (5.165 in), flaccid 9.16 cm; many men who are average think they're below average; 'small penis anxiety'",
+   "url": "https://www.wbur.org/commonhealth/2015/03/03/biggest-study-penis-size",
+   "fetched": "2026-11-26"
+  },
+  {
+   "fact": "Average erect 5.16 in (13.12 cm), against the widely accepted norm of six inches",
+   "url": "https://www.pinknews.co.uk/2015/03/03/study-reveals-the-average-penis-size-may-not-be-as-big-as-you-think/",
+   "fetched": "2026-11-26"
+  },
+  {
+   "fact": "Data should help reassure the large majority of men that their size is in the normal range (BJU International, Veale et al.)",
+   "url": "https://medicalxpress.com/news/2015-03-flaccid-erect-penis-lengths-men.pdf",
+   "fetched": "2026-11-26"
+  },
+  {
+   "fact": "King's College London press release: 17 studies, up to 15,521 males measured by health professionals",
+   "url": "https://www.kcl.ac.uk/archive/news/ioppn/records/2015/march/am-i-normal-an-analysis-of-penis-lengths",
+   "fetched": "2026-11-26"
+  }
+ ],
+ "math": [
+  {
+   "expr": "15521",
+   "expect": 15521,
+   "note": "men in the review (KCL / BJU International 2015)"
+  },
+  {
+   "expr": "1 if 15521 > 15000 else 0",
+   "expect": 1,
+   "note": "'over 15,000 men'"
+  },
+  {
+   "expr": "round(13.12, 1)",
+   "expect": 13.1,
+   "note": "average erect length 13.12 cm"
+  },
+  {
+   "expr": "round(13.12 / 2.54, 1)",
+   "expect": 5.2,
+   "note": "13.12 cm in inches"
+  },
+  {
+   "expr": "6",
+   "expect": 6,
+   "note": "the 6 inch myth (PinkNews: widely accepted norm)"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-29T23:30:00+05:30",
+  "instagram_caption": "6 inches is a myth 📏\n\nThe biggest review ever, 17 studies and 15,521 men measured by health professionals, found the real average is 13.1 cm, about 5.2 inches.\n\nThe twist: lots of men who are totally average think they're below average. Doctors call it small penis anxiety. Most guys who worry are completely normal.\n\nSources: BJU International (Veale et al. 2015) via King's College London, WBUR.\n\nWhat number did you think the average was?\n\n#docstick #menshealth #bodyfacts #mythbusting #sexeducation",
+  "youtube_title": "6 Inches Is a Myth: The Real Average",
+  "youtube_description": "The biggest review ever (17 studies, 15,521 men measured by health professionals) found the real average is 13.1 cm, about 5.2 inches, not 6. Many men who are average think they're below average, which doctors call small penis anxiety.\n\nEducational only, not medical advice.\n\nSources:\n• King's College London, \"Am I normal? An analysis of penis lengths\" (fetched Nov 26, 2026)\n• WBUR, \"Biggest study yet of penis size\" (fetched Nov 26, 2026)\n• Medical Xpress, \"Penis size: researchers provide the long and short of it\" (fetched Nov 26, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#MensHealth #MythBusting #Shorts"
+ }
+}

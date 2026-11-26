@@ -1,0 +1,617 @@
+{
+ "id": "022_six_inch_myth",
+ "voice": "am_michael",
+ "speed": 1.0,
+ "phrases": [
+  {
+   "say": "Six inches is a myth.",
+   "cap": "*6 INCHES* | IS A *MYTH.*",
+   "pause": 0.2
+  },
+  {
+   "say": "The biggest study ever measured more than fifteen thousand men.",
+   "cap": "THE BIGGEST STUDY EVER | MEASURED OVER | *15,000 MEN.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Measured by doctors, not by guesses.",
+   "cap": "MEASURED BY *DOCTORS,* | NOT BY GUESSES.",
+   "pause": 0.45
+  },
+  {
+   "say": "The real average?",
+   "cap": "THE *REAL* AVERAGE?",
+   "pause": 0.2
+  },
+  {
+   "say": "Thirteen point one centimetres. About five point two inches.",
+   "cap": "*13.1 CM.* | ABOUT *5.2 INCHES.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Not six. And definitely not what the internet shows you.",
+   "cap": "NOT SIX. | AND DEFINITELY *NOT* | WHAT THE *INTERNET* | SHOWS YOU.",
+   "pause": 0.45
+  },
+  {
+   "say": "Now the twist.",
+   "cap": "NOW THE *TWIST.*",
+   "pause": 0.2
+  },
+  {
+   "say": "Lots of men who are totally average think they're below average.",
+   "cap": "LOTS OF MEN WHO ARE | *TOTALLY AVERAGE* | THINK THEY'RE | *BELOW AVERAGE.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Doctors even have a name for it.",
+   "cap": "DOCTORS EVEN | HAVE A *NAME* FOR IT.",
+   "pause": 0.2
+  },
+  {
+   "say": "Small penis anxiety.",
+   "cap": "*SMALL PENIS ANXIETY.*",
+   "pause": 0.45
+  },
+  {
+   "say": "So, does size matter?",
+   "cap": "SO, DOES | *SIZE MATTER?*",
+   "pause": 0.2
+  },
+  {
+   "say": "Here's what matters. Most guys who worry are completely normal.",
+   "cap": "MOST GUYS | WHO WORRY ARE | *COMPLETELY NORMAL.*",
+   "pause": 0.2
+  },
+  {
+   "say": "Put the ruler down.",
+   "cap": "PUT THE *RULER* DOWN.",
+   "pause": 0.45
+  },
+  {
+   "say": "Follow,",
+   "cap": "*FOLLOW*",
+   "pause": 0.15
+  },
+  {
+   "say": "for the stuff school skipped.",
+   "cap": "FOR THE STUFF | SCHOOL *SKIPPED.*",
+   "pause": 0.5
+  }
+ ],
+ "scenes": [
+  {
+   "first": 0,
+   "end": 2,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      0,
+      0.0,
+      "deadpan"
+     ],
+     [
+      1,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "sign",
+     "x": 820,
+     "y": 1560,
+     "s": 1.3,
+     "slot": "floor_right",
+     "at": [
+      0,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [],
+     "args": {
+      "lines": [
+       "AVERAGE:",
+       "6 INCHES"
+      ]
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "bigx",
+     "x": 860,
+     "y": 1300,
+     "s": 0.9,
+     "slot": "low_right",
+     "at": [
+      0,
+      1.2
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 2,
+   "end": 3,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      2,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "big_number",
+     "x": 660,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "center",
+     "at": [
+      2,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "value": 15521
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "ruler",
+     "x": 520,
+     "y": 1300,
+     "s": 0.6,
+     "slot": "low_left",
+     "at": [
+      2,
+      0.6
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "check",
+     "x": 860,
+     "y": 1300,
+     "s": 0.7,
+     "slot": "low_right",
+     "at": [
+      2,
+      0.9
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 3,
+   "end": 5,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      3,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "big_number",
+     "x": 660,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "center",
+     "at": [
+      3,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "value": 13.1,
+      "decimals": 1,
+      "suffix": " CM",
+      "color": "red"
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "ruler",
+     "x": 860,
+     "y": 1300,
+     "s": 0.8,
+     "slot": "low_right",
+     "at": [
+      4,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": "ABOUT 5.2 INCHES",
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 5,
+   "end": 6,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      5,
+      0.0,
+      "deadpan"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "sign",
+     "x": 640,
+     "y": 1560,
+     "s": 1.3,
+     "slot": "floor_center",
+     "at": [
+      5,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [],
+     "args": {
+      "lines": [
+       "AVERAGE:",
+       "6 INCHES"
+      ]
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "bigx",
+     "x": 680,
+     "y": 1300,
+     "s": 1.0,
+     "slot": "low",
+     "at": [
+      5,
+      0.7
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 6,
+   "end": 8,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      6,
+      0.0,
+      "deadpan"
+     ],
+     [
+      7,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [
+    {
+     "kind": "boy",
+     "x": 820,
+     "s": 2.25,
+     "face": -1,
+     "poses": [
+      [
+       6,
+       0.0,
+       "think"
+      ]
+     ],
+     "at": [
+      6,
+      0.0
+     ],
+     "in": "slide"
+    }
+   ],
+   "els": [
+    {
+     "type": "prop",
+     "name": "bubble",
+     "x": 860,
+     "y": 830,
+     "s": 0.85,
+     "slot": "high_right",
+     "at": [
+      6,
+      0.5
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "lines": [
+       "AM I",
+       "BELOW AVERAGE?"
+      ],
+      "tail": "right"
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 8,
+   "end": 10,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      8,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "brain",
+     "x": 660,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "center",
+     "at": [
+      8,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "SMALL PENIS ANXIETY",
+     "sub": null,
+     "x": 680,
+     "y": 1300,
+     "color": "red",
+     "rot": -0.12,
+     "size": 44,
+     "at": [
+      9,
+      0.2
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 10,
+   "end": 13,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      10,
+      0.0,
+      "deadpan"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "sign",
+     "x": 640,
+     "y": 1560,
+     "s": 1.3,
+     "slot": "floor_center",
+     "at": [
+      10,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [],
+     "args": {
+      "lines": [
+       "YOU'RE",
+       "PROBABLY FINE"
+      ]
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "check",
+     "x": 660,
+     "y": 830,
+     "s": 1.0,
+     "slot": "high",
+     "at": [
+      10,
+      0.7
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 13,
+   "end": 15,
+   "outro": true,
+   "doc": {
+    "x": 540,
+    "s": 2.4,
+    "face": 1,
+    "poses": [
+     [
+      13,
+      0.0,
+      "wave"
+     ]
+    ]
+   },
+   "people": [],
+   "els": []
+  }
+ ],
+ "cover": {
+  "big": [
+   "6 INCHES?",
+   "*THAT'S A MYTH.*"
+  ]
+ },
+ "sources": [
+  {
+   "fact": "Review of 17 studies, 15,521 men measured by health professionals: average erect length 13.12 cm (5.165 in), flaccid 9.16 cm; many men who are average think they're below average; 'small penis anxiety'",
+   "url": "https://www.wbur.org/commonhealth/2015/03/03/biggest-study-penis-size",
+   "fetched": "2026-11-26"
+  },
+  {
+   "fact": "Average erect 5.16 in (13.12 cm), against the widely accepted norm of six inches",
+   "url": "https://www.pinknews.co.uk/2015/03/03/study-reveals-the-average-penis-size-may-not-be-as-big-as-you-think/",
+   "fetched": "2026-11-26"
+  },
+  {
+   "fact": "Data should help reassure the large majority of men that their size is in the normal range (BJU International, Veale et al.)",
+   "url": "https://medicalxpress.com/news/2015-03-flaccid-erect-penis-lengths-men.pdf",
+   "fetched": "2026-11-26"
+  },
+  {
+   "fact": "King's College London press release: 17 studies, up to 15,521 males measured by health professionals",
+   "url": "https://www.kcl.ac.uk/archive/news/ioppn/records/2015/march/am-i-normal-an-analysis-of-penis-lengths",
+   "fetched": "2026-11-26"
+  }
+ ],
+ "math": [
+  {
+   "expr": "15521",
+   "expect": 15521,
+   "note": "men in the review (KCL / BJU International 2015)"
+  },
+  {
+   "expr": "1 if 15521 > 15000 else 0",
+   "expect": 1,
+   "note": "'over 15,000 men'"
+  },
+  {
+   "expr": "round(13.12, 1)",
+   "expect": 13.1,
+   "note": "average erect length 13.12 cm"
+  },
+  {
+   "expr": "round(13.12 / 2.54, 1)",
+   "expect": 5.2,
+   "note": "13.12 cm in inches"
+  },
+  {
+   "expr": "6",
+   "expect": 6,
+   "note": "the 6 inch myth (PinkNews: widely accepted norm)"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-29T23:30:00+05:30",
+  "instagram_caption": "6 inches is a myth 📏\n\nThe biggest review ever, 17 studies and 15,521 men measured by health professionals, found the real average is 13.1 cm, about 5.2 inches.\n\nThe twist: lots of men who are totally average think they're below average. Doctors call it small penis anxiety. Most guys who worry are completely normal.\n\nSources: BJU International (Veale et al. 2015) via King's College London, WBUR.\n\nWhat number did you think the average was?\n\n#docstick #menshealth #bodyfacts #mythbusting #sexeducation",
+  "youtube_title": "6 Inches Is a Myth: The Real Average",
+  "youtube_description": "The biggest review ever (17 studies, 15,521 men measured by health professionals) found the real average is 13.1 cm, about 5.2 inches, not 6. Many men who are average think they're below average, which doctors call small penis anxiety.\n\nEducational only, not medical advice.\n\nSources:\n• King's College London, \"Am I normal? An analysis of penis lengths\" (fetched Nov 26, 2026)\n• WBUR, \"Biggest study yet of penis size\" (fetched Nov 26, 2026)\n• Medical Xpress, \"Penis size: researchers provide the long and short of it\" (fetched Nov 26, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#MensHealth #MythBusting #Shorts"
+ }
+}
