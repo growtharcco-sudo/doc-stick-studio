@@ -1,0 +1,679 @@
+{
+ "id": "020_morning_wood_night_shift",
+ "voice": "am_michael",
+ "speed": 1.0,
+ "phrases": [
+  {
+   "say": "Morning wood isn't a morning thing.",
+   "cap": "MORNING WOOD | ISN'T A | *MORNING THING.*",
+   "pause": 0.2
+  },
+  {
+   "say": "It's a night shift.",
+   "cap": "IT'S A | *NIGHT SHIFT.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Wait. Then why is it there every morning?",
+   "cap": "WAIT. THEN WHY | IS IT THERE | EVERY *MORNING?*",
+   "pause": 0.45
+  },
+  {
+   "say": "Healthy men get up to five erections a night, while asleep.",
+   "cap": "HEALTHY MEN GET | UP TO *5* A NIGHT, | WHILE *ASLEEP.*",
+   "pause": 0.2
+  },
+  {
+   "say": "Each one can last twenty to thirty minutes.",
+   "cap": "EACH ONE | CAN LAST | *20 TO 30* MINUTES.",
+   "pause": 0.45
+  },
+  {
+   "say": "They happen in REM sleep, the stage where you dream.",
+   "cap": "THEY HAPPEN IN | *REM SLEEP,* | THE STAGE | WHERE YOU DREAM.",
+   "pause": 0.45
+  },
+  {
+   "say": "But no, it's not the dreams.",
+   "cap": "BUT NO, IT'S | *NOT THE DREAMS.*",
+   "pause": 0.2
+  },
+  {
+   "say": "In REM, your nervous system flips from fight or flight to rest and digest.",
+   "cap": "YOUR NERVOUS SYSTEM | FLIPS FROM | *FIGHT OR FLIGHT* | TO *REST AND DIGEST.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Blood flow goes up.",
+   "cap": "BLOOD FLOW | *GOES UP.*",
+   "pause": 0.2
+  },
+  {
+   "say": "And scientists think the extra oxygen may help keep the tissue healthy.",
+   "cap": "SCIENTISTS THINK | THE EXTRA *OXYGEN* | MAY HELP KEEP | THE TISSUE *HEALTHY.*",
+   "pause": 0.45
+  },
+  {
+   "say": "You often wake up straight out of REM.",
+   "cap": "YOU OFTEN WAKE UP | STRAIGHT OUT | OF *REM.*",
+   "pause": 0.2
+  },
+  {
+   "say": "So you just catch the last one.",
+   "cap": "SO YOU JUST CATCH | THE *LAST ONE.*",
+   "pause": 0.45
+  },
+  {
+   "say": "If they disappear for weeks, talk to a doctor.",
+   "cap": "IF THEY DISAPPEAR | FOR WEEKS, | *TALK TO A DOCTOR.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Otherwise, it's not weird.",
+   "cap": "OTHERWISE, | IT'S *NOT WEIRD.*",
+   "pause": 0.2
+  },
+  {
+   "say": "It's a nightly health check.",
+   "cap": "IT'S A NIGHTLY | *HEALTH CHECK.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Follow,",
+   "cap": "*FOLLOW*",
+   "pause": 0.15
+  },
+  {
+   "say": "for the stuff school skipped.",
+   "cap": "FOR THE STUFF | SCHOOL *SKIPPED.*",
+   "pause": 0.5
+  }
+ ],
+ "scenes": [
+  {
+   "first": 0,
+   "end": 2,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      0,
+      0.0,
+      "deadpan"
+     ],
+     [
+      1,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "bed",
+     "x": 820,
+     "y": 1560,
+     "s": 0.9,
+     "slot": "floor_right",
+     "at": [
+      0,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [],
+     "args": {
+      "state": "zzz"
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "clock",
+     "x": 860,
+     "y": 830,
+     "s": 0.8,
+     "slot": "high_right",
+     "at": [
+      0,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 2,
+   "end": 3,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      2,
+      0.0,
+      "deadpan"
+     ],
+     [
+      3,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [
+    {
+     "kind": "boy",
+     "x": 820,
+     "s": 2.25,
+     "face": -1,
+     "poses": [
+      [
+       2,
+       0.0,
+       "think"
+      ]
+     ],
+     "at": [
+      2,
+      0.0
+     ],
+     "in": "slide"
+    }
+   ],
+   "els": [
+    {
+     "type": "prop",
+     "name": "bubble",
+     "x": 860,
+     "y": 830,
+     "s": 0.85,
+     "slot": "high_right",
+     "at": [
+      2,
+      0.5
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "lines": [
+       "WHY EVERY",
+       "MORNING?"
+      ],
+      "tail": "right"
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 3,
+   "end": 5,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      3,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "big_number",
+     "x": 660,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "center",
+     "at": [
+      3,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "value": 5,
+      "suffix": "x"
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "clock",
+     "x": 860,
+     "y": 1300,
+     "s": 0.8,
+     "slot": "low_right",
+     "at": [
+      4,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": "20 TO 30 MIN",
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 5,
+   "end": 6,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      5,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "brain",
+     "x": 660,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "center",
+     "at": [
+      5,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "REM SLEEP",
+     "sub": null,
+     "x": 680,
+     "y": 1300,
+     "color": "red",
+     "rot": -0.12,
+     "size": 54,
+     "at": [
+      5,
+      1.2
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 6,
+   "end": 8,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      6,
+      0.0,
+      "deadpan"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "bed",
+     "x": 820,
+     "y": 1560,
+     "s": 0.9,
+     "slot": "floor_right",
+     "at": [
+      6,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "state": "zzz"
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "NOT THE DREAMS",
+     "sub": null,
+     "x": 660,
+     "y": 1010,
+     "color": "red",
+     "rot": -0.12,
+     "size": 64,
+     "at": [
+      6,
+      0.6
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 8,
+   "end": 10,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      8,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "heart",
+     "x": 520,
+     "y": 1300,
+     "s": 1.0,
+     "slot": "low_left",
+     "at": [
+      8,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": "BLOOD FLOW",
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "arrow_up",
+     "x": 860,
+     "y": 1300,
+     "s": 1.0,
+     "slot": "low_right",
+     "at": [
+      9,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": "OXYGEN",
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 10,
+   "end": 12,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      10,
+      0.0,
+      "deadpan"
+     ],
+     [
+      11,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "clock",
+     "x": 660,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "center",
+     "at": [
+      10,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "fast": true
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 12,
+   "end": 13,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      12,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "warning",
+     "x": 660,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "center",
+     "at": [
+      12,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "SEE A DOCTOR",
+     "sub": null,
+     "x": 680,
+     "y": 1300,
+     "color": "red",
+     "rot": -0.12,
+     "size": 54,
+     "at": [
+      12,
+      1.2
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 13,
+   "end": 15,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      13,
+      0.0,
+      "deadpan"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "bed",
+     "x": 640,
+     "y": 1560,
+     "s": 0.9,
+     "slot": "floor_center",
+     "at": [
+      13,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [],
+     "args": {
+      "state": "zzz"
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "check",
+     "x": 660,
+     "y": 830,
+     "s": 1.0,
+     "slot": "high",
+     "at": [
+      13,
+      0.7
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 15,
+   "end": 17,
+   "outro": true,
+   "doc": {
+    "x": 540,
+    "s": 2.4,
+    "face": 1,
+    "poses": [
+     [
+      15,
+      0.0,
+      "wave"
+     ]
+    ]
+   },
+   "people": [],
+   "els": []
+  }
+ ],
+ "cover": {
+  "big": [
+   "MORNING WOOD?",
+   "*NIGHT SHIFT.*"
+  ]
+ },
+ "sources": [
+  {
+   "fact": "Nocturnal penile tumescence happens in REM sleep; REM shifts the body from sympathetic (fight or flight) to parasympathetic (rest and digest); men wake out of REM; up to five per night, lasting up to 20 or 30 minutes; not caused by sexy dreams; it can tell doctors a lot about sexual function",
+   "url": "https://www.newcastle.edu.au/hippocampus/story/2020/male-erections",
+   "fetched": "2026-11-26"
+  },
+  {
+   "fact": "Increased oxygen at night may be beneficial for the health of the tissue; studies are undecided",
+   "url": "https://www.inverse.com/mind-body/what-causes-morning-wood",
+   "fetched": "2026-11-26"
+  },
+  {
+   "fact": "Erections during REM sleep are a robust physiologic phenomenon in all normal healthy males, irrespective of age",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/14984691/",
+   "fetched": "2026-11-26"
+  },
+  {
+   "fact": "NPT occurs 3 to 5 times a night; if morning erections stop, it could be a sign of erectile dysfunction or another health issue",
+   "url": "https://ro.co/erectile-dysfunction/morning-wood",
+   "fetched": "2026-11-26"
+  }
+ ],
+ "math": [
+  {
+   "expr": "5",
+   "expect": 5,
+   "note": "up to five per night (University of Newcastle)"
+  },
+  {
+   "expr": "20",
+   "expect": 20,
+   "note": "lasting up to 20 or 30 minutes (University of Newcastle)"
+  },
+  {
+   "expr": "30",
+   "expect": 30,
+   "note": "lasting up to 20 or 30 minutes (University of Newcastle)"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-27T23:30:00+05:30",
+  "instagram_caption": "It's not a morning thing. It's a night shift 🌙\n\nHealthy men get up to five erections a night during REM sleep, each lasting 20 to 30 minutes. It isn't caused by dreams: in REM the nervous system switches to rest and digest, blood flow goes up, and you often wake up right out of the last one.\n\nScientists think the extra oxygen may help keep the tissue healthy. If they disappear for weeks, talk to a doctor.\n\nSources: University of Newcastle, The Conversation, PubMed, Ro.\n\nDid you know this happens while you sleep?\n\n#docstick #mensHealth #sleepscience #bodyfacts #sexeducation",
+  "youtube_title": "Why Morning Wood Happens (It's a Night Shift)",
+  "youtube_description": "Healthy men get up to five erections a night during REM sleep, each lasting 20 to 30 minutes. It isn't caused by dreams: REM switches the nervous system to rest and digest, and you often wake up right out of the last one. If they disappear for weeks, talk to a doctor.\n\nEducational only, not medical advice.\n\nSources:\n• University of Newcastle, \"Male erections\" (fetched Nov 26, 2026)\n• The Conversation via Inverse, \"What causes morning erections?\" (fetched Nov 26, 2026)\n• PubMed, \"Sleep-related erections: neural mechanisms and clinical significance\" (fetched Nov 26, 2026)\n• Ro, \"Morning wood\" (fetched Nov 26, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#MensHealth #SleepScience #Shorts"
+ }
+}

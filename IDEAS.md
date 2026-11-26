@@ -7,7 +7,7 @@ Sex ed / relationships (about 1 in 3)
 - [x] The egg chooses: eggs release chemicals that attract some sperm over others (011)
 - [x] Period myths: Romans thought period blood soured wine and dulled mirrors (Pliny the Elder) (007)
 - [ ] Your heart rate during a kiss / kissing burns calories (check the real number)
-- [ ] The "morning wood" is a nightly health check (nocturnal erections, sleep cycles)
+- [x] The "morning wood" is a nightly health check (020)
 - [x] Why men have nipples (009)
 - [x] Period syncing: roommates' periods probably don't sync (013)
 - [ ] Consent explained with a cup of tea, stick-figure version
