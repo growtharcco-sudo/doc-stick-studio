@@ -752,3 +752,73 @@ def internal_condom(c, st):
     ellipse(c, 0, -80, 55, 18); c.set_source_rgba(1, 1, 1, 0.9); c.fill_preserve(); stroke(c, (0.30, 0.55, 0.75), 7)
     ellipse(c, 0, 85, 32, 11); stroke(c, (0.30, 0.55, 0.75), 6)
     c.move_to(-28, -40); c.curve_to(-32, 0, -24, 40, -18, 60); c.set_source_rgba(1, 1, 1, 0.8); c.set_line_width(6); c.stroke()
+
+
+@prop("nose", (-125, -170, 125, 125), "center",
+      "cartoon nose, front view, with two nostrils. One nostril breathes (air lines), the other naps (small Zs). "
+      "args.side 'left'|'right' = the working nostril (default left); state 'swap' = they swap shifts")
+def nose(c, st):
+    side = st.args.get("side", "left")
+    if st.state == "swap": side = "right" if side == "left" else "left"
+    c.move_to(-30, -160); c.curve_to(-40, -90, -70, -40, -95, 10)
+    c.curve_to(-125, 60, -95, 95, -60, 90); c.curve_to(-35, 112, 35, 112, 60, 90)
+    c.curve_to(95, 95, 125, 60, 95, 10); c.curve_to(70, -40, 40, -90, 30, -160); c.close_path()
+    fillstroke(c, PEACH, DPEACH, 6)
+    c.move_to(-60, -10); c.curve_to(-75, 20, -78, 45, -70, 60); stroke(c, DPEACH, 4)
+    for sx in (-1, 1):
+        work = (sx < 0) == (side == "left")
+        nx = sx * 42
+        ellipse(c, nx, 72, 22 if work else 13, 12 if work else 6); c.set_source_rgb(*DPEACH); c.fill()
+        if work:
+            for i in range(2):                                   # breath puffs curling out sideways
+                ph = (st.t * 0.9 + i / 2) % 1; d = sx * (30 + ph * 50)
+                c.move_to(nx + d * 0.3, 96 + ph * 10); c.curve_to(nx + d * 0.6, 120, nx + d, 90 + ph * 20, nx + d * 1.2, 112)
+                c.set_source_rgba(0.55, 0.60, 0.68, 0.9 * (1 - ph)); c.set_line_width(6); c.stroke()
+        else:
+            ph = (st.t * 0.6) % 1
+            text(c, "z", nx + sx * (30 + ph * 20), 30 - ph * 40, 46, (0.35, 0.35, 0.5))
+
+
+@prop("flower", (-60, -190, 60, 0), "ground", "potted daisy (smell, nature). args.color petal colour")
+def flower(c, st):
+    sw = math.sin(st.t * 2) * 4
+    c.move_to(0, -55); c.curve_to(sw, -100, -sw, -120, sw, -140); stroke(c, DGREEN, 7)
+    c.move_to(-50, -55); c.line_to(50, -55); c.line_to(38, 0); c.line_to(-38, 0); c.close_path(); fillstroke(c, (0.80, 0.42, 0.25), INK, 5)
+    for i in range(8):
+        a = i * math.pi / 4 + st.t * 0.3
+        ellipse(c, sw + math.cos(a) * 30, -145 + math.sin(a) * 30, 18, 18); fillstroke(c, col(st.args.get("color"), WHITE), INK, 4)
+    c.arc(sw, -145, 18, 0, 2 * math.pi); fillstroke(c, YELLOW, INK, 4)
+
+
+@prop("teaspoon", (-150, -40, 150, 40), "center", "metal teaspoon lying sideways (measuring, small amounts). args.fill colour of a liquid in the bowl (e.g. 'red')")
+def teaspoon(c, st):
+    c.save(); c.rotate(-0.15 + math.sin(st.t * 1.5) * 0.03)
+    rrect(c, -140, -9, 190, 18, 9); fillstroke(c, (0.82, 0.84, 0.88), INK, 5)
+    ellipse(c, 92, 0, 52, 32); fillstroke(c, (0.82, 0.84, 0.88), INK, 6)
+    if st.args.get("fill"):
+        ellipse(c, 92, 2, 38, 20); c.set_source_rgb(*col(st.args.get("fill"))); c.fill()
+    c.move_to(60, -14); c.curve_to(70, -22, 90, -24, 104, -20); c.set_source_rgba(1, 1, 1, 0.9); c.set_line_width(5); c.stroke()
+    c.restore()
+
+
+@prop("feather", (-45, -150, 45, 150), "center", "long fluffy feather that wiggles (tickling)")
+def feather(c, st):
+    c.save(); c.rotate(0.35 + math.sin(st.t * 6) * 0.12)
+    c.move_to(0, -140); c.curve_to(55, -90, 45, 40, 6, 110); c.line_to(-6, 110); c.curve_to(-45, 40, -55, -90, 0, -140); c.close_path()
+    fillstroke(c, (0.62, 0.82, 0.96), NAVY, 5)
+    for i in range(7):
+        y = -100 + i * 28
+        c.move_to(0, y); c.line_to(32 - abs(i - 3) * 4, y - 16); c.move_to(0, y); c.line_to(-32 + abs(i - 3) * 4, y - 16); stroke(c, NAVY, 3)
+    c.move_to(0, -140); c.line_to(0, 145); stroke(c, NAVY, 5)
+    c.restore()
+
+
+@prop("broom", (-80, -300, 80, 0), "ground", "cleaning broom standing up, sweeping side to side (cleaning, housekeeping)")
+def broom(c, st):
+    c.save(); c.rotate(math.sin(st.t * 4) * 0.08)
+    c.move_to(0, -295); c.line_to(0, -95); stroke(c, BROWN, 12)
+    c.move_to(-30, -100); c.line_to(30, -100); c.line_to(70, 0); c.line_to(-70, 0); c.close_path(); fillstroke(c, YELLOW, (0.55, 0.40, 0.10), 5)
+    for x in range(-50, 60, 20):
+        c.move_to(x * 0.4, -95); c.line_to(x, -4); stroke(c, (0.55, 0.40, 0.10), 3)
+    rrect(c, -34, -112, 68, 18, 6); fillstroke(c, RED, INK, 4)
+    c.restore()

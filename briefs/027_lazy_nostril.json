@@ -1,0 +1,115 @@
+{
+ "id": "027_lazy_nostril",
+ "beats": [
+  {
+   "say": "One of your nostrils is slacking off right now.",
+   "cap": "ONE OF YOUR | *NOSTRILS* IS | *SLACKING OFF* | RIGHT NOW.",
+   "show": {
+    "kind": "hook",
+    "prop": {"name": "nose", "size": 1.3, "slot": "center", "args": {"side": "left"}},
+    "add_props": [{"name": "qmark", "slot": "high_right", "size": 0.7, "at": "1"}]
+   }
+  },
+  {
+   "say": "Yes. Really.",
+   "cap": "YES. *REALLY.*"
+  },
+  {
+   "say": "It's called the nasal cycle.",
+   "cap": "IT'S CALLED THE | *NASAL CYCLE.*",
+   "show": {
+    "kind": "explain",
+    "prop": {"name": "nose", "size": 1.2, "args": {"side": "left"}},
+    "stamp": {"text": "THE NASAL CYCLE", "at": "0+0.6", "size": 54}
+   }
+  },
+  {
+   "say": "Blood vessels on one side swell up,",
+   "cap": "BLOOD VESSELS | ON ONE SIDE | *SWELL UP,*"
+  },
+  {
+   "say": "so that side lets less air through.",
+   "cap": "SO THAT SIDE | LETS *LESS AIR* | THROUGH."
+  },
+  {
+   "say": "Then, every few hours, they swap shifts.",
+   "cap": "THEN, EVERY | *FEW HOURS,* | THEY *SWAP SHIFTS.*",
+   "show": {
+    "kind": "pair",
+    "left": {"name": "clock", "size": 0.8, "args": {"fast": true}},
+    "right": {"name": "nose", "size": 0.9, "args": {"side": "left"}, "states": {"0+1.4": "swap"}},
+    "right_at": "0"
+   }
+  },
+  {
+   "say": "In one study, all thirty three people tested were doing it.",
+   "cap": "IN ONE STUDY, | ALL *33 PEOPLE* | TESTED WERE | *DOING IT.*",
+   "show": {
+    "kind": "number",
+    "ring": {"value": 100, "line1": "33 OF 33", "line2": "CYCLED"}
+   }
+  },
+  {
+   "say": "You usually don't even notice.",
+   "cap": "YOU USUALLY | DON'T EVEN *NOTICE.*"
+  },
+  {
+   "say": "Why bother? One idea: it keeps your nose from drying out.",
+   "cap": "WHY BOTHER? | ONE IDEA: | IT KEEPS YOUR NOSE | FROM *DRYING OUT.*",
+   "show": {
+    "kind": "pair",
+    "left": {"name": "drop", "size": 0.9, "label": "MOIST"},
+    "right": {"name": "flower", "size": 1.0, "slot": "floor_right", "label": "SMELL?"},
+    "right_at": "1"
+   }
+  },
+  {
+   "say": "Another: each side may smell things a little differently.",
+   "cap": "ANOTHER: | EACH SIDE MAY | *SMELL* THINGS | A LITTLE *DIFFERENTLY.*"
+  },
+  {
+   "say": "If one side stays blocked and won't clear, see a doctor.",
+   "cap": "IF ONE SIDE | *STAYS BLOCKED* | AND WON'T CLEAR, | *SEE A DOCTOR.*",
+   "show": {
+    "kind": "explain",
+    "prop": {"name": "warning", "size": 1.0}
+   }
+  },
+  {
+   "say": "Otherwise, relax.",
+   "cap": "OTHERWISE, *RELAX.*",
+   "show": {
+    "kind": "exit",
+    "prop": {"name": "nose", "size": 1.0, "slot": "right", "args": {"side": "right"}},
+    "leave_at": "2+0.3",
+    "pose": "deadpan",
+    "poses": {"2+0.4": "wave"}
+   }
+  },
+  {
+   "say": "Your nose works in shifts.",
+   "cap": "YOUR NOSE | WORKS IN *SHIFTS.*"
+  },
+  {
+   "say": "And one nostril is always on its break.",
+   "cap": "AND ONE NOSTRIL | IS ALWAYS | ON ITS *BREAK.*"
+  }
+ ],
+ "cover": {"big": ["ONE NOSTRIL IS", "*SLACKING OFF*"]},
+ "sources": [
+  {"fact": "Every few hours one side of the nose becomes more congested and the other decongests (nasal cycle); turbinate blood vessels swell and shrink alternately; you shouldn't notice it; see a healthcare provider if a stuffy nose isn't going away or is getting worse", "url": "https://health.clevelandclinic.org/why-do-i-sometimes-get-stuffy-in-one-nostril", "fetched": "2026-11-27"},
+  {"fact": "Kahana-Zweig et al. 2016, PLoS ONE: greater-airflow nostril shifts between left and right; cycle about 2 hours awake, longer in sleep; all 33 subjects cycled; engorgement of erectile tissue from asymmetric blood flow; proposed roles include air conditioning and optimising each nostril for different odors (theory)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5053491", "fetched": "2026-11-27"},
+  {"fact": "Nasal cycle: mean about 2.5 hours, varies widely; keeps one side of the nose moist for humidification; people usually don't notice; each nostril may detect a different range of smells", "url": "https://en.wikipedia.org/wiki/Nasal_cycle", "fetched": "2026-11-27"}
+ ],
+ "math": [
+  {"expr": "33", "expect": 33, "note": "Kahana-Zweig et al. 2016: 33 subjects, all cycled"},
+  {"expr": "round(33 / 33 * 100)", "expect": 100, "note": "33 of 33 = 100% on the ring"}
+ ],
+ "post": {
+  "slot": "morning",
+  "post_at": "2026-11-27T07:30:00+05:30",
+  "instagram_caption": "One of your nostrils is slacking off right now 👃\n\nIt's called the nasal cycle. Blood vessels inside one side of your nose swell so it lets less air through, and every few hours the sides swap. In one study, all 33 people tested were cycling, and most of us never notice.\n\nScientists think it may help keep the nose from drying out, and each side may smell things a little differently. If one side stays blocked and won't clear, see a doctor.\n\nSources: Cleveland Clinic, PLoS ONE (Kahana-Zweig et al. 2016), Wikipedia.\n\nWhich nostril is on shift for you right now?\n\n#docstick #bodyfacts #nose #weirdfacts #science",
+  "youtube_title": "One of Your Nostrils Is Slacking Off Right Now",
+  "youtube_description": "Your nose works in shifts. In the nasal cycle, blood vessels on one side swell so that side lets less air through, and every few hours the sides swap. One study found all 33 people tested were cycling. It may help keep the nose moist, and each side may smell things a little differently. If one side stays blocked and won't clear, see a doctor.\n\nEducational only, not medical advice.\n\nSources:\n• Cleveland Clinic, \"Why Your Nose Is Blocked on One Side\" (fetched Nov 27, 2026)\n• PLoS ONE, \"Measuring and Characterizing the Human Nasal Cycle\" (fetched Nov 27, 2026)\n• Wikipedia, \"Nasal cycle\" (fetched Nov 27, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#BodyFacts #Science #Shorts"
+ }
+}

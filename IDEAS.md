@@ -23,7 +23,7 @@ Everything else about the body
 - [ ] You shed about a million skin cells a day? (check the real number)
 - [x] Babies have about 300 bones, adults 206: they fuse (014)
 - [x] Why yawns are contagious (015)
-- [ ] Your nose smells in stereo
+- [x] Your nose smells in stereo: the nasal cycle, one nostril always on break (027)
 - [ ] Sneezes can't happen while you're asleep (REM atonia)
 - [x] Wet dreams: up to 9 in 10 boys, nobody explains it (021)
 - [x] Six inches is a myth: the real average and small penis anxiety (022)

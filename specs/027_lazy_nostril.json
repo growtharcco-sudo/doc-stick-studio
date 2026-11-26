@@ -1,0 +1,521 @@
+{
+ "id": "027_lazy_nostril",
+ "voice": "am_michael",
+ "speed": 1.0,
+ "phrases": [
+  {
+   "say": "One of your nostrils is slacking off right now.",
+   "cap": "ONE OF YOUR | *NOSTRILS* IS | *SLACKING OFF* | RIGHT NOW.",
+   "pause": 0.2
+  },
+  {
+   "say": "Yes. Really.",
+   "cap": "YES. *REALLY.*",
+   "pause": 0.45
+  },
+  {
+   "say": "It's called the nasal cycle.",
+   "cap": "IT'S CALLED THE | *NASAL CYCLE.*",
+   "pause": 0.2
+  },
+  {
+   "say": "Blood vessels on one side swell up,",
+   "cap": "BLOOD VESSELS | ON ONE SIDE | *SWELL UP,*",
+   "pause": 0.2
+  },
+  {
+   "say": "so that side lets less air through.",
+   "cap": "SO THAT SIDE | LETS *LESS AIR* | THROUGH.",
+   "pause": 0.45
+  },
+  {
+   "say": "Then, every few hours, they swap shifts.",
+   "cap": "THEN, EVERY | *FEW HOURS,* | THEY *SWAP SHIFTS.*",
+   "pause": 0.45
+  },
+  {
+   "say": "In one study, all thirty three people tested were doing it.",
+   "cap": "IN ONE STUDY, | ALL *33 PEOPLE* | TESTED WERE | *DOING IT.*",
+   "pause": 0.2
+  },
+  {
+   "say": "You usually don't even notice.",
+   "cap": "YOU USUALLY | DON'T EVEN *NOTICE.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Why bother? One idea: it keeps your nose from drying out.",
+   "cap": "WHY BOTHER? | ONE IDEA: | IT KEEPS YOUR NOSE | FROM *DRYING OUT.*",
+   "pause": 0.2
+  },
+  {
+   "say": "Another: each side may smell things a little differently.",
+   "cap": "ANOTHER: | EACH SIDE MAY | *SMELL* THINGS | A LITTLE *DIFFERENTLY.*",
+   "pause": 0.45
+  },
+  {
+   "say": "If one side stays blocked and won't clear, see a doctor.",
+   "cap": "IF ONE SIDE | *STAYS BLOCKED* | AND WON'T CLEAR, | *SEE A DOCTOR.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Otherwise, relax.",
+   "cap": "OTHERWISE, *RELAX.*",
+   "pause": 0.2
+  },
+  {
+   "say": "Your nose works in shifts.",
+   "cap": "YOUR NOSE | WORKS IN *SHIFTS.*",
+   "pause": 0.2
+  },
+  {
+   "say": "And one nostril is always on its break.",
+   "cap": "AND ONE NOSTRIL | IS ALWAYS | ON ITS *BREAK.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Follow,",
+   "cap": "*FOLLOW*",
+   "pause": 0.15
+  },
+  {
+   "say": "for the stuff school skipped.",
+   "cap": "FOR THE STUFF | SCHOOL *SKIPPED.*",
+   "pause": 0.5
+  }
+ ],
+ "scenes": [
+  {
+   "first": 0,
+   "end": 2,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      0,
+      0.0,
+      "deadpan"
+     ],
+     [
+      1,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "nose",
+     "x": 660,
+     "y": 1010,
+     "s": 1.3,
+     "slot": "center",
+     "at": [
+      0,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [],
+     "args": {
+      "side": "left"
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "qmark",
+     "x": 860,
+     "y": 830,
+     "s": 0.7,
+     "slot": "high_right",
+     "at": [
+      1,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 2,
+   "end": 5,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      2,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "nose",
+     "x": 660,
+     "y": 1010,
+     "s": 1.2,
+     "slot": "center",
+     "at": [
+      2,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "side": "left"
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "THE NASAL CYCLE",
+     "sub": null,
+     "x": 680,
+     "y": 1300,
+     "color": "red",
+     "rot": -0.12,
+     "size": 54,
+     "at": [
+      2,
+      0.6
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 5,
+   "end": 6,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      5,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "clock",
+     "x": 520,
+     "y": 1300,
+     "s": 0.8,
+     "slot": "low_left",
+     "at": [
+      5,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "fast": true
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "nose",
+     "x": 860,
+     "y": 1300,
+     "s": 0.9,
+     "slot": "low_right",
+     "at": [
+      5,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [
+      [
+       5,
+       1.4,
+       "swap"
+      ]
+     ],
+     "args": {
+      "side": "left"
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 6,
+   "end": 8,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      6,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "ring",
+     "x": 660,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "center",
+     "at": [
+      6,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "value": 100,
+      "line1": "33 OF 33",
+      "line2": "CYCLED"
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 8,
+   "end": 10,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      8,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "drop",
+     "x": 520,
+     "y": 1300,
+     "s": 0.9,
+     "slot": "low_left",
+     "at": [
+      8,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": "MOIST",
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "flower",
+     "x": 820,
+     "y": 1560,
+     "s": 1.0,
+     "slot": "floor_right",
+     "at": [
+      9,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": "SMELL?",
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 10,
+   "end": 11,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      10,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "warning",
+     "x": 660,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "center",
+     "at": [
+      10,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 11,
+   "end": 14,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      11,
+      0.0,
+      "deadpan"
+     ],
+     [
+      13,
+      0.4,
+      "wave"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "nose",
+     "x": 840,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "right",
+     "at": [
+      11,
+      0.0
+     ],
+     "until": [
+      13,
+      0.3
+     ],
+     "in": "none",
+     "out": "slide_right",
+     "states": [],
+     "args": {
+      "side": "right"
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 14,
+   "end": 16,
+   "outro": true,
+   "doc": {
+    "x": 540,
+    "s": 2.4,
+    "face": 1,
+    "poses": [
+     [
+      14,
+      0.0,
+      "wave"
+     ]
+    ]
+   },
+   "people": [],
+   "els": []
+  }
+ ],
+ "cover": {
+  "big": [
+   "ONE NOSTRIL IS",
+   "*SLACKING OFF*"
+  ]
+ },
+ "sources": [
+  {
+   "fact": "Every few hours one side of the nose becomes more congested and the other decongests (nasal cycle); turbinate blood vessels swell and shrink alternately; you shouldn't notice it; see a healthcare provider if a stuffy nose isn't going away or is getting worse",
+   "url": "https://health.clevelandclinic.org/why-do-i-sometimes-get-stuffy-in-one-nostril",
+   "fetched": "2026-11-27"
+  },
+  {
+   "fact": "Kahana-Zweig et al. 2016, PLoS ONE: greater-airflow nostril shifts between left and right; cycle about 2 hours awake, longer in sleep; all 33 subjects cycled; engorgement of erectile tissue from asymmetric blood flow; proposed roles include air conditioning and optimising each nostril for different odors (theory)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5053491",
+   "fetched": "2026-11-27"
+  },
+  {
+   "fact": "Nasal cycle: mean about 2.5 hours, varies widely; keeps one side of the nose moist for humidification; people usually don't notice; each nostril may detect a different range of smells",
+   "url": "https://en.wikipedia.org/wiki/Nasal_cycle",
+   "fetched": "2026-11-27"
+  }
+ ],
+ "math": [
+  {
+   "expr": "33",
+   "expect": 33,
+   "note": "Kahana-Zweig et al. 2016: 33 subjects, all cycled"
+  },
+  {
+   "expr": "round(33 / 33 * 100)",
+   "expect": 100,
+   "note": "33 of 33 = 100% on the ring"
+  }
+ ],
+ "post": {
+  "slot": "morning",
+  "post_at": "2026-11-27T07:30:00+05:30",
+  "instagram_caption": "One of your nostrils is slacking off right now 👃\n\nIt's called the nasal cycle. Blood vessels inside one side of your nose swell so it lets less air through, and every few hours the sides swap. In one study, all 33 people tested were cycling, and most of us never notice.\n\nScientists think it may help keep the nose from drying out, and each side may smell things a little differently. If one side stays blocked and won't clear, see a doctor.\n\nSources: Cleveland Clinic, PLoS ONE (Kahana-Zweig et al. 2016), Wikipedia.\n\nWhich nostril is on shift for you right now?\n\n#docstick #bodyfacts #nose #weirdfacts #science",
+  "youtube_title": "One of Your Nostrils Is Slacking Off Right Now",
+  "youtube_description": "Your nose works in shifts. In the nasal cycle, blood vessels on one side swell so that side lets less air through, and every few hours the sides swap. One study found all 33 people tested were cycling. It may help keep the nose moist, and each side may smell things a little differently. If one side stays blocked and won't clear, see a doctor.\n\nEducational only, not medical advice.\n\nSources:\n• Cleveland Clinic, \"Why Your Nose Is Blocked on One Side\" (fetched Nov 27, 2026)\n• PLoS ONE, \"Measuring and Characterizing the Human Nasal Cycle\" (fetched Nov 27, 2026)\n• Wikipedia, \"Nasal cycle\" (fetched Nov 27, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#BodyFacts #Science #Shorts"
+ }
+}
