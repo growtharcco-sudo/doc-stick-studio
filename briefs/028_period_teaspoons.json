@@ -1,0 +1,109 @@
+{
+ "id": "028_period_teaspoons",
+ "beats": [
+  {
+   "say": "A whole period is usually about six to eight teaspoons of blood.",
+   "cap": "A WHOLE PERIOD: | USUALLY ABOUT | *6 TO 8 TEASPOONS* | OF BLOOD.",
+   "show": {
+    "kind": "hook",
+    "prop": {"name": "teaspoon", "size": 1.2, "slot": "center", "args": {"fill": "red"}},
+    "add_props": [{"name": "qmark", "slot": "high_right", "size": 0.7, "at": "1"}]
+   }
+  },
+  {
+   "say": "The whole thing.",
+   "cap": "THE *WHOLE* THING."
+  },
+  {
+   "say": "So why does it look like so much more?",
+   "cap": "SO WHY DOES IT | LOOK LIKE | *SO MUCH MORE?*",
+   "show": {
+    "kind": "patient",
+    "person": "girl",
+    "question": ["WHY DOES IT", "LOOK LIKE MORE?"]
+   }
+  },
+  {
+   "say": "Because it isn't just blood.",
+   "cap": "BECAUSE IT | *ISN'T JUST BLOOD.*"
+  },
+  {
+   "say": "Every month, the womb builds a soft new lining.",
+   "cap": "EVERY MONTH, | THE WOMB BUILDS | A SOFT *NEW LINING.*",
+   "show": {
+    "kind": "explain",
+    "prop": {"name": "sign", "size": 1.0, "slot": "floor_right", "args": {"lines": ["BLOOD", "+ WOMB LINING", "+ MUCUS"]}}
+   }
+  },
+  {
+   "say": "No pregnancy? It sheds.",
+   "cap": "NO PREGNANCY? | IT *SHEDS.*"
+  },
+  {
+   "say": "So period fluid is blood, plus that lining, plus mucus.",
+   "cap": "SO PERIOD FLUID | IS BLOOD, | PLUS THAT *LINING,* | PLUS *MUCUS.*"
+  },
+  {
+   "say": "Doctors call a period heavy at about eighty millilitres or more.",
+   "cap": "DOCTORS CALL IT | *HEAVY* AT ABOUT | *80 ML* OR MORE.",
+   "show": {
+    "kind": "number",
+    "number": {"value": 80, "suffix": " ML"},
+    "left": {"name": "teaspoon", "size": 0.8, "args": {"fill": "red"}},
+    "right": {"name": "warning", "size": 0.8},
+    "right_at": "1+0.3"
+   }
+  },
+  {
+   "say": "That's about sixteen teaspoons.",
+   "cap": "THAT'S ABOUT | *16 TEASPOONS.*"
+  },
+  {
+   "say": "See a doctor if you need a new pad every hour or two,",
+   "cap": "SEE A DOCTOR | IF YOU NEED | A NEW PAD | *EVERY HOUR OR TWO,*",
+   "show": {
+    "kind": "explain",
+    "prop": {"name": "clock", "size": 1.0, "args": {"fast": true}}
+   }
+  },
+  {
+   "say": "or it lasts more than seven days.",
+   "cap": "OR IT LASTS | *MORE THAN 7 DAYS.*"
+  },
+  {
+   "say": "So, not a horror movie.",
+   "cap": "SO, NOT A | *HORROR MOVIE.*",
+   "show": {
+    "kind": "exit",
+    "prop": {"name": "teaspoon", "size": 1.0, "slot": "right", "args": {"fill": "red"}},
+    "leave_at": "1+0.6",
+    "pose": "deadpan",
+    "poses": {"1+0.8": "wave"}
+   }
+  },
+  {
+   "say": "A few teaspoons. With extras.",
+   "cap": "A FEW TEASPOONS. | *WITH EXTRAS.*"
+  }
+ ],
+ "cover": {"big": ["ONE PERIOD?", "*A FEW SPOONS*"]},
+ "sources": [
+  {"fact": "Most women lose less than 16 teaspoons (80ml) of blood during their period, average around 6 to 8 teaspoons; heavy menstrual bleeding is 80ml or more per period, or lasting longer than 7 days; signs include changing products every hour or two; see your GP if worried about bleeding or periods get heavier", "url": "https://www.nidirect.gov.uk/conditions/heavy-periods", "fetched": "2026-11-27"},
+  {"fact": "The endometrium is the tissue that sheds when you have your period, when implantation doesn't happen; period fluid is made up of endometrial cells and blood", "url": "https://my.clevelandclinic.org/health/body/endometrium", "fetched": "2026-11-27"},
+  {"fact": "Menstrual fluid consists of blood, cells, debris from the endometrial lining, mucus and other fluids; median loss about 40 ml; more than 80 ml per cycle is menorrhagia", "url": "https://www.ebsco.com/research-starters/health-and-medicine/menstruation", "fetched": "2026-11-27"}
+ ],
+ "math": [
+  {"expr": "6 * 5", "expect": 30, "note": "6 teaspoons x 5 ml = 30 ml (nidirect average 6 to 8 tsp)"},
+  {"expr": "8 * 5", "expect": 40, "note": "8 teaspoons x 5 ml = 40 ml, matches EBSCO median about 40 ml"},
+  {"expr": "80", "expect": 80, "note": "nidirect and EBSCO: heavy = 80 ml or more"},
+  {"expr": "80 / 5", "expect": 16, "note": "80 ml = 16 teaspoons (nidirect)"},
+  {"expr": "7", "expect": 7, "note": "nidirect: periods lasting longer than 7 days count as heavy"}
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-27T23:30:00+05:30",
+  "instagram_caption": "A whole period is usually just 6 to 8 teaspoons of blood 🥄\n\nIt looks like more because period fluid isn't only blood. Each month the womb builds a new lining, and if there's no pregnancy it sheds, so the flow is blood plus that lining plus mucus. Doctors call a period heavy at about 80 ml (16 teaspoons) or more.\n\nSee a doctor if you need a new pad every hour or two, or your period lasts more than 7 days.\n\nSources: nidirect (NHS info for Northern Ireland), Cleveland Clinic, EBSCO Research Starters.\n\nDid anyone ever tell you this at school?\n\n#docstick #periods #sexeducation #bodyfacts #womenshealth",
+  "youtube_title": "A Whole Period Is Only About 6 to 8 Teaspoons of Blood",
+  "youtube_description": "A typical period is around 6 to 8 teaspoons of blood. It looks like more because period fluid is blood plus the shed womb lining plus mucus. A period counts as heavy at about 80 ml (16 teaspoons) or more, or if it lasts more than 7 days. See a doctor if you need a new pad every hour or two, or bleeding lasts more than 7 days.\n\nEducational only, not medical advice.\n\nSources:\n• nidirect, \"Heavy periods\" (fetched Nov 27, 2026)\n• Cleveland Clinic, \"Endometrium\" (fetched Nov 27, 2026)\n• EBSCO Research Starters, \"Menstruation\" (fetched Nov 27, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#Periods #SexEducation #Shorts"
+ }
+}

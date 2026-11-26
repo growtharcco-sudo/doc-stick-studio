@@ -1,0 +1,505 @@
+{
+ "id": "028_period_teaspoons",
+ "voice": "am_michael",
+ "speed": 1.0,
+ "phrases": [
+  {
+   "say": "A whole period is usually about six to eight teaspoons of blood.",
+   "cap": "A WHOLE PERIOD: | USUALLY ABOUT | *6 TO 8 TEASPOONS* | OF BLOOD.",
+   "pause": 0.2
+  },
+  {
+   "say": "The whole thing.",
+   "cap": "THE *WHOLE* THING.",
+   "pause": 0.45
+  },
+  {
+   "say": "So why does it look like so much more?",
+   "cap": "SO WHY DOES IT | LOOK LIKE | *SO MUCH MORE?*",
+   "pause": 0.2
+  },
+  {
+   "say": "Because it isn't just blood.",
+   "cap": "BECAUSE IT | *ISN'T JUST BLOOD.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Every month, the womb builds a soft new lining.",
+   "cap": "EVERY MONTH, | THE WOMB BUILDS | A SOFT *NEW LINING.*",
+   "pause": 0.2
+  },
+  {
+   "say": "No pregnancy? It sheds.",
+   "cap": "NO PREGNANCY? | IT *SHEDS.*",
+   "pause": 0.2
+  },
+  {
+   "say": "So period fluid is blood, plus that lining, plus mucus.",
+   "cap": "SO PERIOD FLUID | IS BLOOD, | PLUS THAT *LINING,* | PLUS *MUCUS.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Doctors call a period heavy at about eighty millilitres or more.",
+   "cap": "DOCTORS CALL IT | *HEAVY* AT ABOUT | *80 ML* OR MORE.",
+   "pause": 0.2
+  },
+  {
+   "say": "That's about sixteen teaspoons.",
+   "cap": "THAT'S ABOUT | *16 TEASPOONS.*",
+   "pause": 0.45
+  },
+  {
+   "say": "See a doctor if you need a new pad every hour or two,",
+   "cap": "SEE A DOCTOR | IF YOU NEED | A NEW PAD | *EVERY HOUR OR TWO,*",
+   "pause": 0.2
+  },
+  {
+   "say": "or it lasts more than seven days.",
+   "cap": "OR IT LASTS | *MORE THAN 7 DAYS.*",
+   "pause": 0.45
+  },
+  {
+   "say": "So, not a horror movie.",
+   "cap": "SO, NOT A | *HORROR MOVIE.*",
+   "pause": 0.2
+  },
+  {
+   "say": "A few teaspoons. With extras.",
+   "cap": "A FEW TEASPOONS. | *WITH EXTRAS.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Follow,",
+   "cap": "*FOLLOW*",
+   "pause": 0.15
+  },
+  {
+   "say": "for the stuff school skipped.",
+   "cap": "FOR THE STUFF | SCHOOL *SKIPPED.*",
+   "pause": 0.5
+  }
+ ],
+ "scenes": [
+  {
+   "first": 0,
+   "end": 2,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      0,
+      0.0,
+      "deadpan"
+     ],
+     [
+      1,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "teaspoon",
+     "x": 660,
+     "y": 1010,
+     "s": 1.2,
+     "slot": "center",
+     "at": [
+      0,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [],
+     "args": {
+      "fill": "red"
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "qmark",
+     "x": 860,
+     "y": 830,
+     "s": 0.7,
+     "slot": "high_right",
+     "at": [
+      1,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 2,
+   "end": 4,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      2,
+      0.0,
+      "deadpan"
+     ],
+     [
+      3,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [
+    {
+     "kind": "girl",
+     "x": 820,
+     "s": 2.25,
+     "face": -1,
+     "poses": [
+      [
+       2,
+       0.0,
+       "think"
+      ]
+     ],
+     "at": [
+      2,
+      0.0
+     ],
+     "in": "slide"
+    }
+   ],
+   "els": [
+    {
+     "type": "prop",
+     "name": "bubble",
+     "x": 860,
+     "y": 830,
+     "s": 0.85,
+     "slot": "high_right",
+     "at": [
+      2,
+      0.5
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "lines": [
+       "WHY DOES IT",
+       "LOOK LIKE MORE?"
+      ],
+      "tail": "right"
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 4,
+   "end": 7,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      4,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "sign",
+     "x": 820,
+     "y": 1560,
+     "s": 1.0,
+     "slot": "floor_right",
+     "at": [
+      4,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "lines": [
+       "BLOOD",
+       "+ WOMB LINING",
+       "+ MUCUS"
+      ]
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 7,
+   "end": 9,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      7,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "big_number",
+     "x": 660,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "center",
+     "at": [
+      7,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "value": 80,
+      "suffix": " ML"
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "teaspoon",
+     "x": 520,
+     "y": 1300,
+     "s": 0.8,
+     "slot": "low_left",
+     "at": [
+      7,
+      0.6
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "fill": "red"
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "warning",
+     "x": 860,
+     "y": 1300,
+     "s": 0.8,
+     "slot": "low_right",
+     "at": [
+      8,
+      0.3
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 9,
+   "end": 11,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      9,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "clock",
+     "x": 660,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "center",
+     "at": [
+      9,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "fast": true
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 11,
+   "end": 13,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      11,
+      0.0,
+      "deadpan"
+     ],
+     [
+      12,
+      0.8,
+      "wave"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "teaspoon",
+     "x": 840,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "right",
+     "at": [
+      11,
+      0.0
+     ],
+     "until": [
+      12,
+      0.6
+     ],
+     "in": "none",
+     "out": "slide_right",
+     "states": [],
+     "args": {
+      "fill": "red"
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 13,
+   "end": 15,
+   "outro": true,
+   "doc": {
+    "x": 540,
+    "s": 2.4,
+    "face": 1,
+    "poses": [
+     [
+      13,
+      0.0,
+      "wave"
+     ]
+    ]
+   },
+   "people": [],
+   "els": []
+  }
+ ],
+ "cover": {
+  "big": [
+   "ONE PERIOD?",
+   "*A FEW SPOONS*"
+  ]
+ },
+ "sources": [
+  {
+   "fact": "Most women lose less than 16 teaspoons (80ml) of blood during their period, average around 6 to 8 teaspoons; heavy menstrual bleeding is 80ml or more per period, or lasting longer than 7 days; signs include changing products every hour or two; see your GP if worried about bleeding or periods get heavier",
+   "url": "https://www.nidirect.gov.uk/conditions/heavy-periods",
+   "fetched": "2026-11-27"
+  },
+  {
+   "fact": "The endometrium is the tissue that sheds when you have your period, when implantation doesn't happen; period fluid is made up of endometrial cells and blood",
+   "url": "https://my.clevelandclinic.org/health/body/endometrium",
+   "fetched": "2026-11-27"
+  },
+  {
+   "fact": "Menstrual fluid consists of blood, cells, debris from the endometrial lining, mucus and other fluids; median loss about 40 ml; more than 80 ml per cycle is menorrhagia",
+   "url": "https://www.ebsco.com/research-starters/health-and-medicine/menstruation",
+   "fetched": "2026-11-27"
+  }
+ ],
+ "math": [
+  {
+   "expr": "6 * 5",
+   "expect": 30,
+   "note": "6 teaspoons x 5 ml = 30 ml (nidirect average 6 to 8 tsp)"
+  },
+  {
+   "expr": "8 * 5",
+   "expect": 40,
+   "note": "8 teaspoons x 5 ml = 40 ml, matches EBSCO median about 40 ml"
+  },
+  {
+   "expr": "80",
+   "expect": 80,
+   "note": "nidirect and EBSCO: heavy = 80 ml or more"
+  },
+  {
+   "expr": "80 / 5",
+   "expect": 16,
+   "note": "80 ml = 16 teaspoons (nidirect)"
+  },
+  {
+   "expr": "7",
+   "expect": 7,
+   "note": "nidirect: periods lasting longer than 7 days count as heavy"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-27T23:30:00+05:30",
+  "instagram_caption": "A whole period is usually just 6 to 8 teaspoons of blood 🥄\n\nIt looks like more because period fluid isn't only blood. Each month the womb builds a new lining, and if there's no pregnancy it sheds, so the flow is blood plus that lining plus mucus. Doctors call a period heavy at about 80 ml (16 teaspoons) or more.\n\nSee a doctor if you need a new pad every hour or two, or your period lasts more than 7 days.\n\nSources: nidirect (NHS info for Northern Ireland), Cleveland Clinic, EBSCO Research Starters.\n\nDid anyone ever tell you this at school?\n\n#docstick #periods #sexeducation #bodyfacts #womenshealth",
+  "youtube_title": "A Whole Period Is Only About 6 to 8 Teaspoons of Blood",
+  "youtube_description": "A typical period is around 6 to 8 teaspoons of blood. It looks like more because period fluid is blood plus the shed womb lining plus mucus. A period counts as heavy at about 80 ml (16 teaspoons) or more, or if it lasts more than 7 days. See a doctor if you need a new pad every hour or two, or bleeding lasts more than 7 days.\n\nEducational only, not medical advice.\n\nSources:\n• nidirect, \"Heavy periods\" (fetched Nov 27, 2026)\n• Cleveland Clinic, \"Endometrium\" (fetched Nov 27, 2026)\n• EBSCO Research Starters, \"Menstruation\" (fetched Nov 27, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#Periods #SexEducation #Shorts"
+ }
+}
