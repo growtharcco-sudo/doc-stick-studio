@@ -13,7 +13,7 @@ from base import ROOT
 EM_DASH, EN_DASH = "—", "–"
 IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
 BRAND_TAG = "#docstick"
-SLOTS = {"evening": "today 23:30 IST", "morning": "tomorrow 07:30 IST", "test": "end-to-end test only"}
+SLOTS = {"evening": "today 23:30 IST", "morning": "tomorrow 07:30 IST", "idea": "18:30 IST, Samrit's own ideas, made in chat", "test": "end-to-end test only"}
 
 
 def check_spec(spec, allow_old_sources=False):

@@ -7,11 +7,13 @@ Look: Doc Stick, a deadpan stick-figure doctor (head mirror, red bowtie), on a c
 and a girl (ponytail, pink dress) as patients when a topic needs them. Every Reel is a short brief built with the
 Reel kit (step 4). GitHub Actions posts every queued Reel at its `post_at`. You never post directly.
 
-Two Reels a day (all times IST), made in ONE daily run (section A):
+Two Reels a day (all times IST), made in ONE daily run (section A). A third, Samrit's own idea, goes in the `idea` slot
+when he sends one in chat; the daily run never fills or touches the `idea` slot:
 | Slot | post_at | Who it reaches |
 |---|---|---|
 | `evening` | today 23:30 | 6 PM London, 1 PM New York |
 | `morning` | tomorrow 07:30 | 9 PM New York the evening before, morning in India |
+| `idea` | 18:30 (made in chat, NOT by the daily run) | Samrit's own topic ideas: India evening, UK lunch |
 
 ## 1. Pick the topic
 - One surprising, TRUE fact about the body per Reel, with a bizarre hook that makes people stop scrolling
