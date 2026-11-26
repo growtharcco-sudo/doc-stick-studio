@@ -682,3 +682,34 @@ def yawn_face(c, st):
         ellipse(c, 0, 40 + 24 * o, 14 * o, 10 * o); c.set_source_rgb(*PINK); c.fill()
     for i, (zx, zy, zs) in enumerate(((95, -110, 30), (122, -145, 22))):
         if o * 1.4 - i * 0.3 > 0.5: text(c, "Z", zx, zy, zs, INK)
+
+
+@prop("sleeper", (-175, -265, 175, 0), "ground",
+      "stick figure asleep in bed under a blanket; the blanket rises into a small tent with a camping flag "
+      "(morning wood gag, Samrit approved: implied only, nothing shown). args.rise_at = seconds after it appears (default 1.0)")
+def sleeper(c, st):
+    k = ease_out((st.age - st.args.get("rise_at", 1.0)) / 0.7)
+    c.rectangle(-170, -110, 22, 110); fillstroke(c, BROWN, INK, 5)
+    c.rectangle(148, -70, 22, 70); fillstroke(c, BROWN, INK, 5)
+    rrect(c, -150, -80, 300, 50, 10); fillstroke(c, WHITE, INK, 5)
+    rrect(c, -142, -112, 80, 36, 14); fillstroke(c, WHITE, INK, 5)
+    c.arc(-100, -112, 27, 0, 2 * math.pi); fillstroke(c, WHITE, INK, 5.5)          # head on the pillow
+    for ex in (-110, -92):
+        c.move_to(ex - 5, -116); c.curve_to(ex - 2, -111, ex + 2, -111, ex + 5, -116); stroke(c, INK, 3)
+    c.move_to(-106, -101); c.line_to(-94, -101); stroke(c, INK, 3)
+    h = 95 * k; bx = 40                                                              # the tent
+    c.move_to(-70, -80); c.line_to(-70, -92); c.line_to(bx - 70, -92)
+    c.curve_to(bx - 35, -92, bx - 15, -92 - h, bx, -92 - h); c.curve_to(bx + 15, -92 - h, bx + 35, -92, bx + 70, -92)
+    c.line_to(150, -92); c.line_to(150, -80); c.close_path()
+    fillstroke(c, (0.45, 0.60, 0.90), NAVY, 5)
+    if k > 0.85:
+        f = ease_out((st.age - st.args.get("rise_at", 1.0) - 0.6) / 0.4)
+        top = -92 - h
+        c.move_to(bx, top); c.line_to(bx, top - 70 * f); stroke(c, INK, 4)
+        if f > 0.5:
+            w = math.sin(st.t * 8) * 4
+            c.move_to(bx, top - 70 * f); c.line_to(bx + 38, top - 58 * f + w); c.line_to(bx, top - 46 * f); c.close_path()
+            fillstroke(c, RED, INK, 3)
+    for i in range(3):
+        ph = (st.t * 0.6 + i / 3) % 1
+        text(c, "Z", -80 + ph * 60 + i * 8, -150 - ph * 90, 34 + i * 6, (0.4, 0.4, 0.5))

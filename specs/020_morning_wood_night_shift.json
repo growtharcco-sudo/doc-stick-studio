@@ -114,11 +114,11 @@
    "els": [
     {
      "type": "prop",
-     "name": "bed",
-     "x": 820,
+     "name": "sleeper",
+     "x": 640,
      "y": 1560,
-     "s": 0.9,
-     "slot": "floor_right",
+     "s": 1.5,
+     "slot": "floor_center",
      "at": [
       0,
       0.0
@@ -128,7 +128,7 @@
      "out": "none",
      "states": [],
      "args": {
-      "state": "zzz"
+      "rise_at": 0.9
      },
      "label": null,
      "flip": false
@@ -145,7 +145,7 @@
       0.0
      ],
      "until": null,
-     "in": "pop",
+     "in": "none",
      "out": "none",
      "states": [],
      "args": {},

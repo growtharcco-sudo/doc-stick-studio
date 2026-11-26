@@ -1,55 +1,217 @@
 {
  "id": "020_morning_wood_night_shift",
  "beats": [
-  {"say": "Morning wood isn't a morning thing.", "cap": "MORNING WOOD | ISN'T A | *MORNING THING.*",
-   "show": {"kind": "hook", "prop": {"name": "bed", "size": 0.9, "args": {"state": "zzz"}},
-            "add_props": [{"name": "clock", "slot": "high_right", "size": 0.8}]}},
-  {"say": "It's a night shift.", "cap": "IT'S A | *NIGHT SHIFT.*"},
-
-  {"say": "Wait. Then why is it there every morning?", "cap": "WAIT. THEN WHY | IS IT THERE | EVERY *MORNING?*",
-   "show": {"kind": "patient", "person": "boy", "question": ["WHY EVERY", "MORNING?"]}},
-
-  {"say": "Healthy men get up to five erections a night, while asleep.", "cap": "HEALTHY MEN GET | UP TO *5* A NIGHT, | WHILE *ASLEEP.*",
-   "show": {"kind": "number", "number": {"value": 5, "suffix": "x"}, "right": {"name": "clock", "label": "20 TO 30 MIN"}, "right_at": "1"}},
-  {"say": "Each one can last twenty to thirty minutes.", "cap": "EACH ONE | CAN LAST | *20 TO 30* MINUTES."},
-
-  {"say": "They happen in REM sleep, the stage where you dream.", "cap": "THEY HAPPEN IN | *REM SLEEP,* | THE STAGE | WHERE YOU DREAM.",
-   "show": {"kind": "explain", "prop": "brain", "stamp": {"text": "REM SLEEP", "at": "0+1.2"}}},
-
-  {"say": "But no, it's not the dreams.", "cap": "BUT NO, IT'S | *NOT THE DREAMS.*",
-   "show": {"kind": "stamp", "prop": {"name": "bed", "size": 0.9, "args": {"state": "zzz"}}, "stamp": {"text": "NOT THE DREAMS", "at": "0+0.6"}}},
-  {"say": "In REM, your nervous system flips from fight or flight to rest and digest.", "cap": "YOUR NERVOUS SYSTEM | FLIPS FROM | *FIGHT OR FLIGHT* | TO *REST AND DIGEST.*"},
-
-  {"say": "Blood flow goes up.", "cap": "BLOOD FLOW | *GOES UP.*",
-   "show": {"kind": "pair", "left": {"name": "heart", "label": "BLOOD FLOW"}, "right": {"name": "arrow_up", "label": "OXYGEN"}}},
-  {"say": "And scientists think the extra oxygen may help keep the tissue healthy.", "cap": "SCIENTISTS THINK | THE EXTRA *OXYGEN* | MAY HELP KEEP | THE TISSUE *HEALTHY.*"},
-
-  {"say": "You often wake up straight out of REM.", "cap": "YOU OFTEN WAKE UP | STRAIGHT OUT | OF *REM.*",
-   "show": {"kind": "explain", "prop": {"name": "clock", "args": {"fast": true}}, "pose": "deadpan", "poses": {"1": "point"}}},
-  {"say": "So you just catch the last one.", "cap": "SO YOU JUST CATCH | THE *LAST ONE.*"},
-
-  {"say": "If they disappear for weeks, talk to a doctor.", "cap": "IF THEY DISAPPEAR | FOR WEEKS, | *TALK TO A DOCTOR.*",
-   "show": {"kind": "explain", "prop": "warning", "stamp": {"text": "SEE A DOCTOR", "at": "0+1.2"}}},
-
-  {"say": "Otherwise, it's not weird.", "cap": "OTHERWISE, | IT'S *NOT WEIRD.*",
-   "show": {"kind": "verdict", "verdict": "true", "props": [{"name": "bed", "size": 0.9, "args": {"state": "zzz"}}]}},
-  {"say": "It's a nightly health check.", "cap": "IT'S A NIGHTLY | *HEALTH CHECK.*"}
+  {
+   "say": "Morning wood isn't a morning thing.",
+   "cap": "MORNING WOOD | ISN'T A | *MORNING THING.*",
+   "show": {
+    "kind": "hook",
+    "prop": {
+     "name": "sleeper",
+     "size": 1.5,
+     "args": {
+      "rise_at": 0.9
+     },
+     "slot": "floor_center"
+    },
+    "add_props": [
+     {
+      "name": "clock",
+      "slot": "high_right",
+      "size": 0.8,
+      "in": "none"
+     }
+    ]
+   }
+  },
+  {
+   "say": "It's a night shift.",
+   "cap": "IT'S A | *NIGHT SHIFT.*"
+  },
+  {
+   "say": "Wait. Then why is it there every morning?",
+   "cap": "WAIT. THEN WHY | IS IT THERE | EVERY *MORNING?*",
+   "show": {
+    "kind": "patient",
+    "person": "boy",
+    "question": [
+     "WHY EVERY",
+     "MORNING?"
+    ]
+   }
+  },
+  {
+   "say": "Healthy men get up to five erections a night, while asleep.",
+   "cap": "HEALTHY MEN GET | UP TO *5* A NIGHT, | WHILE *ASLEEP.*",
+   "show": {
+    "kind": "number",
+    "number": {
+     "value": 5,
+     "suffix": "x"
+    },
+    "right": {
+     "name": "clock",
+     "label": "20 TO 30 MIN"
+    },
+    "right_at": "1"
+   }
+  },
+  {
+   "say": "Each one can last twenty to thirty minutes.",
+   "cap": "EACH ONE | CAN LAST | *20 TO 30* MINUTES."
+  },
+  {
+   "say": "They happen in REM sleep, the stage where you dream.",
+   "cap": "THEY HAPPEN IN | *REM SLEEP,* | THE STAGE | WHERE YOU DREAM.",
+   "show": {
+    "kind": "explain",
+    "prop": "brain",
+    "stamp": {
+     "text": "REM SLEEP",
+     "at": "0+1.2"
+    }
+   }
+  },
+  {
+   "say": "But no, it's not the dreams.",
+   "cap": "BUT NO, IT'S | *NOT THE DREAMS.*",
+   "show": {
+    "kind": "stamp",
+    "prop": {
+     "name": "bed",
+     "size": 0.9,
+     "args": {
+      "state": "zzz"
+     }
+    },
+    "stamp": {
+     "text": "NOT THE DREAMS",
+     "at": "0+0.6"
+    }
+   }
+  },
+  {
+   "say": "In REM, your nervous system flips from fight or flight to rest and digest.",
+   "cap": "YOUR NERVOUS SYSTEM | FLIPS FROM | *FIGHT OR FLIGHT* | TO *REST AND DIGEST.*"
+  },
+  {
+   "say": "Blood flow goes up.",
+   "cap": "BLOOD FLOW | *GOES UP.*",
+   "show": {
+    "kind": "pair",
+    "left": {
+     "name": "heart",
+     "label": "BLOOD FLOW"
+    },
+    "right": {
+     "name": "arrow_up",
+     "label": "OXYGEN"
+    }
+   }
+  },
+  {
+   "say": "And scientists think the extra oxygen may help keep the tissue healthy.",
+   "cap": "SCIENTISTS THINK | THE EXTRA *OXYGEN* | MAY HELP KEEP | THE TISSUE *HEALTHY.*"
+  },
+  {
+   "say": "You often wake up straight out of REM.",
+   "cap": "YOU OFTEN WAKE UP | STRAIGHT OUT | OF *REM.*",
+   "show": {
+    "kind": "explain",
+    "prop": {
+     "name": "clock",
+     "args": {
+      "fast": true
+     }
+    },
+    "pose": "deadpan",
+    "poses": {
+     "1": "point"
+    }
+   }
+  },
+  {
+   "say": "So you just catch the last one.",
+   "cap": "SO YOU JUST CATCH | THE *LAST ONE.*"
+  },
+  {
+   "say": "If they disappear for weeks, talk to a doctor.",
+   "cap": "IF THEY DISAPPEAR | FOR WEEKS, | *TALK TO A DOCTOR.*",
+   "show": {
+    "kind": "explain",
+    "prop": "warning",
+    "stamp": {
+     "text": "SEE A DOCTOR",
+     "at": "0+1.2"
+    }
+   }
+  },
+  {
+   "say": "Otherwise, it's not weird.",
+   "cap": "OTHERWISE, | IT'S *NOT WEIRD.*",
+   "show": {
+    "kind": "verdict",
+    "verdict": "true",
+    "props": [
+     {
+      "name": "bed",
+      "size": 0.9,
+      "args": {
+       "state": "zzz"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "say": "It's a nightly health check.",
+   "cap": "IT'S A NIGHTLY | *HEALTH CHECK.*"
+  }
  ],
- "cover": {"big": ["MORNING WOOD?", "*NIGHT SHIFT.*"]},
+ "cover": {
+  "big": [
+   "MORNING WOOD?",
+   "*NIGHT SHIFT.*"
+  ]
+ },
  "sources": [
-  {"fact": "Nocturnal penile tumescence happens in REM sleep; REM shifts the body from sympathetic (fight or flight) to parasympathetic (rest and digest); men wake out of REM; up to five per night, lasting up to 20 or 30 minutes; not caused by sexy dreams; it can tell doctors a lot about sexual function",
-   "url": "https://www.newcastle.edu.au/hippocampus/story/2020/male-erections", "fetched": "2026-11-26"},
-  {"fact": "Increased oxygen at night may be beneficial for the health of the tissue; studies are undecided",
-   "url": "https://www.inverse.com/mind-body/what-causes-morning-wood", "fetched": "2026-11-26"},
-  {"fact": "Erections during REM sleep are a robust physiologic phenomenon in all normal healthy males, irrespective of age",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/14984691/", "fetched": "2026-11-26"},
-  {"fact": "NPT occurs 3 to 5 times a night; if morning erections stop, it could be a sign of erectile dysfunction or another health issue",
-   "url": "https://ro.co/erectile-dysfunction/morning-wood", "fetched": "2026-11-26"}
+  {
+   "fact": "Nocturnal penile tumescence happens in REM sleep; REM shifts the body from sympathetic (fight or flight) to parasympathetic (rest and digest); men wake out of REM; up to five per night, lasting up to 20 or 30 minutes; not caused by sexy dreams; it can tell doctors a lot about sexual function",
+   "url": "https://www.newcastle.edu.au/hippocampus/story/2020/male-erections",
+   "fetched": "2026-11-26"
+  },
+  {
+   "fact": "Increased oxygen at night may be beneficial for the health of the tissue; studies are undecided",
+   "url": "https://www.inverse.com/mind-body/what-causes-morning-wood",
+   "fetched": "2026-11-26"
+  },
+  {
+   "fact": "Erections during REM sleep are a robust physiologic phenomenon in all normal healthy males, irrespective of age",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/14984691/",
+   "fetched": "2026-11-26"
+  },
+  {
+   "fact": "NPT occurs 3 to 5 times a night; if morning erections stop, it could be a sign of erectile dysfunction or another health issue",
+   "url": "https://ro.co/erectile-dysfunction/morning-wood",
+   "fetched": "2026-11-26"
+  }
  ],
  "math": [
-  {"expr": "5", "expect": 5, "note": "up to five per night (University of Newcastle)"},
-  {"expr": "20", "expect": 20, "note": "lasting up to 20 or 30 minutes (University of Newcastle)"},
-  {"expr": "30", "expect": 30, "note": "lasting up to 20 or 30 minutes (University of Newcastle)"}
+  {
+   "expr": "5",
+   "expect": 5,
+   "note": "up to five per night (University of Newcastle)"
+  },
+  {
+   "expr": "20",
+   "expect": 20,
+   "note": "lasting up to 20 or 30 minutes (University of Newcastle)"
+  },
+  {
+   "expr": "30",
+   "expect": 30,
+   "note": "lasting up to 20 or 30 minutes (University of Newcastle)"
+  }
  ],
  "post": {
   "slot": "evening",
