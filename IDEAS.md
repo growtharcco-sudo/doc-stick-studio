@@ -22,6 +22,7 @@ Everything else about the body
 - [x] Your stomach makes a new lining every few days so it doesn't digest itself (012)
 - [x] Stomach growls are the gut's cleaning crew (migrating motor complex) (030)
 - [x] Goosebumps: leftover fur-fluffing reflex (003)
+- [x] Wrinkly bath fingers are tyre treads: the nervous system does it on purpose (031)
 - [ ] You shed about a million skin cells a day? (check the real number)
 - [x] Babies have about 300 bones, adults 206: they fuse (014)
 - [x] Why yawns are contagious (015)

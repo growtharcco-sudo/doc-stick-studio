@@ -1,0 +1,217 @@
+{
+ "id": "031_pruney_fingers_treads",
+ "beats": [
+  {
+   "say": "Your wrinkly bath fingers? They might be tyre treads.",
+   "cap": "YOUR *WRINKLY* | BATH FINGERS? | THEY MIGHT BE | *TYRE TREADS.*",
+   "show": {
+    "kind": "hook",
+    "prop": {
+     "name": "tyre",
+     "size": 0.95
+    },
+    "prop2": {
+     "name": "hand",
+     "size": 0.85,
+     "slot": "center",
+     "in": "none",
+     "at": "0",
+     "args": {
+      "pruney": true
+     }
+    }
+   }
+  },
+  {
+   "say": "Yes. Really.",
+   "cap": "YES. *REALLY.*"
+  },
+  {
+   "say": "Most people think water just soaks into the skin.",
+   "cap": "MOST PEOPLE THINK | WATER JUST *SOAKS* | INTO THE SKIN.",
+   "show": {
+    "kind": "stamp",
+    "prop": {
+     "name": "sign",
+     "args": {
+      "lines": [
+       "WATER",
+       "SOAKS IN"
+      ]
+     }
+    },
+    "stamp": {
+     "text": "NOPE",
+     "at": "1+0.2"
+    },
+    "poses": {
+     "1": "shrug"
+    }
+   }
+  },
+  {
+   "say": "Nope. Your nervous system does it on purpose.",
+   "cap": "NOPE. | YOUR *NERVOUS SYSTEM* | DOES IT *ON PURPOSE.*"
+  },
+  {
+   "say": "It squeezes the blood vessels under your fingertips,",
+   "cap": "IT *SQUEEZES* | THE BLOOD VESSELS | UNDER YOUR FINGERTIPS,",
+   "show": {
+    "kind": "explain",
+    "prop": {
+     "name": "hand",
+     "size": 1.05,
+     "states": {
+      "1": "pruney"
+     }
+    },
+    "stamp": {
+     "text": "ON PURPOSE",
+     "at": "1+0.6"
+    }
+   }
+  },
+  {
+   "say": "and the skin wrinkles up.",
+   "cap": "AND THE SKIN | *WRINKLES* UP."
+  },
+  {
+   "say": "Doctors have known since the nineteen thirties:",
+   "cap": "DOCTORS HAVE KNOWN | SINCE THE *1930s:*",
+   "show": {
+    "kind": "explain",
+    "prop": {
+     "name": "brain",
+     "size": 1.0
+    },
+    "stamp": {
+     "text": "NO NERVES, NO WRINKLES",
+     "at": "1+0.4",
+     "size": 40
+    }
+   }
+  },
+  {
+   "say": "if the nerves in a finger are damaged, it doesn't wrinkle.",
+   "cap": "IF THE *NERVES* | IN A FINGER ARE DAMAGED, | IT *DOESN'T* WRINKLE."
+  },
+  {
+   "say": "So why bother?",
+   "cap": "SO WHY *BOTHER?*",
+   "pause": 0.3
+  },
+  {
+   "say": "In twenty thirteen, scientists made people move wet marbles.",
+   "cap": "IN *2013,* | SCIENTISTS MADE PEOPLE | MOVE *WET MARBLES.*",
+   "show": {
+    "kind": "number",
+    "number": {
+     "value": 12,
+     "suffix": "% FASTER"
+    },
+    "left": "drop",
+    "right": {
+     "name": "hand",
+     "args": {
+      "pruney": true
+     }
+    },
+    "right_at": "1"
+   }
+  },
+  {
+   "say": "With wrinkly fingers, they were twelve percent faster.",
+   "cap": "WITH WRINKLY FINGERS, | THEY WERE | *12% FASTER.*"
+  },
+  {
+   "say": "Dry marbles? No difference.",
+   "cap": "DRY MARBLES? | *NO DIFFERENCE.*"
+  },
+  {
+   "say": "The idea is the wrinkles channel water away,",
+   "cap": "THE IDEA IS | THE WRINKLES | *CHANNEL WATER* AWAY,",
+   "show": {
+    "kind": "pair",
+    "left": {
+     "name": "hand",
+     "size": 0.85,
+     "args": {
+      "pruney": true
+     }
+    },
+    "right": {
+     "name": "tyre",
+     "size": 0.75,
+     "slot": "floor_far"
+    },
+    "right_at": "1"
+   }
+  },
+  {
+   "say": "like the treads on a car tyre.",
+   "cap": "LIKE THE *TREADS* | ON A CAR TYRE."
+  },
+  {
+   "say": "So you're not ruined from the bath.",
+   "cap": "SO YOU'RE NOT | *RUINED* FROM THE BATH.",
+   "show": {
+    "kind": "exit",
+    "prop": {
+     "name": "tyre",
+     "size": 0.95
+    },
+    "leave_at": "1+0.2",
+    "pose": "deadpan",
+    "poses": {
+     "1": "wave"
+    }
+   }
+  },
+  {
+   "say": "You've got all weather tyres.",
+   "cap": "YOU'VE GOT | *ALL WEATHER TYRES.*"
+  }
+ ],
+ "cover": {
+  "big": [
+   "PRUNEY FINGERS",
+   "*ARE TREADS*"
+  ]
+ },
+ "sources": [
+  {
+   "fact": "Newcastle University (Jan 9, 2013): wrinkled fingers give a better grip in wet conditions; wrinkling is an active process caused by blood vessels constricting below the skin, controlled by the autonomic nervous system; volunteers were 12% faster with wet marbles when their fingers were wrinkled; wrinkles make no difference for moving dry objects; could be working like treads on car tyres",
+   "url": "https://www.ncl.ac.uk/press/articles/archive/2013/01/getagrip-whywegetwrinklyfingersandtoes.html",
+   "fetched": "2026-11-29"
+  },
+  {
+   "fact": "Nature News (2013): people often assume wrinkling is water passing into the outer skin; researchers have known since the 1930s that the effect does not occur when there is nerve damage in the fingers; it is an involuntary reaction of the autonomic nervous system; wrinkles channel away water like rain treads in car tyres",
+   "url": "https://www.nature.com/articles/nature.2013.12175",
+   "fetched": "2026-11-29"
+  }
+ ],
+ "math": [
+  {
+   "expr": "1930",
+   "expect": 1930,
+   "note": "Nature: known since the 1930s that nerve damage stops wrinkling"
+  },
+  {
+   "expr": "2013",
+   "expect": 2013,
+   "note": "Newcastle University study published January 2013"
+  },
+  {
+   "expr": "12",
+   "expect": 12,
+   "note": "Newcastle University: 12% faster with wet marbles when fingers were wrinkled"
+  }
+ ],
+ "post": {
+  "slot": "morning",
+  "post_at": "2026-11-29T07:30:00+05:30",
+  "instagram_caption": "Your wrinkly bath fingers might be tyre treads 🛁\n\nPruney fingers aren't just water soaking in. Your nervous system squeezes the blood vessels under your fingertips on purpose, which is why fingers with damaged nerves don't wrinkle. In a 2013 Newcastle University study, people moved wet marbles 12% faster with wrinkly fingers, and dry marbles made no difference.\n\nThe idea: the wrinkles channel water away, like treads on a car tyre.\n\nSources: Newcastle University, Nature.\n\nHow long does it take your fingers to go pruney?\n\n#docstick #bodyfacts #weirdfacts #sciencefacts #nervoussystem",
+  "youtube_title": "Your Wrinkly Bath Fingers Might Be Tyre Treads",
+  "youtube_description": "Pruney bath fingers aren't just water soaking in: your nervous system squeezes the blood vessels under your fingertips on purpose, and fingers with nerve damage don't wrinkle. In a 2013 Newcastle University study, people moved wet marbles 12% faster with wrinkly fingers. The idea is the wrinkles channel water away, like tyre treads.\n\nEducational only, not medical advice.\n\nSources:\n• Newcastle University, \"Get a grip: why we get wrinkly fingers and toes\" (fetched Nov 29, 2026)\n• Nature, \"Science gets a grip on wrinkly fingers\" (fetched Nov 29, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#BodyFacts #Science #Shorts"
+ }
+}

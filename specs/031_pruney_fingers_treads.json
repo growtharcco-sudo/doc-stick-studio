@@ -1,0 +1,585 @@
+{
+ "id": "031_pruney_fingers_treads",
+ "voice": "am_michael",
+ "speed": 1.0,
+ "phrases": [
+  {
+   "say": "Your wrinkly bath fingers? They might be tyre treads.",
+   "cap": "YOUR *WRINKLY* | BATH FINGERS? | THEY MIGHT BE | *TYRE TREADS.*",
+   "pause": 0.2
+  },
+  {
+   "say": "Yes. Really.",
+   "cap": "YES. *REALLY.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Most people think water just soaks into the skin.",
+   "cap": "MOST PEOPLE THINK | WATER JUST *SOAKS* | INTO THE SKIN.",
+   "pause": 0.2
+  },
+  {
+   "say": "Nope. Your nervous system does it on purpose.",
+   "cap": "NOPE. | YOUR *NERVOUS SYSTEM* | DOES IT *ON PURPOSE.*",
+   "pause": 0.45
+  },
+  {
+   "say": "It squeezes the blood vessels under your fingertips,",
+   "cap": "IT *SQUEEZES* | THE BLOOD VESSELS | UNDER YOUR FINGERTIPS,",
+   "pause": 0.2
+  },
+  {
+   "say": "and the skin wrinkles up.",
+   "cap": "AND THE SKIN | *WRINKLES* UP.",
+   "pause": 0.45
+  },
+  {
+   "say": "Doctors have known since the nineteen thirties:",
+   "cap": "DOCTORS HAVE KNOWN | SINCE THE *1930s:*",
+   "pause": 0.2
+  },
+  {
+   "say": "if the nerves in a finger are damaged, it doesn't wrinkle.",
+   "cap": "IF THE *NERVES* | IN A FINGER ARE DAMAGED, | IT *DOESN'T* WRINKLE.",
+   "pause": 0.2
+  },
+  {
+   "say": "So why bother?",
+   "cap": "SO WHY *BOTHER?*",
+   "pause": 0.3
+  },
+  {
+   "say": "In twenty thirteen, scientists made people move wet marbles.",
+   "cap": "IN *2013,* | SCIENTISTS MADE PEOPLE | MOVE *WET MARBLES.*",
+   "pause": 0.2
+  },
+  {
+   "say": "With wrinkly fingers, they were twelve percent faster.",
+   "cap": "WITH WRINKLY FINGERS, | THEY WERE | *12% FASTER.*",
+   "pause": 0.2
+  },
+  {
+   "say": "Dry marbles? No difference.",
+   "cap": "DRY MARBLES? | *NO DIFFERENCE.*",
+   "pause": 0.45
+  },
+  {
+   "say": "The idea is the wrinkles channel water away,",
+   "cap": "THE IDEA IS | THE WRINKLES | *CHANNEL WATER* AWAY,",
+   "pause": 0.2
+  },
+  {
+   "say": "like the treads on a car tyre.",
+   "cap": "LIKE THE *TREADS* | ON A CAR TYRE.",
+   "pause": 0.45
+  },
+  {
+   "say": "So you're not ruined from the bath.",
+   "cap": "SO YOU'RE NOT | *RUINED* FROM THE BATH.",
+   "pause": 0.2
+  },
+  {
+   "say": "You've got all weather tyres.",
+   "cap": "YOU'VE GOT | *ALL WEATHER TYRES.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Follow,",
+   "cap": "*FOLLOW*",
+   "pause": 0.15
+  },
+  {
+   "say": "for the stuff school skipped.",
+   "cap": "FOR THE STUFF | SCHOOL *SKIPPED.*",
+   "pause": 0.5
+  }
+ ],
+ "scenes": [
+  {
+   "first": 0,
+   "end": 2,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      0,
+      0.0,
+      "deadpan"
+     ],
+     [
+      1,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "tyre",
+     "x": 820,
+     "y": 1560,
+     "s": 0.95,
+     "slot": "floor_right",
+     "at": [
+      0,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "hand",
+     "x": 660,
+     "y": 1010,
+     "s": 0.85,
+     "slot": "center",
+     "at": [
+      0,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [],
+     "args": {
+      "pruney": true
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 2,
+   "end": 4,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      2,
+      0.0,
+      "deadpan"
+     ],
+     [
+      3,
+      0.0,
+      "shrug"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "sign",
+     "x": 820,
+     "y": 1560,
+     "s": 1.0,
+     "slot": "floor_right",
+     "at": [
+      2,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "lines": [
+       "WATER",
+       "SOAKS IN"
+      ]
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "NOPE",
+     "sub": null,
+     "x": 660,
+     "y": 1010,
+     "color": "red",
+     "rot": -0.12,
+     "size": 64,
+     "at": [
+      3,
+      0.2
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 4,
+   "end": 6,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      4,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "hand",
+     "x": 660,
+     "y": 1010,
+     "s": 1.05,
+     "slot": "center",
+     "at": [
+      4,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [
+      [
+       5,
+       0.0,
+       "pruney"
+      ]
+     ],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "ON PURPOSE",
+     "sub": null,
+     "x": 680,
+     "y": 1300,
+     "color": "red",
+     "rot": -0.12,
+     "size": 54,
+     "at": [
+      5,
+      0.6
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 6,
+   "end": 9,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      6,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "brain",
+     "x": 660,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "center",
+     "at": [
+      6,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "NO NERVES, NO WRINKLES",
+     "sub": null,
+     "x": 680,
+     "y": 1300,
+     "color": "red",
+     "rot": -0.12,
+     "size": 40,
+     "at": [
+      7,
+      0.4
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 9,
+   "end": 12,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      9,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "big_number",
+     "x": 660,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "center",
+     "at": [
+      9,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "value": 12,
+      "suffix": "% FASTER"
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "drop",
+     "x": 520,
+     "y": 1300,
+     "s": 0.7,
+     "slot": "low_left",
+     "at": [
+      9,
+      0.6
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "hand",
+     "x": 860,
+     "y": 1300,
+     "s": 0.8,
+     "slot": "low_right",
+     "at": [
+      10,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "pruney": true
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 12,
+   "end": 14,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      12,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "hand",
+     "x": 520,
+     "y": 1300,
+     "s": 0.85,
+     "slot": "low_left",
+     "at": [
+      12,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "pruney": true
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "tyre",
+     "x": 940,
+     "y": 1560,
+     "s": 0.75,
+     "slot": "floor_far",
+     "at": [
+      13,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 14,
+   "end": 16,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      14,
+      0.0,
+      "deadpan"
+     ],
+     [
+      15,
+      0.0,
+      "wave"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "tyre",
+     "x": 820,
+     "y": 1560,
+     "s": 0.95,
+     "slot": "floor_right",
+     "at": [
+      14,
+      0.0
+     ],
+     "until": [
+      15,
+      0.2
+     ],
+     "in": "none",
+     "out": "slide_right",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 16,
+   "end": 18,
+   "outro": true,
+   "doc": {
+    "x": 540,
+    "s": 2.4,
+    "face": 1,
+    "poses": [
+     [
+      16,
+      0.0,
+      "wave"
+     ]
+    ]
+   },
+   "people": [],
+   "els": []
+  }
+ ],
+ "cover": {
+  "big": [
+   "PRUNEY FINGERS",
+   "*ARE TREADS*"
+  ]
+ },
+ "sources": [
+  {
+   "fact": "Newcastle University (Jan 9, 2013): wrinkled fingers give a better grip in wet conditions; wrinkling is an active process caused by blood vessels constricting below the skin, controlled by the autonomic nervous system; volunteers were 12% faster with wet marbles when their fingers were wrinkled; wrinkles make no difference for moving dry objects; could be working like treads on car tyres",
+   "url": "https://www.ncl.ac.uk/press/articles/archive/2013/01/getagrip-whywegetwrinklyfingersandtoes.html",
+   "fetched": "2026-11-29"
+  },
+  {
+   "fact": "Nature News (2013): people often assume wrinkling is water passing into the outer skin; researchers have known since the 1930s that the effect does not occur when there is nerve damage in the fingers; it is an involuntary reaction of the autonomic nervous system; wrinkles channel away water like rain treads in car tyres",
+   "url": "https://www.nature.com/articles/nature.2013.12175",
+   "fetched": "2026-11-29"
+  }
+ ],
+ "math": [
+  {
+   "expr": "1930",
+   "expect": 1930,
+   "note": "Nature: known since the 1930s that nerve damage stops wrinkling"
+  },
+  {
+   "expr": "2013",
+   "expect": 2013,
+   "note": "Newcastle University study published January 2013"
+  },
+  {
+   "expr": "12",
+   "expect": 12,
+   "note": "Newcastle University: 12% faster with wet marbles when fingers were wrinkled"
+  }
+ ],
+ "post": {
+  "slot": "morning",
+  "post_at": "2026-11-29T07:30:00+05:30",
+  "instagram_caption": "Your wrinkly bath fingers might be tyre treads 🛁\n\nPruney fingers aren't just water soaking in. Your nervous system squeezes the blood vessels under your fingertips on purpose, which is why fingers with damaged nerves don't wrinkle. In a 2013 Newcastle University study, people moved wet marbles 12% faster with wrinkly fingers, and dry marbles made no difference.\n\nThe idea: the wrinkles channel water away, like treads on a car tyre.\n\nSources: Newcastle University, Nature.\n\nHow long does it take your fingers to go pruney?\n\n#docstick #bodyfacts #weirdfacts #sciencefacts #nervoussystem",
+  "youtube_title": "Your Wrinkly Bath Fingers Might Be Tyre Treads",
+  "youtube_description": "Pruney bath fingers aren't just water soaking in: your nervous system squeezes the blood vessels under your fingertips on purpose, and fingers with nerve damage don't wrinkle. In a 2013 Newcastle University study, people moved wet marbles 12% faster with wrinkly fingers. The idea is the wrinkles channel water away, like tyre treads.\n\nEducational only, not medical advice.\n\nSources:\n• Newcastle University, \"Get a grip: why we get wrinkly fingers and toes\" (fetched Nov 29, 2026)\n• Nature, \"Science gets a grip on wrinkly fingers\" (fetched Nov 29, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#BodyFacts #Science #Shorts"
+ }
+}

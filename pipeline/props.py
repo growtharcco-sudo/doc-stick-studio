@@ -822,3 +822,116 @@ def broom(c, st):
         c.move_to(x * 0.4, -95); c.line_to(x, -4); stroke(c, (0.55, 0.40, 0.10), 3)
     rrect(c, -34, -112, 68, 18, 6); fillstroke(c, RED, INK, 4)
     c.restore()
+
+
+@prop("hand", (-120, -205, 115, 135), "center",
+      "cartoon open hand, palm facing out, five fingers. args.pruney true or state 'pruney' = wrinkle lines on the fingertips")
+def hand(c, st):
+    pr = st.args.get("pruney") or st.state == "pruney"
+    k = clamp(st.since / 0.4) if st.state == "pruney" else 1.0
+    WR = (0.62, 0.36, 0.26)
+
+    def wrinkles(top):
+        for j in range(4):
+            y = top + 16 + j * 15
+            c.move_to(-14, y); c.curve_to(-5, y - 8 * k, 5, y + 8 * k, 14, y); stroke(c, WR, 4)
+    c.save(); c.rotate(math.sin(st.t * 1.8) * 0.04)
+    for fx, top, a in ((-58, -150, 0.22), (-20, -200, 0.06), (20, -205, -0.02), (58, -180, -0.12)):   # four fingers
+        c.save(); c.translate(fx, -20); c.rotate(-a)
+        rrect(c, -20, top + 20, 40, -top, 20); fillstroke(c, PEACH, DPEACH, 6)
+        if pr: wrinkles(top + 20)
+        c.restore()
+    c.save(); c.translate(-80, 45); c.rotate(-0.8)                 # thumb
+    rrect(c, -20, -115, 40, 120, 20); fillstroke(c, PEACH, DPEACH, 6)
+    if pr: wrinkles(-115)
+    c.restore()
+    rrect(c, -80, -45, 160, 170, 50); fillstroke(c, PEACH, DPEACH, 6)   # palm
+    c.move_to(-50, 20); c.curve_to(-10, 45, 30, 40, 60, 10); stroke(c, DPEACH, 4)
+    c.restore()
+
+
+@prop("tyre", (-135, -270, 135, 0), "ground", "black car tyre standing up, with chunky tread grooves, slowly rocking (grip, treads)")
+def tyre(c, st):
+    r, cy = 130, -135
+    c.save(); c.translate(0, cy); c.rotate(math.sin(st.t * 1.5) * 0.15)
+    c.arc(0, 0, r, 0, 2 * math.pi); fillstroke(c, (0.18, 0.18, 0.20), INK, 6)
+    for i in range(16):                                           # tread blocks on the rim
+        a = i * math.pi / 8
+        c.save(); c.rotate(a); c.rectangle(-9, -r - 2, 18, 24); c.set_source_rgb(0.32, 0.32, 0.36); c.fill(); c.restore()
+    c.arc(0, 0, 72, 0, 2 * math.pi); fillstroke(c, (0.80, 0.82, 0.86), INK, 5)
+    c.arc(0, 0, 22, 0, 2 * math.pi); fillstroke(c, GREY, INK, 4)
+    for i in range(5):
+        a = i * 2 * math.pi / 5
+        c.arc(math.cos(a) * 45, math.sin(a) * 45, 7, 0, 2 * math.pi); c.set_source_rgb(*INK); c.fill()
+    c.restore()
+
+
+@prop("teacup", (-125, -165, 145, 60), "center", "cup of tea on a saucer with steam (tea, the consent analogy). state 'cold' = no steam, args.color = cup colour")
+def teacup(c, st):
+    cup = col(st.args.get("color"), (0.98, 0.97, 0.93))
+    if st.state != "cold": wavy_up(c, 0, -80, st.t, (0.55, 0.55, 0.6), n=3, gap=38, rise=50, w=5)
+    ellipse(c, 0, 45, 120, 18); fillstroke(c, cup, INK, 5)
+    c.arc(95, -5, 34, -1.3, 1.3); stroke(c, INK, 18); c.arc(95, -5, 34, -1.3, 1.3); stroke(c, cup, 8)
+    c.move_to(-95, -55); c.line_to(95, -55); c.curve_to(92, 10, 60, 40, 0, 40); c.curve_to(-60, 40, -92, 10, -95, -55); c.close_path()
+    fillstroke(c, cup, INK, 6)
+    ellipse(c, 0, -55, 95, 14); fillstroke(c, (0.62, 0.38, 0.18), INK, 5)
+    c.move_to(-60, -10); c.line_to(60, -10); stroke(c, RED, 6)
+
+
+@prop("firefly", (-120, -110, 120, 100), "center", "friendly firefly with a softly pulsing glowing tail (bioluminescence, glowing)")
+def firefly(c, st):
+    g = 0.5 + 0.5 * math.sin(st.t * 3)
+    bob = math.sin(st.t * 2.2) * 6
+    c.save(); c.translate(0, bob)
+    for rr, a in ((95, 0.18), (70, 0.3)):
+        c.arc(55, 15, rr * (0.8 + 0.2 * g), 0, 2 * math.pi); c.set_source_rgba(1.0, 0.92, 0.35, a * (0.5 + 0.5 * g)); c.fill()
+    ellipse(c, 55, 15, 45, 38); fillstroke(c, (1.0, 0.90 + 0.06 * g, 0.40), INK, 5)
+    for sx, rot in ((-10, -0.5), (25, -0.2)):                     # wings flutter
+        c.save(); c.translate(sx, -35); c.rotate(rot + math.sin(st.t * 20) * 0.15)
+        ellipse(c, 0, -25, 22, 40); c.set_source_rgba(0.85, 0.92, 1.0, 0.85); c.fill_preserve(); stroke(c, NAVY, 3); c.restore()
+    ellipse(c, -5, 5, 50, 35); fillstroke(c, (0.35, 0.30, 0.28), INK, 5)
+    c.arc(-65, -5, 28, 0, 2 * math.pi); fillstroke(c, RED, INK, 5)
+    c.arc(-75, -12, 7, 0, 2 * math.pi); c.set_source_rgb(1, 1, 1); c.fill(); c.arc(-76, -12, 3.5, 0, 2 * math.pi); c.set_source_rgb(*INK); c.fill()
+    c.move_to(-80, -30); c.curve_to(-95, -60, -100, -70, -110, -80); stroke(c, INK, 3)
+    c.restore()
+
+
+@prop("camera", (-135, -110, 135, 90), "center", "chunky photo camera with a big lens. args.flash true = a flash burst every couple of seconds")
+def camera(c, st):
+    rrect(c, -70, -105, 70, 35, 8); fillstroke(c, (0.30, 0.30, 0.34), INK, 5)
+    rrect(c, -130, -75, 260, 160, 22); fillstroke(c, (0.25, 0.25, 0.28), INK, 6)
+    rrect(c, -130, -40, 260, 30, 4); c.set_source_rgb(0.40, 0.40, 0.44); c.fill()
+    c.arc(10, 10, 58, 0, 2 * math.pi); fillstroke(c, (0.80, 0.82, 0.86), INK, 6)
+    c.arc(10, 10, 38, 0, 2 * math.pi); fillstroke(c, NAVY, INK, 5)
+    c.arc(-2, -2, 10, 0, 2 * math.pi); c.set_source_rgba(1, 1, 1, 0.85); c.fill()
+    rrect(c, 80, -60, 34, 20, 4); fillstroke(c, YELLOW, INK, 3)
+    if st.args.get("flash") and (st.t % 2.2) < 0.15:
+        for i in range(8):
+            a = i * math.pi / 4
+            c.move_to(97 + math.cos(a) * 30, -50 + math.sin(a) * 30); c.line_to(97 + math.cos(a) * 60, -50 + math.sin(a) * 60)
+            stroke(c, YELLOW, 6)
+
+
+@prop("ear", (-105, -160, 105, 160), "center",
+      "cartoon ear, side view (like the nose). args.wax true = a little yellow-brown wax blob rides out of the canal on repeat, with an arrow (self-cleaning)")
+def ear(c, st):
+    c.move_to(-40, -150); c.curve_to(40, -175, 105, -110, 95, -30); c.curve_to(88, 30, 40, 50, 30, 95)
+    c.curve_to(22, 140, -30, 165, -55, 130); c.curve_to(-75, 100, -60, 60, -55, 30)
+    c.curve_to(-65, -40, -95, -130, -40, -150); c.close_path(); fillstroke(c, PEACH, DPEACH, 6)
+    c.move_to(-25, -115); c.curve_to(30, -130, 70, -80, 60, -25); c.curve_to(55, 15, 20, 30, 10, 60); stroke(c, DPEACH, 5)
+    ellipse(c, -15, 0, 30, 38); c.set_source_rgb(*DPEACH); c.fill()
+    if st.args.get("wax"):
+        ph = (st.t * 0.45) % 1
+        x = -15 - ph * 70; a = 1 - clamp((ph - 0.75) / 0.25)
+        ellipse(c, x, 4, 13, 10); c.set_source_rgba(0.85, 0.62, 0.20, a); c.fill_preserve(); c.set_source_rgba(*DBROWN, a); c.set_line_width(3); c.stroke()
+        c.move_to(-60, -60); c.line_to(-100, -60); c.set_source_rgba(*RED, 0.9); c.set_line_width(7); c.stroke()
+        c.move_to(-112, -60); c.line_to(-92, -74); c.line_to(-92, -46); c.close_path(); c.set_source_rgba(*RED, 0.9); c.fill()
+
+
+@prop("cotton_swab", (-165, -40, 165, 40), "center", "cotton swab (cotton bud) lying sideways, white tips, slightly tilted")
+def cotton_swab(c, st):
+    c.save(); c.rotate(-0.12 + math.sin(st.t * 1.5) * 0.03)
+    rrect(c, -125, -7, 250, 14, 7); fillstroke(c, (0.62, 0.80, 0.96), NAVY, 4)
+    for sx in (-1, 1):
+        ellipse(c, sx * 135, 0, 30, 22); fillstroke(c, WHITE, INK, 5)
+    c.restore()
