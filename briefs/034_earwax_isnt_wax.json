@@ -1,0 +1,135 @@
+{
+ "id": "034_earwax_isnt_wax",
+ "beats": [
+  {
+   "say": "Earwax isn't wax.",
+   "cap": "EARWAX | *ISN'T WAX.*",
+   "show": {
+    "kind": "hook",
+    "prop": {"name": "ear", "size": 1.1, "slot": "right", "args": {"wax": true}}
+   }
+  },
+  {
+   "say": "Yes. Really. Please don't make candles.",
+   "cap": "YES. *REALLY.* | PLEASE DON'T | MAKE *CANDLES.*"
+  },
+  {
+   "say": "It's mostly skin oil, dead skin cells and hair,",
+   "cap": "IT'S MOSTLY | *SKIN OIL,* | *DEAD SKIN CELLS* | AND *HAIR,*",
+   "show": {
+    "kind": "explain",
+    "prop": {"name": "ear", "size": 1.2},
+    "stamp": {"text": "NOT WAX", "at": "0+1.2"}
+   }
+  },
+  {
+   "say": "made by glands in your ear canal.",
+   "cap": "MADE BY *GLANDS* | IN YOUR EAR CANAL."
+  },
+  {
+   "say": "Some of them are modified sweat glands. Lovely.",
+   "cap": "SOME OF THEM ARE | MODIFIED *SWEAT GLANDS.* | LOVELY.",
+   "pause": 0.3
+  },
+  {
+   "say": "But it's useful. It traps dirt and dust,",
+   "cap": "BUT IT'S *USEFUL.* | IT *TRAPS* | DIRT AND DUST,",
+   "show": {
+    "kind": "pair",
+    "left": {"name": "shield", "size": 0.9},
+    "right": {"name": "bacteria", "size": 1.2},
+    "right_at": "1"
+   }
+  },
+  {
+   "say": "and it helps fight bacteria and fungi.",
+   "cap": "AND IT HELPS | *FIGHT* BACTERIA | AND FUNGI."
+  },
+  {
+   "say": "And your ears clean themselves.",
+   "cap": "AND YOUR EARS | *CLEAN THEMSELVES.*",
+   "show": {
+    "kind": "explain",
+    "prop": {"name": "ear", "size": 1.2, "args": {"wax": true}},
+    "stamp": {"text": "SELF-CLEANING", "at": "1+0.3"}
+   }
+  },
+  {
+   "say": "Chewing and talking slowly work the wax out,",
+   "cap": "*CHEWING* AND *TALKING* | SLOWLY WORK | THE WAX OUT,"
+  },
+  {
+   "say": "like a tiny conveyor belt.",
+   "cap": "LIKE A TINY | *CONVEYOR BELT.*"
+  },
+  {
+   "say": "Cotton swabs? They can push wax deeper.",
+   "cap": "*COTTON SWABS?* | THEY CAN PUSH | WAX *DEEPER.*",
+   "show": {
+    "kind": "explain",
+    "prop": {"name": "cotton_swab", "size": 1.1},
+    "stamp": {"text": "NOT FOR EARS", "at": "1+0.2"},
+    "poses": {"2": "shrug"}
+   }
+  },
+  {
+   "say": "Even the box says not to put them in your ear.",
+   "cap": "EVEN THE *BOX* SAYS | NOT TO PUT THEM | IN YOUR EAR."
+  },
+  {
+   "say": "See a doctor if your ear hurts,",
+   "cap": "SEE A DOCTOR | IF YOUR EAR *HURTS,*",
+   "show": {
+    "kind": "explain",
+    "prop": {"name": "sign", "slot": "floor_right", "args": {"lines": ["EAR PAIN?", "SEE A DOCTOR"]}}
+   }
+  },
+  {
+   "say": "your hearing goes muffled, or you feel dizzy.",
+   "cap": "YOUR HEARING | GOES *MUFFLED,* | OR YOU FEEL *DIZZY.*"
+  },
+  {
+   "say": "Otherwise, leave it.",
+   "cap": "OTHERWISE, | *LEAVE IT.*",
+   "show": {
+    "kind": "exit",
+    "prop": {"name": "ear", "size": 1.1, "slot": "right", "args": {"wax": true}},
+    "leave_at": "1+0.3",
+    "pose": "deadpan",
+    "poses": {"1": "wave"}
+   }
+  },
+  {
+   "say": "It's not wax. And it's not your job.",
+   "cap": "IT'S NOT WAX. | AND IT'S *NOT YOUR JOB.*"
+  }
+ ],
+ "cover": {
+  "big": ["EARWAX", "*ISN'T WAX*"]
+ },
+ "sources": [
+  {
+   "fact": "Cleveland Clinic, 'Earwax (Cerumen)': earwax isn't really wax; it is mostly sebum, dead skin cells and hair; made by sebaceous glands and ceruminous glands (modified sweat glands) in the ear canal; it traps dirt and dust and releases substances that protect against bacterial and fungal infections; ears are self-cleaning, chewing or talking gradually work the wax out; never stick cotton swabs into your ear",
+   "url": "https://my.clevelandclinic.org/health/body/24624-earwax",
+   "fetched": "2026-11-29"
+  },
+  {
+   "fact": "Cleveland Clinic Health Essentials (Jenaye Baker, PA-C): earwax has anti-fungal and anti-bacterial properties; ears naturally move wax outward; swab packages warn 'Do not insert swabs into the ear canal'; a swab pushes earwax deeper; get checked if your ear hurts, your hearing is muffled, you feel dizzy, or you have ringing",
+   "url": "https://health.clevelandclinic.org/concerned-about-earwax-new-guidelines-say-dont-over-clean-your-ears",
+   "fetched": "2026-11-29"
+  },
+  {
+   "fact": "Hearing Health Foundation, 'The Ear Is Self-Cleaning': the ear is self-cleaning, with cerumen moving like a conveyor belt outward toward the opening of the ear canal",
+   "url": "https://hearinghealthfoundation.org/blogs/the-ear-is-self-cleaning",
+   "fetched": "2026-11-29"
+  }
+ ],
+ "math": [],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-30T23:30:00+05:30",
+  "instagram_caption": "Earwax isn't wax 👂\n\nIt's mostly skin oil, dead skin cells and hair, made by glands in your ear canal, some of them modified sweat glands. It traps dirt and dust and helps fight bacteria and fungi. Your ears clean themselves: chewing and talking slowly move the wax out, like a tiny conveyor belt. Cotton swabs can push it deeper, and the box itself says not to put them in your ear. See a doctor if your ear hurts, your hearing goes muffled or you feel dizzy.\n\nIt's not wax. And it's not your job.\n\nSources: Cleveland Clinic, Hearing Health Foundation.\n\nWhat did you think earwax was made of?\n\n#docstick #bodyfacts #weirdfacts #earwax #sciencefacts",
+  "youtube_title": "Earwax Isn't Wax (And Your Ears Clean Themselves)",
+  "youtube_description": "Earwax is mostly skin oil, dead skin cells and hair, made by glands in the ear canal. It traps dirt, helps fight bacteria and fungi, and your ears move it out on their own as you chew and talk. Cotton swabs can push it deeper. See a doctor if your ear hurts, your hearing goes muffled or you feel dizzy.\n\nEducational only, not medical advice.\n\nSources:\n• Cleveland Clinic, \"Earwax (Cerumen): Types, Function & Causes\" (fetched Nov 29, 2026)\n• Cleveland Clinic, \"How To Safely Remove Earwax (and What NOT To Do)\" (fetched Nov 29, 2026)\n• Hearing Health Foundation, \"The Ear Is Self-Cleaning\" (fetched Nov 29, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#BodyFacts #Earwax #Shorts"
+ }
+}

@@ -24,6 +24,7 @@ Everything else about the body
 - [x] Goosebumps: leftover fur-fluffing reflex (003)
 - [x] Wrinkly bath fingers are tyre treads: the nervous system does it on purpose (031)
 - [x] You glow in the dark: the body gives off visible light 1,000x too dim to see (033)
+- [x] Earwax isn't wax: skin oil, dead skin and hair, and ears clean themselves (034)
 - [ ] You shed about a million skin cells a day? (check the real number)
 - [x] Babies have about 300 bones, adults 206: they fuse (014)
 - [x] Why yawns are contagious (015)

@@ -1,0 +1,508 @@
+{
+ "id": "034_earwax_isnt_wax",
+ "voice": "am_michael",
+ "speed": 1.0,
+ "phrases": [
+  {
+   "say": "Earwax isn't wax.",
+   "cap": "EARWAX | *ISN'T WAX.*",
+   "pause": 0.2
+  },
+  {
+   "say": "Yes. Really. Please don't make candles.",
+   "cap": "YES. *REALLY.* | PLEASE DON'T | MAKE *CANDLES.*",
+   "pause": 0.45
+  },
+  {
+   "say": "It's mostly skin oil, dead skin cells and hair,",
+   "cap": "IT'S MOSTLY | *SKIN OIL,* | *DEAD SKIN CELLS* | AND *HAIR,*",
+   "pause": 0.2
+  },
+  {
+   "say": "made by glands in your ear canal.",
+   "cap": "MADE BY *GLANDS* | IN YOUR EAR CANAL.",
+   "pause": 0.2
+  },
+  {
+   "say": "Some of them are modified sweat glands. Lovely.",
+   "cap": "SOME OF THEM ARE | MODIFIED *SWEAT GLANDS.* | LOVELY.",
+   "pause": 0.3
+  },
+  {
+   "say": "But it's useful. It traps dirt and dust,",
+   "cap": "BUT IT'S *USEFUL.* | IT *TRAPS* | DIRT AND DUST,",
+   "pause": 0.2
+  },
+  {
+   "say": "and it helps fight bacteria and fungi.",
+   "cap": "AND IT HELPS | *FIGHT* BACTERIA | AND FUNGI.",
+   "pause": 0.45
+  },
+  {
+   "say": "And your ears clean themselves.",
+   "cap": "AND YOUR EARS | *CLEAN THEMSELVES.*",
+   "pause": 0.2
+  },
+  {
+   "say": "Chewing and talking slowly work the wax out,",
+   "cap": "*CHEWING* AND *TALKING* | SLOWLY WORK | THE WAX OUT,",
+   "pause": 0.2
+  },
+  {
+   "say": "like a tiny conveyor belt.",
+   "cap": "LIKE A TINY | *CONVEYOR BELT.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Cotton swabs? They can push wax deeper.",
+   "cap": "*COTTON SWABS?* | THEY CAN PUSH | WAX *DEEPER.*",
+   "pause": 0.2
+  },
+  {
+   "say": "Even the box says not to put them in your ear.",
+   "cap": "EVEN THE *BOX* SAYS | NOT TO PUT THEM | IN YOUR EAR.",
+   "pause": 0.45
+  },
+  {
+   "say": "See a doctor if your ear hurts,",
+   "cap": "SEE A DOCTOR | IF YOUR EAR *HURTS,*",
+   "pause": 0.2
+  },
+  {
+   "say": "your hearing goes muffled, or you feel dizzy.",
+   "cap": "YOUR HEARING | GOES *MUFFLED,* | OR YOU FEEL *DIZZY.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Otherwise, leave it.",
+   "cap": "OTHERWISE, | *LEAVE IT.*",
+   "pause": 0.2
+  },
+  {
+   "say": "It's not wax. And it's not your job.",
+   "cap": "IT'S NOT WAX. | AND IT'S *NOT YOUR JOB.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Follow,",
+   "cap": "*FOLLOW*",
+   "pause": 0.15
+  },
+  {
+   "say": "for the stuff school skipped.",
+   "cap": "FOR THE STUFF | SCHOOL *SKIPPED.*",
+   "pause": 0.5
+  }
+ ],
+ "scenes": [
+  {
+   "first": 0,
+   "end": 2,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      0,
+      0.0,
+      "deadpan"
+     ],
+     [
+      1,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "ear",
+     "x": 840,
+     "y": 1010,
+     "s": 1.1,
+     "slot": "right",
+     "at": [
+      0,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [],
+     "args": {
+      "wax": true
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 2,
+   "end": 5,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      2,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "ear",
+     "x": 660,
+     "y": 1010,
+     "s": 1.2,
+     "slot": "center",
+     "at": [
+      2,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "NOT WAX",
+     "sub": null,
+     "x": 680,
+     "y": 1300,
+     "color": "red",
+     "rot": -0.12,
+     "size": 54,
+     "at": [
+      2,
+      1.2
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 5,
+   "end": 7,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      5,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "shield",
+     "x": 520,
+     "y": 1300,
+     "s": 0.9,
+     "slot": "low_left",
+     "at": [
+      5,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "bacteria",
+     "x": 860,
+     "y": 1300,
+     "s": 1.2,
+     "slot": "low_right",
+     "at": [
+      6,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 7,
+   "end": 10,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      7,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "ear",
+     "x": 660,
+     "y": 1010,
+     "s": 1.2,
+     "slot": "center",
+     "at": [
+      7,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "wax": true
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "SELF-CLEANING",
+     "sub": null,
+     "x": 680,
+     "y": 1300,
+     "color": "red",
+     "rot": -0.12,
+     "size": 54,
+     "at": [
+      8,
+      0.3
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 10,
+   "end": 12,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      10,
+      0.0,
+      "point"
+     ],
+     [
+      12,
+      0.0,
+      "shrug"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "cotton_swab",
+     "x": 660,
+     "y": 1010,
+     "s": 1.1,
+     "slot": "center",
+     "at": [
+      10,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "NOT FOR EARS",
+     "sub": null,
+     "x": 680,
+     "y": 1300,
+     "color": "red",
+     "rot": -0.12,
+     "size": 54,
+     "at": [
+      11,
+      0.2
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 12,
+   "end": 14,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      12,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "sign",
+     "x": 820,
+     "y": 1560,
+     "s": 1.0,
+     "slot": "floor_right",
+     "at": [
+      12,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "lines": [
+       "EAR PAIN?",
+       "SEE A DOCTOR"
+      ]
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 14,
+   "end": 16,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      14,
+      0.0,
+      "deadpan"
+     ],
+     [
+      15,
+      0.0,
+      "wave"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "ear",
+     "x": 840,
+     "y": 1010,
+     "s": 1.1,
+     "slot": "right",
+     "at": [
+      14,
+      0.0
+     ],
+     "until": [
+      15,
+      0.3
+     ],
+     "in": "none",
+     "out": "slide_right",
+     "states": [],
+     "args": {
+      "wax": true
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 16,
+   "end": 18,
+   "outro": true,
+   "doc": {
+    "x": 540,
+    "s": 2.4,
+    "face": 1,
+    "poses": [
+     [
+      16,
+      0.0,
+      "wave"
+     ]
+    ]
+   },
+   "people": [],
+   "els": []
+  }
+ ],
+ "cover": {
+  "big": [
+   "EARWAX",
+   "*ISN'T WAX*"
+  ]
+ },
+ "sources": [
+  {
+   "fact": "Cleveland Clinic, 'Earwax (Cerumen)': earwax isn't really wax; it is mostly sebum, dead skin cells and hair; made by sebaceous glands and ceruminous glands (modified sweat glands) in the ear canal; it traps dirt and dust and releases substances that protect against bacterial and fungal infections; ears are self-cleaning, chewing or talking gradually work the wax out; never stick cotton swabs into your ear",
+   "url": "https://my.clevelandclinic.org/health/body/24624-earwax",
+   "fetched": "2026-11-29"
+  },
+  {
+   "fact": "Cleveland Clinic Health Essentials (Jenaye Baker, PA-C): earwax has anti-fungal and anti-bacterial properties; ears naturally move wax outward; swab packages warn 'Do not insert swabs into the ear canal'; a swab pushes earwax deeper; get checked if your ear hurts, your hearing is muffled, you feel dizzy, or you have ringing",
+   "url": "https://health.clevelandclinic.org/concerned-about-earwax-new-guidelines-say-dont-over-clean-your-ears",
+   "fetched": "2026-11-29"
+  },
+  {
+   "fact": "Hearing Health Foundation, 'The Ear Is Self-Cleaning': the ear is self-cleaning, with cerumen moving like a conveyor belt outward toward the opening of the ear canal",
+   "url": "https://hearinghealthfoundation.org/blogs/the-ear-is-self-cleaning",
+   "fetched": "2026-11-29"
+  }
+ ],
+ "math": [],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-30T23:30:00+05:30",
+  "instagram_caption": "Earwax isn't wax 👂\n\nIt's mostly skin oil, dead skin cells and hair, made by glands in your ear canal, some of them modified sweat glands. It traps dirt and dust and helps fight bacteria and fungi. Your ears clean themselves: chewing and talking slowly move the wax out, like a tiny conveyor belt. Cotton swabs can push it deeper, and the box itself says not to put them in your ear. See a doctor if your ear hurts, your hearing goes muffled or you feel dizzy.\n\nIt's not wax. And it's not your job.\n\nSources: Cleveland Clinic, Hearing Health Foundation.\n\nWhat did you think earwax was made of?\n\n#docstick #bodyfacts #weirdfacts #earwax #sciencefacts",
+  "youtube_title": "Earwax Isn't Wax (And Your Ears Clean Themselves)",
+  "youtube_description": "Earwax is mostly skin oil, dead skin cells and hair, made by glands in the ear canal. It traps dirt, helps fight bacteria and fungi, and your ears move it out on their own as you chew and talk. Cotton swabs can push it deeper. See a doctor if your ear hurts, your hearing goes muffled or you feel dizzy.\n\nEducational only, not medical advice.\n\nSources:\n• Cleveland Clinic, \"Earwax (Cerumen): Types, Function & Causes\" (fetched Nov 29, 2026)\n• Cleveland Clinic, \"How To Safely Remove Earwax (and What NOT To Do)\" (fetched Nov 29, 2026)\n• Hearing Health Foundation, \"The Ear Is Self-Cleaning\" (fetched Nov 29, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#BodyFacts #Earwax #Shorts"
+ }
+}
