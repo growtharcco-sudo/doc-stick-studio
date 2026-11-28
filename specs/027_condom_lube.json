@@ -1,0 +1,518 @@
+{
+ "id": "027_condom_lube",
+ "voice": "am_michael",
+ "speed": 1.0,
+ "phrases": [
+  {
+   "say": "Baby oil can wreck a condom in sixty seconds.",
+   "cap": "*BABY OIL* CAN WRECK | A CONDOM IN | *60 SECONDS.*",
+   "pause": 0.2
+  },
+  {
+   "say": "Here's what nobody tells you.",
+   "cap": "HERE'S WHAT | *NOBODY* TELLS YOU.",
+   "pause": 0.45
+  },
+  {
+   "say": "Most condoms already come with lube in the wrapper.",
+   "cap": "MOST CONDOMS | ALREADY COME WITH | *LUBE* IN THE WRAPPER.",
+   "pause": 0.2
+  },
+  {
+   "say": "Adding more is fine. It can even help stop them breaking.",
+   "cap": "ADDING MORE IS *FINE.* | IT CAN EVEN HELP | STOP THEM *BREAKING.*",
+   "pause": 0.45
+  },
+  {
+   "say": "But only the right kind.",
+   "cap": "BUT ONLY | THE *RIGHT KIND.*",
+   "pause": 0.2
+  },
+  {
+   "say": "Water based or silicone lube. Both safe.",
+   "cap": "WATER-BASED | OR *SILICONE* LUBE. | BOTH *SAFE.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Oil is the problem.",
+   "cap": "*OIL* IS THE PROBLEM.",
+   "pause": 0.2
+  },
+  {
+   "say": "In one lab test, sixty seconds of mineral oil cut condom strength by about ninety percent.",
+   "cap": "IN ONE LAB TEST, | *60 SECONDS* | OF MINERAL OIL | CUT CONDOM STRENGTH | BY ABOUT *90%.*",
+   "pause": 0.2
+  },
+  {
+   "say": "And mineral oil is in baby oil, and lots of lotions.",
+   "cap": "MINERAL OIL IS IN | *BABY OIL,* AND | LOTS OF *LOTIONS.*",
+   "pause": 0.45
+  },
+  {
+   "say": "So with latex condoms: no Vaseline, no lotion, no coconut oil.",
+   "cap": "WITH LATEX CONDOMS: | NO *VASELINE,* | NO *LOTION,* | NO *COCONUT OIL.*",
+   "pause": 0.45
+  },
+  {
+   "say": "The condom already brought its own lube.",
+   "cap": "THE CONDOM ALREADY | BROUGHT ITS *OWN LUBE.*",
+   "pause": 0.2
+  },
+  {
+   "say": "Let it do its job.",
+   "cap": "LET IT | *DO ITS JOB.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Follow,",
+   "cap": "*FOLLOW*",
+   "pause": 0.15
+  },
+  {
+   "say": "for the stuff school skipped.",
+   "cap": "FOR THE STUFF | SCHOOL *SKIPPED.*",
+   "pause": 0.5
+  }
+ ],
+ "scenes": [
+  {
+   "first": 0,
+   "end": 2,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      0,
+      0.0,
+      "deadpan"
+     ],
+     [
+      1,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "sign",
+     "x": 820,
+     "y": 1560,
+     "s": 1.3,
+     "slot": "floor_right",
+     "at": [
+      0,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [],
+     "args": {
+      "lines": [
+       "BABY OIL",
+       "+ CONDOM"
+      ]
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "clock",
+     "x": 860,
+     "y": 830,
+     "s": 0.8,
+     "slot": "high_right",
+     "at": [
+      0,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [],
+     "args": {
+      "fast": true
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 2,
+   "end": 4,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      2,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "condom",
+     "x": 660,
+     "y": 1010,
+     "s": 1.5,
+     "slot": "center",
+     "at": [
+      2,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "PRE-LUBRICATED",
+     "sub": null,
+     "x": 680,
+     "y": 1300,
+     "color": "red",
+     "rot": -0.12,
+     "size": 54,
+     "at": [
+      2,
+      1.5
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 4,
+   "end": 6,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      4,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "drop",
+     "x": 520,
+     "y": 1300,
+     "s": 1.1,
+     "slot": "low_left",
+     "at": [
+      4,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": "WATER-BASED",
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "drop",
+     "x": 860,
+     "y": 1300,
+     "s": 1.1,
+     "slot": "low_right",
+     "at": [
+      4,
+      0.6
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "color": "teal"
+     },
+     "label": "SILICONE",
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "SAFE",
+     "sub": null,
+     "x": 660,
+     "y": 830,
+     "color": "ink",
+     "rot": -0.12,
+     "size": 70,
+     "at": [
+      5,
+      0.3
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 6,
+   "end": 9,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      6,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "big_number",
+     "x": 660,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "center",
+     "at": [
+      6,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "value": 90,
+      "prefix": "-",
+      "suffix": "%",
+      "color": "red"
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "drop",
+     "x": 520,
+     "y": 1300,
+     "s": 0.7,
+     "slot": "low_left",
+     "at": [
+      6,
+      0.6
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "color": "yellow"
+     },
+     "label": "MINERAL OIL",
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "clock",
+     "x": 860,
+     "y": 1300,
+     "s": 0.8,
+     "slot": "low_right",
+     "at": [
+      7,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "fast": true
+     },
+     "label": "60 SECONDS",
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 9,
+   "end": 10,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      9,
+      0.0,
+      "deadpan"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "sign",
+     "x": 640,
+     "y": 1560,
+     "s": 1.3,
+     "slot": "floor_center",
+     "at": [
+      9,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [
+      [
+       9,
+       0.7,
+       "crossed"
+      ]
+     ],
+     "args": {
+      "lines": [
+       "VASELINE,",
+       "LOTION, OILS"
+      ]
+     },
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 10,
+   "end": 12,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      10,
+      0.0,
+      "deadpan"
+     ],
+     [
+      11,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "condom",
+     "x": 660,
+     "y": 1010,
+     "s": 1.5,
+     "slot": "center",
+     "at": [
+      10,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 12,
+   "end": 14,
+   "outro": true,
+   "doc": {
+    "x": 540,
+    "s": 2.4,
+    "face": 1,
+    "poses": [
+     [
+      12,
+      0.0,
+      "wave"
+     ]
+    ]
+   },
+   "people": [],
+   "els": []
+  }
+ ],
+ "cover": {
+  "big": [
+   "BABY OIL",
+   "*+ CONDOM?*"
+  ]
+ },
+ "sources": [
+  {
+   "fact": "60 seconds of mineral oil exposure caused about a 90% decrease in latex condom strength (burst volume); baby oil and Vaseline Intensive Care lotion contain mineral oil",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/2535978/",
+   "fetched": "2026-11-28"
+  },
+  {
+   "fact": "Most condoms come lubricated in the wrapper; adding lube helps keep them from breaking; water-based or silicone lube is safe with any condom; don't use anything with oil",
+   "url": "https://www.plannedparenthood.org/blog/how-do-you-use-lube-with-condoms",
+   "fetched": "2026-11-28"
+  },
+  {
+   "fact": "Oil-based lubricants including massage oil, hand lotion, coconut oil and Vaseline can cause condoms to break",
+   "url": "https://www.bedsider.org/questions/1979-should-i-really-use-lube-with-condoms?tag=how_to",
+   "fetched": "2026-11-28"
+  },
+  {
+   "fact": "Do not use oil-based lubricant with latex condoms; use water-based or silicone-based lubricant",
+   "url": "https://www.nhs.uk/contraception/methods-of-contraception/condoms/",
+   "fetched": "2026-11-28"
+  }
+ ],
+ "math": [
+  {
+   "expr": "60",
+   "expect": 60,
+   "note": "60 seconds of exposure (Contraception, 1989)"
+  },
+  {
+   "expr": "90",
+   "expect": 90,
+   "note": "about 90% decrease in strength (Contraception, 1989)"
+  }
+ ],
+ "post": {
+  "slot": "idea",
+  "post_at": "2026-12-04T18:30:00+05:30",
+  "instagram_caption": "Baby oil can wreck a condom in 60 seconds 😳\n\nMost condoms already come with lube in the wrapper, and adding more water-based or silicone lube is fine (it can even help stop breaks). But in one lab test, 60 seconds of mineral oil, found in baby oil and many lotions, cut latex condom strength by about 90%.\n\nWith latex condoms: no Vaseline, no lotion, no coconut oil.\n\nSources: Contraception journal (1989), Planned Parenthood, Bedsider, NHS.\n\nDid you know condoms come pre-lubed?\n\n#docstick #contraception #sexeducation #safersex #bodyfacts",
+  "youtube_title": "Baby Oil Can Wreck a Condom in 60 Seconds",
+  "youtube_description": "Most condoms already come pre-lubricated, and extra water-based or silicone lube is safe. But in one lab test, 60 seconds of mineral oil (found in baby oil and many lotions) cut latex condom strength by about 90%. With latex condoms, avoid Vaseline, lotion and oils like coconut oil.\n\nEducational only, not medical advice.\n\nSources:\n• Contraception (1989), \"Mineral oil lubricants cause rapid deterioration of latex condoms\", PubMed 2535978 (fetched Nov 28, 2026)\n• Planned Parenthood, \"How do you use lube with condoms?\" (fetched Nov 28, 2026)\n• Bedsider, \"Should I really use lube with condoms?\" (fetched Nov 28, 2026)\n• NHS, \"Condoms\" (fetched Nov 28, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#SaferSex #Contraception #Shorts"
+ }
+}

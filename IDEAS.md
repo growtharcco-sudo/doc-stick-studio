@@ -34,3 +34,4 @@ Everything else about the body
 - [x] Can you satisfy her? 84% satisfied, 18% from intercourse alone (024)
 - [x] Masturbation myths: blindness, hairy palms, Kellogg's corn flakes (025)
 - [x] Internal (female) condom: put in 8 hours before, don't double up (026)
+- [x] Condoms come pre-lubed; baby oil wrecks latex in 60 seconds (027)

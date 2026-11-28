@@ -1,0 +1,53 @@
+{
+ "id": "027_condom_lube",
+ "beats": [
+  {"say": "Baby oil can wreck a condom in sixty seconds.", "cap": "*BABY OIL* CAN WRECK | A CONDOM IN | *60 SECONDS.*",
+   "show": {"kind": "hook", "prop": {"name": "sign", "size": 1.3, "args": {"lines": ["BABY OIL", "+ CONDOM"]}},
+            "add_props": [{"name": "clock", "slot": "high_right", "size": 0.8, "in": "none", "args": {"fast": true}}]}},
+  {"say": "Here's what nobody tells you.", "cap": "HERE'S WHAT | *NOBODY* TELLS YOU."},
+
+  {"say": "Most condoms already come with lube in the wrapper.", "cap": "MOST CONDOMS | ALREADY COME WITH | *LUBE* IN THE WRAPPER.",
+   "show": {"kind": "explain", "prop": {"name": "condom", "size": 1.5}, "stamp": {"text": "PRE-LUBRICATED", "at": "0+1.5", "size": 54}}},
+  {"say": "Adding more is fine. It can even help stop them breaking.", "cap": "ADDING MORE IS *FINE.* | IT CAN EVEN HELP | STOP THEM *BREAKING.*"},
+
+  {"say": "But only the right kind.", "cap": "BUT ONLY | THE *RIGHT KIND.*",
+   "show": {"kind": "pair", "left": {"name": "drop", "size": 1.1, "label": "WATER-BASED"}, "right": {"name": "drop", "size": 1.1, "args": {"color": "teal"}, "label": "SILICONE"}, "right_at": "0+0.6",
+            "stamps": [{"text": "SAFE", "slot": "high", "at": "1+0.3", "size": 70, "color": "ink"}]}},
+  {"say": "Water based or silicone lube. Both safe.", "cap": "WATER-BASED | OR *SILICONE* LUBE. | BOTH *SAFE.*"},
+
+  {"say": "Oil is the problem.", "cap": "*OIL* IS THE PROBLEM.",
+   "show": {"kind": "number", "number": {"value": 90, "prefix": "-", "suffix": "%", "color": "red"},
+            "left": {"name": "drop", "args": {"color": "yellow"}, "label": "MINERAL OIL"}, "right": {"name": "clock", "size": 0.8, "args": {"fast": true}, "label": "60 SECONDS"}, "right_at": "1"}},
+  {"say": "In one lab test, sixty seconds of mineral oil cut condom strength by about ninety percent.", "cap": "IN ONE LAB TEST, | *60 SECONDS* | OF MINERAL OIL | CUT CONDOM STRENGTH | BY ABOUT *90%.*"},
+  {"say": "And mineral oil is in baby oil, and lots of lotions.", "cap": "MINERAL OIL IS IN | *BABY OIL,* AND | LOTS OF *LOTIONS.*"},
+
+  {"say": "So with latex condoms: no Vaseline, no lotion, no coconut oil.", "cap": "WITH LATEX CONDOMS: | NO *VASELINE,* | NO *LOTION,* | NO *COCONUT OIL.*",
+   "show": {"kind": "verdict", "props": [{"name": "sign", "size": 1.3, "args": {"lines": ["VASELINE,", "LOTION, OILS"]}}]}},
+
+  {"say": "The condom already brought its own lube.", "cap": "THE CONDOM ALREADY | BROUGHT ITS *OWN LUBE.*",
+   "show": {"kind": "explain", "prop": {"name": "condom", "size": 1.5}, "pose": "deadpan", "poses": {"1": "point"}}},
+  {"say": "Let it do its job.", "cap": "LET IT | *DO ITS JOB.*"}
+ ],
+ "cover": {"big": ["BABY OIL", "*+ CONDOM?*"]},
+ "sources": [
+  {"fact": "60 seconds of mineral oil exposure caused about a 90% decrease in latex condom strength (burst volume); baby oil and Vaseline Intensive Care lotion contain mineral oil",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/2535978/", "fetched": "2026-11-28"},
+  {"fact": "Most condoms come lubricated in the wrapper; adding lube helps keep them from breaking; water-based or silicone lube is safe with any condom; don't use anything with oil",
+   "url": "https://www.plannedparenthood.org/blog/how-do-you-use-lube-with-condoms", "fetched": "2026-11-28"},
+  {"fact": "Oil-based lubricants including massage oil, hand lotion, coconut oil and Vaseline can cause condoms to break",
+   "url": "https://www.bedsider.org/questions/1979-should-i-really-use-lube-with-condoms?tag=how_to", "fetched": "2026-11-28"},
+  {"fact": "Do not use oil-based lubricant with latex condoms; use water-based or silicone-based lubricant",
+   "url": "https://www.nhs.uk/contraception/methods-of-contraception/condoms/", "fetched": "2026-11-28"}
+ ],
+ "math": [
+  {"expr": "60", "expect": 60, "note": "60 seconds of exposure (Contraception, 1989)"},
+  {"expr": "90", "expect": 90, "note": "about 90% decrease in strength (Contraception, 1989)"}
+ ],
+ "post": {
+  "slot": "idea",
+  "post_at": "2026-12-04T18:30:00+05:30",
+  "instagram_caption": "Baby oil can wreck a condom in 60 seconds 😳\n\nMost condoms already come with lube in the wrapper, and adding more water-based or silicone lube is fine (it can even help stop breaks). But in one lab test, 60 seconds of mineral oil, found in baby oil and many lotions, cut latex condom strength by about 90%.\n\nWith latex condoms: no Vaseline, no lotion, no coconut oil.\n\nSources: Contraception journal (1989), Planned Parenthood, Bedsider, NHS.\n\nDid you know condoms come pre-lubed?\n\n#docstick #contraception #sexeducation #safersex #bodyfacts",
+  "youtube_title": "Baby Oil Can Wreck a Condom in 60 Seconds",
+  "youtube_description": "Most condoms already come pre-lubricated, and extra water-based or silicone lube is safe. But in one lab test, 60 seconds of mineral oil (found in baby oil and many lotions) cut latex condom strength by about 90%. With latex condoms, avoid Vaseline, lotion and oils like coconut oil.\n\nEducational only, not medical advice.\n\nSources:\n• Contraception (1989), \"Mineral oil lubricants cause rapid deterioration of latex condoms\", PubMed 2535978 (fetched Nov 28, 2026)\n• Planned Parenthood, \"How do you use lube with condoms?\" (fetched Nov 28, 2026)\n• Bedsider, \"Should I really use lube with condoms?\" (fetched Nov 28, 2026)\n• NHS, \"Condoms\" (fetched Nov 28, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#SaferSex #Contraception #Shorts"
+ }
+}
