@@ -10,7 +10,7 @@ Sex ed / relationships (about 1 in 3)
 - [x] The "morning wood" is a nightly health check (020)
 - [x] Why men have nipples (009)
 - [x] Period syncing: roommates' periods probably don't sync (013)
-- [ ] Consent explained with a cup of tea, stick-figure version
+- [x] Consent explained with a cup of tea, stick-figure version (032)
 - [x] Periods: a whole period is about 6 to 8 teaspoons of blood, plus lining and mucus (028)
 - [x] Puberty: why voices crack (larynx growth) (004)
 
