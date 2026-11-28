@@ -1,0 +1,527 @@
+{
+ "id": "033_you_glow_in_the_dark",
+ "voice": "am_michael",
+ "speed": 1.0,
+ "phrases": [
+  {
+   "say": "You are glowing. Right now.",
+   "cap": "YOU ARE *GLOWING.* | RIGHT NOW.",
+   "pause": 0.2
+  },
+  {
+   "say": "Yes. Really. Like a firefly. Sort of.",
+   "cap": "YES. *REALLY.* | LIKE A *FIREFLY.* | SORT OF.",
+   "pause": 0.45
+  },
+  {
+   "say": "In two thousand nine, scientists in Japan filmed five volunteers",
+   "cap": "IN *2009,* | SCIENTISTS IN JAPAN | FILMED *5 VOLUNTEERS*",
+   "pause": 0.2
+  },
+  {
+   "say": "with a camera that can catch single particles of light.",
+   "cap": "WITH A CAMERA | THAT CAN CATCH | *SINGLE PARTICLES* | OF LIGHT.",
+   "pause": 0.2
+  },
+  {
+   "say": "The human body gives off visible light.",
+   "cap": "THE HUMAN BODY | GIVES OFF | *VISIBLE LIGHT.*",
+   "pause": 0.45
+  },
+  {
+   "say": "It's about a thousand times too weak for your eyes to see.",
+   "cap": "IT'S ABOUT | *1,000 TIMES* | TOO WEAK | FOR YOUR EYES TO SEE.",
+   "pause": 0.2
+  },
+  {
+   "say": "Which is why nobody has mentioned it.",
+   "cap": "WHICH IS WHY | *NOBODY* HAS | MENTIONED IT.",
+   "pause": 0.45
+  },
+  {
+   "say": "Scientists link the glow to your metabolism,",
+   "cap": "SCIENTISTS LINK | THE GLOW TO YOUR | *METABOLISM,*",
+   "pause": 0.2
+  },
+  {
+   "say": "the chemistry that keeps you running.",
+   "cap": "THE *CHEMISTRY* | THAT KEEPS YOU RUNNING.",
+   "pause": 0.45
+  },
+  {
+   "say": "It was brightest around four p m,",
+   "cap": "IT WAS *BRIGHTEST* | AROUND *4 PM,*",
+   "pause": 0.2
+  },
+  {
+   "say": "and dimmest around ten a m.",
+   "cap": "AND *DIMMEST* | AROUND *10 AM.*",
+   "pause": 0.45
+  },
+  {
+   "say": "And the brightest part of you? Your face.",
+   "cap": "AND THE BRIGHTEST | PART OF YOU? | YOUR *FACE.*",
+   "pause": 0.45
+  },
+  {
+   "say": "So you are a firefly.",
+   "cap": "SO YOU *ARE* | A FIREFLY.",
+   "pause": 0.2
+  },
+  {
+   "say": "Just a very, very dim one.",
+   "cap": "JUST A VERY, VERY | *DIM ONE.*",
+   "pause": 0.45
+  },
+  {
+   "say": "Follow,",
+   "cap": "*FOLLOW*",
+   "pause": 0.15
+  },
+  {
+   "say": "for the stuff school skipped.",
+   "cap": "FOR THE STUFF | SCHOOL *SKIPPED.*",
+   "pause": 0.5
+  }
+ ],
+ "scenes": [
+  {
+   "first": 0,
+   "end": 2,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      0,
+      0.0,
+      "deadpan"
+     ],
+     [
+      1,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "firefly",
+     "x": 840,
+     "y": 1010,
+     "s": 1.1,
+     "slot": "right",
+     "at": [
+      0,
+      0.0
+     ],
+     "until": null,
+     "in": "none",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 2,
+   "end": 5,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      2,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "camera",
+     "x": 660,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "center",
+     "at": [
+      2,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "flash": false
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "CATCHES SINGLE PHOTONS",
+     "sub": null,
+     "x": 680,
+     "y": 1300,
+     "color": "red",
+     "rot": -0.12,
+     "size": 44,
+     "at": [
+      3,
+      0.3
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 5,
+   "end": 7,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      5,
+      0.0,
+      "point"
+     ],
+     [
+      6,
+      0.0,
+      "shrug"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "big_number",
+     "x": 660,
+     "y": 1010,
+     "s": 1.0,
+     "slot": "center",
+     "at": [
+      5,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {
+      "value": 1000,
+      "suffix": "x TOO DIM"
+     },
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "firefly",
+     "x": 520,
+     "y": 1300,
+     "s": 0.7,
+     "slot": "low_left",
+     "at": [
+      5,
+      0.6
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 7,
+   "end": 9,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      7,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "flame",
+     "x": 820,
+     "y": 1560,
+     "s": 1.6,
+     "slot": "floor_right",
+     "at": [
+      7,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "stamp",
+     "text": "METABOLISM",
+     "sub": null,
+     "x": 680,
+     "y": 1300,
+     "color": "red",
+     "rot": -0.12,
+     "size": 54,
+     "at": [
+      8,
+      0.2
+     ],
+     "until": null
+    }
+   ]
+  },
+  {
+   "first": 9,
+   "end": 11,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      9,
+      0.0,
+      "point"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "clock",
+     "x": 520,
+     "y": 1300,
+     "s": 1.0,
+     "slot": "low_left",
+     "at": [
+      9,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    },
+    {
+     "type": "prop",
+     "name": "sun",
+     "x": 860,
+     "y": 1300,
+     "s": 1.0,
+     "slot": "low_right",
+     "at": [
+      9,
+      0.6
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 11,
+   "end": 12,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      11,
+      0.0,
+      "point"
+     ],
+     [
+      12,
+      0.0,
+      "shocked"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "mirror",
+     "x": 820,
+     "y": 1560,
+     "s": 0.9,
+     "slot": "floor_right",
+     "at": [
+      11,
+      0.0
+     ],
+     "until": null,
+     "in": "pop",
+     "out": "none",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 12,
+   "end": 14,
+   "doc": {
+    "x": 190,
+    "s": 2.25,
+    "face": 1,
+    "poses": [
+     [
+      12,
+      0.0,
+      "point"
+     ],
+     [
+      13,
+      0.0,
+      "wave"
+     ]
+    ]
+   },
+   "people": [],
+   "els": [
+    {
+     "type": "prop",
+     "name": "firefly",
+     "x": 840,
+     "y": 1010,
+     "s": 1.1,
+     "slot": "right",
+     "at": [
+      12,
+      0.0
+     ],
+     "until": [
+      13,
+      0.4
+     ],
+     "in": "none",
+     "out": "slide_right",
+     "states": [],
+     "args": {},
+     "label": null,
+     "flip": false
+    }
+   ]
+  },
+  {
+   "first": 14,
+   "end": 16,
+   "outro": true,
+   "doc": {
+    "x": 540,
+    "s": 2.4,
+    "face": 1,
+    "poses": [
+     [
+      14,
+      0.0,
+      "wave"
+     ]
+    ]
+   },
+   "people": [],
+   "els": []
+  }
+ ],
+ "cover": {
+  "big": [
+   "YOU GLOW",
+   "*IN THE DARK*"
+  ]
+ },
+ "sources": [
+  {
+   "fact": "Kobayashi, Kikuchi and Okamura, PLoS ONE 4(7): e6256 (2009), 'Imaging of ultraweak spontaneous photon emission from human body displaying diurnal rhythm': the human body emits ultraweak visible light 1000 times lower than the sensitivity of our naked eyes; imaged with a cryogenic CCD camera; emission linked to changes in energy metabolism",
+   "url": "https://doaj.org/article/c77ea97939b64f4986150a3145cd2aea",
+   "fetched": "2026-11-29"
+  },
+  {
+   "fact": "National Geographic (Ed Yong, Jul 20, 2009): Kobayashi recruited five volunteers; camera sensitive to a single photon; glow a thousand times less intense than the sensitivity of the human eye; strongest in the late afternoon; faces are the shiniest parts of the body, mouths and cheeks especially; light comes from chemical reactions that produce free radicals",
+   "url": "https://www.nationalgeographic.com/science/article/photographing-the-glow-of-the-human-body",
+   "fetched": "2026-11-29"
+  },
+  {
+   "fact": "NBC News, 'Humans glow in visible light': five healthy male volunteers; emission lowest at 10 a.m. and peaking at 4 p.m.; faces glowed more than the rest of the body; tied to metabolic rhythms",
+   "url": "https://www.nbcnews.com/id/wbna32090918",
+   "fetched": "2026-11-29"
+  }
+ ],
+ "math": [
+  {
+   "expr": "2009",
+   "expect": 2009,
+   "note": "PLoS ONE paper published July 2009"
+  },
+  {
+   "expr": "5",
+   "expect": 5,
+   "note": "National Geographic and NBC News: five volunteers"
+  },
+  {
+   "expr": "1000",
+   "expect": 1000,
+   "note": "PLoS ONE abstract: 1000 times lower than the sensitivity of the naked eye"
+  },
+  {
+   "expr": "12 + 4",
+   "expect": 16,
+   "note": "NBC News: peak at 4 p.m. (16:00), National Geographic: late afternoon"
+  },
+  {
+   "expr": "10",
+   "expect": 10,
+   "note": "NBC News: lowest at 10 a.m."
+  }
+ ],
+ "post": {
+  "slot": "morning",
+  "post_at": "2026-11-30T07:30:00+05:30",
+  "instagram_caption": "You are glowing. Right now ✨\n\nIn 2009, scientists in Japan filmed five volunteers with a camera that can catch single particles of light. The human body gives off visible light, about 1,000 times too weak for your eyes to see. They link it to metabolism. It was brightest around 4 pm, dimmest around 10 am, and brightest of all on the face.\n\nSo you are a firefly. Just a very, very dim one.\n\nSources: Kobayashi et al., PLoS ONE (2009); National Geographic; NBC News.\n\nWhat other body fact sounds fake but is true?\n\n#docstick #bodyfacts #weirdfacts #sciencefacts #biology",
+  "youtube_title": "You Glow in the Dark (Just Very, Very Faintly)",
+  "youtube_description": "In 2009, scientists in Japan used an ultra sensitive camera to show the human body gives off visible light, about 1,000 times too weak for our eyes to see. The glow is linked to metabolism, peaked around 4 pm, was dimmest around 10 am, and was brightest on the face.\n\nEducational only, not medical advice.\n\nSources:\n• PLoS ONE, \"Imaging of ultraweak spontaneous photon emission from human body displaying diurnal rhythm\" (fetched Nov 29, 2026)\n• National Geographic, \"Photographing the glow of the human body\" (fetched Nov 29, 2026)\n• NBC News, \"Humans glow in visible light\" (fetched Nov 29, 2026)\n\nDoc Stick: the stuff school skipped. Instagram: @askdocstick\n\n#BodyFacts #Science #Shorts"
+ }
+}
